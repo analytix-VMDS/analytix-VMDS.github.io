@@ -18,8 +18,6 @@ requirejs.config({
 requirejs([ 
     'jquery', 
     'd3',
-    'js/network',
-    'js/cluster',
 ],function($, d3, Network, Cluster) {
         
     
