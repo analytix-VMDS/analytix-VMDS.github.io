@@ -4,7 +4,7 @@
 
 requirejs.config({
     baseUrl:'',
-    path: {
+    paths: {
         backbone: 'lib/backbone/backbone-min',
         bootstrap: 'lib/bootstrap/js/bootstrap.min',
         d3: 'lib/d3/d3.min',
@@ -18,7 +18,7 @@ requirejs.config({
 requirejs([ 
     'jquery', 
     'd3',
-],function($, d3, Network, Cluster) {
+],function($, d3) {
         
     
 });
