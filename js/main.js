@@ -1,4 +1,4 @@
-/* 
+/*
 / Main script that acts as the entry point for the application
 */
 
@@ -15,10 +15,18 @@ requirejs.config({
 })
 
 // Main application single entry point
-requirejs([ 
-    'jquery', 
+requirejs([
+    'jquery',
     'd3',
-],function($, d3) {
-        
-    
+    'js/models/graph',
+    'js/views/graph'
+],function($, d3, Model, View) {
+
+  var data = [  ];
+
+  this.graph_model = new Model( data );
+
+  this.graph_view = new View( { "model" : this.graph_model } );
+
+
 });
