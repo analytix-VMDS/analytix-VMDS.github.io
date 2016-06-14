@@ -1,6 +1,7 @@
-# Boilerplate code for a D3 application
+# Boilerplate code for a data-based D3 application
 
-Clone this repository to quickly begin building a web application with D3 visualizations.
+Clone this repository to efficiently build a data-based web application with D3 visualizations. Essential Backbone components, such as the model and view, have
+already been included.
 
 It contains all the boilerplate code for an application using:
 
@@ -16,7 +17,7 @@ git clone https://github.com/SMCCoder/d3app
 ```
 then download the submodules.
 ```
-cd d3app
+cd d3-databased-app-boilerplate
 git submodule init
 git submodule update
 ```
