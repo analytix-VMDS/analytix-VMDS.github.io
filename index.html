@@ -6,28 +6,63 @@
     <!-- Calls to CSS Stylesheets -->
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet" type="text/css">
-
     <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.css">
+
+    <!-- Calls to javascript files in bootstrap & jquery -->
+    <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- The main script is the entry point for the application -->
     <script data-main="js/main" src="lib/require/require.js"></script>
 </head>
 
-<body>
+<body style="padding: 0px;">
 
     <div class="container">
 
+      <!--
+       Goals for branch Home:
+          * Make dropdown that contains...
+          * Create button that...
+     -->
+
         <!-- Page header for the webpage -->
         <div class="page-header">
-            <h1>Data Analysis</h1>
+
+            <h1>Data Analysis
+
+            <!-- Try bootstrap style button -->
+              <!--<button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                Button
+              </button>-->
+
+              <!-- and bootstrap style dropdown -->
+              <!--<div class="dropdown" style="float: right; margin-left: 20px;">
+                <ul class="nav nav-pills" role="tablist">
+                  <li role="presentation" class="dropdown">
+                    <button id="drop4" href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                      Data List
+                      <span class="caret"></span>
+                    </button>
+                    <ul id="menu1" class="dropdown-menu" aria-labeledby="drop4">
+                      <li><a href="#">some item</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>-->
+
+            </h1>
+
             <tr>
-                <td>Please select:
-                    <select name="choice" width="4">
-                        <%=optionStr%>
-                    </select>
-                    <br>
-                    <td>
-                        <input type=submit name=action value="Button">
+              <td>Please select:
+                <select name="choice" width="4">
+                      <%=optionStr%>
+                </select>
+                  <br>
+               </td>
+            </tr>
+            <input type=submit name=action value="Button"></input>
+
         </div>
 
         <div id="svg_location"></div>
