@@ -26,8 +26,8 @@ define([
         },
 
         draw_graph: function() {
+          d3.select("svg").style("background", "blue");
 
-    
 
         }
 
