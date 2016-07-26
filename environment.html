@@ -1,0 +1,78 @@
+<html>
+<!-- Header where scripts and stylesheets are called -->
+
+<head>
+    <!-- Calls to CSS Stylesheets -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.css">
+
+    <!-- Calls to javascript files in bootstrap & jquery -->
+    <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- The main script is the entry point for the application -->
+    <script data-main="js/main" src="lib/require/require.js"></script>
+</head>
+<body style="padding: 0px;">
+
+
+    <div class="container">
+
+      <!--
+       Tabs connecting to Home branch
+     -->
+
+        <!-- Page header for the webpage -->
+        <div class="page-header">
+
+            <h1>Environment</h1>
+
+            <!-- bootstrap style button -->
+              <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                Environment
+              </button>
+
+              <!-- bootstrap style dropdown -->
+              <div class="dropdown" style="float: left; margin-left: 20px;">
+                <ul class="nav nav-pills" role="tablist">
+                  <li role="presentation" class="dropdown">
+                    <button id="drop4" href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                      Choose Data Analysis Type
+                      <span class="caret"></span>
+                    </button>
+                    <ul id="menu1" class="dropdown-menu" aria-labeledby="drop4">
+                      <li><a href="#">some data analyzing method</a></li>
+                      <li><a href="#">etc</a></li>
+                      <li><a href="#">etc</a></li>
+                      <li><a href="#">etc</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="dropdown" style="float: left; margin-left: 20px;">
+                <ul class="nav nav-pills" role="tablist">
+                  <li role="presentation" class="dropdown">
+                    <button id="drop4" href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                      Choose Subtopic
+                      <span class="caret"></span>
+                    </button>
+                    <ul id="menu1" class="dropdown-menu" aria-labeledby="drop4">
+                      <li><a href="#">voting polls</a></li>
+                      <li><a href="#">etc</a></li>
+                      <li><a href="#">etc</a></li>
+                      <li><a href="#">etc</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+        </div>
+        <div id="svg_location"></div>
+
+    </div>
+
+</body>
+
+</html>
