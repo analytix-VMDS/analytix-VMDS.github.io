@@ -3,7 +3,14 @@
 Add main CSS here
 
 */
+.icon {
+  transition: background-color 0.5s ease;
+  background-color: red;
+}
+.icon:hover {
+  background-color: blue;
 
+}
 body {
   padding-top: 20px;
   padding-bottom: 20px;
