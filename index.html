@@ -1,33 +1,39 @@
 <!DOCTYPE HTML>
 <html>
-    <!-- Header where scripts and stylesheets are called -->
-    <head>
-        <!-- Calls to CSS Stylesheets -->
-        <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/main.css" rel="stylesheet" type="text/css">
+<!-- Header where scripts and stylesheets are called -->
 
-        <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.css">
+<head>
+    <!-- Calls to CSS Stylesheets -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
 
-        <!-- The main script is the entry point for the application -->
-        <script data-main="js/main" src="lib/require/require.js"></script>
-    </head>
+    <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.css">
 
-    <body>
+    <!-- The main script is the entry point for the application -->
+    <script data-main="js/main" src="lib/require/require.js"></script>
+</head>
 
-      <div class="container">
+<body>
 
-            <!-- Page header for the webpage -->
-            <div class="page-header">
-              <h1>Data Analysis</h1>
-              <tr><td>Please select: <select name="choice" width="4" ><%=optionStr%></select>
-        <br>
-        <td><input type=submit name=action value="Button" >
-            </div>
+    <div class="container">
 
-            <div id="svg_location"></div>
-
+        <!-- Page header for the webpage -->
+        <div class="page-header">
+            <h1>Data Analysis</h1>
+            <tr>
+                <td>Please select:
+                    <select name="choice" width="4">
+                        <%=optionStr%>
+                    </select>
+                    <br>
+                    <td>
+                        <input type=submit name=action value="Button">
         </div>
 
-    </body>
+        <div id="svg_location"></div>
+
+    </div>
+
+</body>
 
 </html>
