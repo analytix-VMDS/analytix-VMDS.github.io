@@ -29,7 +29,7 @@ define([
           d3.json("json/test.json", function(data){
             console.log(data);
           })
-          console.log("D");
+          console.log("u");
           /*var zip = $('select option:selected').text().substring(1, 6);
           $.getJSON('http://data.colorado.gov/resource/4ykn-tg5h.json?entityStatus=Good%20Standing&principalZipCode=', function (data) {
             console.log(data);
