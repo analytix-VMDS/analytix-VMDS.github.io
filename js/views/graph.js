@@ -25,11 +25,11 @@ define([
 
         },
 
-        draw_graph: function() {
-          d3.select("svg").style("background", "blue");
+      /*  draw_graph: function() {
+          d3.select("svg").style("background", "");
           d3.select(".icon").on("mouseover", function(){
-            d3.select(".icon").transition().style("background-color", "purple");
-          })
+            d3.select(this).transition().style("background-color", "purple");
+          })   */
 
         }
 
