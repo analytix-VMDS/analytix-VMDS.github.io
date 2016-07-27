@@ -12,16 +12,17 @@ define([
 
         initialize: function(){
 
-          this.element = "#svg_location"
+          /*this.element = "#svg_location"
 
           this.width = this.model.get("width");
           this.height = this.model.get("height");
 
           this.svg = d3.select(this.element).append("svg")
             .attr("width", this.width)
-            .attr("height", this.height);
+            .attr("height", this.height);*/
 
           this.draw_graph();
+          this.draw_google_maps();
 
         },
 
@@ -29,23 +30,24 @@ define([
           d3.json("json/test.json", function(data){
             console.log(data);
           })
-          console.log("u");
-          /*var zip = $('select option:selected').text().substring(1, 6);
-          $.getJSON('http://data.colorado.gov/resource/4ykn-tg5h.json?entityStatus=Good%20Standing&principalZipCode=', function (data) {
-            console.log(data);
-          });*/
-          /*var user = new User();
-          $.ajax({
-              type: 'POST',
-              url : 'http://demo.ckan.org/api/3/action/group_list',
-              crossDomain: true,
-              data: JSON.stringify(user),
-              contentType:'application/json; charset=utf-8',
-              dataType: 'json'
-          });*/
-          d3.select("svg").style("background", "blue");
+
+          //d3.select("svg").style("background", "blue");
 
 
+        },
+
+        draw_google_maps: function() {
+          function initMap() {
+              // Create a map object and specify the DOM element for display.
+              var map = new google.maps.Map(document.getElementById('map'), {
+                  center: {
+                      lat: -34.397,
+                      lng: 150.644
+                  },
+                  scrollwheel: false,
+                  zoom: 8
+              });
+          }
         }
 
       });
