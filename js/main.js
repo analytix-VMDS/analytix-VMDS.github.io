@@ -25,7 +25,6 @@ requirejs([
   var data = [  ];
 
   this.graph_model = new Model( data );
-
   this.graph_view = new View( { "model" : this.graph_model } );
 
 
