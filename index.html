@@ -10,11 +10,22 @@
     <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.css">
     <!--<link rel="stylesheet" href="/maps/documentation/javascript/demos/demos.css">-->
 
+    <script type="text/javascript" src="ejs_production.js"></script>
+    <!--<script src="/pico/client.js"></script>-->
+    <!--<script>
+        pico.load("data-grabber.py");
+    </script>-->
+
     <!-- The main script is the entry point for the application -->
     <script data-main="js/main" src="lib/require/require.js"></script>
 </head>
 
 <body>
+
+  <!--<%
+  var pythscript = require("data-grabber.py")
+  pythscript.pyth()
+   %>-->
 
     <div class="container">
 
@@ -25,21 +36,12 @@
 
         <div id="svg_location"></div>
 
-        <div id="map"></div>
-        <script>
-            function initMap() {
-                // Create a map object and specify the DOM element for display.
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    center: {
-                        lat: -34.397,
-                        lng: 150.644
-                    },
-                    scrollwheel: false,
-                    zoom: 8
-                });
-            }
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF6-dEtsRQ5jcaXJy2oDjU46u896i_xDk&callback=initMap" async defer></script>
+        <div style="height: 500px; margin-bottom: 50px" id="map"></div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF6-dEtsRQ5jcaXJy2oDjU46u896i_xDk" async defer></script>
+
+        <!--<form action = "data-grabber.py" method = "POST">
+           <input type = "submit" value = "Run the Program!!!">
+        </form>-->
 
     </div>
 

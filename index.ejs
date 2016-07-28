@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<!-- Header where scripts and stylesheets are called -->
+
+<head>
+    <!-- Calls to CSS Stylesheets -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.css">
+    <!--<link rel="stylesheet" href="/maps/documentation/javascript/demos/demos.css">-->
+
+    <script type="text/javascript" src="/pico/client.js"></script>
+    <script type="text/javascript">
+        pico.load('example');
+        pico.main = function() {
+            var displayMessage = function(message){
+               document.getElementById('message').innerHTML = message;
+           }
+           example.hello(displayMessage);
+        }
+    </script>
+
+    <!-- The main script is the entry point for the application -->
+    <script data-main="js/main" src="lib/require/require.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Page header for the webpage -->
+        <div class="page-header">
+            <h1>Title</h1>
+        </div>
+
+        <div id="svg_location"></div>
+
+        <div style="height: 500px; margin-bottom: 50px" id="map"></div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF6-dEtsRQ5jcaXJy2oDjU46u896i_xDk" async defer></script>
+
+        <!--<form action = "data-grabber.py" method = "POST">
+           <input type = "submit" value = "Run the Program!!!">
+        </form>-->
+
+    </div>
+
+</body>
+
+</html>
