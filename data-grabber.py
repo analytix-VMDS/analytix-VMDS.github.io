@@ -6,7 +6,7 @@ import json
 import cgitb
 import cgi
 from flask import Flask
-import pico
+#import pico
 #app = Flask(__name__)
 
 #@app.route('/index.html')#//localhost.8888')
