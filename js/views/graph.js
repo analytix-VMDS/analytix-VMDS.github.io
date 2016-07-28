@@ -21,17 +21,17 @@ define([
             .attr("width", this.width)
             .attr("height", this.height);
 
-          this.draw_graph();
+        //  this.draw_graph();
 
-        },
+        }
 
       /*  draw_graph: function() {
           d3.select("svg").style("background", "");
           d3.select(".icon").on("mouseover", function(){
             d3.select(this).transition().style("background-color", "purple");
-          })   */
+          })
 
-        }
+        }  */
 
       });
 
