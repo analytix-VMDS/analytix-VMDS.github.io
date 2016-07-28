@@ -1,26 +1,75 @@
+body {
+	margin: 0;
+	padding: 0;
+}
 h1{
 	text-align: center;
 	color: #3e220f;
 	font-weight:500;
 	font-style:normal;
-	font-size:5em;
+	font-size:4.8em;
+	padding-top:1.5em;
 }
 a{
 	text-decoration:none;
 	font-weight: 700;
 	font-size: 1.25em;
 	color: #78583e; 
+	display:block;
+	padding:.3em;
+}
+#more-info{
+    text-align:left;
+    font-size: .85em;
+    margin-bottom: 0;
+    margin-left:.5em;
+    margin-top: .5em;
 }
 
-li{
+#navbar ul{
+	list-style-type: none;
+	overflow:hidden;
+	position:fixed;
+	margin-top: 0;
+	padding:.5em;
+	width:100%;
+	background-color:#eae8d7;
+	top:0;
+}
+#navbar ul li{
+	float:left;
+}
+#navbar ul li a, .button{
+	display:inline-block;
+	text-align:center;
+	text-decoration:none;
+}
+#navbar ul li a:hover, .dropdown:hover .button{
+	background-color: #eae8d7;
+	transition: all 0.5s ease;
+}
+.dropdown{
+	display:inline-block;
+}
+.dropdown:hover .dcontent{
+	display:block;
+	font-size:.5em;
+}
+.dcontent{
+	position:absolute;
+	display:none;
+
+}
+
+#options ul li{
 	text-align: center;
 	display:inline-block;
 	padding:1em;
 }
-li a:hover {
+#options ul li a:hover {
     background-color: #eae8d7;
+    transition: all 0.5s ease;
 }
-
 .fa.fa-globe{
 	font-size:5em;
 	display: block;
@@ -45,15 +94,10 @@ li a:hover {
 	font-size:1em;
 }
 
-hr.style { 
-  height: 10px;
-	border: 0;
-	box-shadow: 0 10px 10px -10px #8c8b8b inset;
-}
-
 #container
 {
     background-color: white;
+    min-height: 100vh;
 }
 
 #header{
@@ -64,7 +108,8 @@ hr.style {
 	text-align: center;
 	list-style-type: none; 
     color: #78583e; 
-    padding-bottom: .5em
+    padding-bottom: 10em
+    
 }
 
 #footer{
@@ -74,7 +119,7 @@ hr.style {
 	font-weight: 700;
 	color: #eae8d7;
 	padding: .1em;
-	position:absolute;
+
 	bottom:0px;
 	width:99.2%;
 
