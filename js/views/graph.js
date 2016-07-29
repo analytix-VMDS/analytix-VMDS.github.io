@@ -106,11 +106,10 @@ define([
 
           // Create the Google Map…
           var map = new google.maps.Map(d3.select(".map").node(), {
-            zoom: 8,
+            zoom: 5,
             center: new google.maps.LatLng(37.76487, -122.41948),
             mapTypeId: google.maps.MapTypeId.TERRAIN,
             center: {lat: 37.0902, lng: -95.7129},
-            zoom: 4,
             scrollwheel: false
           });
 
