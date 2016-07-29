@@ -25,6 +25,10 @@ requirejs([
   var data = [];
   var scope = this;
 
+  /*$.ajax({
+      url:"data-grabber.py", success: function(){alert("DONE");}
+ });*/
+
   for(var i = 0; i < 1; i++) {
     d3.json("json/file"+i+".json", function(error, json){
 
