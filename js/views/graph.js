@@ -30,6 +30,26 @@ define([
 
         get_data: function() {
 
+          var u = $.ajax({
+             url: 'http://services.cngnow.com/V1/Stations.svc/external/circlefilter?latitude=35.4675&longitude=-97.5161&range=15&status=active',
+             data: {
+                format: 'json'
+             },
+             error: function() {
+                $('#info').html('<p>An error has occurred</p>');
+             },
+             dataType: 'jsonp',
+             success: function(data) {
+               console.log(data);
+                //var $title = $('<h1>').text(data.talks[0].talk_title);
+                //var $description = $('<p>').text(data.talks[0].talk_description);
+                //$('#info')
+                  // .append($title)
+                   //.append($description);
+             },
+             type: 'GET'
+          });
+
           /*var data;
           var scope = this;
           d3.json("json/test.json", function(error, json){
