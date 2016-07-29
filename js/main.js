@@ -25,7 +25,7 @@ requirejs([
   var data = [];
   var scope = this;
 
-  for(var i = 0; i < 2; i++) {
+  for(var i = 0; i < 1; i++) {
     d3.json("json/file"+i+".json", function(error, json){
 
       if (error) {  //If error is not null, something went wrong.

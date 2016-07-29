@@ -85,27 +85,17 @@
 </div>
 
 <div>
-  <div style="float: left; margin-left: 30px;">
-    <h4>Analyze the differences between average male and female <br>salaries as well
-      as how much of people's salaries are paid <br>to the government as tax. Find out
-      how popular your job is <br>with the occupation popularity statistics too!
+
+  <div style="float: left; margin-left: 30px; width: 400px;">
+    <h4>Analyze the differences between average male and female salaries as well
+      as how much of people's salaries are paid to the government as tax. Find out
+      how popular your job is with the occupation popularity statistics too!
     </h4>
   </div>
 
-<div style="margin-top: 100px; margin-left: 600px; margin-right: 100px; height: 600px" id="map"></div>
-    <script>
-      function initMap() {
-        // Create a map object and specify the DOM element for display.
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 37.0902, lng: -95.7129},
-          scrollwheel: false,
-          zoom: 4
-        });
-      }
+<div class="map"></div>
 
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF6-dEtsRQ5jcaXJy2oDjU46u896i_xDk&callback=initMap"
-    async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF6-dEtsRQ5jcaXJy2oDjU46u896i_xDk&callback=initMap" async defer></script>
 
 
 

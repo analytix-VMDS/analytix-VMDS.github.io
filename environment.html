@@ -94,20 +94,8 @@
     </h4>
             </div>
 
-            <div style="margin-top: 100px; margin-left: 600px; margin-right: 100px; height: 600px" id="map"></div>
-            <script>
-                function initMap() {
-                    // Create a map object and specify the DOM element for display.
-                    var map = new google.maps.Map(document.getElementById('map'), {
-                        center: {
-                            lat: 37.0902,
-                            lng: -95.7129
-                        },
-                        scrollwheel: false,
-                        zoom: 4
-                    });
-                }
-            </script>
+            <div class="map"></div>
+
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF6-dEtsRQ5jcaXJy2oDjU46u896i_xDk&callback=initMap" async defer></script>
 
 

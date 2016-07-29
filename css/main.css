@@ -21,8 +21,30 @@ body {
   margin-bottom: 20px;
 }
 
-#map {
-  height: 300px;
+.map {
+  margin-top: 100px;
+  margin-left: 600px;
+  margin-right: 100px;
+  height: 600px
 }
-=======
->>>>>>> D3-Graphing
+
+.stations, .stations svg {
+  position: absolute;
+}
+
+.stations svg {
+  width: 60px;
+  height: 20px;
+  padding-right: 100px;
+  font: 10px sans-serif;
+}
+
+.stations circle {
+  fill: brown;
+  stroke: black;
+  stroke-width: 1.5px;
+}
+
+.stations circle:hover {
+  fill: blue;
+}
