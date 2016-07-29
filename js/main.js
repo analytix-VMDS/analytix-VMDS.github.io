@@ -22,11 +22,30 @@ requirejs([
     'js/views/graph'
 ],function($, d3, Model, View) {
 
-  var data = [  ];
+  var data = [];
+  var scope = this;
 
-  this.graph_model = new Model( data );
+  for(var i = 0; i < 2; i++) {
+    d3.json("json/file"+i+".json", function(error, json){
 
-  this.graph_view = new View( { "model" : this.graph_model } );
+      if (error) {  //If error is not null, something went wrong.
+        console.log(error);  //Log the error.
+      } else {      //If no error, the file loaded correctly.
+
+        //Include other code to execute after successful file load here
+        data = json;
+        caller(data);
+
+      }
+    })
+  }
+
+  var caller = function(data) {
+    //console.log(data);
+    this.graph_model = new Model( data );
+    this.graph_view = new View( { "model" : this.graph_model } );
+    //console.log(this.graph_model)
+  }
 
 
 });

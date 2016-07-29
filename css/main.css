@@ -3,6 +3,7 @@
 Add main CSS here
 
 */
+<<<<<<< HEAD
 /*.icon {
   transition: background-color 0.5s ease;
   background-color: red;
@@ -23,3 +24,5 @@ body {
 #map {
   height: 300px;
 }
+=======
+>>>>>>> D3-Graphing

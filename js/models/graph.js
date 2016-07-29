@@ -15,6 +15,7 @@ define([
 
         initialize: function(data){
             // Data is going to be an array of objects.
+            
             this.set({
               "datasets": data,
             })
