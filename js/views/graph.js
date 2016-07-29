@@ -120,7 +120,7 @@ define([
 
               // Add a circle.
               marker.append("circle")
-                  .attr("r", 5)
+                  .attr("r", function(d){ return d.value.LastReportedPrice*5})
                   .attr("cx", padding)
                   .attr("cy", padding)
                   .on("mouseover", function(){

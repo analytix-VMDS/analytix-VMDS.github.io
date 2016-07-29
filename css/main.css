@@ -26,6 +26,7 @@ body {
   margin-left: 600px;
   margin-right: 100px;
   height: 600px
+  /*pointer-events: none;*/
 }
 
 .stations, .stations svg {
@@ -40,7 +41,7 @@ body {
 }
 
 .stations circle {
-  fill: brown;
+  fill: green;
   stroke: black;
   stroke-width: 1.5px;
 }
