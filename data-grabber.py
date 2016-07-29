@@ -26,17 +26,22 @@ from flask import Flask
 
 #def pyth:
 
-urls=["places": {
-        "http://services.cngnow.com/V1/Stations.svc/external/circlefilter?latitude=35.4675&longitude=-97.5161&range=15&status=active"
-        },
-      "environment": {
-        "http://apiv3.iucnredlist.org/api/v3/species/countries/name/Loxodonta%20africana?token=9bb4facb6d23f48efbf424bb05c0c1ef1cf6f468393bc745d42179ac4aca5fee"
-        },
-      "politics": {
-        "http://elections.huffingtonpost.com/pollster/api/charts.json",
-        "http://elections.huffingtonpost.com/pollster/api/charts/2012-general-election-romney-vs-obama.json"
-        }
-      ]
+# urls=["places": {
+#         "http://services.cngnow.com/V1/Stations.svc/external/circlefilter?latitude=35.4675&longitude=-97.5161&range=15&status=active"
+#         },
+#       "environment": {
+#         "http://apiv3.iucnredlist.org/api/v3/species/countries/name/Loxodonta%20africana?token=9bb4facb6d23f48efbf424bb05c0c1ef1cf6f468393bc745d42179ac4aca5fee"
+#         },
+#       "politics": {
+#         "http://elections.huffingtonpost.com/pollster/api/charts.json",
+#         "http://elections.huffingtonpost.com/pollster/api/charts/2012-general-election-romney-vs-obama.json"
+#         }
+#       ]
+
+urls=["http://services.cngnow.com/V1/Stations.svc/external/circlefilter?latitude=35.4675&longitude=-97.5161&range=15&status=active",
+    "http://apiv3.iucnredlist.org/api/v3/species/countries/name/Loxodonta%20africana?token=9bb4facb6d23f48efbf424bb05c0c1ef1cf6f468393bc745d42179ac4aca5fee",
+    "http://elections.huffingtonpost.com/pollster/api/charts.json",
+    "http://elections.huffingtonpost.com/pollster/api/charts/2012-general-election-romney-vs-obama.json"]
 
 print(urls)
 
