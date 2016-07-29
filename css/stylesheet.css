@@ -4,8 +4,8 @@ body {
 }
 h1{
 	text-align: center;
-	color: #3e220f;
-	font-weight:500;
+	color: #78583e;
+	font-weight:600;
 	font-style:normal;
 	font-size:4.8em;
 	padding-top:1.5em;
@@ -14,7 +14,7 @@ a{
 	text-decoration:none;
 	font-weight: 700;
 	font-size: 1.25em;
-	color: #78583e; 
+	color: #78583e;
 	display:block;
 	padding:.3em;
 }
@@ -38,27 +38,6 @@ a{
 }
 #navbar ul li{
 	float:left;
-}
-#navbar ul li a, .button{
-	display:inline-block;
-	text-align:center;
-	text-decoration:none;
-}
-#navbar ul li a:hover, .dropdown:hover .button{
-	background-color: #eae8d7;
-	transition: all 0.5s ease;
-}
-.dropdown{
-	display:inline-block;
-}
-.dropdown:hover .dcontent{
-	display:block;
-	font-size:.5em;
-}
-.dcontent{
-	position:absolute;
-	display:none;
-
 }
 
 #options ul li{
@@ -102,14 +81,15 @@ a{
 
 #header{
 	background-color: white;
+	padding:1em;
 }
 
 #options ul{
 	text-align: center;
-	list-style-type: none; 
-    color: #78583e; 
+	list-style-type: none;
+    color: #78583e;
     padding-bottom: 10em
-    
+
 }
 
 #footer{
@@ -118,12 +98,28 @@ a{
 	background-color:#ba9668;
 	font-weight: 700;
 	color: #eae8d7;
-	padding: .1em;
-
 	bottom:0px;
-	width:99.2%;
+	width:100%;
+	padding-top:1em;
 
 }
 #about-us{
-	
+	background-color:#eae8d7;
+	color: #78583e;
+	font-size:1.5em;
+	text-align:justify;
+	padding-right: 5em;
+	padding-left:5em;
+	padding-bottom: 1em;
+	padding-top:1em;
+}
+#contact{
+	background-color:#78583e;
+	padding-right: 5em;
+	padding-left:5em;
+	padding-bottom: 1em;
+	padding-top:1em;
+	font-size:1.5em;
+	color:#eae8d7;
+	text-align:justify;
 }
