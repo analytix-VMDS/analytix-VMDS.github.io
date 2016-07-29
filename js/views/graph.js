@@ -22,7 +22,7 @@ define([
             .attr("height", 500);
 
           this.get_data();
-          this.draw_google_maps();
+        //  this.draw_google_maps();
 
           //console.log(u);
 
@@ -180,6 +180,13 @@ define([
              }
           });
 
+        },
+
+        draw_table: function(){
+          $("body").click(function(){
+            console.log("cffcg");
+
+          });
         }
 
       });

@@ -67,12 +67,13 @@
                     <fieldset>
                       <h4><label style="color:#78583e" for="dataset">Choose a Visual</label>
 <select name="dataset" id="dataset">
-<option selected="selected">table</option>
-<option>bar graph</option>
-<option>pie graph</option>
-<option>line graph</option>
-<option>box-and-whisker plot</option></h4>
+<option id="tableEntertain" selected="selected">table</option>
+<option id="barEntertain">bar graph</option>
+<option id="pieEntertain">pie graph</option>
+<option id="lineEntertain">line graph</option>
+<option id="bAwEntertain">box-and-whisker plot</option>
                         </select>
+                      </h4>
                 </form>
             </div>
             <!-- bootstrap style button -->
@@ -88,11 +89,22 @@
     </h4>
             </div>
 
-            <div class="map"></div>
+            <!--<div class="map"></div>
 
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF6-dEtsRQ5jcaXJy2oDjU46u896i_xDk&callback=initMap" async defer></script>
+-->
+            <!-- <div class="svg_location"></div>  -->
+            <div id="selectTable">hi</div>
+              <div id="selectBar">blah</div>
+                <div id="selectPie">oy</div>
+                  <div id="selectLine">hello</div>
+                    <div id="selectBaW">here</div>
 
-            <div class="svg_location"></div>
+                    <script type="text/javascript">
+                      $("#tableEntertain").click(function(){
+                        console.log("yayy");
+                      });
+                    </script>
 
 </body>
 
