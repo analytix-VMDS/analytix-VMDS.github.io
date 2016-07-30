@@ -19,8 +19,13 @@ requirejs([
     'jquery',
     'd3',
     'js/models/graph',
-    'js/views/graph'
-],function($, d3, Model, View) {
+    'js/views/graph',
+    'js/views/EnterView',
+    'js/views/EnvView',
+    'js/views/HealthView',
+    'js/views/VoteView',
+    'js/views/WagesView'
+],function($, d3, Model, View, enterView, envView, healthView, voteView, wagesView) {
 
   var data = [];
   var scope = this;
@@ -47,6 +52,13 @@ requirejs([
   var caller = function(data) {
     //console.log(data);
     this.graph_model = new Model( data );
+
+    this.enter_view = new enterView( { "model" : this.graph_model } );
+    this.env_view = new envView( { "model" : this.graph_model } );
+    this.health_view = new healthView( { "model" : this.graph_model } );
+    this.vote_view = new voteView( { "model" : this.graph_model } );
+    this.wages_view = new wagesView( { "model" : this.graph_model } );
+
     this.graph_view = new View( { "model" : this.graph_model } );
     //console.log(this.graph_model)
   }

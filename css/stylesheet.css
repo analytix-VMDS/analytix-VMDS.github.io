@@ -17,6 +17,9 @@ a{
 	color: #78583e;
 	display:block;
 	padding:.3em;
+	/*Could make icons rounded w/o oval (optional)*/
+	/*width: 150px;
+	border-radius: 50px;*/
 }
 #more-info{
     text-align:left;

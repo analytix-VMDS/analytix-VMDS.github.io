@@ -22,7 +22,7 @@ define([
             .attr("height", 500);
 
           this.get_data();
-        //  this.draw_google_maps();
+          this.draw_google_maps();
 
           //console.log(u);
 
