@@ -15,14 +15,22 @@ define([
 
         initialize: function(data){
             // Data is going to be an array of objects.
-            
+
+            console.log("model");
+
             this.set({
               "datasets": data,
             })
 
         },
 
+        data: function() {
+
+        }
+
     });
+
+    //var d = new Data()
 
     return model;
 
