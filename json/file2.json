@@ -1,1 +1,3337 @@
-[{"id": 797, "last_updated": "2016-07-29T00:28:45.000Z", "state": "US", "url": "http://elections.huffingtonpost.com/pollster/2016-general-election-trump-vs-clinton-vs-johnson", "estimates": [{"last_name": "Clinton", "party": "Dem", "lead_confidence": 63.7, "value": "39.7", "incumbent": false, "choice": "Clinton", "first_name": "Hillary"}, {"last_name": "Trump", "party": "Rep", "lead_confidence": 36.3, "value": "39.4", "incumbent": false, "choice": "Trump", "first_name": "Donald"}, {"last_name": "Johnson", "party": "Lib", "lead_confidence": null, "value": "8.8", "incumbent": false, "choice": "Johnson", "first_name": "Gary"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": "4.4", "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 248, "topic": "2016-president", "short_title": "2016 President: Trump vs. Clinton vs. Johnson", "slug": "2016-general-election-trump-vs-clinton-vs-johnson", "title": "2016 General Election: Trump vs. Clinton vs. Johnson", "election_date": "2016-11-08"}, {"id": 796, "last_updated": "2016-07-26T20:07:11.000Z", "state": "US", "url": "http://elections.huffingtonpost.com/pollster/mike-pence-favorable-rating", "estimates": [{"last_name": null, "party": "N/A", "lead_confidence": null, "value": "33.8899353719753", "incumbent": false, "choice": "Favorable", "first_name": null}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": "28.642586993477668", "incumbent": false, "choice": "Unfavorable", "first_name": null}], "poll_count": 9, "topic": "favorable-ratings", "short_title": "Mike Pence Favorable ", "slug": "mike-pence-favorable-rating", "title": "Mike Pence Favorable Rating", "election_date": null}, {"id": 795, "last_updated": "2016-07-19T20:49:47.000Z", "state": "IA", "url": "http://elections.huffingtonpost.com/pollster/2016-iowa-senate-grassley-vs-judge", "estimates": [{"last_name": "Grassley", "party": "Rep", "lead_confidence": null, "value": "45.0807813964062", "incumbent": true, "choice": "Grassley", "first_name": "Chuck"}, {"last_name": "Judge ", "party": "Dem", "lead_confidence": null, "value": "37.09047012219887", "incumbent": false, "choice": "Judge", "first_name": "Patty "}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": "15.891808398305379", "incumbent": false, "choice": "Undecided", "first_name": null}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 2.0, "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 6, "topic": "2016-senate", "short_title": "2016 IA Senate: Grassley vs. Judge", "slug": "2016-iowa-senate-grassley-vs-judge", "title": "2016 Iowa Senate: Grassley vs. Judge", "election_date": "2016-11-08"}, {"id": 794, "last_updated": "2016-07-20T00:03:01.000Z", "state": "IN", "url": "http://elections.huffingtonpost.com/pollster/2016-indiana-president-trump-vs-clinton", "estimates": [], "poll_count": 2, "topic": "2016-president", "short_title": "IN President: Trump vs. Clinton", "slug": "2016-indiana-president-trump-vs-clinton", "title": "2016 Indiana President: Trump vs. Clinton", "election_date": "2016-11-08"}, {"id": 793, "last_updated": "2016-07-26T16:47:08.000Z", "state": "NV", "url": "http://elections.huffingtonpost.com/pollster/2016-nevada-senate-heck-vs-cortez-mastro", "estimates": [{"last_name": "Heck", "party": "Rep", "lead_confidence": null, "value": 46.0, "incumbent": false, "choice": "Heck", "first_name": "Joe"}, {"last_name": "Cortez Mastro ", "party": "Dem", "lead_confidence": null, "value": 37.0, "incumbent": false, "choice": "Cortez", "first_name": "Catherine "}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 12.0, "incumbent": false, "choice": "Undecided", "first_name": null}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 5.0, "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 5, "topic": "2016-senate", "short_title": "2016 Nevada Senate", "slug": "2016-nevada-senate-heck-vs-cortez-mastro", "title": "2016 Nevada Senate: Heck vs. Cortez Mastro", "election_date": "2016-11-08"}, {"id": 792, "last_updated": "2016-07-26T15:57:07.000Z", "state": "NV", "url": "http://elections.huffingtonpost.com/pollster/2016-nevada-president-trump-vs-clinton", "estimates": [{"last_name": "Clinton", "party": "Dem", "lead_confidence": null, "value": 45.0, "incumbent": false, "choice": "Clinton", "first_name": "Hillary"}, {"last_name": "Trump", "party": "Rep", "lead_confidence": null, "value": "42.99999999999573", "incumbent": false, "choice": "Trump", "first_name": "Donald"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 12.0, "incumbent": false, "choice": "Other", "first_name": null}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 7.0, "incumbent": false, "choice": "Undecided", "first_name": null}], "poll_count": 5, "topic": "2016-president", "short_title": "NV: Trump vs. Clinton", "slug": "2016-nevada-president-trump-vs-clinton", "title": "2016 Nevada President: Trump vs. Clinton", "election_date": "2016-11-08"}, {"id": 791, "last_updated": "2016-07-27T15:12:09.000Z", "state": "KS", "url": "http://elections.huffingtonpost.com/pollster/2016-kansas-president-trump-vs-clinton", "estimates": [], "poll_count": 4, "topic": "2016-president", "short_title": "KS: Trump vs. Clinton", "slug": "2016-kansas-president-trump-vs-clinton", "title": "2016 Kansas President: Trump vs. Clinton", "election_date": "2016-11-08"}, {"id": 790, "last_updated": "2016-07-29T00:21:42.000Z", "state": "CO", "url": "http://elections.huffingtonpost.com/pollster/2016-colorado-president-trump-vs-clinton", "estimates": [{"last_name": "Clinton", "party": "Dem", "lead_confidence": 99.9, "value": "42.1", "incumbent": false, "choice": "Clinton", "first_name": "Hillary"}, {"last_name": "Trump", "party": "Rep", "lead_confidence": "0.1", "value": 37.1, "incumbent": false, "choice": "Trump", "first_name": "Donald"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": "12.7", "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 7, "topic": "2016-president", "short_title": "CO: Trump vs. Clinton", "slug": "2016-colorado-president-trump-vs-clinton", "title": "2016 Colorado President: Trump vs. Clinton", "election_date": "2016-11-08"}, {"id": 789, "last_updated": "2016-06-29T19:53:57.000Z", "state": "UT", "url": "http://elections.huffingtonpost.com/pollster/2016-utah-senate-lee-vs-snow", "estimates": [], "poll_count": 1, "topic": "2016-senate", "short_title": "2016 UT Senate: Lee vs. Snow", "slug": "2016-utah-senate-lee-vs-snow", "title": "2016 Utah Senate: Lee vs. Snow", "election_date": "2016-11-08"}, {"id": 788, "last_updated": "2016-07-27T18:32:10.000Z", "state": "UT", "url": "http://elections.huffingtonpost.com/pollster/2016-utah-governor-herbert-vs-weinholtz", "estimates": [], "poll_count": 2, "topic": "2016-governor", "short_title": "2016 UT Governor: Herbert vs. Weinholtz", "slug": "2016-utah-governor-herbert-vs-weinholtz", "title": "2016 Utah Governor: Herbert vs. Weinholtz", "election_date": "2016-11-08"}, {"id": 787, "last_updated": "2016-06-24T21:53:39.000Z", "state": "UT", "url": "http://elections.huffingtonpost.com/pollster/2016-utah-governor-democratic-primary", "estimates": [], "poll_count": 1, "topic": "2016-governor-dem-primary", "short_title": "2016 UT Governor Democratic Primary", "slug": "2016-utah-governor-democratic-primary", "title": "2016 Utah Governor Democratic Primary", "election_date": "2016-06-28"}, {"id": 786, "last_updated": "2016-06-24T21:50:09.000Z", "state": "UT", "url": "http://elections.huffingtonpost.com/pollster/2016-utah-governor-republican-primary", "estimates": [], "poll_count": 3, "topic": "2016-governor-gop-primary", "short_title": "2016 UT Governor Republican Primary", "slug": "2016-utah-governor-republican-primary", "title": "2016 Utah Governor Republican Primary", "election_date": "2016-06-28"}, {"id": 785, "last_updated": "2016-07-07T15:33:40.000Z", "state": "WV", "url": "http://elections.huffingtonpost.com/pollster/2016-west-virginia-governor-cole-vs-justice", "estimates": [], "poll_count": 4, "topic": "2016-governor", "short_title": "2016 WV Governor: Cole vs. Justice ", "slug": "2016-west-virginia-governor-cole-vs-justice", "title": "2016 West Virginia Governor: Cole vs. Justice ", "election_date": "2016-11-08"}, {"id": 784, "last_updated": "2016-07-29T00:29:01.000Z", "state": "NJ", "url": "http://elections.huffingtonpost.com/pollster/2016-new-jersey-president-trump-vs-clinton", "estimates": [{"last_name": "Clinton", "party": "Dem", "lead_confidence": 100.0, "value": 45.3, "incumbent": false, "choice": "Clinton", "first_name": "Hillary"}, {"last_name": "Trump", "party": "Rep", "lead_confidence": 0.0, "value": "35.0", "incumbent": false, "choice": "Trump", "first_name": "Donald"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": "9.8", "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 6, "topic": "2016-president", "short_title": "NJ President: Trump vs. Clinton", "slug": "2016-new-jersey-president-trump-vs-clinton", "title": "2016 New Jersey President: Trump vs. Clinton", "election_date": "2016-11-08"}, {"id": 783, "last_updated": "2016-07-29T00:52:10.000Z", "state": "UT", "url": "http://elections.huffingtonpost.com/pollster/2016-utah-president-trump-vs-clinton", "estimates": [{"last_name": "Trump", "party": "Rep", "lead_confidence": 97.6, "value": "34.6", "incumbent": false, "choice": "Trump", "first_name": "Donald"}, {"last_name": "Clinton", "party": "Dem", "lead_confidence": 2.5, "value": "29.4", "incumbent": false, "choice": "Clinton", "first_name": "Hillary"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": "25.5", "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 8, "topic": "2016-president", "short_title": "UT President: Trump vs. Clinton", "slug": "2016-utah-president-trump-vs-clinton", "title": "2016 Utah President: Trump vs. Clinton", "election_date": "2016-11-08"}, {"id": 782, "last_updated": "2016-07-29T01:14:59.000Z", "state": "PA", "url": "http://elections.huffingtonpost.com/pollster/2016-pennsylvania-senate-toomey-vs-mcginty", "estimates": [{"last_name": "Toomey", "party": "Rep", "lead_confidence": 85.9, "value": "42.9", "incumbent": true, "choice": "Toomey", "first_name": "Pat"}, {"last_name": "McGinty", "party": "Dem", "lead_confidence": "14.1", "value": "41.0", "incumbent": false, "choice": "McGinty", "first_name": "Katie"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": "0.7", "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 16, "topic": "2016-senate", "short_title": "2016 PA Senate: Toomey vs. McGinty", "slug": "2016-pennsylvania-senate-toomey-vs-mcginty", "title": "2016 Pennsylvania Senate: Toomey vs. McGinty", "election_date": "2016-11-08"}, {"id": 781, "last_updated": "2016-07-29T00:46:11.000Z", "state": "NY", "url": "http://elections.huffingtonpost.com/pollster/2016-new-york-senate-long-vs-schumer", "estimates": [{"last_name": "Schumer", "party": "Dem", "lead_confidence": 100.0, "value": "60.7", "incumbent": true, "choice": "Schumer", "first_name": "Chuck"}, {"last_name": "Long", "party": "Rep", "lead_confidence": 0.0, "value": "25.0", "incumbent": false, "choice": "Long", "first_name": "Wendy"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 1.0, "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 6, "topic": "2016-senate", "short_title": "2016 NY Senate: Long vs. Schumer", "slug": "2016-new-york-senate-long-vs-schumer", "title": "2016 New York Senate: Long vs. Schumer", "election_date": "2016-11-08"}, {"id": 780, "last_updated": "2016-07-29T01:14:03.000Z", "state": "FL", "url": "http://elections.huffingtonpost.com/pollster/2016-florida-senate-rubio-vs-grayson", "estimates": [{"last_name": "Rubio", "party": "Rep", "lead_confidence": 100.0, "value": "46.1", "incumbent": true, "choice": "Rubio", "first_name": "Marco"}, {"last_name": "Grayson", "party": "Dem", "lead_confidence": "0.0", "value": "38.9", "incumbent": false, "choice": "Grayson", "first_name": "Alan"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 1.0, "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 8, "topic": "2016-senate", "short_title": "2016 Florida Senate ", "slug": "2016-florida-senate-rubio-vs-grayson", "title": "2016 Florida Senate: Rubio vs. Grayson", "election_date": "2016-11-08"}, {"id": 779, "last_updated": "2016-07-29T01:27:51.000Z", "state": "FL", "url": "http://elections.huffingtonpost.com/pollster/2016-florida-senate-rubio-vs-murphy", "estimates": [{"last_name": "Rubio", "party": "Rep", "lead_confidence": 99.8, "value": "46.5", "incumbent": true, "choice": "Rubio", "first_name": "Marco"}, {"last_name": "Murphy", "party": "Dem", "lead_confidence": 0.3, "value": "41.2", "incumbent": false, "choice": "Murphy", "first_name": "Patrick"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 1.5, "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 12, "topic": "2016-senate", "short_title": "2016 Florida Senate ", "slug": "2016-florida-senate-rubio-vs-murphy", "title": "2016 Florida Senate: Rubio vs. Murphy", "election_date": "2016-11-08"}, {"id": 778, "last_updated": "2016-07-07T15:27:20.000Z", "state": "GA", "url": "http://elections.huffingtonpost.com/pollster/2016-georgia-senate-isakson-vs-barksdale", "estimates": [], "poll_count": 1, "topic": "2016-senate", "short_title": "2016 Georgia Senate ", "slug": "2016-georgia-senate-isakson-vs-barksdale", "title": "2016 Georgia Senate: Isakson vs. Barksdale ", "election_date": "2016-11-08"}, {"id": 777, "last_updated": "2016-07-28T17:12:09.000Z", "state": "CA", "url": "http://elections.huffingtonpost.com/pollster/2016-california-senate-harris-vs-sanchez", "estimates": [{"last_name": "Harris", "party": "Dem", "lead_confidence": null, "value": 47.0, "incumbent": false, "choice": "Harris", "first_name": "Kamala"}, {"last_name": "Sanchez", "party": "Dem", "lead_confidence": null, "value": "20.31716293104242", "incumbent": false, "choice": "Sanchez", "first_name": "Loretta"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 28.0, "incumbent": false, "choice": "Other", "first_name": null}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": "13.999999999999872", "incumbent": false, "choice": "Undecided", "first_name": null}], "poll_count": 6, "topic": "2016-senate", "short_title": "2016 California Senate", "slug": "2016-california-senate-harris-vs-sanchez", "title": "2016 California Senate: Harris vs. Sanchez", "election_date": "2016-11-08"}, {"id": 776, "last_updated": "2016-07-29T01:40:28.000Z", "state": "AZ", "url": "http://elections.huffingtonpost.com/pollster/2016-arizona-senate-mccain-vs-kirkpatrick", "estimates": [{"last_name": "McCain", "party": "Rep", "lead_confidence": 98.4, "value": "43.6", "incumbent": true, "choice": "McCain", "first_name": "John"}, {"last_name": "Kirkpatrick", "party": "Dem", "lead_confidence": 1.6, "value": "38.8", "incumbent": false, "choice": "Kirkpatrick", "first_name": "Ann"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 4.0, "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 12, "topic": "2016-senate", "short_title": "2016 Arizona Senate", "slug": "2016-arizona-senate-mccain-vs-kirkpatrick", "title": "2016 Arizona Senate: McCain vs. Kirkpatrick", "election_date": "2016-11-08"}, {"id": 775, "last_updated": "2016-06-17T21:32:09.000Z", "state": "NH", "url": "http://elections.huffingtonpost.com/pollster/2016-new-hampshire-democratic-presidential-caucus", "estimates": [{"last_name": "Sanders", "party": "Dem", "lead_confidence": null, "value": 55.56, "incumbent": false, "choice": "Sanders", "first_name": "Bernie"}, {"last_name": "Clinton", "party": "Dem", "lead_confidence": null, "value": 39.75, "incumbent": false, "choice": "Clinton", "first_name": "Hillary"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 4.64, "incumbent": false, "choice": "Undecided", "first_name": null}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 0.82, "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 88, "topic": "", "short_title": "NH Democratic Presidential Primary", "slug": "2016-new-hampshire-democratic-presidential-caucus", "title": "2016 New Hampshire Democratic Presidential Primary", "election_date": "2016-11-08"}, {"id": 774, "last_updated": "2016-06-17T21:32:07.000Z", "state": "IA", "url": "http://elections.huffingtonpost.com/pollster/2016-iowa-republican-presidential-primary", "estimates": [{"last_name": "Trump", "party": "Rep", "lead_confidence": null, "value": 30.08, "incumbent": false, "choice": "Trump", "first_name": "Donald"}, {"last_name": "Cruz", "party": "Rep", "lead_confidence": null, "value": 24.57, "incumbent": false, "choice": "Cruz", "first_name": "Ted"}, {"last_name": "Rubio", "party": "Rep", "lead_confidence": null, "value": 14.5, "incumbent": false, "choice": "Rubio", "first_name": "Marco"}, {"last_name": "Carson", "party": "Rep", "lead_confidence": null, "value": 7.7, "incumbent": false, "choice": "Carson", "first_name": "Ben"}, {"last_name": "Bush", "party": "Rep", "lead_confidence": null, "value": 3.95, "incumbent": false, "choice": "Bush", "first_name": "Jeb"}, {"last_name": "Paul", "party": "Rep", "lead_confidence": null, "value": 3.91, "incumbent": false, "choice": "Paul", "first_name": "Rand"}, {"last_name": "Huckabee", "party": "Rep", "lead_confidence": null, "value": 2.89, "incumbent": false, "choice": "Huckabee", "first_name": "Mike"}, {"last_name": "Christie", "party": "Rep", "lead_confidence": null, "value": 2.87, "incumbent": false, "choice": "Christie", "first_name": "Chris"}, {"last_name": "Kasich", "party": "Rep", "lead_confidence": null, "value": 2.72, "incumbent": false, "choice": "Kasich", "first_name": "John"}, {"last_name": "Fiorina", "party": "Rep", "lead_confidence": null, "value": 1.83, "incumbent": false, "choice": "Fiorina", "first_name": "Carly"}, {"last_name": "Santorum", "party": "Rep", "lead_confidence": null, "value": 1.22, "incumbent": false, "choice": "Santorum", "first_name": "Rick"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 3.13, "incumbent": false, "choice": "Undecided", "first_name": null}], "poll_count": 96, "topic": "", "short_title": "IA Republican Presidential Caucus", "slug": "2016-iowa-republican-presidential-primary", "title": "2016 Iowa Republican Presidential Caucus", "election_date": "2016-11-08"}, {"id": 773, "last_updated": "2016-06-17T21:27:19.000Z", "state": "IA", "url": "http://elections.huffingtonpost.com/pollster/2016-iowa-democratic-presidential-primary", "estimates": [{"last_name": "Clinton", "party": "Dem", "lead_confidence": null, "value": 46.74, "incumbent": false, "choice": "Clinton", "first_name": "Hillary"}, {"last_name": "Sanders", "party": "Dem", "lead_confidence": null, "value": 45.2, "incumbent": false, "choice": "Sanders", "first_name": "Bernie"}, {"last_name": "O'Malley", "party": "Dem", "lead_confidence": null, "value": 4.0, "incumbent": false, "choice": "O'Malley", "first_name": "Martin"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 3.93, "incumbent": false, "choice": "Undecided", "first_name": null}], "poll_count": 81, "topic": "", "short_title": "IA Democratic Presidential Caucus", "slug": "2016-iowa-democratic-presidential-primary", "title": "2016 Iowa Democratic Presidential Caucus", "election_date": "2016-11-08"}, {"id": 771, "last_updated": "2016-06-06T14:35:49.000Z", "state": "NM", "url": "http://elections.huffingtonpost.com/pollster/2016-new-mexico-republican-presidential-primary", "estimates": [], "poll_count": 1, "topic": "2016-president-gop-primary", "short_title": "2016 NM Republican Presidential Primary", "slug": "2016-new-mexico-republican-presidential-primary", "title": "2016 New Mexico Republican Presidential Primary", "election_date": "2016-11-08"}, {"id": 770, "last_updated": "2016-07-29T01:36:14.000Z", "state": "GA", "url": "http://elections.huffingtonpost.com/pollster/2016-georgia-president-trump-vs-clinton", "estimates": [{"last_name": "Trump", "party": "Rep", "lead_confidence": 95.2, "value": "47.1", "incumbent": false, "choice": "Trump", "first_name": "Donald"}, {"last_name": "Clinton", "party": "Dem", "lead_confidence": 4.8, "value": "43.7", "incumbent": false, "choice": "Clinton", "first_name": "Hillary"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": "9.0", "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 8, "topic": "2016-president", "short_title": "GA: Trump vs. Clinton", "slug": "2016-georgia-president-trump-vs-clinton", "title": "2016 Georgia President: Trump vs. Clinton", "election_date": "2016-11-08"}, {"id": 769, "last_updated": "2016-06-06T14:36:03.000Z", "state": "WV", "url": "http://elections.huffingtonpost.com/pollster/2016-west-virginia-gubernatorial-democratic-primary", "estimates": [{"last_name": "Justice", "party": "Dem", "lead_confidence": null, "value": 32.0, "incumbent": false, "choice": "Justice", "first_name": "Jim"}, {"last_name": "Goodwin", "party": "Dem", "lead_confidence": null, "value": 27.0, "incumbent": false, "choice": "BGoodwin", "first_name": "Booth"}, {"last_name": "Kessler", "party": "Dem", "lead_confidence": null, "value": 23.0, "incumbent": false, "choice": "Kessler", "first_name": "Jeff"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 18.0, "incumbent": false, "choice": "Undecided", "first_name": null}], "poll_count": 5, "topic": "2016-governor-dem-primary", "short_title": "2016 WV Gubernatorial Democratic Primary", "slug": "2016-west-virginia-gubernatorial-democratic-primary", "title": "2016 West Virginia Gubernatorial Democratic Primary", "election_date": "2016-05-10"}, {"id": 768, "last_updated": "2016-07-07T15:33:39.000Z", "state": "MD", "url": "http://elections.huffingtonpost.com/pollster/2016-maryland-senate-szeliga-vs-van-hollen", "estimates": [], "poll_count": 1, "topic": "2016-senate", "short_title": "2016 MD Senate: Szeliga vs. Van Hollen", "slug": "2016-maryland-senate-szeliga-vs-van-hollen", "title": "2016 Maryland Senate: Szeliga vs. Van Hollen", "election_date": "2016-11-08"}, {"id": 767, "last_updated": "2016-07-02T18:32:07.000Z", "state": "IL", "url": "http://elections.huffingtonpost.com/pollster/2016-illinois-senate-kirk-vs-duckworth", "estimates": [], "poll_count": 3, "topic": "2016-senate", "short_title": "2016 IL Senate: Kirk vs. Duckworth", "slug": "2016-illinois-senate-kirk-vs-duckworth", "title": "2016 Illinois Senate: Kirk vs. Duckworth", "election_date": "2016-11-08"}, {"id": 766, "last_updated": "2016-07-29T13:59:43.000Z", "state": "MO", "url": "http://elections.huffingtonpost.com/pollster/2016-missouri-president-trump-vs-clinton", "estimates": [{"last_name": "Trump", "party": "Rep", "lead_confidence": 100.0, "value": "43.4", "incumbent": false, "choice": "Trump", "first_name": "Donald"}, {"last_name": "Clinton", "party": "Dem", "lead_confidence": "0.0", "value": "38.3", "incumbent": false, "choice": "Clinton", "first_name": "Hillary"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": "8.4", "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 6, "topic": "2016-president", "short_title": "MO President: Trump vs. Clinton", "slug": "2016-missouri-president-trump-vs-clinton", "title": "2016 Missouri President: Trump vs. Clinton", "election_date": "2016-11-08"}, {"id": 765, "last_updated": "2016-07-07T15:33:38.000Z", "state": "MD", "url": "http://elections.huffingtonpost.com/pollster/2016-maryland-president-trump-vs-clinton", "estimates": [], "poll_count": 3, "topic": "2016-president", "short_title": "MD President: Trump vs. Clinton", "slug": "2016-maryland-president-trump-vs-clinton", "title": "2016 Maryland President: Trump vs. Clinton", "election_date": "2016-11-08"}, {"id": 764, "last_updated": "2016-07-29T01:54:56.000Z", "state": "MI", "url": "http://elections.huffingtonpost.com/pollster/2016-michigan-president-trump-vs-clinton", "estimates": [{"last_name": "Clinton", "party": "Dem", "lead_confidence": 100.0, "value": "40.4", "incumbent": false, "choice": "Clinton", "first_name": "Hillary"}, {"last_name": "Trump", "party": "Rep", "lead_confidence": "0.0", "value": "34.2", "incumbent": false, "choice": "Trump", "first_name": "Donald"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": "7.7", "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 16, "topic": "2016-president", "short_title": "MI President: Trump vs. Clinton", "slug": "2016-michigan-president-trump-vs-clinton", "title": "2016 Michigan President: Trump vs. Clinton", "election_date": "2016-11-08"}, {"id": 763, "last_updated": "2016-07-29T01:49:11.000Z", "state": "AZ", "url": "http://elections.huffingtonpost.com/pollster/2016-arizona-president-trump-vs-clinton", "estimates": [{"last_name": "Trump", "party": "Rep", "lead_confidence": 56.5, "value": "44.5", "incumbent": false, "choice": "Trump", "first_name": "Donald"}, {"last_name": "Clinton", "party": "Dem", "lead_confidence": 43.5, "value": "44.1", "incumbent": false, "choice": "Clinton", "first_name": "Hillary"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 6.0, "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 7, "topic": "2016-president", "short_title": "AZ President: Trump vs. Clinton", "slug": "2016-arizona-president-trump-vs-clinton", "title": "2016 Arizona President: Trump vs. Clinton", "election_date": "2016-11-08"}, {"id": 762, "last_updated": "2016-06-06T14:36:07.000Z", "state": "MN", "url": "http://elections.huffingtonpost.com/pollster/2016-minnesota-president-trump-vs-clinton", "estimates": [], "poll_count": 3, "topic": "2016-president", "short_title": "MN President: Trump vs. Clinton", "slug": "2016-minnesota-president-trump-vs-clinton", "title": "2016 Minnesota President: Trump vs. Clinton", "election_date": "2016-11-08"}, {"id": 761, "last_updated": "2016-07-29T02:09:25.000Z", "state": "VA", "url": "http://elections.huffingtonpost.com/pollster/2016-virginia-president-trump-vs-clinton", "estimates": [{"last_name": "Clinton", "party": "Dem", "lead_confidence": 99.7, "value": "41.8", "incumbent": false, "choice": "Clinton", "first_name": "Hillary"}, {"last_name": "Trump", "party": "Rep", "lead_confidence": "0.3", "value": "36.8", "incumbent": false, "choice": "Trump", "first_name": "Donald"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": "9.5", "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 13, "topic": "2016-president", "short_title": "VA President: Trump vs. Clinton", "slug": "2016-virginia-president-trump-vs-clinton", "title": "2016 Virginia President: Trump vs. Clinton", "election_date": "2016-11-08"}, {"id": 760, "last_updated": "2016-07-29T02:11:29.000Z", "state": "IA", "url": "http://elections.huffingtonpost.com/pollster/2016-iowa-president-trump-vs-clinton", "estimates": [{"last_name": "Clinton", "party": "Dem", "lead_confidence": 93.1, "value": "45.7", "incumbent": false, "choice": "Clinton", "first_name": "Hillary"}, {"last_name": "Trump", "party": "Rep", "lead_confidence": 6.9, "value": 42.7, "incumbent": false, "choice": "Trump", "first_name": "Donald"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 12.0, "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 14, "topic": "2016-president", "short_title": "IA: Trump vs. Clinton", "slug": "2016-iowa-president-trump-vs-clinton", "title": "2016 Iowa President: Trump vs. Clinton", "election_date": "2016-11-08"}, {"id": 759, "last_updated": "2016-07-29T02:18:42.000Z", "state": "NC", "url": "http://elections.huffingtonpost.com/pollster/2016-north-carolina-president-trump-vs-clinton", "estimates": [{"last_name": "Clinton", "party": "Dem", "lead_confidence": 98.4, "value": "44.5", "incumbent": false, "choice": "Clinton", "first_name": "Hillary"}, {"last_name": "Trump", "party": "Rep", "lead_confidence": 1.6, "value": "41.2", "incumbent": false, "choice": "Trump", "first_name": "Donald"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": "9.0", "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 24, "topic": "2016-president", "short_title": "NC President: Trump vs. Clinton", "slug": "2016-north-carolina-president-trump-vs-clinton", "title": "2016 North Carolina President: Trump vs. Clinton", "election_date": "2016-11-08"}, {"id": 758, "last_updated": "2016-07-29T02:21:24.000Z", "state": "WI", "url": "http://elections.huffingtonpost.com/pollster/2016-wisconsin-president-trump-vs-clinton", "estimates": [{"last_name": "Clinton", "party": "Dem", "lead_confidence": 98.8, "value": "44.4", "incumbent": false, "choice": "Clinton", "first_name": "Hillary"}, {"last_name": "Trump", "party": "Rep", "lead_confidence": "1.2", "value": "36.3", "incumbent": false, "choice": "Trump", "first_name": "Donald"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": "9.1", "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 16, "topic": "2016-president", "short_title": "WI President: Trump vs. Clinton", "slug": "2016-wisconsin-president-trump-vs-clinton", "title": "2016 Wisconsin President: Trump vs. Clinton", "election_date": "2016-11-08"}, {"id": 757, "last_updated": "2016-07-29T02:40:31.000Z", "state": "OH", "url": "http://elections.huffingtonpost.com/pollster/2016-ohio-president-trump-vs-clinton", "estimates": [{"last_name": "Clinton", "party": "Dem", "lead_confidence": 62.2, "value": "43.0", "incumbent": false, "choice": "Clinton", "first_name": "Hillary"}, {"last_name": "Trump", "party": "Rep", "lead_confidence": 37.8, "value": "42.7", "incumbent": false, "choice": "Trump", "first_name": "Donald"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 9.2, "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 21, "topic": "2016-president", "short_title": "OH: Trump vs. Clinton", "slug": "2016-ohio-president-trump-vs-clinton", "title": "2016 Ohio President: Trump vs. Clinton", "election_date": "2016-11-08"}, {"id": 756, "last_updated": "2016-07-29T02:40:42.000Z", "state": "PA", "url": "http://elections.huffingtonpost.com/pollster/2016-pennsylvania-president-trump-vs-clinton", "estimates": [{"last_name": "Clinton", "party": "Dem", "lead_confidence": 98.9, "value": "43.5", "incumbent": false, "choice": "Clinton", "first_name": "Hillary"}, {"last_name": "Trump", "party": "Rep", "lead_confidence": 1.1, "value": 39.8, "incumbent": false, "choice": "Trump", "first_name": "Donald"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": "6.9", "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 18, "topic": "2016-president", "short_title": "PA: Trump vs. Clinton", "slug": "2016-pennsylvania-president-trump-vs-clinton", "title": "2016 Pennsylvania President: Trump vs. Clinton", "election_date": "2016-11-08"}, {"id": 755, "last_updated": "2016-07-29T02:31:29.000Z", "state": "NY", "url": "http://elections.huffingtonpost.com/pollster/2016-new-york-president-trump-vs-clinton", "estimates": [{"last_name": "Clinton", "party": "Dem", "lead_confidence": 100.0, "value": "50.3", "incumbent": false, "choice": "Clinton", "first_name": "Hillary"}, {"last_name": "Trump", "party": "Rep", "lead_confidence": 0.0, "value": "33.6", "incumbent": false, "choice": "Trump", "first_name": "Donald"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": "3.2", "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 16, "topic": "2016-president", "short_title": "NY President: Trump vs. Clinton", "slug": "2016-new-york-president-trump-vs-clinton", "title": "2016 New York President: Trump vs. Clinton", "election_date": "2016-11-08"}, {"id": 754, "last_updated": "2016-07-29T13:15:50.000Z", "state": "NH", "url": "http://elections.huffingtonpost.com/pollster/2016-new-hampshire-president-trump-vs-clinton", "estimates": [{"last_name": "Clinton", "party": "Dem", "lead_confidence": 79.4, "value": "40.9", "incumbent": false, "choice": "Clinton", "first_name": "Hillary"}, {"last_name": "Trump", "party": "Rep", "lead_confidence": 20.6, "value": "39.3", "incumbent": false, "choice": "Trump", "first_name": "Donald"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 10.1, "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 23, "topic": "2016-president", "short_title": "NH: Trump vs. Clinton", "slug": "2016-new-hampshire-president-trump-vs-clinton", "title": "2016 New Hampshire President: Trump vs. Clinton", "election_date": "2016-11-08"}, {"id": 753, "last_updated": "2016-07-29T02:43:55.000Z", "state": "CA", "url": "http://elections.huffingtonpost.com/pollster/2016-california-presidential-general-election-trump-vs-clinton", "estimates": [{"last_name": "Clinton", "party": "Dem", "lead_confidence": 100.0, "value": "48.9", "incumbent": false, "choice": "Clinton", "first_name": "Hillary"}, {"last_name": "Trump", "party": "Rep", "lead_confidence": 0.0, "value": "27.0", "incumbent": false, "choice": "Trump", "first_name": "Donald"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": "13.1", "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 14, "topic": "2016-president", "short_title": "CA: Trump vs. Clinton", "slug": "2016-california-presidential-general-election-trump-vs-clinton", "title": "2016 California President: Trump vs. Clinton", "election_date": "2016-11-08"}, {"id": 752, "last_updated": "2016-07-29T03:12:58.000Z", "state": "FL", "url": "http://elections.huffingtonpost.com/pollster/2016-florida-presidential-general-election-trump-vs-clinton", "estimates": [{"last_name": "Clinton", "party": "Dem", "lead_confidence": 93.6, "value": "43.7", "incumbent": false, "choice": "Clinton", "first_name": "Hillary"}, {"last_name": "Trump", "party": "Rep", "lead_confidence": "6.4", "value": "41.3", "incumbent": false, "choice": "Trump", "first_name": "Donald"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": "7.4", "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 30, "topic": "2016-president", "short_title": "FL: Trump vs. Clinton", "slug": "2016-florida-presidential-general-election-trump-vs-clinton", "title": "2016 Florida President: Trump vs. Clinton", "election_date": "2016-11-08"}, {"id": 751, "last_updated": "2016-07-06T14:02:08.000Z", "state": "OR", "url": "http://elections.huffingtonpost.com/pollster/2016-oregon-republican-presidential-primary", "estimates": [], "poll_count": 2, "topic": "2016-president-gop-primary", "short_title": "2016 OR Republican Presidential Primary", "slug": "2016-oregon-republican-presidential-primary", "title": "2016 Oregon Republican Presidential Primary", "election_date": "2016-05-17"}, {"id": 750, "last_updated": "2016-06-23T22:34:53.000Z", "state": "UK", "url": "http://elections.huffingtonpost.com/pollster/uk-european-union-referendum", "estimates": [{"last_name": null, "party": "N/A", "lead_confidence": 73.1, "value": 45.8, "incumbent": false, "choice": "Remain in the EU", "first_name": null}, {"last_name": null, "party": "N/A", "lead_confidence": 26.9, "value": 45.3, "incumbent": false, "choice": "Leave the EU", "first_name": null}], "poll_count": 77, "topic": "uk-eu-referendum", "short_title": "UK EU Referendum", "slug": "uk-european-union-referendum", "title": "UK European Union Referendum", "election_date": "2016-06-23"}, {"id": 746, "last_updated": "2016-06-06T14:36:15.000Z", "state": "IN", "url": "http://elections.huffingtonpost.com/pollster/2016-indiana-democratic-presidential-primary", "estimates": [{"last_name": "Clinton", "party": "Dem", "lead_confidence": null, "value": 51.18, "incumbent": false, "choice": "Clinton", "first_name": "Hillary"}, {"last_name": "Sanders", "party": "Dem", "lead_confidence": null, "value": 43.47, "incumbent": false, "choice": "Sanders", "first_name": "Bernie"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 4.13, "incumbent": false, "choice": "Undecided", "first_name": null}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 1.0, "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 6, "topic": "2016-president-dem-primary", "short_title": "2016 IN Democratic Presidential Primary", "slug": "2016-indiana-democratic-presidential-primary", "title": "2016 Indiana Democratic Presidential Primary", "election_date": "2016-05-03"}, {"id": 745, "last_updated": "2016-07-29T02:58:08.000Z", "state": "NC", "url": "http://elections.huffingtonpost.com/pollster/2016-north-carolina-senate-burr-vs-ross", "estimates": [{"last_name": "Burr", "party": "Rep", "lead_confidence": 96.6, "value": "42.2", "incumbent": true, "choice": "Burr", "first_name": "Richard"}, {"last_name": "Ross", "party": "Dem", "lead_confidence": "3.4", "value": "38.3", "incumbent": false, "choice": "Ross", "first_name": "Deborah"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": "4.6", "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 13, "topic": "2016-senate", "short_title": "2016 North Carolina Senate", "slug": "2016-north-carolina-senate-burr-vs-ross", "title": "2016 North Carolina Senate: Burr vs. Ross", "election_date": "2016-11-08"}, {"id": 744, "last_updated": "2016-06-06T14:36:16.000Z", "state": "MD", "url": "http://elections.huffingtonpost.com/pollster/2016-maryland-senate-republican-primary", "estimates": [{"last_name": "Szeliga", "party": "Rep", "lead_confidence": null, "value": 20.0, "incumbent": false, "choice": "Szeliga", "first_name": "Kathy"}, {"last_name": "Douglas", "party": "Rep", "lead_confidence": null, "value": 13.0, "incumbent": false, "choice": "Douglas", "first_name": "Richard"}, {"last_name": "Kefalas", "party": "Rep", "lead_confidence": null, "value": 11.0, "incumbent": false, "choice": "Kefalas", "first_name": "Chrys"}, {"last_name": "Hooe", "party": "Rep", "lead_confidence": null, "value": 3.0, "incumbent": false, "choice": "Hooe", "first_name": "Joseph David"}, {"last_name": "Wallace", "party": "Rep", "lead_confidence": null, "value": 3.0, "incumbent": false, "choice": "Wallace", "first_name": "Dave"}, {"last_name": "Graziani", "party": "Rep", "lead_confidence": null, "value": 2.0, "incumbent": false, "choice": "Graziani", "first_name": "John "}, {"last_name": "Chaffee", "party": "Rep", "lead_confidence": null, "value": 1.0, "incumbent": false, "choice": "Chaffee", "first_name": "Chris"}, {"last_name": "Connor", "party": "Rep", "lead_confidence": null, "value": 1.0, "incumbent": false, "choice": "Connor", "first_name": "Sean"}, {"last_name": "Richardson", "party": "Rep", "lead_confidence": null, "value": 1.0, "incumbent": false, "choice": "Richardson", "first_name": "Lynn"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 57.0, "incumbent": false, "choice": "Undecided", "first_name": null}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 1.0, "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 5, "topic": "2016-senate-gop-primary", "short_title": "2016 MD Senate Republican Primary", "slug": "2016-maryland-senate-republican-primary", "title": "2016 Maryland Senate Republican Primary", "election_date": "2016-04-26"}, {"id": 743, "last_updated": "2016-06-06T14:36:17.000Z", "state": "PA", "url": "http://elections.huffingtonpost.com/pollster/2016-pennsylvania-senate-democratic-primary", "estimates": [{"last_name": "McGinty", "party": "Dem", "lead_confidence": null, "value": 38.85, "incumbent": false, "choice": "McGinty", "first_name": "Katie"}, {"last_name": "Sestak", "party": "Dem", "lead_confidence": null, "value": 36.0, "incumbent": false, "choice": "Sestak", "first_name": "Joe"}, {"last_name": "Fetterman", "party": "Dem", "lead_confidence": null, "value": 11.62, "incumbent": false, "choice": "Fetterman", "first_name": "John"}, {"last_name": "Vodvarka", "party": "Dem", "lead_confidence": null, "value": 3.0, "incumbent": false, "choice": "Vodvarka", "first_name": "Joe"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 13.25, "incumbent": false, "choice": "Undecided", "first_name": null}], "poll_count": 11, "topic": "2016-senate-dem-primary", "short_title": "2016 PA Senate Democratic Primary", "slug": "2016-pennsylvania-senate-democratic-primary", "title": "2016 Pennsylvania Senate Democratic Primary", "election_date": "2016-04-26"}, {"id": 742, "last_updated": "2016-06-06T14:36:17.000Z", "state": "DE", "url": "http://elections.huffingtonpost.com/pollster/2016-delaware-republican-presidential-primary", "estimates": [], "poll_count": 1, "topic": "2016-president-gop-primary", "short_title": "2016 DE Republican Presidential Primary", "slug": "2016-delaware-republican-presidential-primary", "title": "2016 Delaware Republican Presidential Primary", "election_date": "2016-04-26"}, {"id": 741, "last_updated": "2016-06-06T14:36:18.000Z", "state": "DE", "url": "http://elections.huffingtonpost.com/pollster/2016-delaware-democratic-presidential-primary", "estimates": [], "poll_count": 1, "topic": "2016-president-dem-primary", "short_title": "2016 DE Democratic Presidential Primary", "slug": "2016-delaware-democratic-presidential-primary", "title": "2016 Delaware Democratic Presidential Primary", "election_date": "2016-04-26"}, {"id": 736, "last_updated": "2016-07-25T23:12:37.000Z", "state": "US", "url": "http://elections.huffingtonpost.com/pollster/2016-national-house-race", "estimates": [{"last_name": null, "party": "Dem", "lead_confidence": null, "value": "44.5080257825462", "incumbent": false, "choice": "Democrat", "first_name": null}, {"last_name": null, "party": "Rep", "lead_confidence": null, "value": "36.565601957067386", "incumbent": false, "choice": "Republican", "first_name": null}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": "16.709677686374597", "incumbent": false, "choice": "Undecided", "first_name": null}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": "3.920742411817259", "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 56, "topic": "2016-house", "short_title": "2016 National House Race", "slug": "2016-national-house-race", "title": "2016 National House Race", "election_date": "2016-11-08"}, {"id": 735, "last_updated": "2016-06-30T18:42:08.000Z", "state": "FL", "url": "http://elections.huffingtonpost.com/pollster/2016-florida-senate-republican-primary", "estimates": [{"last_name": "Rubio", "party": "Rep", "lead_confidence": null, "value": 63.0, "incumbent": true, "choice": "Rubio", "first_name": "Marco"}, {"last_name": "Jolly", "party": "Rep", "lead_confidence": null, "value": 12.45, "incumbent": false, "choice": "Jolly", "first_name": "David"}, {"last_name": "Beruff", "party": "Rep", "lead_confidence": null, "value": 11.0, "incumbent": false, "choice": "Beruff", "first_name": "Carlos"}, {"last_name": "Young", "party": "Rep", "lead_confidence": null, "value": 10.0, "incumbent": false, "choice": "Young", "first_name": "Dwight "}, {"last_name": "DeSantis", "party": "Rep", "lead_confidence": null, "value": 9.67, "incumbent": false, "choice": "DeSantis", "first_name": "Ron"}, {"last_name": "Lopez-Cantera", "party": "Rep", "lead_confidence": null, "value": 8.06, "incumbent": false, "choice": "Lopez-Cantera", "first_name": "Carlos"}, {"last_name": "Wilcox", "party": "Rep", "lead_confidence": null, "value": 3.96, "incumbent": false, "choice": "Wilcox", "first_name": "Todd"}, {"last_name": "Rivera", "party": "Rep", "lead_confidence": null, "value": 2.0, "incumbent": false, "choice": "Rivera", "first_name": "Ernie"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 32.5, "incumbent": false, "choice": "Undecided", "first_name": null}], "poll_count": 15, "topic": "2016-senate-gop-primary", "short_title": "2016 FL Senate Republican Primary ", "slug": "2016-florida-senate-republican-primary", "title": "2016 Florida Senate Republican Primary ", "election_date": "2016-08-30"}, {"id": 734, "last_updated": "2016-06-30T18:52:07.000Z", "state": "FL", "url": "http://elections.huffingtonpost.com/pollster/2016-florida-senate-democratic-primary", "estimates": [{"last_name": "Murphy", "party": "Dem", "lead_confidence": null, "value": 27.73, "incumbent": false, "choice": "Murphy", "first_name": "Patrick"}, {"last_name": "Grayson", "party": "Dem", "lead_confidence": null, "value": 21.81, "incumbent": false, "choice": "Grayson", "first_name": "Alan"}, {"last_name": "Keith", "party": "Dem", "lead_confidence": null, "value": 9.82, "incumbent": false, "choice": "Keith", "first_name": "Pamela Michelle "}, {"last_name": "Luster", "party": "Dem", "lead_confidence": null, "value": 3.0, "incumbent": false, "choice": "Luster", "first_name": "Reginald"}, {"last_name": "De La Fuente", "party": "Dem", "lead_confidence": null, "value": 2.0, "incumbent": false, "choice": "De La Fuente", "first_name": "Rocky"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 42.62, "incumbent": false, "choice": "Undecided", "first_name": null}], "poll_count": 18, "topic": "2016-senate-dem-primary", "short_title": "2016 FL Senate Democratic Primary", "slug": "2016-florida-senate-democratic-primary", "title": "2016 Florida Senate Democratic Primary", "election_date": "2016-08-30"}, {"id": 732, "last_updated": "2016-06-06T14:36:22.000Z", "state": "AL", "url": "http://elections.huffingtonpost.com/pollster/2016-new-hampshire-presidential-republican-caucus", "estimates": [], "poll_count": 3, "topic": "", "short_title": "2016-new-hampshire-presidential-republican-caucus", "slug": "2016-new-hampshire-presidential-republican-caucus", "title": "2016-new-hampshire-presidential-republican-caucus", "election_date": null}, {"id": 731, "last_updated": "2016-06-06T14:36:22.000Z", "state": "IL", "url": "http://elections.huffingtonpost.com/pollster/2016-illinois-senate-democratic-primary", "estimates": [{"last_name": "Duckworth", "party": "Dem", "lead_confidence": null, "value": 42.52, "incumbent": false, "choice": "Duckworth", "first_name": "Tammy"}, {"last_name": "Harris", "party": "Dem", "lead_confidence": null, "value": 26.0, "incumbent": false, "choice": "Harris", "first_name": "Napoleon"}, {"last_name": "Zopp", "party": "Dem", "lead_confidence": null, "value": 10.31, "incumbent": false, "choice": "Zopp", "first_name": "Andrea"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 27.94, "incumbent": false, "choice": "Undecided", "first_name": null}], "poll_count": 6, "topic": "2016-senate-dem-primary", "short_title": "2016 IL Senate Democratic Primary", "slug": "2016-illinois-senate-democratic-primary", "title": "2016 Illinois Senate Democratic Primary", "election_date": null}, {"id": 730, "last_updated": "2016-06-06T14:36:23.000Z", "state": "ID", "url": "http://elections.huffingtonpost.com/pollster/2016-idaho-republican-presidential-primary", "estimates": [], "poll_count": 1, "topic": "2016-president-gop-primary", "short_title": "ID Republican Presidential Primary", "slug": "2016-idaho-republican-presidential-primary", "title": "2016 Idaho Republican Presidential Primary", "election_date": "2016-03-08"}, {"id": 729, "last_updated": "2016-06-06T14:36:23.000Z", "state": "ID", "url": "http://elections.huffingtonpost.com/pollster/2016-idaho-democratic-presidential-caucus", "estimates": [], "poll_count": 1, "topic": "2016-president-dem-primary", "short_title": "ID Democratic Presidential Caucus", "slug": "2016-idaho-democratic-presidential-caucus", "title": "2016 Idaho Democratic Presidential Caucus", "election_date": "2016-03-22"}, {"id": 728, "last_updated": "2016-06-06T14:36:24.000Z", "state": "RI", "url": "http://elections.huffingtonpost.com/pollster/2016-rhode-island-republican-presidential-primary", "estimates": [{"last_name": "Trump", "party": "Rep", "lead_confidence": null, "value": 59.5, "incumbent": false, "choice": "Trump", "first_name": "Donald"}, {"last_name": "Kasich", "party": "Rep", "lead_confidence": null, "value": 22.0, "incumbent": false, "choice": "Kasich", "first_name": "John"}, {"last_name": "Cruz", "party": "Rep", "lead_confidence": null, "value": 11.5, "incumbent": false, "choice": "Cruz", "first_name": "Ted"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 6.5, "incumbent": false, "choice": "Undecided", "first_name": null}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 6.0, "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 5, "topic": "2016-president-gop-primary", "short_title": "RI Republican Presidential Primary", "slug": "2016-rhode-island-republican-presidential-primary", "title": "2016 Rhode Island Republican Presidential Primary", "election_date": "2016-04-26"}, {"id": 727, "last_updated": "2016-06-06T14:36:24.000Z", "state": "RI", "url": "http://elections.huffingtonpost.com/pollster/2016-rhode-island-democratic-presidential-primary", "estimates": [], "poll_count": 4, "topic": "2016-president-dem-primary", "short_title": "RI Democratic Presidential Primary", "slug": "2016-rhode-island-democratic-presidential-primary", "title": "2016 Rhode Island Democratic Presidential Primary", "election_date": "2016-04-26"}, {"id": 725, "last_updated": "2016-07-28T15:57:08.000Z", "state": "VT", "url": "http://elections.huffingtonpost.com/pollster/2016-vermont-republican-presidential-primary", "estimates": [], "poll_count": 1, "topic": "2016-president-gop-primary", "short_title": "VT Presidential Primary", "slug": "2016-vermont-republican-presidential-primary", "title": "2016 Vermont Republican Presidential Primary", "election_date": "2016-03-01"}, {"id": 723, "last_updated": "2016-06-06T14:36:26.000Z", "state": "AL", "url": "http://elections.huffingtonpost.com/pollster/2016-alabama-democratic-presidential-primary", "estimates": [], "poll_count": 2, "topic": "2016-president-dem-primary", "short_title": "AL Democratic Presidential Primary", "slug": "2016-alabama-democratic-presidential-primary", "title": "2016 Alabama Democratic Presidential Primary", "election_date": "2016-03-01"}, {"id": 722, "last_updated": "2016-07-06T14:12:08.000Z", "state": "MS", "url": "http://elections.huffingtonpost.com/pollster/2016-mississippi-democratic-presidential-primary", "estimates": [], "poll_count": 2, "topic": "2016-president-dem-primary", "short_title": "MS Democratic Presidential Primary", "slug": "2016-mississippi-democratic-presidential-primary", "title": "2016 Mississippi Democratic Presidential Primary", "election_date": "2016-03-08"}, {"id": 721, "last_updated": "2016-07-28T15:57:07.000Z", "state": "VT", "url": "http://elections.huffingtonpost.com/pollster/2016-vermont-democratic-presidential-primary", "estimates": [], "poll_count": 2, "topic": "2016-president-dem-primary", "short_title": "VT Democratic Presidential Primary", "slug": "2016-vermont-democratic-presidential-primary", "title": "2016 Vermont Democratic Presidential Primary", "election_date": "2016-03-01"}, {"id": 720, "last_updated": "2016-06-06T14:36:27.000Z", "state": "MT", "url": "http://elections.huffingtonpost.com/pollster/2016-montana-democratic-presidential-primary", "estimates": [], "poll_count": 1, "topic": "2016-president-dem-primary", "short_title": "MT Democratic Presidential Primary", "slug": "2016-montana-democratic-presidential-primary", "title": "2016 Montana Democratic Presidential Primary", "election_date": "2016-06-07"}, {"id": 719, "last_updated": "2016-06-06T14:36:27.000Z", "state": "MT", "url": "http://elections.huffingtonpost.com/pollster/2016-montana-republican-presidential-primary", "estimates": [], "poll_count": 1, "topic": "2016-president-gop-primary", "short_title": "MT Republican Presidential Primary", "slug": "2016-montana-republican-presidential-primary", "title": "2016 Montana Republican Presidential Primary", "election_date": "2016-06-07"}, {"id": 718, "last_updated": "2016-06-06T14:36:28.000Z", "state": "WV", "url": "http://elections.huffingtonpost.com/pollster/2016-west-virginia-presidential-democratic-primary", "estimates": [{"last_name": "Sanders", "party": "Dem", "lead_confidence": null, "value": 47.0, "incumbent": false, "choice": "Sanders", "first_name": "Bernie"}, {"last_name": "Clinton", "party": "Dem", "lead_confidence": null, "value": 43.0, "incumbent": false, "choice": "Clinton", "first_name": "Hillary"}, {"last_name": "Farrell", "party": "Dem", "lead_confidence": null, "value": 6.0, "incumbent": false, "choice": "Farrell", "first_name": "Paul"}, {"last_name": "Judd", "party": "Dem", "lead_confidence": null, "value": 1.0, "incumbent": false, "choice": "Judd", "first_name": "Keith "}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 11.0, "incumbent": false, "choice": "Undecided", "first_name": null}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 7.0, "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 5, "topic": "2016-president-dem-primary", "short_title": "WV Democratic Presidential Primary", "slug": "2016-west-virginia-presidential-democratic-primary", "title": "2016 West Virginia Democratic Presidential Primary", "election_date": "2016-05-10"}, {"id": 717, "last_updated": "2016-06-06T14:36:28.000Z", "state": "WV", "url": "http://elections.huffingtonpost.com/pollster/2016-west-virginia-presidential-republican-primary", "estimates": [], "poll_count": 4, "topic": "2016-president-gop-primary", "short_title": "WV Republican Presidential Primary", "slug": "2016-west-virginia-presidential-republican-primary", "title": "2016 West Virginia Republican Presidential Primary", "election_date": "2016-05-10"}, {"id": 716, "last_updated": "2016-06-06T14:36:29.000Z", "state": "IN", "url": "http://elections.huffingtonpost.com/pollster/2016-indiana-presidential-republican-primary", "estimates": [{"last_name": "Trump", "party": "Rep", "lead_confidence": null, "value": 43.36, "incumbent": false, "choice": "Trump", "first_name": "Donald"}, {"last_name": "Cruz", "party": "Rep", "lead_confidence": null, "value": 29.35, "incumbent": false, "choice": "Cruz", "first_name": "Ted"}, {"last_name": "Kasich", "party": "Rep", "lead_confidence": null, "value": 10.86, "incumbent": false, "choice": "Kasich", "first_name": "John"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 13.14, "incumbent": false, "choice": "Undecided", "first_name": null}], "poll_count": 9, "topic": "2016-president-gop-primary", "short_title": "IN Republican Presidential Primary", "slug": "2016-indiana-presidential-republican-primary", "title": "2016 Indiana Republican Presidential Primary", "election_date": "2016-05-03"}, {"id": 715, "last_updated": "2016-06-06T14:36:29.000Z", "state": "MD", "url": "http://elections.huffingtonpost.com/pollster/2016-maryland-presidential-democratic-primary", "estimates": [{"last_name": "Clinton", "party": "Dem", "lead_confidence": null, "value": 55.14, "incumbent": false, "choice": "Clinton", "first_name": "Hillary"}, {"last_name": "Sanders", "party": "Dem", "lead_confidence": null, "value": 35.8, "incumbent": false, "choice": "Sanders", "first_name": "Bernie"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 5.82, "incumbent": false, "choice": "Undecided", "first_name": null}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 1.0, "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 14, "topic": "2016-president-dem-primary", "short_title": "MD Democratic Presidential Primary", "slug": "2016-maryland-presidential-democratic-primary", "title": "2016 Maryland Democratic Presidential Primary", "election_date": "2016-04-26"}, {"id": 714, "last_updated": "2016-06-06T14:36:30.000Z", "state": "MD", "url": "http://elections.huffingtonpost.com/pollster/2016-maryland-presidential-republican-primary", "estimates": [{"last_name": "Trump", "party": "Rep", "lead_confidence": null, "value": 48.7, "incumbent": false, "choice": "Trump", "first_name": "Donald"}, {"last_name": "Kasich", "party": "Rep", "lead_confidence": null, "value": 22.23, "incumbent": false, "choice": "Kasich", "first_name": "John"}, {"last_name": "Cruz", "party": "Rep", "lead_confidence": null, "value": 21.75, "incumbent": false, "choice": "Cruz", "first_name": "Ted"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 4.92, "incumbent": false, "choice": "Undecided", "first_name": null}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 0.48, "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 8, "topic": "2016-president-gop-primary", "short_title": "MD Republican Presidential Primary", "slug": "2016-maryland-presidential-republican-primary", "title": "2016 Maryland Republican Presidential Primary", "election_date": "2016-04-26"}, {"id": 713, "last_updated": "2016-06-06T14:36:30.000Z", "state": "CT", "url": "http://elections.huffingtonpost.com/pollster/2016-connecticut-presidential-democratic-primary", "estimates": [{"last_name": "Clinton", "party": "Dem", "lead_confidence": null, "value": 48.51, "incumbent": false, "choice": "Clinton", "first_name": "Hillary"}, {"last_name": "Sanders", "party": "Dem", "lead_confidence": null, "value": 46.0, "incumbent": false, "choice": "Sanders", "first_name": "Bernie"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 6.0, "incumbent": false, "choice": "Undecided", "first_name": null}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 3.0, "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 6, "topic": "2016-president-dem-primary", "short_title": "CT Democratic Presidential Primary", "slug": "2016-connecticut-presidential-democratic-primary", "title": "2016 Connecticut Democratic Presidential Primary ", "election_date": "2016-04-26"}, {"id": 712, "last_updated": "2016-06-06T14:36:31.000Z", "state": "CT", "url": "http://elections.huffingtonpost.com/pollster/2016-connecticut-presidential-republican-primary", "estimates": [{"last_name": "Trump", "party": "Rep", "lead_confidence": null, "value": 56.5, "incumbent": false, "choice": "Trump", "first_name": "Donald"}, {"last_name": "Kasich", "party": "Rep", "lead_confidence": null, "value": 28.0, "incumbent": false, "choice": "Kasich", "first_name": "John"}, {"last_name": "Cruz", "party": "Rep", "lead_confidence": null, "value": 19.0, "incumbent": false, "choice": "Cruz", "first_name": "Ted"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 5.0, "incumbent": false, "choice": "Undecided", "first_name": null}], "poll_count": 7, "topic": "2016-president-gop-primary", "short_title": "CT Republican Presidential Primary", "slug": "2016-connecticut-presidential-republican-primary", "title": "2016 Connecticut Republican Presidential Primary", "election_date": "2016-04-26"}, {"id": 711, "last_updated": "2016-07-21T14:27:13.000Z", "state": "NY", "url": "http://elections.huffingtonpost.com/pollster/2016-new-york-presidential-democratic-primary", "estimates": [{"last_name": "Clinton", "party": "Dem", "lead_confidence": null, "value": "54.55123203586937", "incumbent": false, "choice": "Clinton", "first_name": "Hillary"}, {"last_name": "Sanders", "party": "Dem", "lead_confidence": null, "value": "41.616168957112166", "incumbent": false, "choice": "Sanders", "first_name": "Bernie"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": "3.459563367451376", "incumbent": false, "choice": "Undecided", "first_name": null}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": "2.000000000000629", "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 21, "topic": "2016-president-dem-primary", "short_title": "NY Democratic Presidential Primary", "slug": "2016-new-york-presidential-democratic-primary", "title": "2016 New York Democratic Presidential Primary", "election_date": "2016-04-19"}, {"id": 710, "last_updated": "2016-07-21T14:27:09.000Z", "state": "NY", "url": "http://elections.huffingtonpost.com/pollster/2016-new-york-presidential-republican-primary", "estimates": [{"last_name": "Trump", "party": "Rep", "lead_confidence": null, "value": "54.043159596085836", "incumbent": false, "choice": "Trump", "first_name": "Donald"}, {"last_name": "Kasich", "party": "Rep", "lead_confidence": null, "value": "22.05417968121729", "incumbent": false, "choice": "Kasich", "first_name": "John"}, {"last_name": "Cruz", "party": "Rep", "lead_confidence": null, "value": "19.214363367351172", "incumbent": false, "choice": "Cruz", "first_name": "Ted"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": "5.323564162899821", "incumbent": false, "choice": "Undecided", "first_name": null}], "poll_count": 25, "topic": "2016-president-gop-primary", "short_title": "NY Republican Presidential Primary", "slug": "2016-new-york-presidential-republican-primary", "title": "2016 New York Republican Presidential Primary", "election_date": "2016-04-19"}, {"id": 709, "last_updated": "2016-06-06T14:36:32.000Z", "state": "WI", "url": "http://elections.huffingtonpost.com/pollster/2016-wisconsin-presidential-democratic-primary", "estimates": [{"last_name": "Sanders", "party": "Dem", "lead_confidence": null, "value": 49.31, "incumbent": false, "choice": "Sanders", "first_name": "Bernie"}, {"last_name": "Clinton", "party": "Dem", "lead_confidence": null, "value": 45.78, "incumbent": false, "choice": "Clinton", "first_name": "Hillary"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 5.02, "incumbent": false, "choice": "Undecided", "first_name": null}], "poll_count": 20, "topic": "2016-president-dem-primary", "short_title": "WI Democratic Presidential Primary", "slug": "2016-wisconsin-presidential-democratic-primary", "title": "2016 Wisconsin Democratic Presidential Primary", "election_date": "2016-04-05"}, {"id": 708, "last_updated": "2016-07-12T15:44:04.000Z", "state": "WI", "url": "http://elections.huffingtonpost.com/pollster/2016-wisconsin-presidential-republican-primary", "estimates": [{"last_name": "Cruz", "party": "Rep", "lead_confidence": null, "value": 41.22, "incumbent": false, "choice": "Cruz", "first_name": "Ted"}, {"last_name": "Trump", "party": "Rep", "lead_confidence": null, "value": 38.18, "incumbent": false, "choice": "Trump", "first_name": "Donald"}, {"last_name": "Kasich", "party": "Rep", "lead_confidence": null, "value": 21.01, "incumbent": false, "choice": "Kasich", "first_name": "John"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 5.78, "incumbent": false, "choice": "Undecided", "first_name": null}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 0.76, "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 24, "topic": "2016-president-gop-primary", "short_title": "WI Republican Presidential Primary", "slug": "2016-wisconsin-presidential-republican-primary", "title": "2016 Wisconsin Republican Presidential Primary", "election_date": "2016-04-05"}, {"id": 707, "last_updated": "2016-06-06T14:36:33.000Z", "state": "WA", "url": "http://elections.huffingtonpost.com/pollster/2016-washington-presidential-democratic-caucus", "estimates": [], "poll_count": 2, "topic": "2016-president-dem-primary", "short_title": "WA Democratic Presidential Caucus", "slug": "2016-washington-presidential-democratic-caucus", "title": "2016 Washington Democratic Presidential Caucus", "election_date": "2016-03-26"}, {"id": 706, "last_updated": "2016-06-06T14:36:34.000Z", "state": "WA", "url": "http://elections.huffingtonpost.com/pollster/2016-washington-presidential-republican-primary", "estimates": [], "poll_count": 2, "topic": "2016-president-gop-primary", "short_title": "WA Republican Presidential Primary", "slug": "2016-washington-presidential-republican-primary", "title": "2016 Washington Republican Presidential Primary", "election_date": "2016-05-24"}, {"id": 705, "last_updated": "2016-06-06T14:36:34.000Z", "state": "AK", "url": "http://elections.huffingtonpost.com/pollster/2016-alaska-presidential-democratic-caucus", "estimates": [], "poll_count": 1, "topic": "2016-president-dem-primary", "short_title": "AK Democratic Presidential Caucus", "slug": "2016-alaska-presidential-democratic-caucus", "title": "2016 Alaska Democratic Presidential Caucus", "election_date": "2016-03-26"}, {"id": 704, "last_updated": "2016-06-06T14:36:35.000Z", "state": "AK", "url": "http://elections.huffingtonpost.com/pollster/2016-alaska-presidential-republican-caucus", "estimates": [{"last_name": "Trump", "party": "Rep", "lead_confidence": null, "value": 28.0, "incumbent": false, "choice": "Trump", "first_name": "Donald"}, {"last_name": "Cruz", "party": "Rep", "lead_confidence": null, "value": 24.0, "incumbent": false, "choice": "Cruz", "first_name": "Ted"}, {"last_name": "Huckabee", "party": "Rep", "lead_confidence": null, "value": 14.0, "incumbent": false, "choice": "Huckabee", "first_name": "Mike"}, {"last_name": "Palin", "party": "Rep", "lead_confidence": null, "value": 11.0, "incumbent": false, "choice": "Palin", "first_name": "Sarah"}, {"last_name": "Carson", "party": "Rep", "lead_confidence": null, "value": 9.0, "incumbent": false, "choice": "Carson", "first_name": "Ben"}, {"last_name": "Bush", "party": "Rep", "lead_confidence": null, "value": 7.0, "incumbent": false, "choice": "Bush", "first_name": "Jeb"}, {"last_name": "Rubio", "party": "Rep", "lead_confidence": null, "value": 7.0, "incumbent": false, "choice": "Rubio", "first_name": "Marco"}, {"last_name": "Walker", "party": "Rep", "lead_confidence": null, "value": 7.0, "incumbent": false, "choice": "Walker", "first_name": "Scott"}, {"last_name": "Ryan", "party": "Rep", "lead_confidence": null, "value": 6.0, "incumbent": false, "choice": "Ryan", "first_name": "Paul"}, {"last_name": "Christie", "party": "Rep", "lead_confidence": null, "value": 3.0, "incumbent": false, "choice": "Christie", "first_name": "Chris"}, {"last_name": "Paul", "party": "Rep", "lead_confidence": null, "value": 3.0, "incumbent": false, "choice": "Paul", "first_name": "Rand"}, {"last_name": "Kasich", "party": "Rep", "lead_confidence": null, "value": 2.0, "incumbent": false, "choice": "Kasich", "first_name": "John"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 13.0, "incumbent": false, "choice": "Undecided", "first_name": null}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 4.0, "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 6, "topic": "2016-president-gop-primary", "short_title": "AK Republican Presidential Caucus", "slug": "2016-alaska-presidential-republican-caucus", "title": "2016 Alaska Republican Presidential Caucus", "election_date": "2016-03-01"}, {"id": 703, "last_updated": "2016-06-17T21:27:19.000Z", "state": "AZ", "url": "http://elections.huffingtonpost.com/pollster/2016-arizona-presidential-democratic-primary", "estimates": [{"last_name": "Clinton", "party": "Dem", "lead_confidence": null, "value": 50.0, "incumbent": false, "choice": "Clinton", "first_name": "Hillary"}, {"last_name": "Sanders", "party": "Dem", "lead_confidence": null, "value": 24.0, "incumbent": false, "choice": "Sanders", "first_name": "Bernie"}, {"last_name": "O'Malley", "party": "Dem", "lead_confidence": null, "value": 2.0, "incumbent": false, "choice": "O'Malley", "first_name": "Martin"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 26.0, "incumbent": false, "choice": "Undecided", "first_name": null}], "poll_count": 5, "topic": "2016-president-dem-primary", "short_title": "AZ Democratic Presidential Primary", "slug": "2016-arizona-presidential-democratic-primary", "title": "2016 Arizona Democratic Presidential Primary", "election_date": "2016-03-22"}, {"id": 702, "last_updated": "2016-06-17T21:27:18.000Z", "state": "AZ", "url": "http://elections.huffingtonpost.com/pollster/2016-arizona-presidential-republican-primary", "estimates": [{"last_name": "Trump", "party": "Rep", "lead_confidence": null, "value": 36.57, "incumbent": false, "choice": "Trump", "first_name": "Donald"}, {"last_name": "Cruz", "party": "Rep", "lead_confidence": null, "value": 20.23, "incumbent": false, "choice": "Cruz", "first_name": "Ted"}, {"last_name": "Kasich", "party": "Rep", "lead_confidence": null, "value": 15.89, "incumbent": false, "choice": "Kasich", "first_name": "John"}, {"last_name": "Rubio", "party": "Rep", "lead_confidence": null, "value": 12.55, "incumbent": false, "choice": "Rubio", "first_name": "Marco"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 14.51, "incumbent": false, "choice": "Undecided", "first_name": null}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 3.0, "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 13, "topic": "2016-president-gop-primary", "short_title": "AZ Republican Presidential Primary", "slug": "2016-arizona-presidential-republican-primary", "title": "2016 Arizona Republican Presidential Primary", "election_date": "2016-03-22"}, {"id": 701, "last_updated": "2016-06-06T14:36:36.000Z", "state": "MO", "url": "http://elections.huffingtonpost.com/pollster/2016-missouri-presidential-democratic-primary", "estimates": [], "poll_count": 3, "topic": "2016-president-dem-primary", "short_title": "MO Democratic Presidential Primary", "slug": "2016-missouri-presidential-democratic-primary", "title": "2016 Missouri Democratic Presidential Primary", "election_date": "2016-03-15"}, {"id": 700, "last_updated": "2016-06-06T14:36:37.000Z", "state": "MO", "url": "http://elections.huffingtonpost.com/pollster/2016-missouri-presidential-republican-primary", "estimates": [], "poll_count": 2, "topic": "2016-president-gop-primary", "short_title": "MO Republican Presidential Primary", "slug": "2016-missouri-presidential-republican-primary", "title": "2016 Missouri Republican Presidential Primary", "election_date": "2016-03-15"}, {"id": 699, "last_updated": "2016-06-06T14:36:37.000Z", "state": "IL", "url": "http://elections.huffingtonpost.com/pollster/2016-illinois-presidential-republican-primary", "estimates": [{"last_name": "Trump", "party": "Rep", "lead_confidence": null, "value": 36.42, "incumbent": false, "choice": "Trump", "first_name": "Donald"}, {"last_name": "Cruz", "party": "Rep", "lead_confidence": null, "value": 25.43, "incumbent": false, "choice": "Cruz", "first_name": "Ted"}, {"last_name": "Kasich", "party": "Rep", "lead_confidence": null, "value": 19.45, "incumbent": false, "choice": "Kasich", "first_name": "John"}, {"last_name": "Rubio", "party": "Rep", "lead_confidence": null, "value": 12.67, "incumbent": false, "choice": "Rubio", "first_name": "Marco"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 3.02, "incumbent": false, "choice": "Undecided", "first_name": null}], "poll_count": 9, "topic": "2016-president-gop-primary", "short_title": "IL Republican Presidential Primary", "slug": "2016-illinois-presidential-republican-primary", "title": "2016 Illinois Republican Presidential Primary", "election_date": "2016-03-15"}, {"id": 698, "last_updated": "2016-07-08T16:27:21.000Z", "state": "IL", "url": "http://elections.huffingtonpost.com/pollster/2016-illinois-presidential-democratic-primary", "estimates": [{"last_name": "Clinton", "party": "Dem", "lead_confidence": null, "value": 48.79, "incumbent": false, "choice": "Clinton", "first_name": "Hillary"}, {"last_name": "Sanders", "party": "Dem", "lead_confidence": null, "value": 41.14, "incumbent": false, "choice": "Sanders", "first_name": "Bernie"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 5.36, "incumbent": false, "choice": "Undecided", "first_name": null}], "poll_count": 10, "topic": "2016-president-dem-primary", "short_title": "IL Democratic Presidential Primary", "slug": "2016-illinois-presidential-democratic-primary", "title": "2016 Illinois Democratic Presidential Primary", "election_date": "2016-03-15"}, {"id": 697, "last_updated": "2016-07-06T14:12:07.000Z", "state": "MS", "url": "http://elections.huffingtonpost.com/pollster/2016-mississippi-presidential-republican-primary", "estimates": [], "poll_count": 3, "topic": "2016-president-gop-primary", "short_title": "MS Republican Presidential Primary", "slug": "2016-mississippi-presidential-republican-primary", "title": "2016 Mississippi Republican Presidential Primary", "election_date": "2016-03-08"}, {"id": 696, "last_updated": "2016-07-28T17:47:08.000Z", "state": "MI", "url": "http://elections.huffingtonpost.com/pollster/2016-michigan-presidential-democratic-primary", "estimates": [{"last_name": "Clinton", "party": "Dem", "lead_confidence": null, "value": "57.506568269643346", "incumbent": false, "choice": "Clinton", "first_name": "Hillary"}, {"last_name": "Sanders", "party": "Dem", "lead_confidence": null, "value": "39.06514858851201", "incumbent": false, "choice": "Sanders", "first_name": "Bernie"}, {"last_name": "O'Malley", "party": "Dem", "lead_confidence": null, "value": 1.0, "incumbent": false, "choice": "O'Malley", "first_name": "Martin"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": "3.91549100328061", "incumbent": false, "choice": "Undecided", "first_name": null}], "poll_count": 21, "topic": "2016-president-dem-primary", "short_title": "MI Democratic Presidential Primary", "slug": "2016-michigan-presidential-democratic-primary", "title": "2016 Michigan Democratic Presidential Primary", "election_date": "2016-03-08"}, {"id": 695, "last_updated": "2016-07-28T17:52:07.000Z", "state": "MI", "url": "http://elections.huffingtonpost.com/pollster/2016-michigan-presidential-republican-primary", "estimates": [{"last_name": "Trump", "party": "Rep", "lead_confidence": null, "value": "38.807108276438086", "incumbent": false, "choice": "Trump", "first_name": "Donald"}, {"last_name": "Cruz", "party": "Rep", "lead_confidence": null, "value": "21.930966578506993", "incumbent": false, "choice": "Cruz", "first_name": "Ted"}, {"last_name": "Kasich", "party": "Rep", "lead_confidence": null, "value": "19.5422763615671", "incumbent": false, "choice": "Kasich", "first_name": "John"}, {"last_name": "Rubio", "party": "Rep", "lead_confidence": null, "value": "12.435003739488685", "incumbent": false, "choice": "Rubio", "first_name": "Marco"}, {"last_name": "Huckabee", "party": "Rep", "lead_confidence": null, "value": 6.0, "incumbent": false, "choice": "Huckabee", "first_name": "Mike"}, {"last_name": "Carson", "party": "Rep", "lead_confidence": null, "value": "4.678769297387275", "incumbent": false, "choice": "Carson", "first_name": "Ben"}, {"last_name": "Bush", "party": "Rep", "lead_confidence": null, "value": "4.355886616967412", "incumbent": false, "choice": "Bush", "first_name": "Jeb"}, {"last_name": "Fiorina", "party": "Rep", "lead_confidence": null, "value": "3.000000000000037", "incumbent": false, "choice": "Fiorina", "first_name": "Carly"}, {"last_name": "Christie", "party": "Rep", "lead_confidence": null, "value": "2.5000000000017906", "incumbent": false, "choice": "Christie", "first_name": "Chris"}, {"last_name": "Paul", "party": "Rep", "lead_confidence": null, "value": 2.0, "incumbent": false, "choice": "Paul", "first_name": "Rand"}, {"last_name": "Walker", "party": "Rep", "lead_confidence": null, "value": 2.0, "incumbent": false, "choice": "Walker", "first_name": "Scott"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": "4.426478175305687", "incumbent": false, "choice": "Undecided", "first_name": null}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": "0.935661068251151", "incumbent": false, "choice": "Other", "first_name": null}], "poll_count": 28, "topic": "2016-president-gop-primary", "short_title": "MI Republican Presidential Primary", "slug": "2016-michigan-presidential-republican-primary", "title": "2016 Michigan Republican Presidential Primary", "election_date": "2016-03-08"}, {"id": 694, "last_updated": "2016-06-06T14:36:40.000Z", "state": "NE", "url": "http://elections.huffingtonpost.com/pollster/2016-nebraska-republican-presidential-primary", "estimates": [], "poll_count": 1, "topic": "2016-president-gop-primary", "short_title": "NE Republican Presidential Primary", "slug": "2016-nebraska-republican-presidential-primary", "title": "2016 Nebraska Republican Presidential Primary", "election_date": "2016-05-10"}, {"id": 693, "last_updated": "2016-06-06T14:36:40.000Z", "state": "ME", "url": "http://elections.huffingtonpost.com/pollster/2016-maine-republican-presidential-caucus", "estimates": [], "poll_count": 1, "topic": "2016-president-gop-primary", "short_title": "ME Republican Presidential Caucus", "slug": "2016-maine-republican-presidential-caucus", "title": "2016 Maine Republican Presidential Caucus", "election_date": "2016-03-05"}, {"id": 692, "last_updated": "2016-07-06T20:17:09.000Z", "state": "LA", "url": "http://elections.huffingtonpost.com/pollster/2016-louisiana-democratic-presidential-primary", "estimates": [], "poll_count": 3, "topic": "2016-president-dem-primary", "short_title": "LA Democratic Presidential Primary", "slug": "2016-louisiana-democratic-presidential-primary", "title": "2016 Louisiana Democratic Presidential Primary", "election_date": "2016-03-05"}, {"id": 691, "last_updated": "2016-06-06T14:36:41.000Z", "state": "KY", "url": "http://elections.huffingtonpost.com/pollster/2016-kentucky-democratic-presidential-primary", "estimates": [], "poll_count": 1, "topic": "2016-president-dem-primary", "short_title": "KY Democratic Presidential Primary", "slug": "2016-kentucky-democratic-presidential-primary", "title": "2016 Kentucky Democratic Presidential Primary", "election_date": "2016-05-17"}, {"id": 690, "last_updated": "2016-06-06T14:36:42.000Z", "state": "KS", "url": "http://elections.huffingtonpost.com/pollster/2016-kansas-democratic-presidential-caucus", "estimates": [], "poll_count": 2, "topic": "2016-president-dem-primary", "short_title": "KS Democratic Presidential Caucus", "slug": "2016-kansas-democratic-presidential-caucus", "title": "2016 Kansas Democratic Presidential Caucus", "election_date": "2016-03-05"}, {"id": 689, "last_updated": "2016-06-06T14:36:42.000Z", "state": "KS", "url": "http://elections.huffingtonpost.com/pollster/2016-kansas-republican-presidential-caucus", "estimates": [], "poll_count": 4, "topic": "2016-president-gop-primary", "short_title": "KS Republican Presidential Caucus", "slug": "2016-kansas-republican-presidential-caucus", "title": "2016 Kansas Republican Presidential Caucus", "election_date": "2016-03-05"}, {"id": 688, "last_updated": "2016-06-06T14:36:43.000Z", "state": "VA", "url": "http://elections.huffingtonpost.com/pollster/2016-virginia-republican-presidential-primary", "estimates": [{"last_name": "Trump", "party": "Rep", "lead_confidence": null, "value": 39.12, "incumbent": false, "choice": "Trump", "first_name": "Donald"}, {"last_name": "Rubio", "party": "Rep", "lead_confidence": null, "value": 25.3, "incumbent": false, "choice": "Rubio", "first_name": "Marco"}, {"last_name": "Cruz", "party": "Rep", "lead_confidence": null, "value": 15.49, "incumbent": false, "choice": "Cruz", "first_name": "Ted"}, {"last_name": "Kasich", "party": "Rep", "lead_confidence": null, "value": 7.29, "incumbent": false, "choice": "Kasich", "first_name": "John"}, {"last_name": "Carson", "party": "Rep", "lead_confidence": null, "value": 6.37, "incumbent": false, "choice": "Carson", "first_name": "Ben"}, {"last_name": "Bush", "party": "Rep", "lead_confidence": null, "value": 2.4, "incumbent": false, "choice": "Bush", "first_name": "Jeb"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 4.81, "incumbent": false, "choice": "Undecided", "first_name": null}], "poll_count": 14, "topic": "2016-president-gop-primary", "short_title": "VA Republican Presidential Primary", "slug": "2016-virginia-republican-presidential-primary", "title": "2016 Virginia Republican Presidential Primary", "election_date": "2016-03-01"}, {"id": 687, "last_updated": "2016-06-06T14:36:43.000Z", "state": "VA", "url": "http://elections.huffingtonpost.com/pollster/2016-virginia-democratic-presidential-primary", "estimates": [{"last_name": "Clinton", "party": "Dem", "lead_confidence": null, "value": 55.9, "incumbent": false, "choice": "Clinton", "first_name": "Hillary"}, {"last_name": "Sanders", "party": "Dem", "lead_confidence": null, "value": 35.03, "incumbent": false, "choice": "Sanders", "first_name": "Bernie"}, {"last_name": null, "party": "N/A", "lead_confidence": null, "value": 6.42, "incumbent": false, "choice": "Undecided", "first_name": null}], "poll_count": 14, "topic": "2016-president-dem-primary", "short_title": "VA Democratic Presidential Primary", "slug": "2016-virginia-democratic-presidential-primary", "title": "2016 Virginia Democratic Presidential Primary", "election_date": "2016-03-01"}]
+[{
+    "id": 797,
+    "last_updated": "2016-07-29T00:28:45.000Z",
+    "state": "US",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-general-election-trump-vs-clinton-vs-johnson",
+    "estimates": [{
+        "last_name": "Clinton",
+        "party": "Dem",
+        "lead_confidence": 63.7,
+        "value": "39.7",
+        "incumbent": false,
+        "choice": "Clinton",
+        "first_name": "Hillary"
+    }, {
+        "last_name": "Trump",
+        "party": "Rep",
+        "lead_confidence": 36.3,
+        "value": "39.4",
+        "incumbent": false,
+        "choice": "Trump",
+        "first_name": "Donald"
+    }, {
+        "last_name": "Johnson",
+        "party": "Lib",
+        "lead_confidence": null,
+        "value": "8.8",
+        "incumbent": false,
+        "choice": "Johnson",
+        "first_name": "Gary"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": "4.4",
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 248,
+    "topic": "2016-president",
+    "short_title": "2016 President: Trump vs. Clinton vs. Johnson",
+    "slug": "2016-general-election-trump-vs-clinton-vs-johnson",
+    "title": "2016 General Election: Trump vs. Clinton vs. Johnson",
+    "election_date": "2016-11-08"
+}, {
+    "id": 796,
+    "last_updated": "2016-07-26T20:07:11.000Z",
+    "state": "US",
+    "url": "http://elections.huffingtonpost.com/pollster/mike-pence-favorable-rating",
+    "estimates": [{
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": "33.8899353719753",
+        "incumbent": false,
+        "choice": "Favorable",
+        "first_name": null
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": "28.642586993477668",
+        "incumbent": false,
+        "choice": "Unfavorable",
+        "first_name": null
+    }],
+    "poll_count": 9,
+    "topic": "favorable-ratings",
+    "short_title": "Mike Pence Favorable ",
+    "slug": "mike-pence-favorable-rating",
+    "title": "Mike Pence Favorable Rating",
+    "election_date": null
+}, {
+    "id": 795,
+    "last_updated": "2016-07-19T20:49:47.000Z",
+    "state": "IA",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-iowa-senate-grassley-vs-judge",
+    "estimates": [{
+        "last_name": "Grassley",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": "45.0807813964062",
+        "incumbent": true,
+        "choice": "Grassley",
+        "first_name": "Chuck"
+    }, {
+        "last_name": "Judge ",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": "37.09047012219887",
+        "incumbent": false,
+        "choice": "Judge",
+        "first_name": "Patty "
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": "15.891808398305379",
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 2.0,
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 6,
+    "topic": "2016-senate",
+    "short_title": "2016 IA Senate: Grassley vs. Judge",
+    "slug": "2016-iowa-senate-grassley-vs-judge",
+    "title": "2016 Iowa Senate: Grassley vs. Judge",
+    "election_date": "2016-11-08"
+}, {
+    "id": 794,
+    "last_updated": "2016-07-20T00:03:01.000Z",
+    "state": "IN",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-indiana-president-trump-vs-clinton",
+    "estimates": [],
+    "poll_count": 2,
+    "topic": "2016-president",
+    "short_title": "IN President: Trump vs. Clinton",
+    "slug": "2016-indiana-president-trump-vs-clinton",
+    "title": "2016 Indiana President: Trump vs. Clinton",
+    "election_date": "2016-11-08"
+}, {
+    "id": 793,
+    "last_updated": "2016-07-26T16:47:08.000Z",
+    "state": "NV",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-nevada-senate-heck-vs-cortez-mastro",
+    "estimates": [{
+        "last_name": "Heck",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 46.0,
+        "incumbent": false,
+        "choice": "Heck",
+        "first_name": "Joe"
+    }, {
+        "last_name": "Cortez Mastro ",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 37.0,
+        "incumbent": false,
+        "choice": "Cortez",
+        "first_name": "Catherine "
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 12.0,
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 5.0,
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 5,
+    "topic": "2016-senate",
+    "short_title": "2016 Nevada Senate",
+    "slug": "2016-nevada-senate-heck-vs-cortez-mastro",
+    "title": "2016 Nevada Senate: Heck vs. Cortez Mastro",
+    "election_date": "2016-11-08"
+}, {
+    "id": 792,
+    "last_updated": "2016-07-26T15:57:07.000Z",
+    "state": "NV",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-nevada-president-trump-vs-clinton",
+    "estimates": [{
+        "last_name": "Clinton",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 45.0,
+        "incumbent": false,
+        "choice": "Clinton",
+        "first_name": "Hillary"
+    }, {
+        "last_name": "Trump",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": "42.99999999999573",
+        "incumbent": false,
+        "choice": "Trump",
+        "first_name": "Donald"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 12.0,
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 7.0,
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }],
+    "poll_count": 5,
+    "topic": "2016-president",
+    "short_title": "NV: Trump vs. Clinton",
+    "slug": "2016-nevada-president-trump-vs-clinton",
+    "title": "2016 Nevada President: Trump vs. Clinton",
+    "election_date": "2016-11-08"
+}, {
+    "id": 791,
+    "last_updated": "2016-07-27T15:12:09.000Z",
+    "state": "KS",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-kansas-president-trump-vs-clinton",
+    "estimates": [],
+    "poll_count": 4,
+    "topic": "2016-president",
+    "short_title": "KS: Trump vs. Clinton",
+    "slug": "2016-kansas-president-trump-vs-clinton",
+    "title": "2016 Kansas President: Trump vs. Clinton",
+    "election_date": "2016-11-08"
+}, {
+    "id": 790,
+    "last_updated": "2016-07-29T00:21:42.000Z",
+    "state": "CO",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-colorado-president-trump-vs-clinton",
+    "estimates": [{
+        "last_name": "Clinton",
+        "party": "Dem",
+        "lead_confidence": 99.9,
+        "value": "42.1",
+        "incumbent": false,
+        "choice": "Clinton",
+        "first_name": "Hillary"
+    }, {
+        "last_name": "Trump",
+        "party": "Rep",
+        "lead_confidence": "0.1",
+        "value": 37.1,
+        "incumbent": false,
+        "choice": "Trump",
+        "first_name": "Donald"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": "12.7",
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 7,
+    "topic": "2016-president",
+    "short_title": "CO: Trump vs. Clinton",
+    "slug": "2016-colorado-president-trump-vs-clinton",
+    "title": "2016 Colorado President: Trump vs. Clinton",
+    "election_date": "2016-11-08"
+}, {
+    "id": 789,
+    "last_updated": "2016-06-29T19:53:57.000Z",
+    "state": "UT",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-utah-senate-lee-vs-snow",
+    "estimates": [],
+    "poll_count": 1,
+    "topic": "2016-senate",
+    "short_title": "2016 UT Senate: Lee vs. Snow",
+    "slug": "2016-utah-senate-lee-vs-snow",
+    "title": "2016 Utah Senate: Lee vs. Snow",
+    "election_date": "2016-11-08"
+}, {
+    "id": 788,
+    "last_updated": "2016-07-27T18:32:10.000Z",
+    "state": "UT",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-utah-governor-herbert-vs-weinholtz",
+    "estimates": [],
+    "poll_count": 2,
+    "topic": "2016-governor",
+    "short_title": "2016 UT Governor: Herbert vs. Weinholtz",
+    "slug": "2016-utah-governor-herbert-vs-weinholtz",
+    "title": "2016 Utah Governor: Herbert vs. Weinholtz",
+    "election_date": "2016-11-08"
+}, {
+    "id": 787,
+    "last_updated": "2016-06-24T21:53:39.000Z",
+    "state": "UT",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-utah-governor-democratic-primary",
+    "estimates": [],
+    "poll_count": 1,
+    "topic": "2016-governor-dem-primary",
+    "short_title": "2016 UT Governor Democratic Primary",
+    "slug": "2016-utah-governor-democratic-primary",
+    "title": "2016 Utah Governor Democratic Primary",
+    "election_date": "2016-06-28"
+}, {
+    "id": 786,
+    "last_updated": "2016-06-24T21:50:09.000Z",
+    "state": "UT",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-utah-governor-republican-primary",
+    "estimates": [],
+    "poll_count": 3,
+    "topic": "2016-governor-gop-primary",
+    "short_title": "2016 UT Governor Republican Primary",
+    "slug": "2016-utah-governor-republican-primary",
+    "title": "2016 Utah Governor Republican Primary",
+    "election_date": "2016-06-28"
+}, {
+    "id": 785,
+    "last_updated": "2016-07-07T15:33:40.000Z",
+    "state": "WV",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-west-virginia-governor-cole-vs-justice",
+    "estimates": [],
+    "poll_count": 4,
+    "topic": "2016-governor",
+    "short_title": "2016 WV Governor: Cole vs. Justice ",
+    "slug": "2016-west-virginia-governor-cole-vs-justice",
+    "title": "2016 West Virginia Governor: Cole vs. Justice ",
+    "election_date": "2016-11-08"
+}, {
+    "id": 784,
+    "last_updated": "2016-07-29T00:29:01.000Z",
+    "state": "NJ",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-new-jersey-president-trump-vs-clinton",
+    "estimates": [{
+        "last_name": "Clinton",
+        "party": "Dem",
+        "lead_confidence": 100.0,
+        "value": 45.3,
+        "incumbent": false,
+        "choice": "Clinton",
+        "first_name": "Hillary"
+    }, {
+        "last_name": "Trump",
+        "party": "Rep",
+        "lead_confidence": 0.0,
+        "value": "35.0",
+        "incumbent": false,
+        "choice": "Trump",
+        "first_name": "Donald"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": "9.8",
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 6,
+    "topic": "2016-president",
+    "short_title": "NJ President: Trump vs. Clinton",
+    "slug": "2016-new-jersey-president-trump-vs-clinton",
+    "title": "2016 New Jersey President: Trump vs. Clinton",
+    "election_date": "2016-11-08"
+}, {
+    "id": 783,
+    "last_updated": "2016-07-29T00:52:10.000Z",
+    "state": "UT",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-utah-president-trump-vs-clinton",
+    "estimates": [{
+        "last_name": "Trump",
+        "party": "Rep",
+        "lead_confidence": 97.6,
+        "value": "34.6",
+        "incumbent": false,
+        "choice": "Trump",
+        "first_name": "Donald"
+    }, {
+        "last_name": "Clinton",
+        "party": "Dem",
+        "lead_confidence": 2.5,
+        "value": "29.4",
+        "incumbent": false,
+        "choice": "Clinton",
+        "first_name": "Hillary"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": "25.5",
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 8,
+    "topic": "2016-president",
+    "short_title": "UT President: Trump vs. Clinton",
+    "slug": "2016-utah-president-trump-vs-clinton",
+    "title": "2016 Utah President: Trump vs. Clinton",
+    "election_date": "2016-11-08"
+}, {
+    "id": 782,
+    "last_updated": "2016-07-29T01:14:59.000Z",
+    "state": "PA",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-pennsylvania-senate-toomey-vs-mcginty",
+    "estimates": [{
+        "last_name": "Toomey",
+        "party": "Rep",
+        "lead_confidence": 85.9,
+        "value": "42.9",
+        "incumbent": true,
+        "choice": "Toomey",
+        "first_name": "Pat"
+    }, {
+        "last_name": "McGinty",
+        "party": "Dem",
+        "lead_confidence": "14.1",
+        "value": "41.0",
+        "incumbent": false,
+        "choice": "McGinty",
+        "first_name": "Katie"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": "0.7",
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 16,
+    "topic": "2016-senate",
+    "short_title": "2016 PA Senate: Toomey vs. McGinty",
+    "slug": "2016-pennsylvania-senate-toomey-vs-mcginty",
+    "title": "2016 Pennsylvania Senate: Toomey vs. McGinty",
+    "election_date": "2016-11-08"
+}, {
+    "id": 781,
+    "last_updated": "2016-07-29T00:46:11.000Z",
+    "state": "NY",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-new-york-senate-long-vs-schumer",
+    "estimates": [{
+        "last_name": "Schumer",
+        "party": "Dem",
+        "lead_confidence": 100.0,
+        "value": "60.7",
+        "incumbent": true,
+        "choice": "Schumer",
+        "first_name": "Chuck"
+    }, {
+        "last_name": "Long",
+        "party": "Rep",
+        "lead_confidence": 0.0,
+        "value": "25.0",
+        "incumbent": false,
+        "choice": "Long",
+        "first_name": "Wendy"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 1.0,
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 6,
+    "topic": "2016-senate",
+    "short_title": "2016 NY Senate: Long vs. Schumer",
+    "slug": "2016-new-york-senate-long-vs-schumer",
+    "title": "2016 New York Senate: Long vs. Schumer",
+    "election_date": "2016-11-08"
+}, {
+    "id": 780,
+    "last_updated": "2016-07-29T01:14:03.000Z",
+    "state": "FL",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-florida-senate-rubio-vs-grayson",
+    "estimates": [{
+        "last_name": "Rubio",
+        "party": "Rep",
+        "lead_confidence": 100.0,
+        "value": "46.1",
+        "incumbent": true,
+        "choice": "Rubio",
+        "first_name": "Marco"
+    }, {
+        "last_name": "Grayson",
+        "party": "Dem",
+        "lead_confidence": "0.0",
+        "value": "38.9",
+        "incumbent": false,
+        "choice": "Grayson",
+        "first_name": "Alan"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 1.0,
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 8,
+    "topic": "2016-senate",
+    "short_title": "2016 Florida Senate ",
+    "slug": "2016-florida-senate-rubio-vs-grayson",
+    "title": "2016 Florida Senate: Rubio vs. Grayson",
+    "election_date": "2016-11-08"
+}, {
+    "id": 779,
+    "last_updated": "2016-07-29T01:27:51.000Z",
+    "state": "FL",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-florida-senate-rubio-vs-murphy",
+    "estimates": [{
+        "last_name": "Rubio",
+        "party": "Rep",
+        "lead_confidence": 99.8,
+        "value": "46.5",
+        "incumbent": true,
+        "choice": "Rubio",
+        "first_name": "Marco"
+    }, {
+        "last_name": "Murphy",
+        "party": "Dem",
+        "lead_confidence": 0.3,
+        "value": "41.2",
+        "incumbent": false,
+        "choice": "Murphy",
+        "first_name": "Patrick"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 1.5,
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 12,
+    "topic": "2016-senate",
+    "short_title": "2016 Florida Senate ",
+    "slug": "2016-florida-senate-rubio-vs-murphy",
+    "title": "2016 Florida Senate: Rubio vs. Murphy",
+    "election_date": "2016-11-08"
+}, {
+    "id": 778,
+    "last_updated": "2016-07-07T15:27:20.000Z",
+    "state": "GA",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-georgia-senate-isakson-vs-barksdale",
+    "estimates": [],
+    "poll_count": 1,
+    "topic": "2016-senate",
+    "short_title": "2016 Georgia Senate ",
+    "slug": "2016-georgia-senate-isakson-vs-barksdale",
+    "title": "2016 Georgia Senate: Isakson vs. Barksdale ",
+    "election_date": "2016-11-08"
+}, {
+    "id": 777,
+    "last_updated": "2016-07-28T17:12:09.000Z",
+    "state": "CA",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-california-senate-harris-vs-sanchez",
+    "estimates": [{
+        "last_name": "Harris",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 47.0,
+        "incumbent": false,
+        "choice": "Harris",
+        "first_name": "Kamala"
+    }, {
+        "last_name": "Sanchez",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": "20.31716293104242",
+        "incumbent": false,
+        "choice": "Sanchez",
+        "first_name": "Loretta"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 28.0,
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": "13.999999999999872",
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }],
+    "poll_count": 6,
+    "topic": "2016-senate",
+    "short_title": "2016 California Senate",
+    "slug": "2016-california-senate-harris-vs-sanchez",
+    "title": "2016 California Senate: Harris vs. Sanchez",
+    "election_date": "2016-11-08"
+}, {
+    "id": 776,
+    "last_updated": "2016-07-29T01:40:28.000Z",
+    "state": "AZ",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-arizona-senate-mccain-vs-kirkpatrick",
+    "estimates": [{
+        "last_name": "McCain",
+        "party": "Rep",
+        "lead_confidence": 98.4,
+        "value": "43.6",
+        "incumbent": true,
+        "choice": "McCain",
+        "first_name": "John"
+    }, {
+        "last_name": "Kirkpatrick",
+        "party": "Dem",
+        "lead_confidence": 1.6,
+        "value": "38.8",
+        "incumbent": false,
+        "choice": "Kirkpatrick",
+        "first_name": "Ann"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 4.0,
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 12,
+    "topic": "2016-senate",
+    "short_title": "2016 Arizona Senate",
+    "slug": "2016-arizona-senate-mccain-vs-kirkpatrick",
+    "title": "2016 Arizona Senate: McCain vs. Kirkpatrick",
+    "election_date": "2016-11-08"
+}, {
+    "id": 775,
+    "last_updated": "2016-06-17T21:32:09.000Z",
+    "state": "NH",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-new-hampshire-democratic-presidential-caucus",
+    "estimates": [{
+        "last_name": "Sanders",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 55.56,
+        "incumbent": false,
+        "choice": "Sanders",
+        "first_name": "Bernie"
+    }, {
+        "last_name": "Clinton",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 39.75,
+        "incumbent": false,
+        "choice": "Clinton",
+        "first_name": "Hillary"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 4.64,
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 0.82,
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 88,
+    "topic": "",
+    "short_title": "NH Democratic Presidential Primary",
+    "slug": "2016-new-hampshire-democratic-presidential-caucus",
+    "title": "2016 New Hampshire Democratic Presidential Primary",
+    "election_date": "2016-11-08"
+}, {
+    "id": 774,
+    "last_updated": "2016-06-17T21:32:07.000Z",
+    "state": "IA",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-iowa-republican-presidential-primary",
+    "estimates": [{
+        "last_name": "Trump",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 30.08,
+        "incumbent": false,
+        "choice": "Trump",
+        "first_name": "Donald"
+    }, {
+        "last_name": "Cruz",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 24.57,
+        "incumbent": false,
+        "choice": "Cruz",
+        "first_name": "Ted"
+    }, {
+        "last_name": "Rubio",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 14.5,
+        "incumbent": false,
+        "choice": "Rubio",
+        "first_name": "Marco"
+    }, {
+        "last_name": "Carson",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 7.7,
+        "incumbent": false,
+        "choice": "Carson",
+        "first_name": "Ben"
+    }, {
+        "last_name": "Bush",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 3.95,
+        "incumbent": false,
+        "choice": "Bush",
+        "first_name": "Jeb"
+    }, {
+        "last_name": "Paul",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 3.91,
+        "incumbent": false,
+        "choice": "Paul",
+        "first_name": "Rand"
+    }, {
+        "last_name": "Huckabee",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 2.89,
+        "incumbent": false,
+        "choice": "Huckabee",
+        "first_name": "Mike"
+    }, {
+        "last_name": "Christie",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 2.87,
+        "incumbent": false,
+        "choice": "Christie",
+        "first_name": "Chris"
+    }, {
+        "last_name": "Kasich",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 2.72,
+        "incumbent": false,
+        "choice": "Kasich",
+        "first_name": "John"
+    }, {
+        "last_name": "Fiorina",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 1.83,
+        "incumbent": false,
+        "choice": "Fiorina",
+        "first_name": "Carly"
+    }, {
+        "last_name": "Santorum",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 1.22,
+        "incumbent": false,
+        "choice": "Santorum",
+        "first_name": "Rick"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 3.13,
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }],
+    "poll_count": 96,
+    "topic": "",
+    "short_title": "IA Republican Presidential Caucus",
+    "slug": "2016-iowa-republican-presidential-primary",
+    "title": "2016 Iowa Republican Presidential Caucus",
+    "election_date": "2016-11-08"
+}, {
+    "id": 773,
+    "last_updated": "2016-06-17T21:27:19.000Z",
+    "state": "IA",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-iowa-democratic-presidential-primary",
+    "estimates": [{
+        "last_name": "Clinton",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 46.74,
+        "incumbent": false,
+        "choice": "Clinton",
+        "first_name": "Hillary"
+    }, {
+        "last_name": "Sanders",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 45.2,
+        "incumbent": false,
+        "choice": "Sanders",
+        "first_name": "Bernie"
+    }, {
+        "last_name": "O'Malley",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 4.0,
+        "incumbent": false,
+        "choice": "O'Malley",
+        "first_name": "Martin"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 3.93,
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }],
+    "poll_count": 81,
+    "topic": "",
+    "short_title": "IA Democratic Presidential Caucus",
+    "slug": "2016-iowa-democratic-presidential-primary",
+    "title": "2016 Iowa Democratic Presidential Caucus",
+    "election_date": "2016-11-08"
+}, {
+    "id": 771,
+    "last_updated": "2016-06-06T14:35:49.000Z",
+    "state": "NM",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-new-mexico-republican-presidential-primary",
+    "estimates": [],
+    "poll_count": 1,
+    "topic": "2016-president-gop-primary",
+    "short_title": "2016 NM Republican Presidential Primary",
+    "slug": "2016-new-mexico-republican-presidential-primary",
+    "title": "2016 New Mexico Republican Presidential Primary",
+    "election_date": "2016-11-08"
+}, {
+    "id": 770,
+    "last_updated": "2016-07-29T01:36:14.000Z",
+    "state": "GA",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-georgia-president-trump-vs-clinton",
+    "estimates": [{
+        "last_name": "Trump",
+        "party": "Rep",
+        "lead_confidence": 95.2,
+        "value": "47.1",
+        "incumbent": false,
+        "choice": "Trump",
+        "first_name": "Donald"
+    }, {
+        "last_name": "Clinton",
+        "party": "Dem",
+        "lead_confidence": 4.8,
+        "value": "43.7",
+        "incumbent": false,
+        "choice": "Clinton",
+        "first_name": "Hillary"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": "9.0",
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 8,
+    "topic": "2016-president",
+    "short_title": "GA: Trump vs. Clinton",
+    "slug": "2016-georgia-president-trump-vs-clinton",
+    "title": "2016 Georgia President: Trump vs. Clinton",
+    "election_date": "2016-11-08"
+}, {
+    "id": 769,
+    "last_updated": "2016-06-06T14:36:03.000Z",
+    "state": "WV",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-west-virginia-gubernatorial-democratic-primary",
+    "estimates": [{
+        "last_name": "Justice",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 32.0,
+        "incumbent": false,
+        "choice": "Justice",
+        "first_name": "Jim"
+    }, {
+        "last_name": "Goodwin",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 27.0,
+        "incumbent": false,
+        "choice": "BGoodwin",
+        "first_name": "Booth"
+    }, {
+        "last_name": "Kessler",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 23.0,
+        "incumbent": false,
+        "choice": "Kessler",
+        "first_name": "Jeff"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 18.0,
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }],
+    "poll_count": 5,
+    "topic": "2016-governor-dem-primary",
+    "short_title": "2016 WV Gubernatorial Democratic Primary",
+    "slug": "2016-west-virginia-gubernatorial-democratic-primary",
+    "title": "2016 West Virginia Gubernatorial Democratic Primary",
+    "election_date": "2016-05-10"
+}, {
+    "id": 768,
+    "last_updated": "2016-07-07T15:33:39.000Z",
+    "state": "MD",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-maryland-senate-szeliga-vs-van-hollen",
+    "estimates": [],
+    "poll_count": 1,
+    "topic": "2016-senate",
+    "short_title": "2016 MD Senate: Szeliga vs. Van Hollen",
+    "slug": "2016-maryland-senate-szeliga-vs-van-hollen",
+    "title": "2016 Maryland Senate: Szeliga vs. Van Hollen",
+    "election_date": "2016-11-08"
+}, {
+    "id": 767,
+    "last_updated": "2016-07-02T18:32:07.000Z",
+    "state": "IL",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-illinois-senate-kirk-vs-duckworth",
+    "estimates": [],
+    "poll_count": 3,
+    "topic": "2016-senate",
+    "short_title": "2016 IL Senate: Kirk vs. Duckworth",
+    "slug": "2016-illinois-senate-kirk-vs-duckworth",
+    "title": "2016 Illinois Senate: Kirk vs. Duckworth",
+    "election_date": "2016-11-08"
+}, {
+    "id": 766,
+    "last_updated": "2016-07-29T13:59:43.000Z",
+    "state": "MO",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-missouri-president-trump-vs-clinton",
+    "estimates": [{
+        "last_name": "Trump",
+        "party": "Rep",
+        "lead_confidence": 100.0,
+        "value": "43.4",
+        "incumbent": false,
+        "choice": "Trump",
+        "first_name": "Donald"
+    }, {
+        "last_name": "Clinton",
+        "party": "Dem",
+        "lead_confidence": "0.0",
+        "value": "38.3",
+        "incumbent": false,
+        "choice": "Clinton",
+        "first_name": "Hillary"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": "8.4",
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 6,
+    "topic": "2016-president",
+    "short_title": "MO President: Trump vs. Clinton",
+    "slug": "2016-missouri-president-trump-vs-clinton",
+    "title": "2016 Missouri President: Trump vs. Clinton",
+    "election_date": "2016-11-08"
+}, {
+    "id": 765,
+    "last_updated": "2016-07-07T15:33:38.000Z",
+    "state": "MD",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-maryland-president-trump-vs-clinton",
+    "estimates": [],
+    "poll_count": 3,
+    "topic": "2016-president",
+    "short_title": "MD President: Trump vs. Clinton",
+    "slug": "2016-maryland-president-trump-vs-clinton",
+    "title": "2016 Maryland President: Trump vs. Clinton",
+    "election_date": "2016-11-08"
+}, {
+    "id": 764,
+    "last_updated": "2016-07-29T01:54:56.000Z",
+    "state": "MI",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-michigan-president-trump-vs-clinton",
+    "estimates": [{
+        "last_name": "Clinton",
+        "party": "Dem",
+        "lead_confidence": 100.0,
+        "value": "40.4",
+        "incumbent": false,
+        "choice": "Clinton",
+        "first_name": "Hillary"
+    }, {
+        "last_name": "Trump",
+        "party": "Rep",
+        "lead_confidence": "0.0",
+        "value": "34.2",
+        "incumbent": false,
+        "choice": "Trump",
+        "first_name": "Donald"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": "7.7",
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 16,
+    "topic": "2016-president",
+    "short_title": "MI President: Trump vs. Clinton",
+    "slug": "2016-michigan-president-trump-vs-clinton",
+    "title": "2016 Michigan President: Trump vs. Clinton",
+    "election_date": "2016-11-08"
+}, {
+    "id": 763,
+    "last_updated": "2016-07-29T01:49:11.000Z",
+    "state": "AZ",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-arizona-president-trump-vs-clinton",
+    "estimates": [{
+        "last_name": "Trump",
+        "party": "Rep",
+        "lead_confidence": 56.5,
+        "value": "44.5",
+        "incumbent": false,
+        "choice": "Trump",
+        "first_name": "Donald"
+    }, {
+        "last_name": "Clinton",
+        "party": "Dem",
+        "lead_confidence": 43.5,
+        "value": "44.1",
+        "incumbent": false,
+        "choice": "Clinton",
+        "first_name": "Hillary"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 6.0,
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 7,
+    "topic": "2016-president",
+    "short_title": "AZ President: Trump vs. Clinton",
+    "slug": "2016-arizona-president-trump-vs-clinton",
+    "title": "2016 Arizona President: Trump vs. Clinton",
+    "election_date": "2016-11-08"
+}, {
+    "id": 762,
+    "last_updated": "2016-06-06T14:36:07.000Z",
+    "state": "MN",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-minnesota-president-trump-vs-clinton",
+    "estimates": [],
+    "poll_count": 3,
+    "topic": "2016-president",
+    "short_title": "MN President: Trump vs. Clinton",
+    "slug": "2016-minnesota-president-trump-vs-clinton",
+    "title": "2016 Minnesota President: Trump vs. Clinton",
+    "election_date": "2016-11-08"
+}, {
+    "id": 761,
+    "last_updated": "2016-07-29T02:09:25.000Z",
+    "state": "VA",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-virginia-president-trump-vs-clinton",
+    "estimates": [{
+        "last_name": "Clinton",
+        "party": "Dem",
+        "lead_confidence": 99.7,
+        "value": "41.8",
+        "incumbent": false,
+        "choice": "Clinton",
+        "first_name": "Hillary"
+    }, {
+        "last_name": "Trump",
+        "party": "Rep",
+        "lead_confidence": "0.3",
+        "value": "36.8",
+        "incumbent": false,
+        "choice": "Trump",
+        "first_name": "Donald"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": "9.5",
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 13,
+    "topic": "2016-president",
+    "short_title": "VA President: Trump vs. Clinton",
+    "slug": "2016-virginia-president-trump-vs-clinton",
+    "title": "2016 Virginia President: Trump vs. Clinton",
+    "election_date": "2016-11-08"
+}, {
+    "id": 760,
+    "last_updated": "2016-07-29T02:11:29.000Z",
+    "state": "IA",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-iowa-president-trump-vs-clinton",
+    "estimates": [{
+        "last_name": "Clinton",
+        "party": "Dem",
+        "lead_confidence": 93.1,
+        "value": "45.7",
+        "incumbent": false,
+        "choice": "Clinton",
+        "first_name": "Hillary"
+    }, {
+        "last_name": "Trump",
+        "party": "Rep",
+        "lead_confidence": 6.9,
+        "value": 42.7,
+        "incumbent": false,
+        "choice": "Trump",
+        "first_name": "Donald"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 12.0,
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 14,
+    "topic": "2016-president",
+    "short_title": "IA: Trump vs. Clinton",
+    "slug": "2016-iowa-president-trump-vs-clinton",
+    "title": "2016 Iowa President: Trump vs. Clinton",
+    "election_date": "2016-11-08"
+}, {
+    "id": 759,
+    "last_updated": "2016-07-29T02:18:42.000Z",
+    "state": "NC",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-north-carolina-president-trump-vs-clinton",
+    "estimates": [{
+        "last_name": "Clinton",
+        "party": "Dem",
+        "lead_confidence": 98.4,
+        "value": "44.5",
+        "incumbent": false,
+        "choice": "Clinton",
+        "first_name": "Hillary"
+    }, {
+        "last_name": "Trump",
+        "party": "Rep",
+        "lead_confidence": 1.6,
+        "value": "41.2",
+        "incumbent": false,
+        "choice": "Trump",
+        "first_name": "Donald"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": "9.0",
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 24,
+    "topic": "2016-president",
+    "short_title": "NC President: Trump vs. Clinton",
+    "slug": "2016-north-carolina-president-trump-vs-clinton",
+    "title": "2016 North Carolina President: Trump vs. Clinton",
+    "election_date": "2016-11-08"
+}, {
+    "id": 758,
+    "last_updated": "2016-07-29T02:21:24.000Z",
+    "state": "WI",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-wisconsin-president-trump-vs-clinton",
+    "estimates": [{
+        "last_name": "Clinton",
+        "party": "Dem",
+        "lead_confidence": 98.8,
+        "value": "44.4",
+        "incumbent": false,
+        "choice": "Clinton",
+        "first_name": "Hillary"
+    }, {
+        "last_name": "Trump",
+        "party": "Rep",
+        "lead_confidence": "1.2",
+        "value": "36.3",
+        "incumbent": false,
+        "choice": "Trump",
+        "first_name": "Donald"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": "9.1",
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 16,
+    "topic": "2016-president",
+    "short_title": "WI President: Trump vs. Clinton",
+    "slug": "2016-wisconsin-president-trump-vs-clinton",
+    "title": "2016 Wisconsin President: Trump vs. Clinton",
+    "election_date": "2016-11-08"
+}, {
+    "id": 757,
+    "last_updated": "2016-07-29T02:40:31.000Z",
+    "state": "OH",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-ohio-president-trump-vs-clinton",
+    "estimates": [{
+        "last_name": "Clinton",
+        "party": "Dem",
+        "lead_confidence": 62.2,
+        "value": "43.0",
+        "incumbent": false,
+        "choice": "Clinton",
+        "first_name": "Hillary"
+    }, {
+        "last_name": "Trump",
+        "party": "Rep",
+        "lead_confidence": 37.8,
+        "value": "42.7",
+        "incumbent": false,
+        "choice": "Trump",
+        "first_name": "Donald"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 9.2,
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 21,
+    "topic": "2016-president",
+    "short_title": "OH: Trump vs. Clinton",
+    "slug": "2016-ohio-president-trump-vs-clinton",
+    "title": "2016 Ohio President: Trump vs. Clinton",
+    "election_date": "2016-11-08"
+}, {
+    "id": 756,
+    "last_updated": "2016-07-29T02:40:42.000Z",
+    "state": "PA",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-pennsylvania-president-trump-vs-clinton",
+    "estimates": [{
+        "last_name": "Clinton",
+        "party": "Dem",
+        "lead_confidence": 98.9,
+        "value": "43.5",
+        "incumbent": false,
+        "choice": "Clinton",
+        "first_name": "Hillary"
+    }, {
+        "last_name": "Trump",
+        "party": "Rep",
+        "lead_confidence": 1.1,
+        "value": 39.8,
+        "incumbent": false,
+        "choice": "Trump",
+        "first_name": "Donald"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": "6.9",
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 18,
+    "topic": "2016-president",
+    "short_title": "PA: Trump vs. Clinton",
+    "slug": "2016-pennsylvania-president-trump-vs-clinton",
+    "title": "2016 Pennsylvania President: Trump vs. Clinton",
+    "election_date": "2016-11-08"
+}, {
+    "id": 755,
+    "last_updated": "2016-07-29T02:31:29.000Z",
+    "state": "NY",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-new-york-president-trump-vs-clinton",
+    "estimates": [{
+        "last_name": "Clinton",
+        "party": "Dem",
+        "lead_confidence": 100.0,
+        "value": "50.3",
+        "incumbent": false,
+        "choice": "Clinton",
+        "first_name": "Hillary"
+    }, {
+        "last_name": "Trump",
+        "party": "Rep",
+        "lead_confidence": 0.0,
+        "value": "33.6",
+        "incumbent": false,
+        "choice": "Trump",
+        "first_name": "Donald"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": "3.2",
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 16,
+    "topic": "2016-president",
+    "short_title": "NY President: Trump vs. Clinton",
+    "slug": "2016-new-york-president-trump-vs-clinton",
+    "title": "2016 New York President: Trump vs. Clinton",
+    "election_date": "2016-11-08"
+}, {
+    "id": 754,
+    "last_updated": "2016-07-29T13:15:50.000Z",
+    "state": "NH",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-new-hampshire-president-trump-vs-clinton",
+    "estimates": [{
+        "last_name": "Clinton",
+        "party": "Dem",
+        "lead_confidence": 79.4,
+        "value": "40.9",
+        "incumbent": false,
+        "choice": "Clinton",
+        "first_name": "Hillary"
+    }, {
+        "last_name": "Trump",
+        "party": "Rep",
+        "lead_confidence": 20.6,
+        "value": "39.3",
+        "incumbent": false,
+        "choice": "Trump",
+        "first_name": "Donald"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 10.1,
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 23,
+    "topic": "2016-president",
+    "short_title": "NH: Trump vs. Clinton",
+    "slug": "2016-new-hampshire-president-trump-vs-clinton",
+    "title": "2016 New Hampshire President: Trump vs. Clinton",
+    "election_date": "2016-11-08"
+}, {
+    "id": 753,
+    "last_updated": "2016-07-29T02:43:55.000Z",
+    "state": "CA",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-california-presidential-general-election-trump-vs-clinton",
+    "estimates": [{
+        "last_name": "Clinton",
+        "party": "Dem",
+        "lead_confidence": 100.0,
+        "value": "48.9",
+        "incumbent": false,
+        "choice": "Clinton",
+        "first_name": "Hillary"
+    }, {
+        "last_name": "Trump",
+        "party": "Rep",
+        "lead_confidence": 0.0,
+        "value": "27.0",
+        "incumbent": false,
+        "choice": "Trump",
+        "first_name": "Donald"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": "13.1",
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 14,
+    "topic": "2016-president",
+    "short_title": "CA: Trump vs. Clinton",
+    "slug": "2016-california-presidential-general-election-trump-vs-clinton",
+    "title": "2016 California President: Trump vs. Clinton",
+    "election_date": "2016-11-08"
+}, {
+    "id": 752,
+    "last_updated": "2016-07-29T03:12:58.000Z",
+    "state": "FL",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-florida-presidential-general-election-trump-vs-clinton",
+    "estimates": [{
+        "last_name": "Clinton",
+        "party": "Dem",
+        "lead_confidence": 93.6,
+        "value": "43.7",
+        "incumbent": false,
+        "choice": "Clinton",
+        "first_name": "Hillary"
+    }, {
+        "last_name": "Trump",
+        "party": "Rep",
+        "lead_confidence": "6.4",
+        "value": "41.3",
+        "incumbent": false,
+        "choice": "Trump",
+        "first_name": "Donald"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": "7.4",
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 30,
+    "topic": "2016-president",
+    "short_title": "FL: Trump vs. Clinton",
+    "slug": "2016-florida-presidential-general-election-trump-vs-clinton",
+    "title": "2016 Florida President: Trump vs. Clinton",
+    "election_date": "2016-11-08"
+}, {
+    "id": 751,
+    "last_updated": "2016-07-06T14:02:08.000Z",
+    "state": "OR",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-oregon-republican-presidential-primary",
+    "estimates": [],
+    "poll_count": 2,
+    "topic": "2016-president-gop-primary",
+    "short_title": "2016 OR Republican Presidential Primary",
+    "slug": "2016-oregon-republican-presidential-primary",
+    "title": "2016 Oregon Republican Presidential Primary",
+    "election_date": "2016-05-17"
+}, {
+    "id": 750,
+    "last_updated": "2016-06-23T22:34:53.000Z",
+    "state": "UK",
+    "url": "http://elections.huffingtonpost.com/pollster/uk-european-union-referendum",
+    "estimates": [{
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": 73.1,
+        "value": 45.8,
+        "incumbent": false,
+        "choice": "Remain in the EU",
+        "first_name": null
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": 26.9,
+        "value": 45.3,
+        "incumbent": false,
+        "choice": "Leave the EU",
+        "first_name": null
+    }],
+    "poll_count": 77,
+    "topic": "uk-eu-referendum",
+    "short_title": "UK EU Referendum",
+    "slug": "uk-european-union-referendum",
+    "title": "UK European Union Referendum",
+    "election_date": "2016-06-23"
+}, {
+    "id": 746,
+    "last_updated": "2016-06-06T14:36:15.000Z",
+    "state": "IN",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-indiana-democratic-presidential-primary",
+    "estimates": [{
+        "last_name": "Clinton",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 51.18,
+        "incumbent": false,
+        "choice": "Clinton",
+        "first_name": "Hillary"
+    }, {
+        "last_name": "Sanders",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 43.47,
+        "incumbent": false,
+        "choice": "Sanders",
+        "first_name": "Bernie"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 4.13,
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 1.0,
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 6,
+    "topic": "2016-president-dem-primary",
+    "short_title": "2016 IN Democratic Presidential Primary",
+    "slug": "2016-indiana-democratic-presidential-primary",
+    "title": "2016 Indiana Democratic Presidential Primary",
+    "election_date": "2016-05-03"
+}, {
+    "id": 745,
+    "last_updated": "2016-07-29T02:58:08.000Z",
+    "state": "NC",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-north-carolina-senate-burr-vs-ross",
+    "estimates": [{
+        "last_name": "Burr",
+        "party": "Rep",
+        "lead_confidence": 96.6,
+        "value": "42.2",
+        "incumbent": true,
+        "choice": "Burr",
+        "first_name": "Richard"
+    }, {
+        "last_name": "Ross",
+        "party": "Dem",
+        "lead_confidence": "3.4",
+        "value": "38.3",
+        "incumbent": false,
+        "choice": "Ross",
+        "first_name": "Deborah"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": "4.6",
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 13,
+    "topic": "2016-senate",
+    "short_title": "2016 North Carolina Senate",
+    "slug": "2016-north-carolina-senate-burr-vs-ross",
+    "title": "2016 North Carolina Senate: Burr vs. Ross",
+    "election_date": "2016-11-08"
+}, {
+    "id": 744,
+    "last_updated": "2016-06-06T14:36:16.000Z",
+    "state": "MD",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-maryland-senate-republican-primary",
+    "estimates": [{
+        "last_name": "Szeliga",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 20.0,
+        "incumbent": false,
+        "choice": "Szeliga",
+        "first_name": "Kathy"
+    }, {
+        "last_name": "Douglas",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 13.0,
+        "incumbent": false,
+        "choice": "Douglas",
+        "first_name": "Richard"
+    }, {
+        "last_name": "Kefalas",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 11.0,
+        "incumbent": false,
+        "choice": "Kefalas",
+        "first_name": "Chrys"
+    }, {
+        "last_name": "Hooe",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 3.0,
+        "incumbent": false,
+        "choice": "Hooe",
+        "first_name": "Joseph David"
+    }, {
+        "last_name": "Wallace",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 3.0,
+        "incumbent": false,
+        "choice": "Wallace",
+        "first_name": "Dave"
+    }, {
+        "last_name": "Graziani",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 2.0,
+        "incumbent": false,
+        "choice": "Graziani",
+        "first_name": "John "
+    }, {
+        "last_name": "Chaffee",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 1.0,
+        "incumbent": false,
+        "choice": "Chaffee",
+        "first_name": "Chris"
+    }, {
+        "last_name": "Connor",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 1.0,
+        "incumbent": false,
+        "choice": "Connor",
+        "first_name": "Sean"
+    }, {
+        "last_name": "Richardson",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 1.0,
+        "incumbent": false,
+        "choice": "Richardson",
+        "first_name": "Lynn"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 57.0,
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 1.0,
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 5,
+    "topic": "2016-senate-gop-primary",
+    "short_title": "2016 MD Senate Republican Primary",
+    "slug": "2016-maryland-senate-republican-primary",
+    "title": "2016 Maryland Senate Republican Primary",
+    "election_date": "2016-04-26"
+}, {
+    "id": 743,
+    "last_updated": "2016-06-06T14:36:17.000Z",
+    "state": "PA",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-pennsylvania-senate-democratic-primary",
+    "estimates": [{
+        "last_name": "McGinty",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 38.85,
+        "incumbent": false,
+        "choice": "McGinty",
+        "first_name": "Katie"
+    }, {
+        "last_name": "Sestak",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 36.0,
+        "incumbent": false,
+        "choice": "Sestak",
+        "first_name": "Joe"
+    }, {
+        "last_name": "Fetterman",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 11.62,
+        "incumbent": false,
+        "choice": "Fetterman",
+        "first_name": "John"
+    }, {
+        "last_name": "Vodvarka",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 3.0,
+        "incumbent": false,
+        "choice": "Vodvarka",
+        "first_name": "Joe"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 13.25,
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }],
+    "poll_count": 11,
+    "topic": "2016-senate-dem-primary",
+    "short_title": "2016 PA Senate Democratic Primary",
+    "slug": "2016-pennsylvania-senate-democratic-primary",
+    "title": "2016 Pennsylvania Senate Democratic Primary",
+    "election_date": "2016-04-26"
+}, {
+    "id": 742,
+    "last_updated": "2016-06-06T14:36:17.000Z",
+    "state": "DE",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-delaware-republican-presidential-primary",
+    "estimates": [],
+    "poll_count": 1,
+    "topic": "2016-president-gop-primary",
+    "short_title": "2016 DE Republican Presidential Primary",
+    "slug": "2016-delaware-republican-presidential-primary",
+    "title": "2016 Delaware Republican Presidential Primary",
+    "election_date": "2016-04-26"
+}, {
+    "id": 741,
+    "last_updated": "2016-06-06T14:36:18.000Z",
+    "state": "DE",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-delaware-democratic-presidential-primary",
+    "estimates": [],
+    "poll_count": 1,
+    "topic": "2016-president-dem-primary",
+    "short_title": "2016 DE Democratic Presidential Primary",
+    "slug": "2016-delaware-democratic-presidential-primary",
+    "title": "2016 Delaware Democratic Presidential Primary",
+    "election_date": "2016-04-26"
+}, {
+    "id": 736,
+    "last_updated": "2016-07-25T23:12:37.000Z",
+    "state": "US",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-national-house-race",
+    "estimates": [{
+        "last_name": null,
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": "44.5080257825462",
+        "incumbent": false,
+        "choice": "Democrat",
+        "first_name": null
+    }, {
+        "last_name": null,
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": "36.565601957067386",
+        "incumbent": false,
+        "choice": "Republican",
+        "first_name": null
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": "16.709677686374597",
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": "3.920742411817259",
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 56,
+    "topic": "2016-house",
+    "short_title": "2016 National House Race",
+    "slug": "2016-national-house-race",
+    "title": "2016 National House Race",
+    "election_date": "2016-11-08"
+}, {
+    "id": 735,
+    "last_updated": "2016-06-30T18:42:08.000Z",
+    "state": "FL",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-florida-senate-republican-primary",
+    "estimates": [{
+        "last_name": "Rubio",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 63.0,
+        "incumbent": true,
+        "choice": "Rubio",
+        "first_name": "Marco"
+    }, {
+        "last_name": "Jolly",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 12.45,
+        "incumbent": false,
+        "choice": "Jolly",
+        "first_name": "David"
+    }, {
+        "last_name": "Beruff",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 11.0,
+        "incumbent": false,
+        "choice": "Beruff",
+        "first_name": "Carlos"
+    }, {
+        "last_name": "Young",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 10.0,
+        "incumbent": false,
+        "choice": "Young",
+        "first_name": "Dwight "
+    }, {
+        "last_name": "DeSantis",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 9.67,
+        "incumbent": false,
+        "choice": "DeSantis",
+        "first_name": "Ron"
+    }, {
+        "last_name": "Lopez-Cantera",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 8.06,
+        "incumbent": false,
+        "choice": "Lopez-Cantera",
+        "first_name": "Carlos"
+    }, {
+        "last_name": "Wilcox",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 3.96,
+        "incumbent": false,
+        "choice": "Wilcox",
+        "first_name": "Todd"
+    }, {
+        "last_name": "Rivera",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 2.0,
+        "incumbent": false,
+        "choice": "Rivera",
+        "first_name": "Ernie"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 32.5,
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }],
+    "poll_count": 15,
+    "topic": "2016-senate-gop-primary",
+    "short_title": "2016 FL Senate Republican Primary ",
+    "slug": "2016-florida-senate-republican-primary",
+    "title": "2016 Florida Senate Republican Primary ",
+    "election_date": "2016-08-30"
+}, {
+    "id": 734,
+    "last_updated": "2016-06-30T18:52:07.000Z",
+    "state": "FL",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-florida-senate-democratic-primary",
+    "estimates": [{
+        "last_name": "Murphy",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 27.73,
+        "incumbent": false,
+        "choice": "Murphy",
+        "first_name": "Patrick"
+    }, {
+        "last_name": "Grayson",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 21.81,
+        "incumbent": false,
+        "choice": "Grayson",
+        "first_name": "Alan"
+    }, {
+        "last_name": "Keith",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 9.82,
+        "incumbent": false,
+        "choice": "Keith",
+        "first_name": "Pamela Michelle "
+    }, {
+        "last_name": "Luster",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 3.0,
+        "incumbent": false,
+        "choice": "Luster",
+        "first_name": "Reginald"
+    }, {
+        "last_name": "De La Fuente",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 2.0,
+        "incumbent": false,
+        "choice": "De La Fuente",
+        "first_name": "Rocky"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 42.62,
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }],
+    "poll_count": 18,
+    "topic": "2016-senate-dem-primary",
+    "short_title": "2016 FL Senate Democratic Primary",
+    "slug": "2016-florida-senate-democratic-primary",
+    "title": "2016 Florida Senate Democratic Primary",
+    "election_date": "2016-08-30"
+}, {
+    "id": 732,
+    "last_updated": "2016-06-06T14:36:22.000Z",
+    "state": "AL",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-new-hampshire-presidential-republican-caucus",
+    "estimates": [],
+    "poll_count": 3,
+    "topic": "",
+    "short_title": "2016-new-hampshire-presidential-republican-caucus",
+    "slug": "2016-new-hampshire-presidential-republican-caucus",
+    "title": "2016-new-hampshire-presidential-republican-caucus",
+    "election_date": null
+}, {
+    "id": 731,
+    "last_updated": "2016-06-06T14:36:22.000Z",
+    "state": "IL",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-illinois-senate-democratic-primary",
+    "estimates": [{
+        "last_name": "Duckworth",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 42.52,
+        "incumbent": false,
+        "choice": "Duckworth",
+        "first_name": "Tammy"
+    }, {
+        "last_name": "Harris",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 26.0,
+        "incumbent": false,
+        "choice": "Harris",
+        "first_name": "Napoleon"
+    }, {
+        "last_name": "Zopp",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 10.31,
+        "incumbent": false,
+        "choice": "Zopp",
+        "first_name": "Andrea"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 27.94,
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }],
+    "poll_count": 6,
+    "topic": "2016-senate-dem-primary",
+    "short_title": "2016 IL Senate Democratic Primary",
+    "slug": "2016-illinois-senate-democratic-primary",
+    "title": "2016 Illinois Senate Democratic Primary",
+    "election_date": null
+}, {
+    "id": 730,
+    "last_updated": "2016-06-06T14:36:23.000Z",
+    "state": "ID",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-idaho-republican-presidential-primary",
+    "estimates": [],
+    "poll_count": 1,
+    "topic": "2016-president-gop-primary",
+    "short_title": "ID Republican Presidential Primary",
+    "slug": "2016-idaho-republican-presidential-primary",
+    "title": "2016 Idaho Republican Presidential Primary",
+    "election_date": "2016-03-08"
+}, {
+    "id": 729,
+    "last_updated": "2016-06-06T14:36:23.000Z",
+    "state": "ID",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-idaho-democratic-presidential-caucus",
+    "estimates": [],
+    "poll_count": 1,
+    "topic": "2016-president-dem-primary",
+    "short_title": "ID Democratic Presidential Caucus",
+    "slug": "2016-idaho-democratic-presidential-caucus",
+    "title": "2016 Idaho Democratic Presidential Caucus",
+    "election_date": "2016-03-22"
+}, {
+    "id": 728,
+    "last_updated": "2016-06-06T14:36:24.000Z",
+    "state": "RI",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-rhode-island-republican-presidential-primary",
+    "estimates": [{
+        "last_name": "Trump",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 59.5,
+        "incumbent": false,
+        "choice": "Trump",
+        "first_name": "Donald"
+    }, {
+        "last_name": "Kasich",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 22.0,
+        "incumbent": false,
+        "choice": "Kasich",
+        "first_name": "John"
+    }, {
+        "last_name": "Cruz",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 11.5,
+        "incumbent": false,
+        "choice": "Cruz",
+        "first_name": "Ted"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 6.5,
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 6.0,
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 5,
+    "topic": "2016-president-gop-primary",
+    "short_title": "RI Republican Presidential Primary",
+    "slug": "2016-rhode-island-republican-presidential-primary",
+    "title": "2016 Rhode Island Republican Presidential Primary",
+    "election_date": "2016-04-26"
+}, {
+    "id": 727,
+    "last_updated": "2016-06-06T14:36:24.000Z",
+    "state": "RI",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-rhode-island-democratic-presidential-primary",
+    "estimates": [],
+    "poll_count": 4,
+    "topic": "2016-president-dem-primary",
+    "short_title": "RI Democratic Presidential Primary",
+    "slug": "2016-rhode-island-democratic-presidential-primary",
+    "title": "2016 Rhode Island Democratic Presidential Primary",
+    "election_date": "2016-04-26"
+}, {
+    "id": 725,
+    "last_updated": "2016-07-28T15:57:08.000Z",
+    "state": "VT",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-vermont-republican-presidential-primary",
+    "estimates": [],
+    "poll_count": 1,
+    "topic": "2016-president-gop-primary",
+    "short_title": "VT Presidential Primary",
+    "slug": "2016-vermont-republican-presidential-primary",
+    "title": "2016 Vermont Republican Presidential Primary",
+    "election_date": "2016-03-01"
+}, {
+    "id": 723,
+    "last_updated": "2016-06-06T14:36:26.000Z",
+    "state": "AL",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-alabama-democratic-presidential-primary",
+    "estimates": [],
+    "poll_count": 2,
+    "topic": "2016-president-dem-primary",
+    "short_title": "AL Democratic Presidential Primary",
+    "slug": "2016-alabama-democratic-presidential-primary",
+    "title": "2016 Alabama Democratic Presidential Primary",
+    "election_date": "2016-03-01"
+}, {
+    "id": 722,
+    "last_updated": "2016-07-06T14:12:08.000Z",
+    "state": "MS",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-mississippi-democratic-presidential-primary",
+    "estimates": [],
+    "poll_count": 2,
+    "topic": "2016-president-dem-primary",
+    "short_title": "MS Democratic Presidential Primary",
+    "slug": "2016-mississippi-democratic-presidential-primary",
+    "title": "2016 Mississippi Democratic Presidential Primary",
+    "election_date": "2016-03-08"
+}, {
+    "id": 721,
+    "last_updated": "2016-07-28T15:57:07.000Z",
+    "state": "VT",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-vermont-democratic-presidential-primary",
+    "estimates": [],
+    "poll_count": 2,
+    "topic": "2016-president-dem-primary",
+    "short_title": "VT Democratic Presidential Primary",
+    "slug": "2016-vermont-democratic-presidential-primary",
+    "title": "2016 Vermont Democratic Presidential Primary",
+    "election_date": "2016-03-01"
+}, {
+    "id": 720,
+    "last_updated": "2016-06-06T14:36:27.000Z",
+    "state": "MT",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-montana-democratic-presidential-primary",
+    "estimates": [],
+    "poll_count": 1,
+    "topic": "2016-president-dem-primary",
+    "short_title": "MT Democratic Presidential Primary",
+    "slug": "2016-montana-democratic-presidential-primary",
+    "title": "2016 Montana Democratic Presidential Primary",
+    "election_date": "2016-06-07"
+}, {
+    "id": 719,
+    "last_updated": "2016-06-06T14:36:27.000Z",
+    "state": "MT",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-montana-republican-presidential-primary",
+    "estimates": [],
+    "poll_count": 1,
+    "topic": "2016-president-gop-primary",
+    "short_title": "MT Republican Presidential Primary",
+    "slug": "2016-montana-republican-presidential-primary",
+    "title": "2016 Montana Republican Presidential Primary",
+    "election_date": "2016-06-07"
+}, {
+    "id": 718,
+    "last_updated": "2016-06-06T14:36:28.000Z",
+    "state": "WV",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-west-virginia-presidential-democratic-primary",
+    "estimates": [{
+        "last_name": "Sanders",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 47.0,
+        "incumbent": false,
+        "choice": "Sanders",
+        "first_name": "Bernie"
+    }, {
+        "last_name": "Clinton",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 43.0,
+        "incumbent": false,
+        "choice": "Clinton",
+        "first_name": "Hillary"
+    }, {
+        "last_name": "Farrell",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 6.0,
+        "incumbent": false,
+        "choice": "Farrell",
+        "first_name": "Paul"
+    }, {
+        "last_name": "Judd",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 1.0,
+        "incumbent": false,
+        "choice": "Judd",
+        "first_name": "Keith "
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 11.0,
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 7.0,
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 5,
+    "topic": "2016-president-dem-primary",
+    "short_title": "WV Democratic Presidential Primary",
+    "slug": "2016-west-virginia-presidential-democratic-primary",
+    "title": "2016 West Virginia Democratic Presidential Primary",
+    "election_date": "2016-05-10"
+}, {
+    "id": 717,
+    "last_updated": "2016-06-06T14:36:28.000Z",
+    "state": "WV",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-west-virginia-presidential-republican-primary",
+    "estimates": [],
+    "poll_count": 4,
+    "topic": "2016-president-gop-primary",
+    "short_title": "WV Republican Presidential Primary",
+    "slug": "2016-west-virginia-presidential-republican-primary",
+    "title": "2016 West Virginia Republican Presidential Primary",
+    "election_date": "2016-05-10"
+}, {
+    "id": 716,
+    "last_updated": "2016-06-06T14:36:29.000Z",
+    "state": "IN",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-indiana-presidential-republican-primary",
+    "estimates": [{
+        "last_name": "Trump",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 43.36,
+        "incumbent": false,
+        "choice": "Trump",
+        "first_name": "Donald"
+    }, {
+        "last_name": "Cruz",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 29.35,
+        "incumbent": false,
+        "choice": "Cruz",
+        "first_name": "Ted"
+    }, {
+        "last_name": "Kasich",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 10.86,
+        "incumbent": false,
+        "choice": "Kasich",
+        "first_name": "John"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 13.14,
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }],
+    "poll_count": 9,
+    "topic": "2016-president-gop-primary",
+    "short_title": "IN Republican Presidential Primary",
+    "slug": "2016-indiana-presidential-republican-primary",
+    "title": "2016 Indiana Republican Presidential Primary",
+    "election_date": "2016-05-03"
+}, {
+    "id": 715,
+    "last_updated": "2016-06-06T14:36:29.000Z",
+    "state": "MD",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-maryland-presidential-democratic-primary",
+    "estimates": [{
+        "last_name": "Clinton",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 55.14,
+        "incumbent": false,
+        "choice": "Clinton",
+        "first_name": "Hillary"
+    }, {
+        "last_name": "Sanders",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 35.8,
+        "incumbent": false,
+        "choice": "Sanders",
+        "first_name": "Bernie"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 5.82,
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 1.0,
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 14,
+    "topic": "2016-president-dem-primary",
+    "short_title": "MD Democratic Presidential Primary",
+    "slug": "2016-maryland-presidential-democratic-primary",
+    "title": "2016 Maryland Democratic Presidential Primary",
+    "election_date": "2016-04-26"
+}, {
+    "id": 714,
+    "last_updated": "2016-06-06T14:36:30.000Z",
+    "state": "MD",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-maryland-presidential-republican-primary",
+    "estimates": [{
+        "last_name": "Trump",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 48.7,
+        "incumbent": false,
+        "choice": "Trump",
+        "first_name": "Donald"
+    }, {
+        "last_name": "Kasich",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 22.23,
+        "incumbent": false,
+        "choice": "Kasich",
+        "first_name": "John"
+    }, {
+        "last_name": "Cruz",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 21.75,
+        "incumbent": false,
+        "choice": "Cruz",
+        "first_name": "Ted"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 4.92,
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 0.48,
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 8,
+    "topic": "2016-president-gop-primary",
+    "short_title": "MD Republican Presidential Primary",
+    "slug": "2016-maryland-presidential-republican-primary",
+    "title": "2016 Maryland Republican Presidential Primary",
+    "election_date": "2016-04-26"
+}, {
+    "id": 713,
+    "last_updated": "2016-06-06T14:36:30.000Z",
+    "state": "CT",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-connecticut-presidential-democratic-primary",
+    "estimates": [{
+        "last_name": "Clinton",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 48.51,
+        "incumbent": false,
+        "choice": "Clinton",
+        "first_name": "Hillary"
+    }, {
+        "last_name": "Sanders",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 46.0,
+        "incumbent": false,
+        "choice": "Sanders",
+        "first_name": "Bernie"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 6.0,
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 3.0,
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 6,
+    "topic": "2016-president-dem-primary",
+    "short_title": "CT Democratic Presidential Primary",
+    "slug": "2016-connecticut-presidential-democratic-primary",
+    "title": "2016 Connecticut Democratic Presidential Primary ",
+    "election_date": "2016-04-26"
+}, {
+    "id": 712,
+    "last_updated": "2016-06-06T14:36:31.000Z",
+    "state": "CT",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-connecticut-presidential-republican-primary",
+    "estimates": [{
+        "last_name": "Trump",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 56.5,
+        "incumbent": false,
+        "choice": "Trump",
+        "first_name": "Donald"
+    }, {
+        "last_name": "Kasich",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 28.0,
+        "incumbent": false,
+        "choice": "Kasich",
+        "first_name": "John"
+    }, {
+        "last_name": "Cruz",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 19.0,
+        "incumbent": false,
+        "choice": "Cruz",
+        "first_name": "Ted"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 5.0,
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }],
+    "poll_count": 7,
+    "topic": "2016-president-gop-primary",
+    "short_title": "CT Republican Presidential Primary",
+    "slug": "2016-connecticut-presidential-republican-primary",
+    "title": "2016 Connecticut Republican Presidential Primary",
+    "election_date": "2016-04-26"
+}, {
+    "id": 711,
+    "last_updated": "2016-07-21T14:27:13.000Z",
+    "state": "NY",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-new-york-presidential-democratic-primary",
+    "estimates": [{
+        "last_name": "Clinton",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": "54.55123203586937",
+        "incumbent": false,
+        "choice": "Clinton",
+        "first_name": "Hillary"
+    }, {
+        "last_name": "Sanders",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": "41.616168957112166",
+        "incumbent": false,
+        "choice": "Sanders",
+        "first_name": "Bernie"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": "3.459563367451376",
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": "2.000000000000629",
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 21,
+    "topic": "2016-president-dem-primary",
+    "short_title": "NY Democratic Presidential Primary",
+    "slug": "2016-new-york-presidential-democratic-primary",
+    "title": "2016 New York Democratic Presidential Primary",
+    "election_date": "2016-04-19"
+}, {
+    "id": 710,
+    "last_updated": "2016-07-21T14:27:09.000Z",
+    "state": "NY",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-new-york-presidential-republican-primary",
+    "estimates": [{
+        "last_name": "Trump",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": "54.043159596085836",
+        "incumbent": false,
+        "choice": "Trump",
+        "first_name": "Donald"
+    }, {
+        "last_name": "Kasich",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": "22.05417968121729",
+        "incumbent": false,
+        "choice": "Kasich",
+        "first_name": "John"
+    }, {
+        "last_name": "Cruz",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": "19.214363367351172",
+        "incumbent": false,
+        "choice": "Cruz",
+        "first_name": "Ted"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": "5.323564162899821",
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }],
+    "poll_count": 25,
+    "topic": "2016-president-gop-primary",
+    "short_title": "NY Republican Presidential Primary",
+    "slug": "2016-new-york-presidential-republican-primary",
+    "title": "2016 New York Republican Presidential Primary",
+    "election_date": "2016-04-19"
+}, {
+    "id": 709,
+    "last_updated": "2016-06-06T14:36:32.000Z",
+    "state": "WI",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-wisconsin-presidential-democratic-primary",
+    "estimates": [{
+        "last_name": "Sanders",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 49.31,
+        "incumbent": false,
+        "choice": "Sanders",
+        "first_name": "Bernie"
+    }, {
+        "last_name": "Clinton",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 45.78,
+        "incumbent": false,
+        "choice": "Clinton",
+        "first_name": "Hillary"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 5.02,
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }],
+    "poll_count": 20,
+    "topic": "2016-president-dem-primary",
+    "short_title": "WI Democratic Presidential Primary",
+    "slug": "2016-wisconsin-presidential-democratic-primary",
+    "title": "2016 Wisconsin Democratic Presidential Primary",
+    "election_date": "2016-04-05"
+}, {
+    "id": 708,
+    "last_updated": "2016-07-12T15:44:04.000Z",
+    "state": "WI",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-wisconsin-presidential-republican-primary",
+    "estimates": [{
+        "last_name": "Cruz",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 41.22,
+        "incumbent": false,
+        "choice": "Cruz",
+        "first_name": "Ted"
+    }, {
+        "last_name": "Trump",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 38.18,
+        "incumbent": false,
+        "choice": "Trump",
+        "first_name": "Donald"
+    }, {
+        "last_name": "Kasich",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 21.01,
+        "incumbent": false,
+        "choice": "Kasich",
+        "first_name": "John"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 5.78,
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 0.76,
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 24,
+    "topic": "2016-president-gop-primary",
+    "short_title": "WI Republican Presidential Primary",
+    "slug": "2016-wisconsin-presidential-republican-primary",
+    "title": "2016 Wisconsin Republican Presidential Primary",
+    "election_date": "2016-04-05"
+}, {
+    "id": 707,
+    "last_updated": "2016-06-06T14:36:33.000Z",
+    "state": "WA",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-washington-presidential-democratic-caucus",
+    "estimates": [],
+    "poll_count": 2,
+    "topic": "2016-president-dem-primary",
+    "short_title": "WA Democratic Presidential Caucus",
+    "slug": "2016-washington-presidential-democratic-caucus",
+    "title": "2016 Washington Democratic Presidential Caucus",
+    "election_date": "2016-03-26"
+}, {
+    "id": 706,
+    "last_updated": "2016-06-06T14:36:34.000Z",
+    "state": "WA",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-washington-presidential-republican-primary",
+    "estimates": [],
+    "poll_count": 2,
+    "topic": "2016-president-gop-primary",
+    "short_title": "WA Republican Presidential Primary",
+    "slug": "2016-washington-presidential-republican-primary",
+    "title": "2016 Washington Republican Presidential Primary",
+    "election_date": "2016-05-24"
+}, {
+    "id": 705,
+    "last_updated": "2016-06-06T14:36:34.000Z",
+    "state": "AK",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-alaska-presidential-democratic-caucus",
+    "estimates": [],
+    "poll_count": 1,
+    "topic": "2016-president-dem-primary",
+    "short_title": "AK Democratic Presidential Caucus",
+    "slug": "2016-alaska-presidential-democratic-caucus",
+    "title": "2016 Alaska Democratic Presidential Caucus",
+    "election_date": "2016-03-26"
+}, {
+    "id": 704,
+    "last_updated": "2016-06-06T14:36:35.000Z",
+    "state": "AK",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-alaska-presidential-republican-caucus",
+    "estimates": [{
+        "last_name": "Trump",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 28.0,
+        "incumbent": false,
+        "choice": "Trump",
+        "first_name": "Donald"
+    }, {
+        "last_name": "Cruz",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 24.0,
+        "incumbent": false,
+        "choice": "Cruz",
+        "first_name": "Ted"
+    }, {
+        "last_name": "Huckabee",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 14.0,
+        "incumbent": false,
+        "choice": "Huckabee",
+        "first_name": "Mike"
+    }, {
+        "last_name": "Palin",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 11.0,
+        "incumbent": false,
+        "choice": "Palin",
+        "first_name": "Sarah"
+    }, {
+        "last_name": "Carson",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 9.0,
+        "incumbent": false,
+        "choice": "Carson",
+        "first_name": "Ben"
+    }, {
+        "last_name": "Bush",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 7.0,
+        "incumbent": false,
+        "choice": "Bush",
+        "first_name": "Jeb"
+    }, {
+        "last_name": "Rubio",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 7.0,
+        "incumbent": false,
+        "choice": "Rubio",
+        "first_name": "Marco"
+    }, {
+        "last_name": "Walker",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 7.0,
+        "incumbent": false,
+        "choice": "Walker",
+        "first_name": "Scott"
+    }, {
+        "last_name": "Ryan",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 6.0,
+        "incumbent": false,
+        "choice": "Ryan",
+        "first_name": "Paul"
+    }, {
+        "last_name": "Christie",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 3.0,
+        "incumbent": false,
+        "choice": "Christie",
+        "first_name": "Chris"
+    }, {
+        "last_name": "Paul",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 3.0,
+        "incumbent": false,
+        "choice": "Paul",
+        "first_name": "Rand"
+    }, {
+        "last_name": "Kasich",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 2.0,
+        "incumbent": false,
+        "choice": "Kasich",
+        "first_name": "John"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 13.0,
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 4.0,
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 6,
+    "topic": "2016-president-gop-primary",
+    "short_title": "AK Republican Presidential Caucus",
+    "slug": "2016-alaska-presidential-republican-caucus",
+    "title": "2016 Alaska Republican Presidential Caucus",
+    "election_date": "2016-03-01"
+}, {
+    "id": 703,
+    "last_updated": "2016-06-17T21:27:19.000Z",
+    "state": "AZ",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-arizona-presidential-democratic-primary",
+    "estimates": [{
+        "last_name": "Clinton",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 50.0,
+        "incumbent": false,
+        "choice": "Clinton",
+        "first_name": "Hillary"
+    }, {
+        "last_name": "Sanders",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 24.0,
+        "incumbent": false,
+        "choice": "Sanders",
+        "first_name": "Bernie"
+    }, {
+        "last_name": "O'Malley",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 2.0,
+        "incumbent": false,
+        "choice": "O'Malley",
+        "first_name": "Martin"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 26.0,
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }],
+    "poll_count": 5,
+    "topic": "2016-president-dem-primary",
+    "short_title": "AZ Democratic Presidential Primary",
+    "slug": "2016-arizona-presidential-democratic-primary",
+    "title": "2016 Arizona Democratic Presidential Primary",
+    "election_date": "2016-03-22"
+}, {
+    "id": 702,
+    "last_updated": "2016-06-17T21:27:18.000Z",
+    "state": "AZ",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-arizona-presidential-republican-primary",
+    "estimates": [{
+        "last_name": "Trump",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 36.57,
+        "incumbent": false,
+        "choice": "Trump",
+        "first_name": "Donald"
+    }, {
+        "last_name": "Cruz",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 20.23,
+        "incumbent": false,
+        "choice": "Cruz",
+        "first_name": "Ted"
+    }, {
+        "last_name": "Kasich",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 15.89,
+        "incumbent": false,
+        "choice": "Kasich",
+        "first_name": "John"
+    }, {
+        "last_name": "Rubio",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 12.55,
+        "incumbent": false,
+        "choice": "Rubio",
+        "first_name": "Marco"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 14.51,
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 3.0,
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 13,
+    "topic": "2016-president-gop-primary",
+    "short_title": "AZ Republican Presidential Primary",
+    "slug": "2016-arizona-presidential-republican-primary",
+    "title": "2016 Arizona Republican Presidential Primary",
+    "election_date": "2016-03-22"
+}, {
+    "id": 701,
+    "last_updated": "2016-06-06T14:36:36.000Z",
+    "state": "MO",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-missouri-presidential-democratic-primary",
+    "estimates": [],
+    "poll_count": 3,
+    "topic": "2016-president-dem-primary",
+    "short_title": "MO Democratic Presidential Primary",
+    "slug": "2016-missouri-presidential-democratic-primary",
+    "title": "2016 Missouri Democratic Presidential Primary",
+    "election_date": "2016-03-15"
+}, {
+    "id": 700,
+    "last_updated": "2016-06-06T14:36:37.000Z",
+    "state": "MO",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-missouri-presidential-republican-primary",
+    "estimates": [],
+    "poll_count": 2,
+    "topic": "2016-president-gop-primary",
+    "short_title": "MO Republican Presidential Primary",
+    "slug": "2016-missouri-presidential-republican-primary",
+    "title": "2016 Missouri Republican Presidential Primary",
+    "election_date": "2016-03-15"
+}, {
+    "id": 699,
+    "last_updated": "2016-06-06T14:36:37.000Z",
+    "state": "IL",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-illinois-presidential-republican-primary",
+    "estimates": [{
+        "last_name": "Trump",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 36.42,
+        "incumbent": false,
+        "choice": "Trump",
+        "first_name": "Donald"
+    }, {
+        "last_name": "Cruz",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 25.43,
+        "incumbent": false,
+        "choice": "Cruz",
+        "first_name": "Ted"
+    }, {
+        "last_name": "Kasich",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 19.45,
+        "incumbent": false,
+        "choice": "Kasich",
+        "first_name": "John"
+    }, {
+        "last_name": "Rubio",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 12.67,
+        "incumbent": false,
+        "choice": "Rubio",
+        "first_name": "Marco"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 3.02,
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }],
+    "poll_count": 9,
+    "topic": "2016-president-gop-primary",
+    "short_title": "IL Republican Presidential Primary",
+    "slug": "2016-illinois-presidential-republican-primary",
+    "title": "2016 Illinois Republican Presidential Primary",
+    "election_date": "2016-03-15"
+}, {
+    "id": 698,
+    "last_updated": "2016-07-08T16:27:21.000Z",
+    "state": "IL",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-illinois-presidential-democratic-primary",
+    "estimates": [{
+        "last_name": "Clinton",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 48.79,
+        "incumbent": false,
+        "choice": "Clinton",
+        "first_name": "Hillary"
+    }, {
+        "last_name": "Sanders",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 41.14,
+        "incumbent": false,
+        "choice": "Sanders",
+        "first_name": "Bernie"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 5.36,
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }],
+    "poll_count": 10,
+    "topic": "2016-president-dem-primary",
+    "short_title": "IL Democratic Presidential Primary",
+    "slug": "2016-illinois-presidential-democratic-primary",
+    "title": "2016 Illinois Democratic Presidential Primary",
+    "election_date": "2016-03-15"
+}, {
+    "id": 697,
+    "last_updated": "2016-07-06T14:12:07.000Z",
+    "state": "MS",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-mississippi-presidential-republican-primary",
+    "estimates": [],
+    "poll_count": 3,
+    "topic": "2016-president-gop-primary",
+    "short_title": "MS Republican Presidential Primary",
+    "slug": "2016-mississippi-presidential-republican-primary",
+    "title": "2016 Mississippi Republican Presidential Primary",
+    "election_date": "2016-03-08"
+}, {
+    "id": 696,
+    "last_updated": "2016-07-28T17:47:08.000Z",
+    "state": "MI",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-michigan-presidential-democratic-primary",
+    "estimates": [{
+        "last_name": "Clinton",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": "57.506568269643346",
+        "incumbent": false,
+        "choice": "Clinton",
+        "first_name": "Hillary"
+    }, {
+        "last_name": "Sanders",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": "39.06514858851201",
+        "incumbent": false,
+        "choice": "Sanders",
+        "first_name": "Bernie"
+    }, {
+        "last_name": "O'Malley",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 1.0,
+        "incumbent": false,
+        "choice": "O'Malley",
+        "first_name": "Martin"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": "3.91549100328061",
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }],
+    "poll_count": 21,
+    "topic": "2016-president-dem-primary",
+    "short_title": "MI Democratic Presidential Primary",
+    "slug": "2016-michigan-presidential-democratic-primary",
+    "title": "2016 Michigan Democratic Presidential Primary",
+    "election_date": "2016-03-08"
+}, {
+    "id": 695,
+    "last_updated": "2016-07-28T17:52:07.000Z",
+    "state": "MI",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-michigan-presidential-republican-primary",
+    "estimates": [{
+        "last_name": "Trump",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": "38.807108276438086",
+        "incumbent": false,
+        "choice": "Trump",
+        "first_name": "Donald"
+    }, {
+        "last_name": "Cruz",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": "21.930966578506993",
+        "incumbent": false,
+        "choice": "Cruz",
+        "first_name": "Ted"
+    }, {
+        "last_name": "Kasich",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": "19.5422763615671",
+        "incumbent": false,
+        "choice": "Kasich",
+        "first_name": "John"
+    }, {
+        "last_name": "Rubio",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": "12.435003739488685",
+        "incumbent": false,
+        "choice": "Rubio",
+        "first_name": "Marco"
+    }, {
+        "last_name": "Huckabee",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 6.0,
+        "incumbent": false,
+        "choice": "Huckabee",
+        "first_name": "Mike"
+    }, {
+        "last_name": "Carson",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": "4.678769297387275",
+        "incumbent": false,
+        "choice": "Carson",
+        "first_name": "Ben"
+    }, {
+        "last_name": "Bush",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": "4.355886616967412",
+        "incumbent": false,
+        "choice": "Bush",
+        "first_name": "Jeb"
+    }, {
+        "last_name": "Fiorina",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": "3.000000000000037",
+        "incumbent": false,
+        "choice": "Fiorina",
+        "first_name": "Carly"
+    }, {
+        "last_name": "Christie",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": "2.5000000000017906",
+        "incumbent": false,
+        "choice": "Christie",
+        "first_name": "Chris"
+    }, {
+        "last_name": "Paul",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 2.0,
+        "incumbent": false,
+        "choice": "Paul",
+        "first_name": "Rand"
+    }, {
+        "last_name": "Walker",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 2.0,
+        "incumbent": false,
+        "choice": "Walker",
+        "first_name": "Scott"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": "4.426478175305687",
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": "0.935661068251151",
+        "incumbent": false,
+        "choice": "Other",
+        "first_name": null
+    }],
+    "poll_count": 28,
+    "topic": "2016-president-gop-primary",
+    "short_title": "MI Republican Presidential Primary",
+    "slug": "2016-michigan-presidential-republican-primary",
+    "title": "2016 Michigan Republican Presidential Primary",
+    "election_date": "2016-03-08"
+}, {
+    "id": 694,
+    "last_updated": "2016-06-06T14:36:40.000Z",
+    "state": "NE",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-nebraska-republican-presidential-primary",
+    "estimates": [],
+    "poll_count": 1,
+    "topic": "2016-president-gop-primary",
+    "short_title": "NE Republican Presidential Primary",
+    "slug": "2016-nebraska-republican-presidential-primary",
+    "title": "2016 Nebraska Republican Presidential Primary",
+    "election_date": "2016-05-10"
+}, {
+    "id": 693,
+    "last_updated": "2016-06-06T14:36:40.000Z",
+    "state": "ME",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-maine-republican-presidential-caucus",
+    "estimates": [],
+    "poll_count": 1,
+    "topic": "2016-president-gop-primary",
+    "short_title": "ME Republican Presidential Caucus",
+    "slug": "2016-maine-republican-presidential-caucus",
+    "title": "2016 Maine Republican Presidential Caucus",
+    "election_date": "2016-03-05"
+}, {
+    "id": 692,
+    "last_updated": "2016-07-06T20:17:09.000Z",
+    "state": "LA",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-louisiana-democratic-presidential-primary",
+    "estimates": [],
+    "poll_count": 3,
+    "topic": "2016-president-dem-primary",
+    "short_title": "LA Democratic Presidential Primary",
+    "slug": "2016-louisiana-democratic-presidential-primary",
+    "title": "2016 Louisiana Democratic Presidential Primary",
+    "election_date": "2016-03-05"
+}, {
+    "id": 691,
+    "last_updated": "2016-06-06T14:36:41.000Z",
+    "state": "KY",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-kentucky-democratic-presidential-primary",
+    "estimates": [],
+    "poll_count": 1,
+    "topic": "2016-president-dem-primary",
+    "short_title": "KY Democratic Presidential Primary",
+    "slug": "2016-kentucky-democratic-presidential-primary",
+    "title": "2016 Kentucky Democratic Presidential Primary",
+    "election_date": "2016-05-17"
+}, {
+    "id": 690,
+    "last_updated": "2016-06-06T14:36:42.000Z",
+    "state": "KS",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-kansas-democratic-presidential-caucus",
+    "estimates": [],
+    "poll_count": 2,
+    "topic": "2016-president-dem-primary",
+    "short_title": "KS Democratic Presidential Caucus",
+    "slug": "2016-kansas-democratic-presidential-caucus",
+    "title": "2016 Kansas Democratic Presidential Caucus",
+    "election_date": "2016-03-05"
+}, {
+    "id": 689,
+    "last_updated": "2016-06-06T14:36:42.000Z",
+    "state": "KS",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-kansas-republican-presidential-caucus",
+    "estimates": [],
+    "poll_count": 4,
+    "topic": "2016-president-gop-primary",
+    "short_title": "KS Republican Presidential Caucus",
+    "slug": "2016-kansas-republican-presidential-caucus",
+    "title": "2016 Kansas Republican Presidential Caucus",
+    "election_date": "2016-03-05"
+}, {
+    "id": 688,
+    "last_updated": "2016-06-06T14:36:43.000Z",
+    "state": "VA",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-virginia-republican-presidential-primary",
+    "estimates": [{
+        "last_name": "Trump",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 39.12,
+        "incumbent": false,
+        "choice": "Trump",
+        "first_name": "Donald"
+    }, {
+        "last_name": "Rubio",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 25.3,
+        "incumbent": false,
+        "choice": "Rubio",
+        "first_name": "Marco"
+    }, {
+        "last_name": "Cruz",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 15.49,
+        "incumbent": false,
+        "choice": "Cruz",
+        "first_name": "Ted"
+    }, {
+        "last_name": "Kasich",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 7.29,
+        "incumbent": false,
+        "choice": "Kasich",
+        "first_name": "John"
+    }, {
+        "last_name": "Carson",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 6.37,
+        "incumbent": false,
+        "choice": "Carson",
+        "first_name": "Ben"
+    }, {
+        "last_name": "Bush",
+        "party": "Rep",
+        "lead_confidence": null,
+        "value": 2.4,
+        "incumbent": false,
+        "choice": "Bush",
+        "first_name": "Jeb"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 4.81,
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }],
+    "poll_count": 14,
+    "topic": "2016-president-gop-primary",
+    "short_title": "VA Republican Presidential Primary",
+    "slug": "2016-virginia-republican-presidential-primary",
+    "title": "2016 Virginia Republican Presidential Primary",
+    "election_date": "2016-03-01"
+}, {
+    "id": 687,
+    "last_updated": "2016-06-06T14:36:43.000Z",
+    "state": "VA",
+    "url": "http://elections.huffingtonpost.com/pollster/2016-virginia-democratic-presidential-primary",
+    "estimates": [{
+        "last_name": "Clinton",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 55.9,
+        "incumbent": false,
+        "choice": "Clinton",
+        "first_name": "Hillary"
+    }, {
+        "last_name": "Sanders",
+        "party": "Dem",
+        "lead_confidence": null,
+        "value": 35.03,
+        "incumbent": false,
+        "choice": "Sanders",
+        "first_name": "Bernie"
+    }, {
+        "last_name": null,
+        "party": "N/A",
+        "lead_confidence": null,
+        "value": 6.42,
+        "incumbent": false,
+        "choice": "Undecided",
+        "first_name": null
+    }],
+    "poll_count": 14,
+    "topic": "2016-president-dem-primary",
+    "short_title": "VA Democratic Presidential Primary",
+    "slug": "2016-virginia-democratic-presidential-primary",
+    "title": "2016 Virginia Democratic Presidential Primary",
+    "election_date": "2016-03-01"
+}]

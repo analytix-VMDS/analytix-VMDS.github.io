@@ -2,6 +2,19 @@
 <!-- Header where scripts and stylesheets are called -->
 
 <head>
+    <script>
+        window.onload = function() {
+            var c = document.getElementById('checkbox-1')
+            c.onchange = function() {
+                if (c.checked == true) {
+                    document.getElementById('answer').style.display = 'inline';
+                } else {
+                    document.getElementById('answer').style.display = '';
+                }
+            }
+        }
+    </script>
+
     <!-- google api -->
     <!-- Calls to CSS Stylesheets -->
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -31,13 +44,13 @@
         <h1 style="margin-left: auto; margin-right: auto; text-align: center;color:#78583e">Entertainment
             <i class="fa fa-gamepad" style="font-size:48px; color:#78583e"></i></h1>
 
-            <div style="height:60px; background-color: #eae8d7; padding: 10px; display: flex; justify-content: center;">
+        <div style="height:60px; background-color: #eae8d7; padding: 10px; display: flex; justify-content: center;">
 
 
             <!-- bootstrap style dropdown -->
             <div class="demo" style="float: left; display: inline-block;">
                 <form action="#">
-                    <h4><label style="color:#78583e" for="subtopic">Choose a Suptopic</label>
+                    <h4><label style="color:#78583e" for="subtopic">Suptopic: </label>
     <select name="subtopic" id="subtopic">
       <option selected="selected">Songs</option>
       <option>Movies</option>
@@ -51,34 +64,35 @@
             <div class="demo" style="float: left; margin-left: 20px">
                 <form action="#">
                     <fieldset>
-                        <h4><label style="color:#78583e" for="analysis">Choose Type of Data Analysis</label>
-<select name="analysis" id="analysis">
-  <option selected="selected">Just Display</option>
-<option>t-test</option>
-  <option>etc</option>
-  <option>etc</option>
-  <option>etc</option></h4>
+                        <h4><label style="color:#78583e" for="visual">Visual: </label>
+<select name="visual" id="visual">
+<option value="selectTable" id="tableEntertain" selected="selected">table</option>
+<option value="selectBar" id="barEntertain">bar graph</option>
+<option value="selectPie" id="pieEntertain">pie graph</option>
+<option value="selectLine" id="lineEntertain">line graph</option>
+<option value="selectBaW" id="bAwEntertain">box-and-whisker plot</option>
                         </select>
+                      </h4>
                 </form>
             </div>
 
             <div class="demo" style="float: left; margin-left: 20px">
                 <form action="#">
                     <fieldset>
-                      <h4><label style="color:#78583e" for="dataset">Choose a Visual</label>
-<select name="dataset" id="dataset">
-<option id="tableEntertain" selected="selected">table</option>
-<option id="barEntertain">bar graph</option>
-<option id="pieEntertain">pie graph</option>
-<option id="lineEntertain">line graph</option>
-<option id="bAwEntertain">box-and-whisker plot</option>
+                        <h4><label style="color:#78583e" for="checkbox-1">Data Analysis</label>
+                          <input type="checkbox" name="checkbox-1" id="checkbox-1"></h4>
+                        <select name="answer" id="answer">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
                         </select>
-                      </h4>
+                    </fieldset>
                 </form>
             </div>
+
+
             <!-- bootstrap style button -->
-            <button style="margin-left: 20px; background-color:#c5bdaa; color:#78583e" type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
-                <b>Analyze</b>
+            <button id="createEnt" style="margin-left: 20px; background-color:#c5bdaa; color:#78583e" type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                <b>Create</b>
             </button>
         </div>
 
@@ -94,17 +108,14 @@
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF6-dEtsRQ5jcaXJy2oDjU46u896i_xDk&callback=initMap" async defer></script>
 -->
             <!-- <div class="svg_location"></div>  -->
-            <div id="selectTable">hi</div>
-              <div id="selectBar">blah</div>
-                <div id="selectPie">oy</div>
-                  <div id="selectLine">hello</div>
-                    <div id="selectBaW">here</div>
+            <div id="selectTable">gggg</div>
+            <div style="display: none;" id="selectBar">ggggg</div>
+            <div style="display: none;" id="selectPie">ggggg</div>
+            <div style="display: none;" id="selectLine">ggggg</div>
+            <div style="display: none;" id="selectBaW">ggg</div>
 
-                    <script type="text/javascript">
-                      $("#tableEntertain").click(function(){
-                        console.log("yayy");
-                      });
-                    </script>
+            <script type="text/javascript">
+            </script>
 
 </body>
 
