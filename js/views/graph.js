@@ -42,7 +42,7 @@ define([
              },
              dataType: 'jsonp',
              success: function(data) {
-               console.log(data);
+               //console.log(data);
                 //var $title = $('<h1>').text(data.talks[0].talk_title);
                 //var $description = $('<p>').text(data.talks[0].talk_description);
                 //$('#info')
@@ -76,7 +76,7 @@ define([
 
         draw_bar_graph: function(data) {
 
-          console.log(data);
+          //console.log(data);
 
           //var data = this.model.get("data");
 
@@ -97,7 +97,7 @@ define([
           //var z = location.pathname.substring(location.pathname.lastIndexOf('/')+1);
           //alert(z);
 
-          console.log(this.model.get("datasets"));
+          //console.log(this.model.get("datasets"));
           var data = this.model.get("datasets");
           /*function initMap() {
               // Create a map object and specify the DOM element for display.
@@ -159,7 +159,7 @@ define([
                   .attr("x", padding + 7)
                   .attr("y", padding)
                   .attr("dy", ".31em")
-                  .text(function(d) { console.log(d.value.Name); return d.value.Name; });
+                  .text(function(d) { return d.value.Name; });
 
               function transform(d) {
                 d = new google.maps.LatLng(d.value.Latitude, d.value.Longitude);

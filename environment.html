@@ -13,12 +13,14 @@
     <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- The main script is the entry point for the application -->
-    <script data-main="js/main" src="lib/require/require.js"></script>
+   <script data-main="js/main" src="lib/require/require.js"></script>
+    <!--<script data-main="js/views/EnvView" src="lib/require/require.js"></script>-->
+
     <!-- font awesome icon code -->
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 
-<body style="padding: 0px;">
+<body id="envTab" style="padding: 0px;">
 
     <!--
        Tabs connecting to Home branch
@@ -103,6 +105,19 @@
 
 
             <div id="svg_location"></div>
+
+
+            <!--<script src="lib/require/require.js"></script>
+            <script type="text/javascript">
+              // Load common code that includes config,
+              // then load the app logic for this page.
+              require(['js/common'], function (common) {
+                // ./js/common.js sets the baseUrl to be ./js/
+                // You can ask for 'app/main-about' here instead
+                // of './js/app/main-about'
+                require(['js/views/EnvView']);
+              });
+            </script>-->
 
 </body>
 
