@@ -1,4 +1,3 @@
-
 define([
     'jquery',
     'jqueryui',
@@ -10,25 +9,61 @@ define([
 
     var view = backbone.View.extend({
 
-        initialize: function(){
+        initialize: function() {
 
-          this.element = ".svg_location"
+            this.element = ".svg_location"
 
-          this.width = this.model.get("width");
-          this.height = this.model.get("height");
+            this.width = this.model.get("width");
+            this.height = this.model.get("height");
 
-          this.svg = d3.select(this.element).append("svg")
-            .attr("width", 900)
-            .attr("height", 500);
+            this.svg = d3.select(this.element).append("svg")
+                .attr("width", 900)
+                .attr("height", 500);
 
-          this.get_data();
-          this.draw_google_maps();
+            this.get_data();
+            this.draw_table();
+            //  this.draw_google_maps();
 
-          //console.log(u);
+
+            //console.log(u);
 
         },
 
         get_data: function() {
+
+            var u = $.ajax({
+                url: 'http://services.cngnow.com/V1/Stations.svc/external/circlefilter?latitude=35.4675&longitude=-97.5161&range=15&status=active',
+                data: {
+                    format: 'json'
+                },
+                error: function() {
+                    $('#info').html('<p>An error has occurred</p>');
+                },
+                dataType: 'jsonp',
+                success: function(data) {
+                    console.log(data);
+                    //var $title = $('<h1>').text(data.talks[0].talk_title);
+                    //var $description = $('<p>').text(data.talks[0].talk_description);
+                    //$('#info')
+                    // .append($title)
+                    //.append($description);
+                },
+                type: 'GET'
+            });
+
+            /*var data;
+            var scope = this;
+            d3.json("json/test.json", function(error, json){
+
+              if (error) {  //If error is not null, something went wrong.
+                console.log(error);  //Log the error.
+              } else {      //If no error, the file loaded correctly.
+                //console.log(json);   //Log the data.
+
+                //Include other code to execute after successful file load here
+                data = json;
+
+                //scope.draw_google_maps(data);
 
           var scope = this;
 
@@ -69,8 +104,8 @@ define([
 
               //scope.draw_google_maps(data);
 
-            }
-          })*/
+              }
+            })*/
 
         },
 
@@ -80,7 +115,7 @@ define([
 
           //var data = this.model.get("data");
 
-          //d3.select()
+            //d3.select()
 
         },
 
@@ -93,6 +128,7 @@ define([
         },
 
         draw_google_maps: function() {
+
 
           //var z = location.pathname.substring(location.pathname.lastIndexOf('/')+1);
           //alert(z);
@@ -170,34 +206,40 @@ define([
                     .style("top", (d.x - padding) + "px");
               }
             };
-          };
 
-        //  d3.select("circle").on("mouseover", function(){
+            //  d3.select("circle").on("mouseover", function(){
             d3.select("circle").transition()
-              .style("fill", "green");
-        //  })
+                .style("fill", "green");
+            //  })
 
-          // Bind our overlay to the map…
-          overlay.setMap(map);
+            // Bind our overlay to the map…
+            overlay.setMap(map);
 
-          $( ".map" ).resizable({
-              handles: 's',
-              stop: function(event, ui) {
-                  $(this).css("width", '');
-             }
-          });
+            $(".map").resizable({
+                handles: 's',
+                stop: function(event, ui) {
+                    $(this).css("width", '');
+                }
+            });
 
         },
 
-        draw_table: function(){
-          $("body").click(function(){
-            console.log("cffcg");
 
-          });
+        draw_table: function() {
+            $('#visual').on('change', function() {
+                value = $(this).val();
+                change(value);
+            });
+            var change = function(val) {
+                $('#createEnt').on("click", function() {
+                    $('#' + val).show();
+                    console.log(val);
+                });
+            }
         }
 
-      });
-
-      return view;
-
     });
+
+    return view;
+
+});
