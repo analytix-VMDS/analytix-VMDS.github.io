@@ -19,8 +19,13 @@ requirejs([
     'jquery',
     'd3',
     'js/models/graph',
-    'js/views/graph'
-],function($, d3, Model, View) {
+    'js/views/graph',
+    'js/views/EnterView',
+    'js/views/EnvView',
+    'js/views/HealthView',
+    'js/views/VoteView',
+    'js/views/WagesView'
+],function($, d3, Model, View, enterView, envView, healthView, voteView, wagesView) {
 
   var data = [];
   var scope = this;
@@ -28,8 +33,36 @@ requirejs([
   /*$.ajax({
       url:"data-grabber.py", success: function(){alert("DONE");}
  });*/
+var ajaxdata = function(api) {
+   $.ajax({
+      url: api,
+      data: {
+         format: 'json'
+      },
+      error: function() {
+         $('#info').html('<p>An error has occurred</p>');
+      },
+      dataType: 'jsonp',
+      success: function(data) {
+        console.log(data);
+         //var $title = $('<h1>').text(data.talks[0].talk_title);
+         //var $description = $('<p>').text(data.talks[0].talk_description);
+         //$('#info')
+           // .append($title)
+            //.append($description);
 
-  for(var i = 0; i < 1; i++) {
+         //scope.draw_bar_graph(data);
+
+      },
+      type: 'GET'
+   });
+ }
+
+ //ajaxdata('http://services.cngnow.com/V1/Stations.svc/external/circlefilter?latitude=35.4675&longitude=-97.5161&range=15&status=active');
+ /*document.getElementById('envTab').onload= */ajaxdata('http://services.cngnow.com/V1/Stations.svc/external/circlefilter?latitude=35.4675&longitude=-97.5161&range=15&status=active');
+
+
+  /*for(var i = 0; i < 1; i++) {
     d3.json("json/file"+i+".json", function(error, json){
 
       if (error) {  //If error is not null, something went wrong.
@@ -42,14 +75,21 @@ requirejs([
 
       }
     })
-  }
+  }*/
 
-  var caller = function(data) {
+  //var caller = function(data) {
     //console.log(data);
     this.graph_model = new Model( data );
-    this.graph_view = new View( { "model" : this.graph_model } );
+
+    //this.enter_view = new enterView( { "model" : this.graph_model } );
+    this.env_view = new envView( { "model" : this.graph_model } );
+    //this.health_view = new healthView( { "model" : this.graph_model } );
+    //this.vote_view = new voteView( { "model" : this.graph_model } );
+    //this.wages_view = new wagesView( { "model" : this.graph_model } );
+
+    //this.graph_view = new View( { "model" : this.graph_model } );
     //console.log(this.graph_model)
-  }
+  //}
 
 
 });

@@ -24,6 +24,7 @@ define([
             this.draw_table();
             //  this.draw_google_maps();
 
+
             //console.log(u);
 
         },
@@ -64,14 +65,55 @@ define([
 
                 //scope.draw_google_maps(data);
 
+          var scope = this;
+
+          var u = $.ajax({
+             url: 'http://services.cngnow.com/V1/Stations.svc/external/circlefilter?latitude=35.4675&longitude=-97.5161&range=15&status=active',
+             data: {
+                format: 'json'
+             },
+             error: function() {
+                $('#info').html('<p>An error has occurred</p>');
+             },
+             dataType: 'jsonp',
+             success: function(data) {
+               //console.log(data);
+                //var $title = $('<h1>').text(data.talks[0].talk_title);
+                //var $description = $('<p>').text(data.talks[0].talk_description);
+                //$('#info')
+                  // .append($title)
+                   //.append($description);
+
+                scope.draw_bar_graph(data);
+
+             },
+             type: 'GET'
+          });
+
+          /*var data;
+          var scope = this;
+          d3.json("json/test.json", function(error, json){
+
+            if (error) {  //If error is not null, something went wrong.
+              console.log(error);  //Log the error.
+            } else {      //If no error, the file loaded correctly.
+              //console.log(json);   //Log the data.
+
+              //Include other code to execute after successful file load here
+              data = json;
+
+              //scope.draw_google_maps(data);
+
               }
             })*/
 
         },
 
-        draw_bar_graph: function(keyname) {
+        draw_bar_graph: function(data) {
 
-            var data = this.model.get("data");
+          //console.log(data);
+
+          //var data = this.model.get("data");
 
             //d3.select()
 
@@ -87,92 +129,82 @@ define([
 
         draw_google_maps: function() {
 
-            //var z = location.pathname.substring(location.pathname.lastIndexOf('/')+1);
-            //alert(z);
 
-            console.log(this.model.get("datasets"));
-            var data = this.model.get("datasets");
-            /*function initMap() {
-                // Create a map object and specify the DOM element for display.
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    center: {
-                        lat: -34.397,
-                        lng: 150.644
-                    },
-                    scrollwheel: false,
-                    zoom: 8
-                });
-            }*/
+          //var z = location.pathname.substring(location.pathname.lastIndexOf('/')+1);
+          //alert(z);
 
-            // Create the Google Map…
-            var map = new google.maps.Map(d3.select(".map").node(), {
-                zoom: 5,
-                center: new google.maps.LatLng(37.76487, -122.41948),
-                mapTypeId: google.maps.MapTypeId.TERRAIN,
-                center: {
-                    lat: 37.0902,
-                    lng: -95.7129
-                },
-                scrollwheel: false
-            });
+          //console.log(this.model.get("datasets"));
+          var data = this.model.get("datasets");
+          /*function initMap() {
+              // Create a map object and specify the DOM element for display.
+              var map = new google.maps.Map(document.getElementById('map'), {
+                  center: {
+                      lat: -34.397,
+                      lng: 150.644
+                  },
+                  scrollwheel: false,
+                  zoom: 8
+              });
+          }*/
 
-            var overlay = new google.maps.OverlayView();
+          // Create the Google Map…
+          var map = new google.maps.Map(d3.select(".map").node(), {
+            zoom: 5,
+            center: new google.maps.LatLng(37.76487, -122.41948),
+            mapTypeId: google.maps.MapTypeId.TERRAIN,
+            center: {lat: 37.0902, lng: -95.7129},
+            scrollwheel: false
+          });
 
-            // Add the container when the overlay is added to the map.
-            overlay.onAdd = function() {
-                var layer = d3.select(this.getPanes().overlayLayer).append("div")
-                    .attr("class", "stations");
+          var overlay = new google.maps.OverlayView();
 
-                // Draw each marker as a separate SVG element.
-                // We could use a single SVG, but what size would it have?
-                overlay.draw = function() {
-                    var projection = this.getProjection(),
-                        padding = 10;
+          // Add the container when the overlay is added to the map.
+          overlay.onAdd = function() {
+            var layer = d3.select(this.getPanes().overlayLayer).append("div")
+                .attr("class", "stations");
 
-                    var marker = layer.selectAll("svg")
-                        .data(d3.entries(data))
-                        .each(transform) // update existing markers
-                        .enter().append("svg")
-                        .each(transform)
-                        .attr("class", "marker")
-                        .on("mouseover", function() {
-                            d3.select(this).transition()
-                                .attr("r", 7);
-                        });
+            // Draw each marker as a separate SVG element.
+            // We could use a single SVG, but what size would it have?
+            overlay.draw = function() {
+              var projection = this.getProjection(),
+                  padding = 10;
 
-                    // Add a circle.
-                    marker.append("circle")
-                        .attr("r", function(d) {
-                            return d.value.LastReportedPrice * 5
-                        })
-                        .attr("cx", padding)
-                        .attr("cy", padding)
-                        .on("mouseover", function() {
-                            d3.select(this).transition()
-                                .attr("r", 7);
-                        })
+              var marker = layer.selectAll("svg")
+                  .data(d3.entries(data))
+                  .each(transform) // update existing markers
+                .enter().append("svg")
+                  .each(transform)
+                  .attr("class", "marker")
+                  .on("mouseover", function(){
+                    d3.select(this).transition()
+                      .attr("r", 7);
+                  });
 
-                    // Add a label.
-                    marker.append("text")
-                        .attr("x", padding + 7)
-                        .attr("y", padding)
-                        .attr("dy", ".31em")
-                        .text(function(d) {
-                            console.log(d.value.Name);
-                            return d.value.Name;
-                        });
+              // Add a circle.
+              marker.append("circle")
+                  .attr("r", function(d){ return d.value.LastReportedPrice*5})
+                  .attr("cx", padding)
+                  .attr("cy", padding)
+                  .on("mouseover", function(){
+                    d3.select(this).transition()
+                      .attr("r", 7);
+                  })
 
-                    function transform(d) {
-                        d = new google.maps.LatLng(d.value.Latitude, d.value.Longitude);
-                        d = projection.fromLatLngToDivPixel(d);
-                        //console.log(d);
-                        return d3.select(this)
-                            .style("left", function() { /*console.log(d.x);*/
-                                return (d.x - padding) + "px"
-                            })
-                            .style("top", (d.x - padding) + "px");
-                    }
-                };
+              // Add a label.
+              marker.append("text")
+                  .attr("x", padding + 7)
+                  .attr("y", padding)
+                  .attr("dy", ".31em")
+                  .text(function(d) { return d.value.Name; });
+
+              function transform(d) {
+                d = new google.maps.LatLng(d.value.Latitude, d.value.Longitude);
+                d = projection.fromLatLngToDivPixel(d);
+                //console.log(d);
+                return d3.select(this)
+                    .style("left", function(){ /*console.log(d.x);*/ return (d.x - padding) + "px"})
+                    .style("top", (d.x - padding) + "px");
+              }
             };
 
             //  d3.select("circle").on("mouseover", function(){
