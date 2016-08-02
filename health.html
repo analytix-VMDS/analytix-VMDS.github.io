@@ -33,9 +33,7 @@
 
 
      <div id="header">
-
-      <h1>Health <i class="fa fa-medkit"></i></h1>
-
+      <h1>Health<i class="fa fa-medkit"></i></h1>
     </div>
 
 
@@ -67,17 +65,18 @@
               </div>
 
               <div class="demo">
-                <form action="#">
-                    <h4><label>Choose a Visual</label>
-                      <select name="dataset" id="dataset">
-                        <option selected="selected">table</option>
-                        <option>bar graph</option>
-                        <option>pie graph</option>
-                        <option>line graph</option>
-                        <option>box-and-whisker plot</option></h4>
+                  <form action="#">
+                      <h4><label for="visual">Visual: </label>
+                      <select name="visual" id="visual">
+                      <option value="selectTable" id="tableEntertain" selected="selected">table</option>
+                      <option value="selectBar" id="barEntertain">bar graph</option>
+                      <option value="selectPie" id="pieEntertain">pie graph</option>
+                      <option value="selectLine" id="lineEntertain">line graph</option>
+                      <option value="selectBaW" id="bAwEntertain">box-and-whisker plot</option>
+                    </h4>
                       </select>
-                    </form>
-                  </div>
+                  </form>
+              </div>
                   <!-- bootstrap style button -->
                   <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
                     <b>Create</b>

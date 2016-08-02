@@ -30,25 +30,21 @@
     <!-- Page header for the webpage -->
 
     <div id="header">
-
-        <h1>Wages
-        <i class="fa fa-dollar"></i></h1>
-
+        <h1>Wages<i class="fa fa-dollar"></i></h1>
         <div>
 
-            <!-- bootstrap style dropdown -->
-            <div id="dropdowns">
-                <div class="demo">
-                    <form action="#">
-                        <h4><label for="subtopic">Choose a Suptopic</label>
-                <select name="subtopic" id="subtopic">
-                  <option selected="selected">Men's Salaries</option>
-                  <option>Women's Salaries</option>
-                  <option>Tax</option>
-                  <option>Occupation Popularity</option>
+          <!-- bootstrap style dropdown -->
+          <div id="dropdowns">
+          <div class="demo">
+            <form action="#">
+            <label for="subtopic">Choose a Suptopic</label>
+                <select class="btn btn-primary" name="subtopic" id="subtopic">
+                  <option class="btn btn-primary" selected="selected">Men's Salaries</option>
+                  <option class= "btn btn-primary">Women's Salaries</option>
+                  <option class= "btn btn-primary">Tax</option>
+                  <option class= "btn btn-primary">Occupation Popularity</option>
                   </select>
-                </h4>
-                    </form>
+            </form>
 
                 </div>
 
@@ -67,18 +63,19 @@
 
                 <div class="demo">
                     <form action="#">
-                        <h4><label for="dataset">Choose a Visual</label>
-                      <select name="dataset" id="dataset">
-                        <option selected="selected">table</option>
-                        <option>bar graph</option>
-                        <option>pie graph</option>
-                        <option>line graph</option>
-                        <option>box-and-whisker plot</option></h4>
+                        <h4><label for="visual">Visual: </label>
+                        <select name="visual" id="visual">
+                        <option value="selectTable" id="tableEntertain" selected="selected">table</option>
+                        <option value="selectBar" id="barEntertain">bar graph</option>
+                        <option value="selectPie" id="pieEntertain">pie graph</option>
+                        <option value="selectLine" id="lineEntertain">line graph</option>
+                        <option value="selectBaW" id="bAwEntertain">box-and-whisker plot</option>
+                      </h4>
                         </select>
                     </form>
                 </div>
-                <!-- bootstrap style button -->
-                <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                  <!-- bootstrap style button -->
+                  <button type="button" id="btn" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
                     <b>Create</b>
                 </button>
 
