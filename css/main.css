@@ -19,6 +19,9 @@ body {
 h1{
     text-align: center;
     color:#78583e;
+    font-weight:600;
+    font-size:3.5em;
+
 }
 label{
   color:#78583e;
@@ -26,6 +29,9 @@ label{
 
 h4{
   color:#78583e;
+}
+select{
+  border:none;
 }
 .fa.fa-globe{
    font-size:1.3em;
@@ -55,32 +61,30 @@ h4{
 #dropdowns{
   background-color: #eae8d7;
   width:100%;
-  height:3.5em;
+  height:3.8em;
   text-align: center;
 }
 #header{
-    height:3em;
-    margin-bottom: 2.5em;
-    justify-content: center;
+
+    text-align:center;
+    background-color:#FCFBE3;
+    padding-bottom:1.5em;
+    padding-top:1em;
 }
 #para{
   font-size:2em;
   text-align:center;
-  margin:2em;
+  margin-top:1em;
+  margin-left:10em;
+  margin-right:10em;
 }
 .demo{
   display:inline-block;
   padding-left: 1em;
   font-size:1.3em;
 }
-.btn.btn-primary{
-  background-color: white;
-  height:2.3em;
-  color:#78583e;
-  border:none;
-}
 
-#btn.btn.btn-primary{
+.btn.create{
   background-color:#c5bdaa;
   border:none;
   height: 3em;
@@ -118,4 +122,19 @@ h4{
 
 .stations circle:hover {
   fill: blue;
+}
+
+.visual {
+  margin: auto;
+  display: block;
+}
+/* piechart styling */
+.arc text {
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+.arc path {
+
+  stroke: #fff;
 }

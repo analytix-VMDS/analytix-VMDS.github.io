@@ -81,7 +81,7 @@ var ajaxdata = function(api) {
     //console.log(data);
     this.graph_model = new Model( data );
 
-    //this.enter_view = new enterView( { "model" : this.graph_model } );
+    this.enter_view = new enterView( { "model" : this.graph_model } );
     this.env_view = new envView( { "model" : this.graph_model } );
     //this.health_view = new healthView( { "model" : this.graph_model } );
     //this.vote_view = new voteView( { "model" : this.graph_model } );
