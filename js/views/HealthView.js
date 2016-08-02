@@ -9,12 +9,12 @@ define([
 
     var view = backbone.View.extend({
 
-        initialize: function(){
+        initialize: function() {
 
         }
 
-      });
-
-      return view;
-
     });
+
+    return view;
+
+});

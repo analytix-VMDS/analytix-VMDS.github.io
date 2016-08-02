@@ -5,20 +5,20 @@
 <!-- Header where scripts and stylesheets are called -->
 
 <head>
-  <!-- google api -->
-  <!-- Calls to CSS Stylesheets -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.css">
+    <!-- google api -->
+    <!-- Calls to CSS Stylesheets -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.css">
 
-  <!-- Calls to javascript files in bootstrap & jquery -->
-  <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
-  <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Calls to javascript files in bootstrap & jquery -->
+    <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
 
-  <!-- The main script is the entry point for the application -->
-  <script data-main="js/main" src="lib/require/require.js"></script>
-  <!-- font awesome icon code -->
-  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- The main script is the entry point for the application -->
+    <script data-main="js/main" src="lib/require/require.js"></script>
+    <!-- font awesome icon code -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -27,20 +27,20 @@
        Tabs connecting to Home branch
      -->
 
-     <!-- Page header for the webpage -->
+    <!-- Page header for the webpage -->
 
-     <div id="header">
+    <div id="header">
 
-      <h1>Wages
+        <h1>Wages
         <i class="fa fa-dollar"></i></h1>
 
         <div>
 
-          <!-- bootstrap style dropdown -->
-          <div id="dropdowns">
-          <div class="demo">
-            <form action="#">
-            <h4><label for="subtopic">Choose a Suptopic</label>
+            <!-- bootstrap style dropdown -->
+            <div id="dropdowns">
+                <div class="demo">
+                    <form action="#">
+                        <h4><label for="subtopic">Choose a Suptopic</label>
                 <select name="subtopic" id="subtopic">
                   <option selected="selected">Men's Salaries</option>
                   <option>Women's Salaries</option>
@@ -48,57 +48,59 @@
                   <option>Occupation Popularity</option>
                   </select>
                 </h4>
-            </form>
+                    </form>
 
-          </div>
+                </div>
 
-          <div class="demo">
-            <form action="#">
-                <h4><label for="analysis">Choose Type of Data Analysis</label>
+                <div class="demo">
+                    <form action="#">
+                        <h4><label for="analysis">Choose Type of Data Analysis</label>
                   <select name="analysis" id="analysis">
                     <option selected="selected">Just Display</option>
                     <option>t-test</option>
                     <option>etc</option>
                     <option>etc</option>
                     <option>etc</option></h4>
-                  </select>
-                </form>
-              </div>
+                        </select>
+                    </form>
+                </div>
 
-              <div class="demo">
-                <form action="#">
-                    <h4><label for="dataset">Choose a Visual</label>
+                <div class="demo">
+                    <form action="#">
+                        <h4><label for="dataset">Choose a Visual</label>
                       <select name="dataset" id="dataset">
                         <option selected="selected">table</option>
                         <option>bar graph</option>
                         <option>pie graph</option>
                         <option>line graph</option>
                         <option>box-and-whisker plot</option></h4>
-                      </select>
+                        </select>
                     </form>
-                  </div>
-                  <!-- bootstrap style button -->
-                  <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
-                    <b>Create</b>
-                  </button>
-
                 </div>
+                <!-- bootstrap style button -->
+                <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    <b>Create</b>
+                </button>
 
-                  <div id="para">
-                    <h4>Analyze the differences between average male and female salaries as well
+            </div>
+
+            <div id="para">
+                <h4>Analyze the differences between average male and female salaries as well
                       as how much of people's salaries are paid to the government as tax. <br>Find out
                       how popular your job is with the occupation popularity statistics too!
                     </h4>
-                  </div>
+            </div>
 
-                  <div class="map"></div>
+            <div class="map"></div>
 
-                  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF6-dEtsRQ5jcaXJy2oDjU46u896i_xDk&callback=initMap" async defer></script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF6-dEtsRQ5jcaXJy2oDjU46u896i_xDk&callback=initMap" async defer></script>
 
 
 
-                  <div id="svg_location"></div>
+            <div id="svg_location"></div>
 
-                </body>
+            <!--<script>
+                require(['views/WagesView']);
+      /script>-->
 
-                </html>
+</bodytml>

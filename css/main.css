@@ -28,27 +28,27 @@ h4{
   color:#78583e;
 }
 .fa.fa-globe{
-   font-size:1.3em; 
+   font-size:1.3em;
    color:#78583e;
    padding-left: .15em;
 }
 .fa.fa-gamepad{
-   font-size:1.3em; 
+   font-size:1.3em;
    color:#78583e;
    padding-left: .15em;
 }
 .fa.fa-medkit{
-   font-size:1.3em; 
+   font-size:1.3em;
    color:#78583e;
    padding-left: .15em;
 }
 .fa.fa-dollar{
-   font-size:1.3em; 
+   font-size:1.3em;
    color:#78583e;
    padding-left: .15em;
 }
 .fa.fa-line-chart{
-   font-size:1.3em; 
+   font-size:1.3em;
    color:#78583e;
    padding-left: .15em;
 }
@@ -59,8 +59,8 @@ h4{
   text-align: center;
 }
 #header{
-    height:3em; 
-    margin-bottom: 2.5em; 
+    height:3em;
+    margin-bottom: 2.5em;
     justify-content: center;
 }
 #para{
@@ -68,14 +68,14 @@ h4{
   text-align:center;
   margin:2em;
 }
-.demo{ 
+.demo{
   display:inline-block;
   padding-left: 1em;
 }
 
 .btn.btn-primary{
-  background-color:#c5bdaa; 
-  height: 3em; 
+  background-color:#c5bdaa;
+  height: 3em;
   color:#78583e;
   margin-left: 1em
 }

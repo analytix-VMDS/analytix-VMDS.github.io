@@ -11,6 +11,7 @@ define([
 
         initialize: function(){
           console.log("environment");
+          var n = 1;
         }
 
       });
