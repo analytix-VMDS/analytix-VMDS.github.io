@@ -71,10 +71,18 @@ h4{
 .demo{ 
   display:inline-block;
   padding-left: 1em;
+  font-size:1.3em;
+}
+.btn.btn-primary{
+  background-color: white;
+  height:2.3em;
+  color:#78583e;
+  border:none;
 }
 
-.btn.btn-primary{
+#btn.btn.btn-primary{
   background-color:#c5bdaa; 
+  border:none;
   height: 3em; 
   color:#78583e;
   margin-left: 1em
@@ -92,7 +100,7 @@ h4{
 }
 
 .stations, .stations svg {
-  position: absolute;
+  position: relative;
 }
 
 .stations svg {
