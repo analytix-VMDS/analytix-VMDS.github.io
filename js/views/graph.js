@@ -191,7 +191,19 @@ define([
                 });
             }
 
-        }
+        },
+
+    /*    $(function() {
+            $(".collapse").on('hide.bs.collapse', function() {
+                var title = $(this).parents('div.panel').find('.panel-title')[0];
+                $(title).attr('title', 'hidden content closed');
+            });
+
+            $(".collapse").on('show.bs.collapse', function() {
+                var title = $(this).parents('div.panel').find('.panel-title')[0];
+                $(title).attr('title', 'hidden content open');
+            });
+        });
 
     });
 

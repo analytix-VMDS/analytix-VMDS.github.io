@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-<html lang="eng">
 <!-- Header where scripts and stylesheets are called -->
 
 <head>
@@ -11,7 +10,13 @@
     <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.css">
 
     <script src="https://use.typekit.net/edv1zzt.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
 
     <!-- Calls to javascript files in bootstrap & jquery -->
     <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
@@ -33,14 +38,17 @@
     <!-- Page header for the webpage -->
 
     <div id="header">
+        <div id="top">
+            <p><a href="/"><i class="fa fa-home"></i>Home</a></p>
+        </div>
         <h1>Environment<i class="fa fa-globe"></i></h1>
 
 
-    <div id="para">
-        <h4>Analyze the world's biggest current environment issues like global warming factors,
+        <div id="para">
+            <h4>Analyze the world's biggest current environment issues like global warming factors,
                 ocean acidification, coral reef destruction, and invasive species.
               </h4>
-   </div>
+        </div>
     </div>
     <!--tyle dropdown -->
     <div id="dropdowns">
@@ -70,7 +78,7 @@
                 <option value="selectBaW" id="bAwEntertain">map</option>
               </select>
             </h4>
-          </form>
+            </form>
         </div>
 
         <div class="demo">
@@ -84,14 +92,14 @@
                 <option value="" id="">linear regression</option>
               </select>
             </h4>
-          </form>
+            </form>
         </div>
 
 
-    <!-- bootstrap style button -->
-    <button type="button" class="btn create" data-toggle="button" aria-pressed="false" autocomplete="off">
-        <b>Create</b>
-    </button>
+        <!-- bootstrap style button -->
+        <button type="button" class="btn create" data-toggle="button" aria-pressed="false" autocomplete="off">
+            <b>Create</b>
+        </button>
     </div>
 
     <div class="map"></div>
@@ -100,6 +108,11 @@
 
     <div id="svg_location"></div>
 
+    <div id="footer">
+        Copyright &copy; 2016 Analytix
+        <br>
+        <p><a style="font-size:1em" href="https://github.com/cs-squad/Data-Analysis-Web-Application">Github<i class="fa fa-github"></i></a></p>
+    </div>
     <!--<script src="lib/require/require.js"></script>
             <script type="text/javascript">
               // Load common code that includes config,

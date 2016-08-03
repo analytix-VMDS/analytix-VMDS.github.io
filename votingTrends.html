@@ -1,26 +1,31 @@
 <!doctype html>
 <html>
-<html lang="eng">
 <!-- Header where scripts and stylesheets are called -->
 
 <head>
-  <!-- google api -->
-  <!-- Calls to CSS Stylesheets -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.css">
+    <!-- google api -->
+    <!-- Calls to CSS Stylesheets -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.css">
 
-  <script src="https://use.typekit.net/edv1zzt.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script src="https://use.typekit.net/edv1zzt.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
 
-  <!-- Calls to javascript files in bootstrap & jquery -->
-  <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
-  <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Calls to javascript files in bootstrap & jquery -->
+    <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
 
-  <!-- The main script is the entry point for the application -->
-  <script data-main="js/main" src="lib/require/require.js"></script>
-  <!-- font awesome icon code -->
-  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- The main script is the entry point for the application -->
+    <script data-main="js/main" src="lib/require/require.js"></script>
+    <!-- font awesome icon code -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -29,33 +34,35 @@
        Tabs connecting to Home branch
      -->
 
-     <!-- Page header for the webpage -->
+    <!-- Page header for the webpage -->
+    <div id="header">
+        <div id="top">
+            <p><a href="/"><i class="fa fa-home"></i>Home</a></p>
+        </div>
+        <h1>Voting Trends<i class="fa fa-line-chart"></i></h1>
 
-     <div id="header">
-      <h1>Voting Trends<i class="fa fa-line-chart"></i></h1>
-
-      <div id="para">
-        <h4>Here, you can find America's history of polls in presidential elections and track
+        <div id="para">
+            <h4>Find America's history of polls in presidential elections and track
           your favorite candidates during election seasons.
         </h4>
-      </div>
-      </div>
-      <!-- bootstrap style dropdown -->
-      <div id="dropdowns">
+        </div>
+    </div>
+    <!-- bootstrap style dropdown -->
+    <div id="dropdowns">
         <div class="demo">
 
-          <h4><label for="subtopic">Subtopic: </label>
+            <h4><label for="subtopic">Subtopic: </label>
             <select name="subtopic" id="subtopic">
               <option selected="selected">Presidential Poll History</option>
               <option>Current Presidential Polls</option>
             </select>
           </h4>
-        </form>
-      </div>
+            </form>
+        </div>
 
-          <div class="demo">
-              <form action="#">
-                  <h4><label for="visual">Visual: </label>
+        <div class="demo">
+            <form action="#">
+                <h4><label for="visual">Visual: </label>
                   <select name="visual" id="visual">
                   <option value="selectTable" id="tableEntertain" selected="selected">table</option>
                   <option value="selectBar" id="barEntertain">bar graph</option>
@@ -65,11 +72,11 @@
                 </select>
               </h4>
             </form>
-          </div>
+        </div>
 
-          <div class="demo">
-              <form action="#">
-                  <h4><label for="analyze">Data Analysis: </label>
+        <div class="demo">
+            <form action="#">
+                <h4><label for="analyze">Data Analysis: </label>
                   <select name="analyze" id="analyze">
                   <option value="" id="" selected="selected">none</option>
                   <option value="" id="">t-test</option>
@@ -79,18 +86,25 @@
                 </select>
               </h4>
             </form>
-          </div>
-              <!-- bootstrap style button -->
-              <button type="button" class="btn create" data-toggle="button" aria-pressed="false" autocomplete="off">
-                <b>Create</b>
-              </button>
-            </div>
+        </div>
+        <!-- bootstrap style button -->
+        <button type="button" class="btn create" data-toggle="button" aria-pressed="false" autocomplete="off">
+            <b>Create</b>
+        </button>
+    </div>
 
-          <div class="map"></div>
+    <div class="map"></div>
 
-          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF6-dEtsRQ5jcaXJy2oDjU46u896i_xDk&callback=initMap" async defer></script>
-          <div id="svg_location"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF6-dEtsRQ5jcaXJy2oDjU46u896i_xDk&callback=initMap" async defer></script>
+    <div id="svg_location"></div>
 
-        </body>
+    <div id="footer">
+        Copyright &copy; 2016 Analytix
+        <br>
+        <p><a style="font-size:1em margin:0" href="https://github.com/cs-squad/Data-Analysis-Web-Application">Github<i class="fa fa-github"></i></a></p>
+    </div>
 
-        </html>
+
+</body>
+
+</html>

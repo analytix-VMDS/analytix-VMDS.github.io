@@ -1,7 +1,5 @@
 <!doctype html>
 <html>
-<html lang="eng">
-
 <!-- Header where scripts and stylesheets are called -->
 
 <head>
@@ -39,21 +37,24 @@
     <!-- Page header for the webpage -->
 
     <div id="header">
+        <div id="top">
+            <p><a href="/"><i class="fa fa-home"></i>Home</a></p>
+        </div>
         <h1>Wages<i class="fa fa-dollar"></i></h1>
 
-        <div id="para">
+        <div id="container">
             <h4>Analyze the differences between average male and female salaries as well
                 as how much of people's salaries are paid to the government as tax. Find out
                 how popular your job is with the occupation popularity statistics too!
               </h4>
         </div>
-        </div>
+    </div>
 
-            <!-- bootstrap style dropdown -->
-            <div id="dropdowns">
-                <div class="demo">
-                    <form action="#">
-                        <h4><label for="subtopic">Sutopic: </label>
+    <!-- bootstrap style dropdown -->
+    <div id="dropdowns">
+        <div class="demo">
+            <form action="#">
+                <h4><label for="subtopic">Sutopic: </label>
                 <select name="subtopic" id="subtopic">
                   <option selected="selected">Men's Salaries</option>
                   <option >Women's Salaries</option>
@@ -61,13 +62,13 @@
                   <option>Occupation Popularity</option>
                   </select>
                   </h4>
-                    </form>
-                </div>
+            </form>
+        </div>
 
 
-                <div class="demo">
-                    <form action="#">
-                        <h4><label for="visual">Visual: </label>
+        <div class="demo">
+            <form action="#">
+                <h4><label for="visual">Visual: </label>
                         <select name="visual" id="visual">
                         <option value="selectTable" id="tableEntertain" selected="selected">table</option>
                         <option value="selectBar" id="barEntertain">bar graph</option>
@@ -75,13 +76,13 @@
                         <option value="selectLine" id="lineEntertain">line graph</option>
                         <option value="selectBaW" id="bAwEntertain">map</option>
                       </h4>
-                        </select>
-                    </form>
-                </div>
+                </select>
+            </form>
+        </div>
 
-                <div class="demo">
-                    <form action="#">
-                        <h4><label for="analyze">Data Analysis: </label>
+        <div class="demo">
+            <form action="#">
+                <h4><label for="analyze">Data Analysis: </label>
                         <select name="analyze" id="analyze">
                         <option value="" id="" selected="selected">none</option>
                         <option value="" id="">t-test</option>
@@ -90,22 +91,29 @@
                         <option value="" id="">linear regression</option>
                       </select>
                     </h4>
-                    </form>
-                </div>
-                <!-- bootstrap style button -->
-                <button type="button" id="btn" class="btn create" data-toggle="button" aria-pressed="false" autocomplete="off">
-                    <b>Create</b>
-                </button>
+            </form>
+        </div>
+        <!-- bootstrap style button -->
+        <button type="button" id="btn" class="btn create" data-toggle="button" aria-pressed="false" autocomplete="off">
+            <b>Create</b>
+        </button>
 
-            </div>
+    </div>
 
-            <div class="map"></div>
+    <div class="map"></div>
 
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF6-dEtsRQ5jcaXJy2oDjU46u896i_xDk&callback=initMap" async defer></script>
-            <div id="svg_location"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF6-dEtsRQ5jcaXJy2oDjU46u896i_xDk&callback=initMap" async defer></script>
+    <div id="svg_location"></div>
 
-            <!--<script>
+    <!--<script>
                 require(['views/WagesView']);
       /script>-->
+      <div id="footer">
+          Copyright &copy; 2016 Analytix
+          <br>
+          <p><a style="font-size:1em" href="https://github.com/cs-squad/Data-Analysis-Web-Application">Github<i class="fa fa-github"></i></a></p>
+      </div>
+</body>
 
-            </bodytml>
+
+</html>
