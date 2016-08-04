@@ -187,11 +187,11 @@ p{
 
 /* bar graph styling */
 .bar {
-  fill: #6b486b;
+  fill: white;/*#6b486b;*/
 }
 
 .bar:hover {
-  fill: #8a89a6;
+  fill: lightgrey;/*#8a89a6;*/
 }
 
 .axis {

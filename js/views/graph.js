@@ -11,17 +11,18 @@ define([
 
         initialize: function() {
 
-            this.element = ".svg_location"
+            /*this.element = ".svg_location"
 
             this.width = this.model.get("width");
             this.height = this.model.get("height");
 
             this.svg = d3.select(this.element).append("svg")
                 .attr("width", 900)
-                .attr("height", 500);
+                .attr("height", 500);*/
 
             this.get_data();
             this.draw_table();
+            this.accordion();
             //  this.draw_google_maps();
 
 
@@ -203,7 +204,49 @@ define([
                 var title = $(this).parents('div.panel').find('.panel-title')[0];
                 $(title).attr('title', 'hidden content open');
             });
-        });
+        });*/
+        accordion: function() {
+          $('#accord-title').click(function(){
+              $(this).text(function(i,old){
+                  return old=='Table (show)' ?  'Table (hide)' : 'Table (show)';
+              });
+          });
+          /*$(".panel").on('hidden.bs.collapse', function () {
+            // do something…
+            d3.select("#accord-title").text("Table (hide)");
+          })*/
+          /*reveal = function() {
+            d3.select("#accord-title").on("click", function(){
+              d3.select(this).text("Table (hide)");
+
+              d3.select(this).on("click", function(){
+                d3.select(this).text("Table (show)");
+                console.log(reveal);
+                //.each("end", reveal);
+                //d3.select(this).on("click", function(){
+                //  d3.select(this).text("Table (hide)").each("end",reveal);
+                //})
+              });
+              reveal;
+
+              //$(this).click(function(){
+              //  $(this).text("Table (show)");
+
+              //})
+          });
+        }
+        reveal();*/
+
+          /*$(".collapse").o.bs.collapse', function() {
+              var title = $(this).parents('div.panel').find('.panel-title')[0];
+              $(title).attr('title', 'hidden content closed');
+          });
+
+          $(".collapse").on('show.bs.collapse', function() {
+              var title = $(this).parents('div.panel').find('.panel-title')[0];
+              $(title).attr('title', 'hidden content open');
+          });*/
+        }
 
     });
 

@@ -11,7 +11,7 @@ define([
 
         initialize: function() {
 
-            this.alternate_graphs();
+            this.alternate_types_of_graphs();
             this.draw_pie_graph();
             this.draw_bar_graph();
             this.draw_line_graph();
@@ -19,18 +19,62 @@ define([
         },
 
         draw_table: function() {
-          //d3.select(".panel-body")
+          d3.csv("json/datanewpie.csv", function(error, data) {
+              if (error) throw error;
+              //data.keys()
+
+              var keydata = d3.nest().key(function(d){return d.name})
+                                     .rollup(function(d){console.log(d); return d[0].money})
+                                     .entries(data);
+
+              console.log(keydata);
+              //var k = keydata[0].values;
+
+              //var valdata = d3.nest().key(function(d){return })
+              console.log(data);
+              console.log(Object.keys(data[0]));
+              var firstcolumnkey = Object.keys(data[0])[0];
+
+              var table = d3.select(".panel-body")//.data(data).enter()
+                          .append("table")
+                          .attr("class","table table-striped table-condensed")
+                          .style("margin-bottom","0px")
+                          .append("tbody")
+                          .selectAll("tr")
+                          .data(data).enter()
+                          .append("tr");
+
+              var keylength = Object.keys(data[0]).length;
+
+              for (var i = 0; i < keylength; i++) {
+
+                table.append("td")
+                      .text(function(d){
+                        //console.log(d);
+                        var key = Object.keys(d)[i];
+                        return d[key];
+                      })
+              }
+
+              /*table.append("td")
+                    .text(function(d){
+                      var key = Object.keys(d)[1];
+                      return d[key];
+                    })*/
+          });
+
+          $("#accordion").draggable();
         },
 
-        alternate_graphs: function() {
+        alternate_types_of_graphs: function() {
           /*$("body").click(function(){
            //style: "popup"
            $(".msBar").show();
            $(".msPie").hide();
           // console.log($(body"));
         });*/
-        var getPrev = ["msPie"];
-        $('#isual').on('change', function() {
+        var getPrev = ["msBar"];
+        $('#visual').on('change', function() {
             value = $(this).val();
             change(value);
             console.log(value);
@@ -97,8 +141,10 @@ define([
                 this.g.append("path")
                     .attr("d", arc)
                     .style("fill", function(d) {
-                        return color(d.data.name);
+                        return "white"//color(d.data.name);
                     })
+                    .attr("stroke-dasharray", "10,10")
+                    .attr("stroke","black")
                     .on("mouseover", function() {
                         //d3.select(this).transition().style("stroke-width","-5px");
                         //arc.outerRadius(20)
@@ -252,8 +298,10 @@ define([
                     })
                     .attr("height", function(d) {
                         return height - y(d.money);
-                    });
-                    /*.style("fill", function(d) {
+                    })
+                    .attr("stroke", "black")
+                    .attr("stroke-dasharray", "10,10")
+                   /*.style("fill", function(d) {
                         console.log(d.money);
                         return "rgb(0, 0," + d.money * 2 + ")"; // "green";
                     });*/

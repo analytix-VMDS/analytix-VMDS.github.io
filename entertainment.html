@@ -5,9 +5,9 @@
 <head>
     <!-- google api -->
     <!-- Calls to CSS Stylesheets -->
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.css">
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <script src="https://use.typekit.net/edv1zzt.js"></script>
     <script>
@@ -65,8 +65,8 @@
             <form action="#">
                 <h4><label for="visual">Visual: </label>
                 <select name="visual" id="visual">
-                <option value="msPie" id="pieEntertain" selected="selected">pie graph</option>
-                <option value="msBar" id="barEntertain">bar graph</option>
+                <option value="msPie" id="pieEntertain">pie graph</option>
+                <option value="msBar" id="barEntertain" selected="selected">bar graph</option>
                 <option value="msLine" id="lineEntertain">line graph</option>
                 <option value="msMap" id="mapEntertain">map</option>
               </select>
@@ -78,11 +78,11 @@
             <form action="#">
                 <h4><label for="analyze">Data Analysis: </label>
                 <select name="analyze" id="analyze">
-                <option value="" id="" selected="selected">none</option>
-                <option value="" id="">t-test</option>
-                <option value="" id="">uniform distribution</option>
-                <option value="" id="">normal distribution</option>
-                <option value="" id="">linear regression</option>
+                <option value="" id="noneEntertain" selected="selected">none</option>
+                <option value="" id="ttestEntertain">t-test</option>
+                <option value="" id="uniEntertain">uniform distribution</option>
+                <option value="" id="normEntertain">normal distribution</option>
+                <option value="" id="linRegEntertain">linear regression</option>
               </select>
             </h4>
             </form>
@@ -94,43 +94,42 @@
         </button>
     </div>
 
-<div class="container">
-    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-        <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingOne">
-                <h4 class="panel-title" title="hidden content closed">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Table
-        </a>
-      </h4>
-            </div>
-            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                <div class="panel-body">
-                    boom
+    <div class="container">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title" title="hidden content closed">
+                      <a id="accord-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Table (hide)
+                      </a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                    </div>
                 </div>
             </div>
         </div>
-      </div>
 
 
-        <div class="svg_location"></div>
+        <!--<div class="svg_location"></div>
 
-        <div class="map"></div>
+        <div class="map"></div>-->
 
         <!--<script type="text/javascript" language="javascript" src="http://www.boxofficemojo.com/data/js/wknd5.php"></script>-->
 
-        <div class="msPie"></div>
-        <div style="display: none;" class="msBar"></div>
+        <div class="msBar"></div>
+        <div style="display: none" class="msPie"></div>
         <div style="display: none;" class="msLine"></div>
 
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF6-dEtsRQ5jcaXJy2oDjU46u896i_xDk&callback=initMap" async defer></script>
 
-</div>
-        <div id="footer">
-            Copyright &copy; 2016 Analytix
-            <br>
-            <p><a style="font-size:1em" href="https://github.com/cs-squad/Data-Analysis-Web-Application">Github<i class="fa fa-github"></i></a></p>
-        </div>
+    </div>
+    <div id="footer">
+        Copyright &copy; 2016 Analytix
+        <br>
+        <p><a style="font-size:1em" href="https://github.com/cs-squad/Data-Analysis-Web-Application">Github<i class="fa fa-github"></i></a></p>
+    </div>
 
 </body>
 

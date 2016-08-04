@@ -71,8 +71,7 @@
             <form action="#">
                 <h4><label for="visual">Visual: </label>
                 <select name="visual" id="visual">
-                <option value="selectTable" id="tableEntertain" selected="selected">table</option>
-                <option value="selectBar" id="barEntertain">bar graph</option>
+                <option value="selectTable" id="barEntertain" selected="selected">bar graph</option>
                 <option value="selectPie" id="pieEntertain">pie graph</option>
                 <option value="selectLine" id="lineEntertain">line graph</option>
                 <option value="selectBaW" id="bAwEntertain">map</option>
@@ -85,11 +84,11 @@
             <form action="#">
                 <h4><label for="analyze">Data Analysis: </label>
                 <select name="analyze" id="analyze">
-                <option value="" id="" selected="selected">none</option>
-                <option value="" id="">t-test</option>
-                <option value="" id="">uniform distribution</option>
-                <option value="" id="">normal distribution</option>
-                <option value="" id="">linear regression</option>
+                  <option value="" id="noneEntertain" selected="selected">none</option>
+                  <option value="" id="ttestEntertain">t-test</option>
+                  <option value="" id="uniEntertain">uniform distribution</option>
+                  <option value="" id="normEntertain">normal distribution</option>
+                  <option value="" id="linRegEntertain">linear regression</option>
               </select>
             </h4>
             </form>
@@ -101,6 +100,24 @@
             <b>Create</b>
         </button>
     </div>
+
+    <div class="container">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title" title="hidden content closed">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Table
+            </a>
+          </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                        boom
+                    </div>
+                </div>
+            </div>
+          </div>
 
     <div class="map"></div>
 

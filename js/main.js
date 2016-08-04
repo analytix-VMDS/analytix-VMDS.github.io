@@ -59,7 +59,8 @@ var ajaxdata = function(api) {
  }
 
  //ajaxdata('http://services.cngnow.com/V1/Stations.svc/external/circlefilter?latitude=35.4675&longitude=-97.5161&range=15&status=active');
- /*document.getElementById('envTab').onload= */ajaxdata('http://services.cngnow.com/V1/Stations.svc/external/circlefilter?latitude=35.4675&longitude=-97.5161&range=15&status=active');
+ /*document.getElementById('envTab').onload= */
+ ajaxdata('http://services.cngnow.com/V1/Stations.svc/external/circlefilter?latitude=35.4675&longitude=-97.5161&range=15&status=active');
 
 
   /*for(var i = 0; i < 1; i++) {
@@ -87,7 +88,7 @@ var ajaxdata = function(api) {
     //this.vote_view = new voteView( { "model" : this.graph_model } );
     this.wages_view = new wagesView( { "model" : this.graph_model } );
 
-    //this.graph_view = new View( { "model" : this.graph_model } );
+    this.graph_view = new View( { "model" : this.graph_model } );
     //console.log(this.graph_model)
   //}
 
