@@ -23,7 +23,7 @@ define([
             this.get_data();
             this.draw_table();
             this.accordion();
-            //  this.draw_google_maps();
+            this.draw_google_maps();
 
 
             //console.log(u);
@@ -92,7 +92,7 @@ define([
             }*/
 
             // Create the Google Map…
-            var map = new google.maps.Map(d3.select(".map").node(), {
+            var map = new google.maps.Map(d3.select(".msMap").node(), {
                 zoom: 5,
                 center: new google.maps.LatLng(37.76487, -122.41948),
                 mapTypeId: google.maps.MapTypeId.TERRAIN,
@@ -169,7 +169,7 @@ define([
             // Bind our overlay to the map…
             overlay.setMap(map);
 
-            $(".map").resizable({
+            $(".msMap").resizable({
                 handles: 's',
                 stop: function(event, ui) {
                     $(this).css("width", '');

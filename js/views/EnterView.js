@@ -3,9 +3,8 @@ define([
     'jqueryui',
     'd3',
     'backbone',
-    'js/models/graph'
 
-], function($, $ui, d3, backbone, Model) {
+], function($, $ui, d3, backbone) {
 
     var view = backbone.View.extend({
 
@@ -16,7 +15,6 @@ define([
             this.draw_bar_graph();
             this.draw_line_graph();
             this.draw_table();
-            this.draw_line_reg();
             this.alternate_types_of_analyses();
             this.alternate_types_of_subtopics();
 
@@ -46,9 +44,9 @@ define([
                     })
                     .style("background-color", "lightgrey")
                     .on("mouseover", function() {
-                        d3.select(this).style("background-color", "blue")
+                        d3.select(this).style("background-color", "grey")
                         var key = d3.select(this).datum().replace(invalidchar, "");
-                        d3.selectAll("." + key).style("background-color", "green")
+                        d3.selectAll("." + key).style("background-color", "yellow")
                     })
                     .on("mouseout", function() {
                         d3.select(this).style("background-color", "lightgrey")
@@ -64,8 +62,8 @@ define([
                 var trdata = tbody.selectAll("tr")
                     .data(data).enter()
                     .append("tr")
-
-                for (var i = 0; i < keydata.length; i++) {
+                var length = keydata.length;
+                for (var i = 0; i < length; i++) {
                     trdata.append("td")
                         .text(function(d) {
                             //console.log(d);
@@ -88,7 +86,7 @@ define([
 
         alternate_types_of_analyses: function() {
 
-            var getPrev = ["msLinReg"];
+            var getPrev = ["msNone"];
             $('#analyze').on('change', function() {
                 value = $(this).val();
                 change(value);
@@ -99,7 +97,7 @@ define([
                 if (getPrev.length > 2) {
                     getPrev.shift();
                 }
-                console.log(getPrev);
+                console.log(val);
 
                 $("." + getPrev[0]).hide();
 
@@ -319,7 +317,7 @@ define([
                 .append("g")
                 .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-            d3.csv("json/data.csv", type, function(error, data) {
+            d3.csv("json/datanewpie.csv", type, function(error, data) {
                 if (error) throw error;
 
                 x.domain(data.map(function(d) {
@@ -373,163 +371,199 @@ define([
         },
 
         draw_line_graph: function() {
+            var height = 300;
+            var width = 600;
             var margin = {
-                    top: 20,
-                    right: 20,
-                    bottom: 30,
-                    left: 50
-                },
-                width = 960 - margin.left - margin.right,
-                height = 500 - margin.top - margin.bottom;
+                top: 20,
+                right: 20,
+                bottom: 50,
+                left: 20
+            };
 
-            var formatDate = d3.time.format("%d-%b-%y");
+            // formatters for axis and labels
+            var currencyFormat = d3.format("$0.2f");
+            var decimalFormat = d3.format("0.2f");
 
-            var x = d3.time.scale()
-                .range([0, width]);
+            var svg = d3.select(".msLine")
+                .append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-            var y = d3.scale.linear()
+            svg.append("g")
+                .attr("class", "y axis");
+
+            svg.append("g")
+                .attr("class", "x axis");
+
+            var xScale = d3.scale.ordinal()
+                .rangeRoundBands([margin.left, width], .1);
+
+            var yScale = d3.scale.linear()
                 .range([height, 0]);
 
             var xAxis = d3.svg.axis()
-                .scale(x)
+                .scale(xScale)
                 .orient("bottom");
 
             var yAxis = d3.svg.axis()
-                .scale(y)
+                .scale(yScale)
                 .orient("left");
 
-            var line = d3.svg.line()
-                .x(function(d) {
-                    //console.log(x(d));
-                    return x(d.IssueDate);
+            d3.csv("movieData3.csv", function(data) {
+
+                // extract the x labels for the axis and scale domain
+                var xLabels = data.map(function(d) {
+                    return d['yearmonth'];
                 })
-                .y(function(d) {
-                    //console.log(y(d));
-                    return y(d.money);
-                });
 
-            var svg = d3.select(".msLine").append("svg")
-                .attr("width", width + margin.left + margin.right)
-                .attr("height", height + margin.top + margin.bottom)
-                .append("g")
-                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+                xScale.domain(xLabels);
+                yScale.domain([0, Math.round(d3.max(data, function(d) {
+                    return parseFloat(d['rate']);
+                }))]);
 
-            d3.csv("json/datanewpie.csv", type, function(error, data) {
-                if (error) throw error;
-                console.log(data);
-
-                x.domain(d3.extent(data, function(d) {
-                    //console.log(d.IssueDate);
-                    return d.IssueDate;
-                }));
-                y.domain(d3.extent(data, function(d) {
-                    console.log(d.IssueDate);
-                    return d.money;
-                }));
-
-                svg.append("g")
-                    .attr("class", "x axis")
-                    .attr("transform", "translate(0," + height + ")")
-                    .call(xAxis);
-
-                svg.append("g")
-                    .attr("class", "y axis")
-                    .call(yAxis)
-                    .append("text")
-                    .attr("transform", "rotate(-90)")
-                    .attr("y", 6)
-                    .attr("dy", ".71em")
-                    .style("text-anchor", "end")
-                    .text("Price ($)");
+                var line = d3.svg.line()
+                    .x(function(d) {
+                        return xScale(d['yearmonth']);
+                    })
+                    .y(function(d) {
+                        return yScale(d['rate']);
+                    });
 
                 svg.append("path")
                     .datum(data)
                     .attr("class", "line")
                     .attr("d", line);
-            });
 
-            function type(d) {
-                d.IssueDate = formatDate.parse(d.IssueDate);
-                d.money = +d.money;
-                return d;
-            }
-        },
+                svg.select(".x.axis")
+                    .attr("transform", "translate(0," + (height) + ")")
+                    .call(xAxis.tickValues(xLabels.filter(function(d, i) {
+                        if (i % 12 == 0)
+                            return d;
+                    })))
+                    .selectAll("text")
+                    .style("text-anchor", "end")
+                    .attr("transform", function(d) {
+                        return "rotate(-45)";
+                    });
 
-        draw_line_reg: function() {
-            var margin = {
-                    top: 20,
-                    right: 20,
-                    bottom: 30,
-                    left: 50
-                },
-                width = 960 - margin.left - margin.right,
-                height = 500 - margin.top - margin.bottom;
+                svg.select(".y.axis")
+                    .attr("transform", "translate(" + (margin.left) + ",0)")
+                    .call(yAxis.tickFormat(currencyFormat));
 
-            var formatDate = d3.time.format("%d-%b-%y");
+                // chart title
+                svg.append("text")
+                    .attr("x", (width + (margin.left + margin.right)) / 2)
+                    .attr("y", 0 + margin.top)
+                    .attr("text-anchor", "middle")
+                    .style("font-size", "16px")
+                    .style("font-family", "sans-serif")
 
-            var x = d3.time.scale()
-                .range([0, width]);
+                // x axis label
+                svg.append("text")
+                    .attr("x", (width + (margin.left + margin.right)) / 2)
+                    .attr("y", height + margin.bottom)
+                    .attr("class", "text-label")
+                    .attr("text-anchor", "middle")
+                    .text("Year-Month");
 
-            var y = d3.scale.linear()
-                .range([height, 0]);
-
-            var xAxis = d3.svg.axis()
-                .scale(x)
-                .orient("bottom");
-
-            var yAxis = d3.svg.axis()
-                .scale(y)
-                .orient("left");
-
-            var line = d3.svg.line()
-                .x(function(d) {
-                    return x(d.date);
-                })
-                .y(function(d) {
-                    return y(d.close);
+                // get the x and y values for least squares
+                var xSeries = d3.range(1, xLabels.length + 1);
+                var ySeries = data.map(function(d) {
+                    return parseFloat(d['rate']);
                 });
 
-            var svg = d3.select("body").append("svg")
-                .attr("width", width + margin.left + margin.right)
-                .attr("height", height + margin.top + margin.bottom)
-                .append("g")
-                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+                var leastSquaresCoeff = leastSquares(xSeries, ySeries);
 
-            d3.tsv("movieData3.tsv", type, function(error, data) {
-                if (error) throw error;
+                // apply the reults of the least squares regression
+                var x1 = xLabels[0];
+                var y1 = leastSquaresCoeff[0] + leastSquaresCoeff[1];
+                var x2 = xLabels[xLabels.length - 1];
+                var y2 = leastSquaresCoeff[0] * xSeries.length + leastSquaresCoeff[1];
+                var trendData = [
+                    [x1, y1, x2, y2]
+                ];
 
-                x.domain(d3.extent(data, function(d) {
-                    return d.date;
-                }));
-                y.domain(d3.extent(data, function(d) {
-                    return d.close;
-                }));
+                var trendline = svg.selectAll(".msLinReg")
+                    .data(trendData);
 
-                svg.append("g")
-                    .attr("class", "x axis")
-                    .attr("transform", "translate(0," + height + ")")
-                    .call(xAxis);
+                trendline.enter()
+                    .append("line")
+                    .attr("class", "msLinReg")
+                    .attr("x1", function(d) {
+                        return xScale(d[0]);
+                    })
+                    .attr("y1", function(d) {
+                        return yScale(d[1]);
+                    })
+                    .attr("x2", function(d) {
+                        return xScale(d[2]);
+                    })
+                    .attr("y2", function(d) {
+                        return yScale(d[3]);
+                    })
+                    .attr("stroke", "black")
+                    .attr("stroke-width", 1)
+                    .style("display", "none");
 
-                svg.append("g")
-                    .attr("class", "y axis")
-                    .call(yAxis)
-                    .append("text")
-                    .attr("transform", "rotate(-90)")
-                    .attr("y", 6)
-                    .attr("dy", ".71em")
-                    .style("text-anchor", "end")
-                    .text("Price ($)");
+                    $(".msLine").click(function(){
+                     $(".msLinReg").show();
+                    });
 
-                svg.append("path")
-                    .datum(data)
-                    .attr("class", "line")
-                    .attr("d", line);
+                // display equation on the chart
+                svg.append("text")
+                    .text("eq: " + decimalFormat(leastSquaresCoeff[0]) + "x + " +
+                        decimalFormat(leastSquaresCoeff[1]))
+                    .attr("class", "text-label")
+                    .attr("x", function(d) {
+                        return xScale(x2) - 60;
+                    })
+                    .attr("y", function(d) {
+                        return yScale(y2) - 30;
+                    });
+
+                // display r-square on the chart
+                svg.append("text")
+                    .text("r-sq: " + decimalFormat(leastSquaresCoeff[2]))
+                    .attr("class", "text-label")
+                    .attr("x", function(d) {
+                        return xScale(x2) - 60;
+                    })
+                    .attr("y", function(d) {
+                        return yScale(y2) - 10;
+                    });
+
             });
 
-            function type(d) {
-                d.date = formatDate.parse(d.date);
-                d.close = +d.close;
-                return d;
+            // returns slope, intercept and r-square of the line
+            function leastSquares(xSeries, ySeries) {
+                var reduceSumFunc = function(prev, cur) {
+                    return prev + cur;
+                };
+
+                var xBar = xSeries.reduce(reduceSumFunc) * 1.0 / xSeries.length;
+                var yBar = ySeries.reduce(reduceSumFunc) * 1.0 / ySeries.length;
+
+                var ssXX = xSeries.map(function(d) {
+                        return Math.pow(d - xBar, 2);
+                    })
+                    .reduce(reduceSumFunc);
+
+                var ssYY = ySeries.map(function(d) {
+                        return Math.pow(d - yBar, 2);
+                    })
+                    .reduce(reduceSumFunc);
+
+                var ssXY = xSeries.map(function(d, i) {
+                        return (d - xBar) * (ySeries[i] - yBar);
+                    })
+                    .reduce(reduceSumFunc);
+
+                var slope = ssXY / ssXX;
+                var intercept = yBar - (xBar * slope);
+                var rSquare = Math.pow(ssXY, 2) / (ssXX * ssYY);
+
+                return [slope, intercept, rSquare];
             }
 
         }

@@ -45,22 +45,16 @@ var ajaxdata = function(api) {
       dataType: 'jsonp',
       success: function(data) {
         console.log(data);
-         //var $title = $('<h1>').text(data.talks[0].talk_title);
-         //var $description = $('<p>').text(data.talks[0].talk_description);
-         //$('#info')
-           // .append($title)
-            //.append($description);
-
-         //scope.draw_bar_graph(data);
 
       },
       type: 'GET'
    });
  }
 
- //ajaxdata('http://services.cngnow.com/V1/Stations.svc/external/circlefilter?latitude=35.4675&longitude=-97.5161&range=15&status=active');
- /*document.getElementById('envTab').onload= */
  ajaxdata('http://services.cngnow.com/V1/Stations.svc/external/circlefilter?latitude=35.4675&longitude=-97.5161&range=15&status=active');
+ //ajaxdata('someapi');
+ ajaxdata('http://uselectionatlas.org/WIKI/api.php');
+ ajaxdata('http://www.boxofficemojo.com/data/js/wknd5.php');
 
 
   /*for(var i = 0; i < 1; i++) {

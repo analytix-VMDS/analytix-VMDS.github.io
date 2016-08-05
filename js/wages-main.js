@@ -14,10 +14,10 @@ requirejs.config({
 requirejs([
     'jquery',
     'd3',
-    'js/models/EnterModel',
+    'js/models/WagesModel',
     'js/views/graph',
-    'js/views/EnterView',
-],function($, d3, enterModel, View, enterView) {
+    'js/views/WagesView',
+],function($, d3, wagesModel, View, wagesView) {
 
   var data = [];
   var scope = this;
@@ -42,8 +42,8 @@ var ajaxdata = function(api) {
 
  ajaxdata('http://services.cngnow.com/V1/Stations.svc/external/circlefilter?latitude=35.4675&longitude=-97.5161&range=15&status=active');
 
-    this.graph_model = new enterModel( data );
+    this.wages_model = new wagesModel( data );
 
-    this.enter_view = new enterView( { "model" : this.graph_model } );
+    this.wages_view = new wagesView( { "model" : this.wages_model } );
 
 });
