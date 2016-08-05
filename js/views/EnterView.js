@@ -16,87 +16,146 @@ define([
             this.draw_bar_graph();
             this.draw_line_graph();
             this.draw_table();
+            this.draw_line_reg();
+            this.alternate_types_of_analyses();
+            this.alternate_types_of_subtopics();
+
         },
 
         draw_table: function() {
-          d3.csv("json/datanewpie.csv", function(error, data) {
-              if (error) throw error;
-              //data.keys()
+            //var vcc = /[~!@$%^&*&*()()+=,./';:"?>[]\{}|`#]/g;
+            //var f = /fsad/g;
+            var invalidchar = /[|&;$%@"<>()+,]/g;
+            d3.csv("json/datanewpie.csv", function(error, data) {
+                if (error) throw error;
 
-              var keydata = d3.nest().key(function(d){return d.name})
-                                     .rollup(function(d){console.log(d); return d[0].money})
-                                     .entries(data);
+                var table = d3.select("#table_loc") //.data(data).enter()
+                    .append("table")
+                    .attr("class", "table table-condensed")
+                    .style("margin-bottom", "0px")
 
-              console.log(keydata);
-              //var k = keydata[0].values;
+                var keydata = Object.keys(data[0]);
 
-              //var valdata = d3.nest().key(function(d){return })
-              console.log(data);
-              console.log(Object.keys(data[0]));
-              var firstcolumnkey = Object.keys(data[0])[0];
+                var tbody = table.append("tbody");
 
-              var table = d3.select(".panel-body")//.data(data).enter()
-                          .append("table")
-                          .attr("class","table table-striped table-condensed")
-                          .style("margin-bottom","0px")
-                          .append("tbody")
-                          .selectAll("tr")
-                          .data(data).enter()
-                          .append("tr");
+                var trheader = tbody.append("tr").selectAll("th")
+                    .data(keydata).enter()
+                    .append("th")
+                    .text(function(d) {
+                        return d;
+                    })
+                    .style("background-color", "lightgrey")
+                    .on("mouseover", function() {
+                        d3.select(this).style("background-color", "blue")
+                        var key = d3.select(this).datum().replace(invalidchar, "");
+                        d3.selectAll("." + key).style("background-color", "green")
+                    })
+                    .on("mouseout", function() {
+                        d3.select(this).style("background-color", "lightgrey")
 
-              var keylength = Object.keys(data[0]).length;
+                        var key = d3.select(this).datum().replace(invalidchar, "");
+                        d3.selectAll("." + key).style("background-color", "white")
+                    })
+                    .on("click", function() {
+                        var keyname = d3.select(this).datum();
+                        console.log(keyname);
+                    })
 
-              for (var i = 0; i < keylength; i++) {
+                var trdata = tbody.selectAll("tr")
+                    .data(data).enter()
+                    .append("tr")
 
-                table.append("td")
-                      .text(function(d){
-                        //console.log(d);
-                        var key = Object.keys(d)[i];
-                        return d[key];
-                      })
-              }
+                for (var i = 0; i < keydata.length; i++) {
+                    trdata.append("td")
+                        .text(function(d) {
+                            //console.log(d);
+                            var key = Object.keys(d)[i];
+                            return d[key];
+                        })
+                        .attr("class", function(d) {
+                            var key = Object.keys(d)[i];
+                            return key.replace(invalidchar, "");
+                        });
+                }
 
-              /*table.append("td")
-                    .text(function(d){
-                      var key = Object.keys(d)[1];
-                      return d[key];
-                    })*/
-          });
+            });
 
-          $("#accordion").draggable();
+            $("#accordion").draggable().resizable({
+                alsoResize: "#table_loc"
+            });
+            $("#table_loc").resizable();
+        },
+
+        alternate_types_of_analyses: function() {
+
+            var getPrev = ["msLinReg"];
+            $('#analyze').on('change', function() {
+                value = $(this).val();
+                change(value);
+                console.log(value);
+            });
+            var change = function(val) {
+                getPrev.push(val);
+                if (getPrev.length > 2) {
+                    getPrev.shift();
+                }
+                console.log(getPrev);
+
+                $("." + getPrev[0]).hide();
+
+
+                $("." + val).show();
+            }
+        },
+
+        alternate_types_of_subtopics: function() {
+
+            var getPrev = ["msSongs"];
+            $('#subtopic').on('change', function() {
+                value = $(this).val();
+                change(value);
+                console.log(value);
+            });
+            var change = function(val) {
+                getPrev.push(val);
+                if (getPrev.length > 2) {
+                    getPrev.shift();
+                }
+                console.log(getPrev);
+
+                $("." + getPrev[0]).hide();
+
+
+                $("." + val).show();
+            }
         },
 
         alternate_types_of_graphs: function() {
-          /*$("body").click(function(){
+            /*$("body").click(function(){
            //style: "popup"
            $(".msBar").show();
            $(".msPie").hide();
           // console.log($(body"));
         });*/
-        var getPrev = ["msBar"];
-        $('#visual').on('change', function() {
-            value = $(this).val();
-            change(value);
-            console.log(value);
-        });
-        var change = function(val) {
-          getPrev.push(val);
-          if(getPrev.length > 2) {
-            getPrev.shift();
-          }
-          console.log(getPrev);
+            var getPrev = ["msBar"];
+            $('#visual').on('change', function() {
+                value = $(this).val();
+                change(value);
+                console.log(value);
+            });
+            var change = function(val) {
+                getPrev.push(val);
+                if (getPrev.length > 2) {
+                    getPrev.shift();
+                }
+                console.log(getPrev);
 
-          $("."+getPrev[0]).hide();
-
-            /*$('#createt').o"click", function() {
-                $('#' + val).show();
-                console.log(val);
-            });*/
-            $("."+val).show();
-        }
+                $("." + getPrev[0]).hide();
+                $("." + val).show();
+            }
         },
 
-    draw_pie_graph: function() {
+        draw_pie_graph: function() {
             var width = 960,
                 height = 500,
                 radius = Math.min(width, height) / 2;
@@ -141,10 +200,10 @@ define([
                 this.g.append("path")
                     .attr("d", arc)
                     .style("fill", function(d) {
-                        return "white"//color(d.data.name);
+                        return "white" //color(d.data.name);
                     })
                     .attr("stroke-dasharray", "10,10")
-                    .attr("stroke","black")
+                    .attr("stroke", "black")
                     .on("mouseover", function() {
                         //d3.select(this).transition().style("stroke-width","-5px");
                         //arc.outerRadius(20)
@@ -301,10 +360,10 @@ define([
                     })
                     .attr("stroke", "black")
                     .attr("stroke-dasharray", "10,10")
-                   /*.style("fill", function(d) {
-                        console.log(d.money);
-                        return "rgb(0, 0," + d.money * 2 + ")"; // "green";
-                    });*/
+                    /*.style("fill", function(d) {
+                         console.log(d.money);
+                         return "rgb(0, 0," + d.money * 2 + ")"; // "green";
+                     });*/
             });
 
             function type(d) {
@@ -341,11 +400,11 @@ define([
 
             var line = d3.svg.line()
                 .x(function(d) {
-                  //console.log(x(d));
+                    //console.log(x(d));
                     return x(d.IssueDate);
                 })
                 .y(function(d) {
-                  //console.log(y(d));
+                    //console.log(y(d));
                     return y(d.money);
                 });
 
@@ -360,11 +419,11 @@ define([
                 console.log(data);
 
                 x.domain(d3.extent(data, function(d) {
-                  //console.log(d.IssueDate);
+                    //console.log(d.IssueDate);
                     return d.IssueDate;
                 }));
                 y.domain(d3.extent(data, function(d) {
-                  console.log(d.IssueDate);
+                    console.log(d.IssueDate);
                     return d.money;
                 }));
 
@@ -394,6 +453,85 @@ define([
                 d.money = +d.money;
                 return d;
             }
+        },
+
+        draw_line_reg: function() {
+            var margin = {
+                    top: 20,
+                    right: 20,
+                    bottom: 30,
+                    left: 50
+                },
+                width = 960 - margin.left - margin.right,
+                height = 500 - margin.top - margin.bottom;
+
+            var formatDate = d3.time.format("%d-%b-%y");
+
+            var x = d3.time.scale()
+                .range([0, width]);
+
+            var y = d3.scale.linear()
+                .range([height, 0]);
+
+            var xAxis = d3.svg.axis()
+                .scale(x)
+                .orient("bottom");
+
+            var yAxis = d3.svg.axis()
+                .scale(y)
+                .orient("left");
+
+            var line = d3.svg.line()
+                .x(function(d) {
+                    return x(d.date);
+                })
+                .y(function(d) {
+                    return y(d.close);
+                });
+
+            var svg = d3.select("body").append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+            d3.tsv("movieData3.tsv", type, function(error, data) {
+                if (error) throw error;
+
+                x.domain(d3.extent(data, function(d) {
+                    return d.date;
+                }));
+                y.domain(d3.extent(data, function(d) {
+                    return d.close;
+                }));
+
+                svg.append("g")
+                    .attr("class", "x axis")
+                    .attr("transform", "translate(0," + height + ")")
+                    .call(xAxis);
+
+                svg.append("g")
+                    .attr("class", "y axis")
+                    .call(yAxis)
+                    .append("text")
+                    .attr("transform", "rotate(-90)")
+                    .attr("y", 6)
+                    .attr("dy", ".71em")
+                    .style("text-anchor", "end")
+                    .text("Price ($)");
+
+                svg.append("path")
+                    .datum(data)
+                    .attr("class", "line")
+                    .attr("d", line);
+            });
+
+            function type(d) {
+                d.date = formatDate.parse(d.date);
+                d.close = +d.close;
+                return d;
+            }
+
         }
 
     });

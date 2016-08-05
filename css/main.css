@@ -180,9 +180,9 @@ p{
 /*table option styling */
 #accordion {
   float: right;
-  text-align: left;
-  width: 20em;
   margin-top: 20px;
+  /*display: inline-block;*/
+  width: 300px;
 }
 
 /* bar graph styling */
@@ -223,4 +223,26 @@ polyline{
 .msPie {
   margin-left: auto;
   display: block;
+}
+
+/* linear regression styling */
+.msLinReg {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
 }

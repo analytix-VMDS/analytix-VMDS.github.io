@@ -83,11 +83,10 @@
             <form action="#">
                 <h4><label for="analyze">Data Analysis: </label>
                         <select name="analyze" id="analyze">
-                          <option value="" id="noneEntertain" selected="selected">none</option>
-                          <option value="" id="ttestEntertain">t-test</option>
-                          <option value="" id="uniEntertain">uniform distribution</option>
-                          <option value="" id="normEntertain">normal distribution</option>
-                          <option value="" id="linRegEntertain">linear regression</option>
+                <option value="msNone" id="noneEntertain" selected="selected">none</option>
+                <option value="msUni" id="uniEntertain">uniform distribution</option>
+                <option value="msNorm" id="normEntertain">normal distribution</option>
+                <option value="msLinReg" id="linRegEntertain">linear regression</option>
                       </select>
                     </h4>
             </form>
@@ -115,21 +114,21 @@
                     </div>
                 </div>
             </div>
-          </div>
+        </div>
 
-    <div class="map"></div>
+        <div class="map"></div>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF6-dEtsRQ5jcaXJy2oDjU46u896i_xDk&callback=initMap" async defer></script>
-    <div id="svg_location"></div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF6-dEtsRQ5jcaXJy2oDjU46u896i_xDk&callback=initMap" async defer></script>
+        <div id="svg_location"></div>
 
-    <!--<script>
+        <!--<script>
                 require(['views/WagesView']);
       /script>-->
-      <div id="footer">
-          Copyright &copy; 2016 Analytix
-          <br>
-          <p><a style="font-size:1em" href="https://github.com/cs-squad/Data-Analysis-Web-Application">Github<i class="fa fa-github"></i></a></p>
-      </div>
+        <div id="footer">
+            Copyright &copy; 2016 Analytix
+            <br>
+            <p><a style="font-size:1em" href="https://github.com/cs-squad/Data-Analysis-Web-Application">Github<i class="fa fa-github"></i></a></p>
+        </div>
 </body>
 
 

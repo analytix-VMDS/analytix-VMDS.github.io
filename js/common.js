@@ -1,5 +1,5 @@
 requirejs.config({
-    baseUrl:'',
+    baseUrl:'lib',
     paths: {
         backbone: 'lib/backbone/backbone-min',
         bootstrap: 'lib/bootstrap/js/bootstrap.min',
