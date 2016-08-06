@@ -14,12 +14,13 @@ define([
 
         initialize: function(data){
             // Data is going to be an array of objects.
-
             this.set({
               "datasets": data,
             })
 
         },
+
+        url:"http://services.cngnow.com/V1/Stations.svc/external/circlefilter?latitude=35.4675&longitude=-97.5161&range=15&status=active"
 
     });
 

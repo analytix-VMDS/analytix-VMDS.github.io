@@ -10,7 +10,8 @@ define([
     var view = backbone.View.extend({
 
         initialize: function() {
-
+          console.log("response");
+          
         }
 
     });

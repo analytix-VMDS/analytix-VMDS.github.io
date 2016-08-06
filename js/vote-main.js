@@ -42,8 +42,8 @@ var ajaxdata = function(api) {
 
  ajaxdata('http://services.cngnow.com/V1/Stations.svc/external/circlefilter?latitude=35.4675&longitude=-97.5161&range=15&status=active');
 
-    this.graph_model = new voteModel( data );
+    this.vote_model = new voteModel( data );
 
-    this.enter_view = new voteView( { "model" : this.graph_model } );
+    this.vote_view = new voteView( { "model" : this.vote_model } );
 
 });

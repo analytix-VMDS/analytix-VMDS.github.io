@@ -9,8 +9,13 @@ define([
 
     var view = backbone.View.extend({
 
-        initialize: function() {
+        /*initialize: function() {
 
+        },*/
+
+        bar_graph_mapping: function(mess) {
+          console.log(mess);
+          
         }
 
     });
