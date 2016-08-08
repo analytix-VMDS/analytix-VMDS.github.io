@@ -54,7 +54,7 @@ var ajaxdata = function(api) {
  ajaxdata('http://services.cngnow.com/V1/Stations.svc/external/circlefilter?latitude=35.4675&longitude=-97.5161&range=15&status=active');
  //ajaxdata('someapi');
  ajaxdata('http://uselectionatlas.org/WIKI/api.php');
- ajaxdata('http://www.boxofficemojo.com/data/js/wknd5.php');
+ //ajaxdata('http://www.boxofficemojo.com/data/js/wknd5.php');
 
 
   /*for(var i = 0; i < 1; i++) {
@@ -76,11 +76,11 @@ var ajaxdata = function(api) {
     //console.log(data);
     this.graph_model = new Model( data );
 
-    this.enter_view = new enterView( { "model" : this.graph_model } );
-    this.env_view = new envView( { "model" : this.graph_model } );
+    //this.enter_view = new enterView( { "model" : this.graph_model } );
+    //this.env_view = new envView( { "model" : this.graph_model } );
     //this.health_view = new healthView( { "model" : this.graph_model } );
     //this.vote_view = new voteView( { "model" : this.graph_model } );
-    this.wages_view = new wagesView( { "model" : this.graph_model } );
+    //this.wages_view = new wagesView( { "model" : this.graph_model } );
 
     this.graph_view = new View( { "model" : this.graph_model } );
     //console.log(this.graph_model)

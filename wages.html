@@ -98,37 +98,51 @@
 
     </div>
 
-    <div class="container">
-        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                    <h4 class="panel-title" title="hidden content closed">
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title" title="hidden content closed">
             <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
               Table
             </a>
           </h4>
-                </div>
-                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                    <div class="panel-body">
-                        boom
-                    </div>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                    boom
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="map"></div>
+    <div class="map"></div>
 
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF6-dEtsRQ5jcaXJy2oDjU46u896i_xDk&callback=initMap" async defer></script>
-        <div id="svg_location"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF6-dEtsRQ5jcaXJy2oDjU46u896i_xDk&callback=initMap" async defer></script>
+    <div id="svg_location"></div>
 
-        <!--<script>
+    <!--<script>
                 require(['views/WagesView']);
       /script>-->
-        <div id="footer">
-            Copyright &copy; 2016 Analytix
-            <br>
-            <p><a style="font-size:1em" href="https://github.com/cs-squad/Data-Analysis-Web-Application">Github<i class="fa fa-github"></i></a></p>
-        </div>
+    <div id="footer">
+      <ul class="share-buttons">
+          <li>
+              <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost.8888&t=" target="_blank" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><i class="fa fa-facebook-square fa-2x"></i></a>
+          </li>
+          <li>
+              <a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Flocalhost.8888&text=:%20http%3A%2F%2Flocalhost.8888" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20' + encodeURIComponent(document.URL)); return false;"><i class="fa fa-twitter-square fa-2x"></i></a>
+          </li>
+          <li><a href="https://plus.google.com/share?url=http%3A%2F%2Flocalhost.8888" target="_blank" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=' + encodeURIComponent(document.URL)); return false;"><i class="fa fa-google-plus-square fa-2x"></i></a></li>
+          <li>
+              <a href="http://www.reddit.com/submit?url=http%3A%2F%2Flocalhost.8888&title=" target="_blank" title="Submit to Reddit" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><i class="fa fa-reddit-square fa-2x"></i></a>
+          </li>
+          <li>
+              <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost.8888&title=&summary=&source=http%3A%2F%2Flocalhost.8888" target="_blank" title="Share on LinkedIn" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><i class="fa fa-linkedin-square fa-2x"></i></a>
+          </li>
+      </ul>
+        Copyright &copy; 2016 Analytix
+        <br>
+        <p><a style="font-size:1em" href="https://github.com/cs-squad/Data-Analysis-Web-Application">Github<i class="fa fa-github"></i></a></p>
+    </div>
 </body>
 
 

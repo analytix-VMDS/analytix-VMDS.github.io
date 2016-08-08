@@ -31,6 +31,7 @@ define([
         },
 
         get_data: function() {
+          console.log(this.model.get("data"));
 
             var u = $.ajax({
                 url: 'http://services.cngnow.com/V1/Stations.svc/external/circlefilter?latitude=35.4675&longitude=-97.5161&range=15&status=active',

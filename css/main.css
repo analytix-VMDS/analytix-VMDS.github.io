@@ -42,6 +42,20 @@ a{
 p{
   display:inline;
 }
+ul.share-buttons{
+  list-style: none;
+  text-align:left;
+  bottom:0px;
+  padding:0;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
+#table_loc {
+  height:400px;
+  overflow:auto;
+}
 #top{
   text-align:left;
   font-size:1.3em;
@@ -100,8 +114,8 @@ p{
 }
 #footer{
   clear:both;
-  text-align: right;
   background-color:#ba9668;
+  text-align:right;
   font-size:1.14em !important;
   font-weight: 700;
   color: #eae8d7;

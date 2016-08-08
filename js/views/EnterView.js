@@ -17,7 +17,7 @@ define([
             this.draw_table();
             this.alternate_types_of_analyses();
             this.alternate_types_of_subtopics();
-
+            this.draw_map();
         },
 
         draw_table: function() {
@@ -30,7 +30,7 @@ define([
                 var table = d3.select("#table_loc") //.data(data).enter()
                     .append("table")
                     .attr("class", "table table-condensed")
-                    .style("margin-bottom", "0px")
+                    .style("margin-bottom", "0px");
 
                 var keydata = Object.keys(data[0]);
 
@@ -62,18 +62,23 @@ define([
                 var trdata = tbody.selectAll("tr")
                     .data(data).enter()
                     .append("tr")
+
                 var length = keydata.length;
+
+                function tdCallback(d) {
+                    var key = Object.keys(d)[i];
+                    return d[key];
+                }
+
+                function classCallback(d) {
+                    var key = Object.keys(d)[i];
+                    return key.replace(invalidchar, "");
+                }
+
                 for (var i = 0; i < length; i++) {
                     trdata.append("td")
-                        .text(function(d) {
-                            //console.log(d);
-                            var key = Object.keys(d)[i];
-                            return d[key];
-                        })
-                        .attr("class", function(d) {
-                            var key = Object.keys(d)[i];
-                            return key.replace(invalidchar, "");
-                        });
+                        .text(tdCallback)
+                        .attr("class", classCallback);
                 }
 
             });
@@ -179,6 +184,7 @@ define([
                     return d.money;
                 });
 
+            // Paremeter here
             var svg = d3.select(".msPie").append("svg")
                 .attr("width", width)
                 .attr("height", height)
@@ -223,8 +229,8 @@ define([
                         return "translate(" + labelArc.centroid(d) + ")";
                     })
                     .attr("dy", ".35em")
-                    .text(function(d) {
-                        return d.data.name + ", " + d.data.money * 1000000 + "$";
+                    .text(function(d) { // Another paremeter here
+                        return d.data.name + ", " + d.data.money + " $";
                     });
 
             });
@@ -310,7 +316,6 @@ define([
                 .orient("left")
                 .ticks(5, "%");
 
-
             var svg = d3.select(".msBar").append("svg")
                 .attr("width", width + margin.left + margin.right)
                 .attr("height", height + margin.top + margin.bottom)
@@ -320,7 +325,10 @@ define([
             d3.csv("json/datanewpie.csv", type, function(error, data) {
                 if (error) throw error;
 
-                x.domain(data.map(function(d) {
+                var keys = Object.keys(data[0]);
+                console.log(keys);
+
+              x.domain(data.map(function(d) {
                     return d.name;
                 }));
                 y.domain([0, d3.max(data, function(d) {
@@ -506,9 +514,9 @@ define([
                     .attr("stroke-width", 1)
                     .style("display", "none");
 
-                    $(".msLine").click(function(){
-                     $(".msLinReg").show();
-                    });
+                $(".msLine").click(function() {
+                    $(".msLinReg").show();
+                });
 
                 // display equation on the chart
                 svg.append("text")
@@ -565,6 +573,112 @@ define([
 
                 return [slope, intercept, rSquare];
             }
+
+        },
+        draw_map: function() {
+
+            //var z = location.pathname.substring(location.pathname.lastIndexOf('/')+1);
+            //alert(z);
+
+            //console.log(this.model.get("datasets"));
+            var data = this.model.get("datasets");
+            /*function initMap() {
+                // Create a map object and specify the DOM element for display.
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    center: {
+                        lat: -34.397,
+                        lng: 150.644
+                    },
+                    scrollwheel: false,
+                    zoom: 8
+                });
+            }*/
+
+            // Create the Google Map…
+            var map = new google.maps.Map(d3.select(".msMap").node(), {
+                zoom: 5,
+                center: new google.maps.LatLng(37.76487, -122.41948),
+                mapTypeId: google.maps.MapTypeId.TERRAIN,
+                center: {
+                    lat: 37.0902,
+                    lng: -95.7129
+                },
+                scrollwheel: false
+            });
+
+            var overlay = new google.maps.OverlayView();
+
+            // Add the container when the overlay is added to the map.
+            overlay.onAdd = function() {
+                var layer = d3.select(this.getPanes().overlayLayer).append("div")
+                    .attr("class", "stations");
+
+                // Draw each marker as a separate SVG element.
+                // We could use a single SVG, but what size would it have?
+                overlay.draw = function() {
+                    var projection = this.getProjection(),
+                        padding = 10;
+
+                    var marker = layer.selectAll("svg")
+                        .data(d3.entries(data))
+                        .each(transform) // update existing markers
+                        .enter().append("svg")
+                        .each(transform)
+                        .attr("class", "marker")
+                        .on("mouseover", function() {
+                            d3.select(this).transition()
+                                .attr("r", 7);
+                        });
+
+                    // Add a circle.
+                    marker.append("circle")
+                        .attr("r", function(d) {
+                            return d.value.LastReportedPrice * 5
+                        })
+                        .attr("cx", padding)
+                        .attr("cy", padding)
+                        .on("mouseover", function() {
+                            d3.select(this).transition()
+                                .attr("r", 7);
+                        })
+
+                    // Add a label.
+                    marker.append("text")
+                        .attr("x", padding + 7)
+                        .attr("y", padding)
+                        .attr("dy", ".31em")
+                        .text(function(d) {
+                            return d.value.Name;
+                        });
+
+                    function transform(d) {
+                        d = new google.maps.LatLng(d.value.Latitude, d.value.Longitude);
+                        d = projection.fromLatLngToDivPixel(d);
+                        //console.log(d);
+                        return d3.select(this)
+                            .style("left", function() { /*console.log(d.x);*/
+                                return (d.x - padding) + "px"
+                            })
+                            .style("top", (d.x - padding) + "px");
+                    }
+                };
+            };
+
+            //  d3.select("circle").on("mouseover", function(){
+            d3.select("circle").transition()
+                .style("fill", "green");
+            //  })
+
+            // Bind our overlay to the map…
+            overlay.setMap(map);
+
+            $(".msMap").resizable({
+                handles: 's',
+                stop: function(event, ui) {
+                    $(this).css("width", '');
+                }
+            });
+
 
         }
 
