@@ -13,6 +13,8 @@ define([
         initialize: function(){
           console.log("environment");
           var n = 1;
+          this.api_options_toggle();
+          this.api_dropdown();
           this.table();
           //this.test_bar();
           //this.model = new envModel();/*
@@ -29,12 +31,76 @@ define([
           //return data;
         },
 
+        api_dropdown: function() {
+
+        },
+
         table: function() {
           //console.log(this.model.get("datasets"));
 
+          var ajaxdata = function(api) {
+          	 $.ajax({
+          			url: api,
+          			data: {
+          				 format: 'json'
+          			},
+          			error: function() {
+          				 $('#info').html('<p>An error has occurred</p>');
+          			},
+          			dataType: 'json',
+          			success: function(d) {
+                  d.result.length = 20;
+          				console.log(d.result[0].scientific_name);
+
+                  d3.select("#scientific_name").selectAll("option")
+                            .data(d.result).enter()
+                            .append("option")
+                            .text(function(d){
+                              return d.scientific_name;
+                            })
+
+          			},
+          			type: 'GET'
+          	 });
+           }
+
+           ajaxdata('http://apiv3.iucnredlist.org/api/v3/species/page/1?token=1da43ebfc20ad97f3b32afcee87d47b77d8acfac9113d2273f15c97e26e047c4');
+
+           function log( message ) {
+            $( "<div>" ).text( message ).prependTo( "#log" );
+            $( "#log" ).scrollTop( 0 );
+          }
+
+          $( "#city" ).autocomplete({
+            source: function( request, response ) {
+              $.ajax( {
+                url: "http://apiv3.iucnredlist.org/api/v3/species/page/1?token=1da43ebfc20ad97f3b32afcee87d47b77d8acfac9113d2273f15c97e26e047c4",
+                dataType: "json",
+                data: {
+                  q: request.term
+                },
+                success: function( data ) {
+                  console.log(data.result);
+
+                  // Handle 'no match' indicated by [ "" ] response
+                  response( data.result.length === 1 && data.result[ 0 ].length === 0 ? [] : data.result );
+                }
+              } );
+            },
+            minLength: 3,
+            select: function( event, ui ) {
+              log( "Selected: " + ui.item.label );
+            }
+          } );
           // Gets table from mappings.js with data as parameter
           // Works w/ two dimensional data
+          var data = this.model.get("datasets").result;
+          //data.length = 15;
           var table = new mappings();
+          var keysforbargraph = table.table_mapping(data);
+
+          console.log(keysforbargraph);
+
           return table.table_mapping(this.model.get("datasets"));
         },
 
@@ -42,7 +108,32 @@ define([
         //  console.log(this.render());
         //  console.log(data);
           var bar = new mappings();
-          return bar.bar_graph_mapping("some message");
+          return bar.bar_graph_mapping(this.model.get("datasets"));
+        },
+
+        api_options_toggle: function() {
+          /*$("#dropdowns").click(function(){
+            console.log("w");
+            $("#redlist_opt").slideToggle("slow");
+          });*/
+
+          var getPrev = ["redlist"];
+          $('#api').on('change', function() {
+              value = $(this).val();
+              console.log(value);
+              change(value);
+          });
+          var change = function(val) {
+            //console.log(val);
+              getPrev.push(val);
+              if (getPrev.length > 2) {
+                  getPrev.shift();
+              }
+              console.log(getPrev);
+
+              $("#" + getPrev[0]+"_opt").slideUp(300);
+              $("#" + val+"_opt").delay(300).slideDown(300);
+          }
         }
 
       });

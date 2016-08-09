@@ -31,11 +31,11 @@ var ajaxdata = function(api) {
 			error: function() {
 				 $('#info').html('<p>An error has occurred</p>');
 			},
-			dataType: 'jsonp',
+			dataType: 'json',
 			success: function(d) {
 				console.log(d);
 				data.push(d);
-				console.log(data);
+				//console.log(data);
 
 				this.env_model = new envModel( d );
 				//console.log(this.env_model);
@@ -55,8 +55,10 @@ var ajaxdata = function(api) {
 				console.log(data);
 		}
 });*/
+//ajaxdata('http://apiv3.iucnredlist.org/api/v3/species/page/1?token=1da43ebfc20ad97f3b32afcee87d47b77d8acfac9113d2273f15c97e26e047c4')
 
- ajaxdata('http://services.cngnow.com/V1/Stations.svc/external/circlefilter?latitude=35.4675&longitude=-97.5161&range=15&status=active');
+ajaxdata('http://apiv3.iucnredlist.org/api/v3/threats/species/name/Loxodonta%20africana?token=1da43ebfc20ad97f3b32afcee87d47b77d8acfac9113d2273f15c97e26e047c4');
+ //ajaxdata('http://services.cngnow.com/V1/Stations.svc/external/circlefilter?latitude=35.4675&longitude=-97.5161&range=15&status=active');
  //ajaxdata('http://api.openweathermap.org/data/2.5/box/city?bbox=12,32,15,37,10&cluster=yes&appid=9729c6690aededc3e82e090ffc14c81f');
  //ajaxdata('http://apiv3.iucnredlist.org/api/v3/species/page/1?token=9bb4facb6d23f48efbf424bb05c0c1ef1cf6f468393bc745d42179ac4aca5fee');
 

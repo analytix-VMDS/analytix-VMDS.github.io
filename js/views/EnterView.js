@@ -325,10 +325,29 @@ define([
             d3.csv("json/datanewpie.csv", type, function(error, data) {
                 if (error) throw error;
 
+
+                /*Object.filter = function (obj, ignore, invert) {
+                  if (ignore === undefined) {
+                      return obj;
+                  }
+                  invert = invert || false;
+                  var not = function(condition, yes) { return yes ? !condition : condition; };
+                  var isArray = Ext.isArray(ignore);
+                  for (var key in obj) {
+                      if (obj.hasOwnProperty(key) &&
+                              (isArray && not(!Ext.Array.contains(ignore, key), invert)) ||
+                              (!isArray && not(!ignore.call(undefined, key, obj[key]), invert))) {
+                          delete obj[key];
+                      }
+                  }
+                  return obj;
+              };*/
+
+
                 var keys = Object.keys(data[0]);
                 console.log(keys);
 
-              x.domain(data.map(function(d) {
+                x.domain(data.map(function(d) {
                     return d.name;
                 }));
                 y.domain([0, d3.max(data, function(d) {
@@ -576,109 +595,10 @@ define([
 
         },
         draw_map: function() {
-
-            //var z = location.pathname.substring(location.pathname.lastIndexOf('/')+1);
-            //alert(z);
-
-            //console.log(this.model.get("datasets"));
-            var data = this.model.get("datasets");
-            /*function initMap() {
-                // Create a map object and specify the DOM element for display.
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    center: {
-                        lat: -34.397,
-                        lng: 150.644
-                    },
-                    scrollwheel: false,
-                    zoom: 8
-                });
-            }*/
-
-            // Create the Google Map…
-            var map = new google.maps.Map(d3.select(".msMap").node(), {
-                zoom: 5,
-                center: new google.maps.LatLng(37.76487, -122.41948),
-                mapTypeId: google.maps.MapTypeId.TERRAIN,
-                center: {
-                    lat: 37.0902,
-                    lng: -95.7129
-                },
-                scrollwheel: false
-            });
-
-            var overlay = new google.maps.OverlayView();
-
-            // Add the container when the overlay is added to the map.
-            overlay.onAdd = function() {
-                var layer = d3.select(this.getPanes().overlayLayer).append("div")
-                    .attr("class", "stations");
-
-                // Draw each marker as a separate SVG element.
-                // We could use a single SVG, but what size would it have?
-                overlay.draw = function() {
-                    var projection = this.getProjection(),
-                        padding = 10;
-
-                    var marker = layer.selectAll("svg")
-                        .data(d3.entries(data))
-                        .each(transform) // update existing markers
-                        .enter().append("svg")
-                        .each(transform)
-                        .attr("class", "marker")
-                        .on("mouseover", function() {
-                            d3.select(this).transition()
-                                .attr("r", 7);
-                        });
-
-                    // Add a circle.
-                    marker.append("circle")
-                        .attr("r", function(d) {
-                            return d.value.LastReportedPrice * 5
-                        })
-                        .attr("cx", padding)
-                        .attr("cy", padding)
-                        .on("mouseover", function() {
-                            d3.select(this).transition()
-                                .attr("r", 7);
-                        })
-
-                    // Add a label.
-                    marker.append("text")
-                        .attr("x", padding + 7)
-                        .attr("y", padding)
-                        .attr("dy", ".31em")
-                        .text(function(d) {
-                            return d.value.Name;
-                        });
-
-                    function transform(d) {
-                        d = new google.maps.LatLng(d.value.Latitude, d.value.Longitude);
-                        d = projection.fromLatLngToDivPixel(d);
-                        //console.log(d);
-                        return d3.select(this)
-                            .style("left", function() { /*console.log(d.x);*/
-                                return (d.x - padding) + "px"
-                            })
-                            .style("top", (d.x - padding) + "px");
-                    }
-                };
-            };
-
-            //  d3.select("circle").on("mouseover", function(){
-            d3.select("circle").transition()
-                .style("fill", "green");
-            //  })
-
-            // Bind our overlay to the map…
-            overlay.setMap(map);
-
-            $(".msMap").resizable({
-                handles: 's',
-                stop: function(event, ui) {
-                    $(this).css("width", '');
-                }
-            });
-
+          var width = 1000;
+          var height = 600;
+          var visual = d3.geo.albersUsa().translate([width/2, height/2]).scale([1000]);
+          var path = d3.geo.path().projection(visual);
 
         }
 
