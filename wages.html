@@ -54,12 +54,11 @@
     <div id="dropdowns">
         <div class="demo">
             <form action="#">
-                <h4><label for="subtopic">Sutopic: </label>
-                <select name="subtopic" id="subtopic">
-                  <option selected="selected">Men's Salaries</option>
-                  <option >Women's Salaries</option>
-                  <option>Tax</option>
-                  <option>Occupation Popularity</option>
+                <h4><label for="api">API: </label>
+                <select name="api" id="api">
+                  <option selected="selected">USDA.gov</option>
+                  <option>quandl.com</option>
+                  <option>knoema.com</option>
                   </select>
                   </h4>
             </form>
@@ -83,10 +82,10 @@
             <form action="#">
                 <h4><label for="analyze">Data Analysis: </label>
                         <select name="analyze" id="analyze">
-                <option value="msNone" id="noneEntertain" selected="selected">none</option>
-                <option value="msUni" id="uniEntertain">uniform distribution</option>
-                <option value="msNorm" id="normEntertain">normal distribution</option>
-                <option value="msLinReg" id="linRegEntertain">linear regression</option>
+                          <option value="msNone" id="noneEntertain" selected="selected">none</option>
+                          <option value="msNorm" id="normEntertain">normal distribution</option>
+                          <option value="msQuadReg" id="quadRegEntertain">quadratic regression</option>
+                          <option value="msLinReg" id="linRegEntertain">linear regression</option>
                       </select>
                     </h4>
             </form>
@@ -125,6 +124,7 @@
       /script>-->
     <div id="footer">
       <ul class="share-buttons">
+        Share:
           <li>
               <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost.8888&t=" target="_blank" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><i class="fa fa-facebook-square fa-2x"></i></a>
           </li>

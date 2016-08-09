@@ -80,7 +80,7 @@ $.ajax({
                   <h4><label for="api">API: </label>
                   <select name="api" id="api">
                   <option value="redlist" selected="selected">Red List</option>
-                  <option value="ex">ex</option>
+                  <option value="ex">knoema.com</option>
                 </select>
               </h4>
               </form>
@@ -122,33 +122,70 @@ $.ajax({
 
         <div id="data_options">
             <div id="redlist_opt">
+              <form class="form-inline">
 
-              <div class="ui-widget">
-  <label for="city">Your city: </label>
-  <input id="city" type="text">
-  Powered by <a href="http://geobytes.com">geobytes.com</a>
-</div>
+                <div class="ui-widget" style="display: inline-block">
+                     <label for="city">Scientific name: </label>
+                     <input id="city" class="form-control" type="text" placeholder="example: Bodianus neopercularis">
+                </div>
+                <div class="demo">
+                    <form action="#">
+                      <h4><label for="factors">Factors: </label>
+                        <select name="factors" id="factors">
+                          <option value="habitats">Habitats</option>
+                          <option value="threats">Threats</option>
+                          <option value="countries">Countries</option>
+                          <option value="history">Historical Assesments</option>
+                       </select>
+                      </h4>
+                    </form>
+                </div>
 
-<div class="ui-widget" style="margin-top:2em; font-family:Arial">
-  Result:
-  <div id="log" style="height: 200px; width: 300px; overflow: auto;" class="ui-widget-content"></div>
-</div>
+              </form>
+              <!--<form class="form-inline">
+                <div class="form-group">
 
               <div class="demo">
                   <form action="#">
-                    <h4><label for="scientific_name">Scientific Name: </label>
-                    <select name="scientific_name" id="scientific_name">
-                      <!-- list of species by scientific name goes here -->
-                    </select>
-                  </h4>
+                    <h4><label for="factors">Factors: </label>
+                      <select name="factors" id="factors">
+                        <option value="habitats">Habitats</option>
+                        <option value="threats">Threats</option>
+                     </select>
+                    </h4>
                   </form>
               </div>
 
+
+             <div class="ui-widget form-group" style="display: inline-block">
+                  <label for="city">Scientific name: </label>
+                  <input style="float:right;" id="city" class="form-control" type="text" placeholder="example: Bodianus neopercularis">
+             </div>
+           </div>
+         </form>-->
+
+           <!--div class="ui-widget" stylmargin-top:2em; font-family:Arial">
+                Result:
+                <div id="log" style="height: 200px; width: 300px; overflow: auto;" class="ui-widget-content"></div>
+              </div>
+-->
+              <!--<div class="demo">
+                  <form action="#">
+                    <h4><label for="scientific_name">Scientific Name: </label>
+                    <select name="scientific_name" id="scientific_name">
+                      <!-- list of species by scientific name goes here --
+                    </select>
+                  </h4>
+                  </form>
+              </div>-->
             </div>
+
+
             <div id="ex_opt" style="display:none">
                 <p>fdsafda</p>
             </div>
         </div>
+      </div>
 
         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
             <div class="panel panel-default">
@@ -178,6 +215,7 @@ $.ajax({
 
         <div id="footer">
             <ul class="share-buttons">
+              Share:
                 <li>
                     <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost.8888&t=" target="_blank" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><i class="fa fa-facebook-square fa-2x"></i></a>
                 </li>

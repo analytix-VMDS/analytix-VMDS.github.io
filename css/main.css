@@ -33,6 +33,20 @@ h4{
 #data_options h4 label{
   color: white;
 }
+#data_options label {
+  color: white;
+  /*float: left;*/
+}
+#data_options input {
+  /*float: right;*/
+  margin: 10px;
+}
+/*#data_options {
+  float: left;
+}*/
+.ui-autocomplete-loading {
+    background: white url("images/ui-anim_basic_16x16.gif") right center no-repeat;
+}
 select{
   border:none;
 }
@@ -52,6 +66,7 @@ ul.share-buttons{
   padding:0;
   display: inline-block;
   float: left;
+  margin-left: 2em;
 }
 
 ul.share-buttons li{
@@ -269,4 +284,35 @@ polyline{
   fill: none;
   stroke: steelblue;
   stroke-width: 1.5px;
+}
+/*map styling*/
+/* On mouse hover, lighten state color */
+path:hover {
+	fill-opacity: .7;
+}
+
+/* Style for Custom Tooltip */
+div.tooltip {
+ 	position: absolute;
+	text-align: center;
+	width: 60px;
+	height: 28px;
+	padding: 2px;
+	font: 12px sans-serif;
+	background: white;
+	border: 0px;
+	border-radius: 8px;
+	pointer-events: none;
+}
+
+/* Legend Font Style */
+body {
+	font: 11px sans-serif;
+}
+
+/* Legend Position Style */
+.legend {
+	position:absolute;
+	left:800px;
+	top:350px;
 }

@@ -38,7 +38,7 @@ define([
         table: function() {
           //console.log(this.model.get("datasets"));
 
-          var ajaxdata = function(api) {
+          /*var ajaxdata = function(api) {
           	 $.ajax({
           			url: api,
           			data: {
@@ -64,12 +64,12 @@ define([
           	 });
            }
 
-           ajaxdata('http://apiv3.iucnredlist.org/api/v3/species/page/1?token=1da43ebfc20ad97f3b32afcee87d47b77d8acfac9113d2273f15c97e26e047c4');
+           ajaxdata('http://apiv3.iucnredlist.org/api/v3/species/page/1?token=1da43ebfc20ad97f3b32afcee87d47b77d8acfac9113d2273f15c97e26e047c4');*/
 
-           function log( message ) {
+           /*function log( message ) {
             $( "<div>" ).text( message ).prependTo( "#log" );
             $( "#log" ).scrollTop( 0 );
-          }
+          }*/
 
           $( "#city" ).autocomplete({
             source: function( request, response ) {
@@ -80,18 +80,24 @@ define([
                   q: request.term
                 },
                 success: function( data ) {
-                  console.log(data.result);
 
-                  // Handle 'no match' indicated by [ "" ] response
-                  response( data.result.length === 1 && data.result[ 0 ].length === 0 ? [] : data.result );
+                  response($.ui.autocomplete.filter(arrofsn, request.term));
+
                 }
-              } );
+              });
             },
-            minLength: 3,
+            minLength: 2,
             select: function( event, ui ) {
-              log( "Selected: " + ui.item.label );
+              
+              var snvalue = ui.item.label.replace(" ", "%20");
+              var factorvalue = $("#factors").val();
+              console.log('http://apiv3.iucnredlist.org/api/v3/'+factorvalue+'/species/name/'+snvalue+'?token=1da43ebfc20ad97f3b32afcee87d47b77d8acfac9113d2273f15c97e26e047c4');
+
             }
-          } );
+          });
+
+
+          console.log($("#city").val());
           // Gets table from mappings.js with data as parameter
           // Works w/ two dimensional data
           var data = this.model.get("datasets").result;

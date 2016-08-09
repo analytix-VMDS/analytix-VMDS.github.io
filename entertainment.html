@@ -35,7 +35,6 @@
       //require(["js/views/EnterView"])
     });
   </script>-->
-
     <!--
        Tabs connecting to Home branch
      -->
@@ -57,11 +56,10 @@
     <div id="dropdowns">
         <div class="demo">
             <form action="#">
-                <h4><label for="subtopic">Subtopic: </label>
-                    <select name="subtopic" id="subtopic">
-                      <option value="msSongs" id="song" selected="selected">Songs</option>
-                      <option value="msMovRate" id="movrate">2016 Movie Data</option>
-                      <option value="msVidGames" id="vidGames">Video Games</option>
+                <h4><label for="api">API: </label>
+                    <select name="api" id="api">
+                      <option value="msSongs" id="song" selected="selected">factual.com</option>
+                      <option>knoema.com</option>
                     </select>
                 </h4>
             </form>
@@ -85,8 +83,8 @@
                 <h4><label for="analyze">Data Analysis: </label>
                 <select name="analyze" id="analyze">
                   <option value="msNone" id="noneEntertain" selected="selected">none</option>
-                  <option value="msUni" id="uniEntertain">uniform distribution</option>
                   <option value="msNorm" id="normEntertain">normal distribution</option>
+                  <option value="msQuadReg" id="quadRegEntertain">quadratic regression</option>
                   <option value="msLinReg" id="linRegEntertain">linear regression</option>
               </select>
             </h4>
@@ -124,13 +122,12 @@
     <div class="msBar"></div>
     <div style="display: none;" class="msPie"></div>
     <div style="display: none;" class="msLine"></div>
-    <div style="display: none;" class="msSongs"></div>
-
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF6-dEtsRQ5jcaXJy2oDjU46u896i_xDk" async defer></script>
     <div style="display: none;" class="msMap"></div>
 
     <div id="footer">
       <ul class="share-buttons">
+        Share:
           <li>
               <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost.8888&t=" target="_blank" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><i class="fa fa-facebook-square fa-2x"></i></a>
           </li>
