@@ -15,13 +15,34 @@ define([
 
         table_mapping: function(data){
           console.log(data);
+
+          var scope = this;
+
           var invalidchar = /[|&;$%@"<>()+,]/g;
+          var keydata = Object.keys(data[0]);
+          console.log(keydata);
+
+          d3.select("#xaxis").selectAll("option:not(:first-child)")
+              .data(keydata).enter()
+              .append("option")
+              .text(function(d){return d;})
+              .attr("value",function(d){return d;})
+              .attr("class","xaxis_opt");
+
+          d3.select("#yaxis").selectAll("option:not(:first-child)")
+              .data(keydata).enter()
+              .append("option")
+              .text(function(d){return d;})
+              .attr("value",function(d){return d;})
+              .attr("class","yaxis_opt");
+
+          //d3.select("#yaxis").select("option:last-child")
+            //      .attr("disabled");
+
           var table = d3.select("#table_loc") //.data(data).enter()
               .append("table")
               .attr("class", "table table-condensed")
               .style("margin-bottom", "0px");
-
-          var keydata = Object.keys(data[0]);
 
           var tbody = table.append("tbody");
 
@@ -47,25 +68,33 @@ define([
               })
               .on("click", function() {
                   var keyname = d3.select(this).datum().replace(invalidchar, "");
-                  //console.log(keyname);
-                  d3.selectAll("."+keyname).style("color","rgb(112, 112, 112)");
 
-                  keysdisabled.push(keyname);
-                  //console.log(keysdisabled);
-                  keyval(keyname);
+                  tp = $("."+keyname).css('opacity') == '1' ? '.5' : '1';
+                  $("."+keyname).animate({
+                    opacity: tp
+                  });
+
+                  function toggleArrayItem(a, v) {
+                      var i = a.indexOf(v);
+                      if (i === -1)
+                          a.push(v);
+                      else
+                          a.splice(i,1);
+                  }
+
+                  toggleArrayItem(keysdisabled, keyname);
+
+                  //scope.carrier(keysdisabled);
+
               });
 
-          console.log(keysdisabled);
-
-          var keyval = function(key) {
-            console.log(key);
-            return key;
-          };
           //console.log(keyval());
 
-          var trdata = tbody.selectAll("tr")
+          var trdata = tbody.selectAll("tr:not(:first-child)")
               .data(data).enter()
               .append("tr");
+
+          console.log(trdata.datum());
 
           var length = keydata.length;
 
@@ -84,19 +113,30 @@ define([
                   .attr("class", classCallback);
           }
 
-          $("#accordion").draggable().resizable({
-              alsoResize: "#table_loc"
-          });
-          $("#table_loc").resizable();
-
-          console.log(trheader.datum());
-          console.log(keysdisabled);
+          //console.log(trheader.datum());
+          //console.log(keysdisabled);
+          this.carrier(data);
 
           return "some val";
         },
 
-        bar_graph_mapping: function(mess) {
-          console.log(mess);
+        carrier: function(data) {
+          //console.log(keys);
+          //console.log($("#xaxis").val());
+          var scope = this;
+          $(".graph").click(function(){
+            var xaxis = $("#xaxis").val();
+            var yaxis = $("#yaxis").val();
+            console.log($("#xaxis").val() + " " +$("#yaxis").val());
+            console.log(data);
+            d3.select(".msBar svg").remove();
+            var functionvalue= "bar_graph_mapping";
+            window['scope']['bar_graph_mapping'](data, xaxis, yaxis);
+          });
+        },
+
+        bar_graph_mapping: function(data, xkey, ykey) {
+          //console.log(mess);
 
           var margin = {
                   top: 20,
@@ -128,10 +168,6 @@ define([
               .append("g")
               .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-          d3.csv("json/datanewpie.csv", type, function(error, data) {
-              if (error) throw error;
-
-
               /*Object.filter = function (obj, ignore, invert) {
                 if (ignore === undefined) {
                     return obj;
@@ -154,10 +190,10 @@ define([
               console.log(keys);
 
               x.domain(data.map(function(d) {
-                  return d.name;
+                  return d[xkey];
               }));
               y.domain([0, d3.max(data, function(d) {
-                  return d.money;
+                  return d[ykey];
               })]);
 
               svg.append("g")
@@ -180,28 +216,52 @@ define([
                   .enter().append("rect")
                   .attr("class", "bar")
                   .attr("x", function(d) {
-                      return x(d.name);
+                      return x(d[xkey]);
                   })
                   .attr("width", x.rangeBand())
                   .attr("y", function(d) {
-                      return y(d.money);
+                      return y(d[ykey]);
                   })
                   .attr("height", function(d) {
-                      return height - y(d.money);
+                      return height - y(d[ykey]);
                   })
-                  .attr("stroke", "black")
-                  .attr("stroke-dasharray", "10,10")
+                  //.attr("stroke", "black")
+                  //.attr("stroke-dasharray", "10,10")
                   /*.style("fill", function(d) {
                        console.log(d.money);
                        return "rgb(0, 0," + d.money * 2 + ")"; // "green";
                    });*/
-          });
 
           function type(d) {
-              d.money = +d.money;
+              //d.money = +d.money;
               return d;
           }
 
+        },
+
+        api_options_toggle: function() {
+          /*$("#dropdowns").click(function(){
+            console.log("w");
+            $("#redlist_opt").slideToggle("slow");
+          });*/
+
+          var getPrev = [];
+          $('#api').on('change', function() {
+              value = $(this).val();
+              console.log(value);
+              change(value);
+          });
+          var change = function(val) {
+            //console.log(val);
+              getPrev.push(val);
+              if (getPrev.length > 2) {
+                  getPrev.shift();
+              }
+              console.log(getPrev);
+
+              $("#" + getPrev[0]+"_opt").slideUp(300);
+              $("#" + val+"_opt").delay(300).slideDown(300);
+          }
         }
 
     });

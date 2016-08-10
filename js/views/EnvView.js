@@ -80,41 +80,77 @@ define([
                   q: request.term
                 },
                 success: function( data ) {
-
+                  var arrofsn = [];
+                  for(var i = 0; i < data.result.length; i++) {
+                    arrofsn.push(data.result[i].scientific_name);
+                  }
                   response($.ui.autocomplete.filter(arrofsn, request.term));
 
                 }
               });
             },
             minLength: 2,
-            select: function( event, ui ) {
-              
-              var snvalue = ui.item.label.replace(" ", "%20");
-              var factorvalue = $("#factors").val();
-              console.log('http://apiv3.iucnredlist.org/api/v3/'+factorvalue+'/species/name/'+snvalue+'?token=1da43ebfc20ad97f3b32afcee87d47b77d8acfac9113d2273f15c97e26e047c4');
 
-            }
           });
 
+          $(".create").click(function(){
+            var scientificName = $("#city").val().replace(" ","%20");
+            var factor = $("#factors").val();
+            //console.log($("#city").val()+" "+$("#factors").val());
+            var api =  'http://apiv3.iucnredlist.org/api/v3/'+factor+'/species/name/'+scientificName+'?token=1da43ebfc20ad97f3b32afcee87d47b77d8acfac9113d2273f15c97e26e047c4';
+            //console.log('http://apiv3.iucnredlist.org/api/v3/'+factor+'/species/name/'+scientificName+'?token=1da43ebfc20ad97f3b32afcee87d47b77d8acfac9113d2273f15c97e26e047c4');
 
-          console.log($("#city").val());
+            console.log(api);
+
+            $.ajax({
+         			url: api,
+         			data: {
+         				 format: 'json'
+         			},
+         			error: function() {
+         				 $('#info').html('<p>An error has occurred</p>');
+                 alert("No data meets qualifications");
+         			},
+         			dataType: 'json',
+         			success: function(d) {
+         				console.log(d);
+         				//console.log(data);
+
+                d3.select("#table_loc table").remove();
+                d3.selectAll(".xaxis_opt").remove();
+                d3.selectAll(".yaxis_opt").remove();
+                var table = new mappings();
+                var keysforbargraph = table.table_mapping(d.result);
+
+         			},
+         			type: 'GET'
+         	 });
+
+          });
+
+          $("#accordion").draggable().resizable({
+              alsoResize: "#table_loc"
+          });
+          $("#table_loc").resizable();
+
+
           // Gets table from mappings.js with data as parameter
           // Works w/ two dimensional data
           var data = this.model.get("datasets").result;
           //data.length = 15;
-          var table = new mappings();
-          var keysforbargraph = table.table_mapping(data);
+          //var table = new mappings();
+          //var keysforbargraph = table.table_mapping(data);
 
-          console.log(keysforbargraph);
+          //console.log(keysforbargraph);
 
-          return table.table_mapping(this.model.get("datasets"));
+          //return table.table_mapping(this.model.get("datasets"));
         },
 
         test_bar: function(){
         //  console.log(this.render());
         //  console.log(data);
-          var bar = new mappings();
-          return bar.bar_graph_mapping(this.model.get("datasets"));
+          //var bar = new mappings();
+          //return bar.bar_graph_mapping(this.model.get("datasets"));
         },
 
         api_options_toggle: function() {
@@ -123,7 +159,7 @@ define([
             $("#redlist_opt").slideToggle("slow");
           });*/
 
-          var getPrev = ["redlist"];
+          var getPrev = [];
           $('#api').on('change', function() {
               value = $(this).val();
               console.log(value);

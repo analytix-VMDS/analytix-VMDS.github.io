@@ -79,7 +79,8 @@ $.ajax({
               <form action="#">
                   <h4><label for="api">API: </label>
                   <select name="api" id="api">
-                  <option value="redlist" selected="selected">Red List</option>
+                    <option value="" selected disabled>Please select</option>
+                  <option value="redlist">Red List</option>
                   <option value="ex">knoema.com</option>
                 </select>
               </h4>
@@ -116,73 +117,38 @@ $.ajax({
 
             <!-- bootstrap style button -->
             <button type="button" class="btn create" data-toggle="button" aria-pressed="false" autocomplete="off">
-                <b>Create</b>
+                <b>Get Data</b>
             </button>
         </div>
 
         <div id="data_options">
-            <div id="redlist_opt">
+            <div id="redlist_opt" style="display:none">
               <form class="form-inline">
 
                 <div class="ui-widget" style="display: inline-block">
                      <label for="city">Scientific name: </label>
-                     <input id="city" class="form-control" type="text" placeholder="example: Bodianus neopercularis">
+                     <input id="city" class="form-control" type="text" placeholder="example: Herpestes brachyurus">
                 </div>
+
                 <div class="demo">
                     <form action="#">
                       <h4><label for="factors">Factors: </label>
                         <select name="factors" id="factors">
                           <option value="habitats">Habitats</option>
                           <option value="threats">Threats</option>
-                          <option value="countries">Countries</option>
-                          <option value="history">Historical Assesments</option>
+                          <!--<option value="countries">Countries</option>
+                          <option value="history">Historical Assesments</option>-->
                        </select>
                       </h4>
                     </form>
                 </div>
 
               </form>
-              <!--<form class="form-inline">
-                <div class="form-group">
-
-              <div class="demo">
-                  <form action="#">
-                    <h4><label for="factors">Factors: </label>
-                      <select name="factors" id="factors">
-                        <option value="habitats">Habitats</option>
-                        <option value="threats">Threats</option>
-                     </select>
-                    </h4>
-                  </form>
-              </div>
-
-
-             <div class="ui-widget form-group" style="display: inline-block">
-                  <label for="city">Scientific name: </label>
-                  <input style="float:right;" id="city" class="form-control" type="text" placeholder="example: Bodianus neopercularis">
-             </div>
-           </div>
-         </form>-->
-
-           <!--div class="ui-widget" stylmargin-top:2em; font-family:Arial">
-                Result:
-                <div id="log" style="height: 200px; width: 300px; overflow: auto;" class="ui-widget-content"></div>
-              </div>
--->
-              <!--<div class="demo">
-                  <form action="#">
-                    <h4><label for="scientific_name">Scientific Name: </label>
-                    <select name="scientific_name" id="scientific_name">
-                      <!-- list of species by scientific name goes here --
-                    </select>
-                  </h4>
-                  </form>
-              </div>-->
             </div>
 
 
             <div id="ex_opt" style="display:none">
-                <p>fdsafda</p>
+                <p>Coming</p>
             </div>
         </div>
       </div>
@@ -198,17 +164,50 @@ $.ajax({
                 </div>
                 <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                     <div class="panel-body">
-                        <div id="table_loc"></div>
+
+                      <div class="demo">
+                          <form action="#">
+                            <h4><label style="color: blue;" for="xaxis">X-Axis: </label>
+                              <select name="xaxis" id="xaxis">
+                                <option value="" selected disabled>Please select</option>
+                              </select>
+                            </h4>
+                          </form>
+                      </div>
+
+                      <div class="demo">
+                          <form action="#">
+                            <h4><label style="color: red;" for="yaxis">Y-Axis: </label>
+                              <select name="yaxis" id="yaxis">
+                                <option value="" selected disabled>Please select</option>
+                              </select>
+                              <br>
+                              <p>
+                                (please choose column with numbers in it)
+                              </p>
+                            </h4>
+                          </form>
+                      </div>
+
+                        <div id="table_loc">
+                          <!-- where javascript loaded table goes -->
+                        </div>
+
+                        <button type="button" class="btn graph" data-toggle="button" aria-pressed="false" autocomplete="off">
+                            <b>Graph</b>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="map"></div>
+        <div class="msBar"></div>
+
+        <!--<div class="map"></div>
 
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF6-dEtsRQ5jcaXJy2oDjU46u896i_xDk&callback=initMap" async defer></script>
 
-        <div id="svg_location"></div>
+        <div id="svg_location"></div>-->
 
         <!--<script src="https://gist.github.com/jonathantneal/5146557.js"></script>-->
 
@@ -222,7 +221,6 @@ $.ajax({
                 <li>
                     <a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Flocalhost.8888&text=:%20http%3A%2F%2Flocalhost.8888" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20' + encodeURIComponent(document.URL)); return false;"><i class="fa fa-twitter-square fa-2x"></i></a>
                 </li>
-                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Flocalhost.8888" target="_blank" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=' + encodeURIComponent(document.URL)); return false;"><i class="fa fa-google-plus-square fa-2x"></i></a></li>
                 <li>
                     <a href="http://www.reddit.com/submit?url=http%3A%2F%2Flocalhost.8888&title=" target="_blank" title="Submit to Reddit" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><i class="fa fa-reddit-square fa-2x"></i></a>
                 </li>

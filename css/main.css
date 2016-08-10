@@ -45,7 +45,7 @@ h4{
   float: left;
 }*/
 .ui-autocomplete-loading {
-    background: white url("images/ui-anim_basic_16x16.gif") right center no-repeat;
+    background: white url("Images/ui-anim_basic_16x16.gif") right center no-repeat;
 }
 select{
   border:none;
@@ -226,11 +226,11 @@ ul.share-buttons li{
 
 /* bar graph styling */
 .bar {
-  fill: white;/*#6b486b;*/
+  fill: #6b486b;
 }
 
 .bar:hover {
-  fill: lightgrey;/*#8a89a6;*/
+  fill: #8a89a6;
 }
 
 .axis {
