@@ -131,7 +131,7 @@ define([
             console.log(data);
             d3.select(".msBar svg").remove();
             var functionvalue= "bar_graph_mapping";
-            window['scope']['bar_graph_mapping'](data, xaxis, yaxis);
+            scope.bar_graph_mapping(data, xaxis, yaxis);
           });
         },
 
