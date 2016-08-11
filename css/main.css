@@ -47,6 +47,13 @@ h4{
 .ui-autocomplete-loading {
     background: white url("Images/ui-anim_basic_16x16.gif") right center no-repeat;
 }
+.add-button
+{
+-webkit-appearance: none;
+outline: none;
+border: 0;
+background: transparent;
+}
 select{
   border:none;
 }

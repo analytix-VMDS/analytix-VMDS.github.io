@@ -114,22 +114,19 @@ define([
                   .attr("class", classCallback);
           }
 
-          //console.log(trheader.datum());
-          //console.log(keysdisabled);
+
           this.carrier(data, keydata);
 
           return "some val";
         },
 
         carrier: function(data, allkeys) {
-          //console.log(keys);
-          //console.log($("#xaxis").val());
+
           var scope = this;
           $(".graph").click(function(){
             var xaxis = $("#xaxis").val();
             var yaxis = $("#yaxis").val();
-            //console.log($("#xaxis").val() + " " +$("#yaxis").val());
-            //console.log(data);
+
             d3.select(".msBar svg").remove();
 
             console.log($("#visuals").val());
@@ -139,10 +136,6 @@ define([
         },
 
         bar_graph_mapping: function(data, xkey, ykey, allkeys) {
-          //console.log(mess);
-          //var options = ["Sort", "Gausion distribution", "Linear regression"];
-          //var dataAnalysisOptionsDropdown = d3.select(".msBar").append("select").selectAll("option").data(options).enter().text(function(d){return d})
-
           var margin = {
                   top: 20,
                   right: 20,
@@ -671,7 +664,7 @@ define([
                 return xScale(d[ykey]);
                })
                .on("mouseover", tip.show)
-               .on("mouseout", tip.hide)
+               .on("mouseout", tip.hide)//it's like... yeah.
                .append("title")
                .text(function(d) {
                 return "Date: " + d[xkey] + "; value: " + d[ykey];

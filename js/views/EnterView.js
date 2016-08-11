@@ -27,6 +27,8 @@ define([
 
         data_caller: function() {
           var scope = this;
+
+          var id = [];
           $( "#city" ).autocomplete({
             source: function( request, response ) {
               $.ajax( {
@@ -37,14 +39,15 @@ define([
                 },
                 success: function( data ) {
                   var arrofsn = [];
-                  var id = [];
+
                   for(var i = 0; i < data.results.length; i++) {
                     arrofsn.push(data.results[i].title);
                     id.push({"id": data.results[i].id, "title": data.results[i].title});
                   }
-                  console.log(id);
-                  console.log(data);
+                  //console.log(id);
+                  //console.log(data);
                   response($.ui.autocomplete.filter(arrofsn, request.term));
+
                   scope.carrier(data);
 
                 }
@@ -54,6 +57,36 @@ define([
 
           });
 
+          this.selectedMovies = [];
+          $(".add-button").click(function(){
+            var currentVal = $("#city").val();
+            //console.log(currentVal);
+            //console.log(id);
+
+            scope.selectedMovies.push(currentVal);
+
+            for(var i = 0; i < id.length; i++) {
+               for(var title in id[i] ) {
+                  //console.log( title + ' == ' +  id[i][title]);
+                  //console.log(id[i][title]);
+               }
+            }
+
+            d3.select("#result-location").attr("style","padding: 6px; font-size: 16px; border-radius: 5px; background-color: rgb(248, 248, 248); color: #78583e; margin-right: 0px; margin-left: 0px; margin-bottom: 10px; width: 270px")
+                  .append("p").text(currentVal+", ").style("border-radius","5px").style("padding","3px")//.style("display","inline-block").style("white-space","normal")
+                  .on("mouseover",function(){
+                    d3.select(this).style("background-color","lightgrey")//.style("z-index","2")
+                  })
+                  .on("mouseout",function(){
+                    d3.select(this).style("background-color","rgb(248, 248, 248)")//.style("z-index","0")
+                  })
+                  .on("click", function(){
+                    d3.select(this).remove();
+                  })
+
+              console.log(scope.selectedMovies);
+          });
+
           $("#accordion").draggable().resizable({
               alsoResize: "#table_loc"
           });
@@ -61,9 +94,43 @@ define([
         },
 
         carrier: function(data) {
+          var scope = this;
           $(".create").click(function(){
+
+            function arrayObjectIndexOf(myArray, searchTerm, property) {
+                for(var i = 0, len = myArray.length; i < len; i++) {
+                    if (myArray[i][property] === searchTerm) return i;
+                }
+                return -1;
+            }
+            var arr = [];
+            for(var f = 0; f < scope.selectedMovies.length; f++) {
+              var index = arrayObjectIndexOf(data.results, scope.selectedMovies[f], "title");
+              //console.log(index);
+              //console.log(data.results[index]);
+              arr.push(data.results[index]);
+
+            }
+            console.log(arr);
+            //console.log(scope.selectedMovies);
+
+            /*var selectedData = data.results.filter(function(n, i){
+
+              //data.results[i].replace
+
+
+              //return data.results[i].title != scope.selectedMovies[j];
+            });*/
+            //for (var i = 0; i > data.results.length; i++) {
+
+            //}
+            //var selectedData = $.grep(data.results, function(d){
+            //  return d.title !== scope.selectedMovies;
+          //  })
+            //console.log(selectedData);
+
             var table = new mappings();
-            return table.table_mapping(data.results);
+            return table.table_mapping(arr);
           });
         },
 
