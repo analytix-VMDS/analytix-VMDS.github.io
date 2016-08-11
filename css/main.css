@@ -120,9 +120,12 @@ ul.share-buttons li{
 }
 #data_options {
   background-color: #78583e;
-  width:100%;
-  text-align: center;
+  /*width:100%;
+  text-align: center;*/
   color:#FCFBE3;
+}
+#data_options div {
+  text-align: center;
 }
 #header{
     text-align:center;
@@ -156,10 +159,14 @@ ul.share-buttons li{
 
 .btn.create{
   background-color:#c5bdaa;
-  border:none;
+  border:.5em;
+  border-style: double;
+  border-color: white;
   height: 3em;
   color:#78583e;
-  margin-left: 1em
+  margin-left: 2em;
+  margin-top: .2em;
+  /*margin-bottom: 3em;*/
 }
 .navbar {
   margin-bottom: 2em;
@@ -216,6 +223,10 @@ ul.share-buttons li{
   stroke-width: 1.5px;
 }
 
+.poly{
+  stroke:#ccccff;
+}
+
 /*table option styling */
 #accordion {
   float: right;
@@ -247,7 +258,24 @@ ul.share-buttons li{
 .x.axis path {
   display: none;
 }
-
+/*normal distribution styling */
+body {
+        font: 10px sans-serif;
+    }
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+    /*.x.axis path {
+        display: none;
+    }*/
+    .line {
+        fill: none;
+        stroke: steelblue;
+        stroke-width: 1.5px;
+    }
 /* piechart styling */
 path.slice{
   stroke-width:2px;
@@ -262,6 +290,33 @@ polyline{
 .msPie {
   margin-left: auto;
   display: block;
+}
+/* line chart styling */
+path {
+	stroke: steelblue;
+	stroke-width: 1;
+	fill: none;
+}
+
+.axis {
+  shape-rendering: crispEdges;
+}
+
+.x.axis line {
+  stroke: lightgrey;
+}
+
+.x.axis .minor {
+  stroke-opacity: .5;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.y.axis line, .y.axis path {
+  fill: none;
+  stroke: #000;
 }
 
 /* linear regression styling */

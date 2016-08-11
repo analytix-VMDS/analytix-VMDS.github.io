@@ -58,8 +58,9 @@
             <form action="#">
                 <h4><label for="api">API: </label>
                     <select name="api" id="api">
-                      <option value="msSongs" id="song" selected="selected">factual.com</option>
-                      <option>knoema.com</option>
+                      <option value="" selected disabled>Please select</option>
+                      <option value="knoema">knoema.com</option>
+                      <option value="factual">factual.com</option>
                     </select>
                 </h4>
             </form>
@@ -67,14 +68,14 @@
 
         <div class="demo">
             <form action="#">
-                <h4><label for="visual">Visual: </label>
-                <select name="visual" id="visual">
-                <option value="msBar" id="barEntertain" selected="selected">bar graph</option>
-                <option value="msPie" id="pieEntertain">pie graph</option>
-                <option value="msLine" id="lineEntertain">line graph</option>
-                <option value="msMap" id="mapEntertain">map</option>
-              </select>
-            </h4>
+              <h4><label for="visuals">Visual: </label>
+                <select name="visuals" id="visuals">
+                  <option value="bar_graph_mapping">Bar Graph</option>
+                  <option value="pie_graph_mapping">Pie Graph</option>
+                  <option value="line_graph_mapping">Line Graph</option>
+                  <option value="bw_graph_mapping">Box and Whisker Plot</option>
+                </select>
+              </h4>
             </form>
         </div>
 
@@ -82,65 +83,137 @@
             <form action="#">
                 <h4><label for="analyze">Data Analysis: </label>
                 <select name="analyze" id="analyze">
-                  <option value="msNone" id="noneEntertain" selected="selected">none</option>
+                  <!--<option value="msNone" id="noneEntertain" selected="selected">none</option>
                   <option value="msNorm" id="normEntertain">normal distribution</option>
-                  <option value="msQuadReg" id="quadRegEntertain">quadratic regression</option>
-                  <option value="msLinReg" id="linRegEntertain">linear regression</option>
+                  <option value="msQuadReg" id="polyRegEntertain">polynomial regression</option>
+                  <option value="msLinReg" id="linRegEntertain">linear regression</option>-->
               </select>
             </h4>
             </form>
         </div>
 
-        <!-- bootstrap style button -->
-        <button type="button" class="btn create" data-toggle="button" aria-pressed="false" autocomplete="off">
-            <b>Get Data</b>
-        </button>
+    </div>
+
+    <div id="data_options">
+        <div id="knoema_opt" style="display:none">
+          <div class="form-inline">
+
+            <div class="form-group" style="text-align: center; margin: auto">
+
+              <div class="demo" style="float: left; margin-right: 15px">
+                <form action="#">
+                <h4>
+                <label for="factors">Factors: </label>
+                <select name="factors" id="factors" style="color: #78583e;">
+                  <option value="habitats">Habitats</option>
+                  <option value="threats">Threats</option>
+               </select>
+              </h4>
+            </form>
+            </div>
+
+            <div class="ui-widget" style="float: left">
+              <h4 style="margin-top: 0px; margin-bottom: 0px"><label for="city">Your city: </label>
+              <input placeholder="ex: Herpestes brachyurus" style="padding: 6px; font-size: 16px; border-radius: 5px; border: none; background-color: rgb(248, 248, 248); color: #78583e; margin-right: 0px; margin-left: 0px" id="city" type="text"></h4>
+            </div>
+
+            <div style="float: left;">
+            <button type="button" class="btn create" data-toggle="button" aria-pressed="false" autocomplete="off">
+                <b>Get Data</b>
+            </button>
+          </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div id="factual_opt" style="display:none">
+            <p>Coming</p>
+        </div>
+    </div>
     </div>
 
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
         <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingOne">
                 <h4 class="panel-title" title="hidden content closed">
-                      <a id="accord-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Table (hide)
-                      </a>
-                    </h4>
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Table
+            </a>
+          </h4>
             </div>
             <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">
-                    <div id="table_loc" class="table-responsive" style="height:400px;overflow:auto;">
-                        <!-- javascript loaded table goes here -->
+
+                    <div class="demo">
+                        <form action="#">
+                            <h4><label style="color: blue;" for="xaxis">X-Axis: </label>
+                              <select name="xaxis" id="xaxis">
+                                <option value="" selected disabled>Please select</option>
+                              </select>
+                            </h4>
+                        </form>
                     </div>
+
+                    <div class="demo">
+                        <form action="#">
+                            <h4><label style="color: red;" for="yaxis">Y-Axis: </label>
+                              <select name="yaxis" id="yaxis">
+                                <option value="" selected disabled>Please select</option>
+                              </select>
+                              <br>
+                              <p>
+                                (please choose column with numbers in it)
+                              </p>
+                            </h4>
+                        </form>
+                    </div>
+
+                    <div id="table_loc">
+                        <!-- where javascript loaded table goes -->
+                    </div>
+
+                    <button type="button" class="btn graph" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <b>Graph</b>
+                    </button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="svg_location"></div>
+
+    <button type="button" class="btn update" data-toggle="button" aria-pressed="false" autocomplete="off">
+        <b>Update</b>
+    </button>
+
+    <div class="msBar"></div>
+
     <!--<script type="text/javascript" language="javascript" src="http://www.boxofficemojo.com/data/js/wknd5.php"></script>
         <script src="http://uselectionatlas.org/WIKI/api.php"></script>-->
 
-    <div class="msBar"></div>
+    <!--<div class="msBar"></div>
     <div style="display: none;" class="msPie"></div>
     <div style="display: none;" class="msLine"></div>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF6-dEtsRQ5jcaXJy2oDjU46u896i_xDk" async defer></script>
     <div style="display: none;" class="msMap"></div>
+    <div class="msNorm"></div>-->
 
     <div id="footer">
-      <ul class="share-buttons">
-        Share:
-          <li>
-              <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost.8888&t=" target="_blank" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><i class="fa fa-facebook-square fa-2x"></i></a>
-          </li>
-          <li>
-              <a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Flocalhost.8888&text=:%20http%3A%2F%2Flocalhost.8888" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20' + encodeURIComponent(document.URL)); return false;"><i class="fa fa-twitter-square fa-2x"></i></a>
-          </li>
-          <li>
-              <a href="http://www.reddit.com/submit?url=http%3A%2F%2Flocalhost.8888&title=" target="_blank" title="Submit to Reddit" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><i class="fa fa-reddit-square fa-2x"></i></a>
-          </li>
-          <li>
-              <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost.8888&title=&summary=&source=http%3A%2F%2Flocalhost.8888" target="_blank" title="Share on LinkedIn" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><i class="fa fa-linkedin-square fa-2x"></i></a>
-          </li>
-      </ul>
+        <ul class="share-buttons">
+            Share:
+            <li>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost.8888&t=" target="_blank" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><i class="fa fa-facebook-square fa-2x"></i></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Flocalhost.8888&text=:%20http%3A%2F%2Flocalhost.8888" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20' + encodeURIComponent(document.URL)); return false;"><i class="fa fa-twitter-square fa-2x"></i></a>
+            </li>
+            <li>
+                <a href="http://www.reddit.com/submit?url=http%3A%2F%2Flocalhost.8888&title=" target="_blank" title="Submit to Reddit" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><i class="fa fa-reddit-square fa-2x"></i></a>
+            </li>
+            <li>
+                <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost.8888&title=&summary=&source=http%3A%2F%2Flocalhost.8888" target="_blank" title="Share on LinkedIn" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            </li>
+        </ul>
         Copyright &copy; 2016 Analytix
         <br>
         <a style="font-size:1em" href="https://github.com/cs-squad/Data-Analysis-Web-Application">Github<i class="fa fa-github"></i></a>

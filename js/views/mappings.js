@@ -127,21 +127,25 @@ define([
           $(".graph").click(function(){
             var xaxis = $("#xaxis").val();
             var yaxis = $("#yaxis").val();
-            console.log($("#xaxis").val() + " " +$("#yaxis").val());
-            console.log(data);
+            //console.log($("#xaxis").val() + " " +$("#yaxis").val());
+            //console.log(data);
             d3.select(".msBar svg").remove();
-            var functionvalue= "bar_graph_mapping";
-            scope.bar_graph_mapping(data, xaxis, yaxis);
+
+            console.log($("#visuals").val());
+            var functionvalue= $("#visuals").val();
+            scope[functionvalue](data, xaxis, yaxis);
           });
         },
 
         bar_graph_mapping: function(data, xkey, ykey) {
           //console.log(mess);
+          //var options = ["Sort", "Gausion distribution", "Linear regression"];
+          //var dataAnalysisOptionsDropdown = d3.select(".msBar").append("select").selectAll("option").data(options).enter().text(function(d){return d})
 
           var margin = {
                   top: 20,
                   right: 20,
-                  bottom: 30,
+                  bottom: 150,
                   left: 60
               },
               width = 960 - margin.left - margin.right,
@@ -151,7 +155,7 @@ define([
               .rangeRoundBands([0, width], .1);
 
           var y = d3.scale.linear()
-              .range([height, 0]);
+              .range([height, 0], .3);
 
           var xAxis = d3.svg.axis()
               .scale(x)
@@ -160,34 +164,13 @@ define([
           var yAxis = d3.svg.axis()
               .scale(y)
               .orient("left")
-              .ticks(5, "%");
+              .ticks(40);
 
           var svg = d3.select(".msBar").append("svg")
               .attr("width", width + margin.left + margin.right)
               .attr("height", height + margin.top + margin.bottom)
               .append("g")
               .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-              /*Object.filter = function (obj, ignore, invert) {
-                if (ignore === undefined) {
-                    return obj;
-                }
-                invert = invert || false;
-                var not = function(condition, yes) { return yes ? !condition : condition; };
-                var isArray = Ext.isArray(ignore);
-                for (var key in obj) {
-                    if (obj.hasOwnProperty(key) &&
-                            (isArray && not(!Ext.Array.contains(ignore, key), invert)) ||
-                            (!isArray && not(!ignore.call(undefined, key, obj[key]), invert))) {
-                        delete obj[key];
-                    }
-                }
-                return obj;
-            };*/
-
-
-              var keys = Object.keys(data[0]);
-              console.log(keys);
 
               x.domain(data.map(function(d) {
                   return d[xkey];
@@ -199,7 +182,14 @@ define([
               svg.append("g")
                   .attr("class", "x axis")
                   .attr("transform", "translate(0," + height + ")")
-                  .call(xAxis);
+                  .call(xAxis)
+                  .selectAll("text")
+                  .attr("y", 0)
+                  .attr("x", 9)
+                  .attr("dy", ".35em")
+                  .attr("transform", "rotate(45)")
+                  .style("text-anchor", "start");
+
 
               svg.append("g")
                   .attr("class", "y axis")
@@ -209,7 +199,7 @@ define([
                   .attr("y", 6)
                   .attr("dy", ".71em")
                   .style("text-anchor", "end")
-                  .text("Frequency");
+                  .text(ykey);
 
               svg.selectAll(".bar")
                   .data(data)
@@ -225,18 +215,452 @@ define([
                   .attr("height", function(d) {
                       return height - y(d[ykey]);
                   })
-                  //.attr("stroke", "black")
-                  //.attr("stroke-dasharray", "10,10")
-                  /*.style("fill", function(d) {
-                       console.log(d.money);
-                       return "rgb(0, 0," + d.money * 2 + ")"; // "green";
-                   });*/
+                  .attr("fill", function(d){
+                    return "rgb(0, "+d[ykey]+",0)";
+                  })
+                  .on("click", function(){
+                    svg.selectAll("rect")
+                       .sort(function(a, b) {
+                             return d3.ascending(a, b);
+                       })
+                       .transition()
+                       .duration(1000)
+                       .attr("x", function(d, i) {
+                             return x(i);
+                       });
+                  });
 
-          function type(d) {
-              //d.money = +d.money;
-              return d;
+             function update(newdata) {
+
+             }
+
+        },
+
+        pie_graph_mapping: function(data, xkey, ykey) {
+          var width = 960,
+              height = 500,
+              radius = Math.min(width, height) / 2;
+
+          var color = d3.scale.ordinal()
+              .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#b8817a", "#d2b1ac"]);
+
+          var arc = d3.svg.arc()
+              .outerRadius(radius - 10)
+              .innerRadius(100)
+
+          var newarc = d3.svg.arc()
+              .outerRadius(radius)
+              .innerRadius(100)
+
+          var labelArc = d3.svg.arc()
+              .outerRadius(radius - 40)
+              .innerRadius(radius - 40);
+
+          var pie = d3.layout.pie()
+              .sort(null)
+              .value(function(d) {
+                  return d[ykey];
+              });
+
+          // Paremeter here
+          var svg = d3.select(".msBar").append("svg")
+              .attr("width", width)
+              .attr("height", height)
+              .append("g")
+              .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+              this.g = svg.selectAll(".arc")
+                  .data(pie(data))
+                  .enter().append("g")
+                  .attr("class", "arc")
+
+              this.g.append("path")
+                  .attr("d", arc)
+                  .style("fill", function(d) {
+                      return color(d.data[xkey]);
+                  })
+                  .on("mouseover", function() {
+                      d3.select(this).transition().attr("d", newarc)
+                  })
+                  .on("mouseout", function() {
+                      d3.select(this).transition().attr("d", arc);
+                  })
+
+              this.g.append("text")
+                  .attr("transform", function(d) {
+                      return "translate(" + labelArc.centroid(d) + ")";
+                  })
+                  .attr("dy", ".35em")
+                  .text(function(d) { // Another paremeter here
+                      return d.data[xkey] + ", " + d.data[ykey] + " $";
+                  });
+
+        },
+
+        line_graph_mapping: function(datajs, xkey, ykey) {
+
+          var dataset1 = [{
+            'qName': 'Q1',
+                'PFTE': '10',
+                'EFTE': '62.7',
+                'SOME': '72.2'
+          }, {
+            'qName': 'Q2',
+                'PFTE': '58',
+                'EFTE': '59.9',
+                'SOME': '67.7'
+          }, {
+            'qName': 'Q3',
+                'PFTE': '53.3',
+                'EFTE': '59.1',
+                'SOME': '69.4'
+          }, {
+            'qName': 'Q4',
+                'PFTE': '35.7',
+                'EFTE': '58.8',
+                'SOME': '68'
+          }, {
+            'qName': 'Q5',
+                'PFTE': '34.2',
+                'EFTE': '58.7',
+                'SOME': '72.4'
+          }, ];
+
+          var dataset2 = [{
+            'qName': 'Q1',
+                'PFTE': '53.4',
+                'EFTE': '52.7',
+                'SOME': '62.2'
+          }, {
+            'qName': 'Q2',
+                'PFTE': '48',
+                'EFTE': '49.9',
+                'SOME': '57.7'
+          }, {
+            'qName': 'Q3',
+                'PFTE': '33.3',
+                'EFTE': '49.1',
+                'SOME': '59.4'
+          }, {
+            'qName': 'Q4',
+                'PFTE': '45.7',
+                'EFTE': '48.8',
+                'SOME': '58'
+          }, {
+            'qName': 'Q5',
+                'PFTE': '54.2',
+                'EFTE': '48.7',
+                'SOME': '62.4'
+          }, ];
+
+          var margin = {
+            top: 20,
+            right: 80,
+            bottom: 30,
+            left: 50
+          },
+          width = 560 - margin.left - margin.right,
+          height = 300 - margin.top - margin.bottom;
+
+          //var parseDate = d3.time.format("%Y%m%d").parse;
+          var x = d3.scale.ordinal().rangeRoundBands([0, width], .2);
+          var y = d3.scale.linear().rangeRound([height, 0]);
+
+          /*var x = d3.time.scale()
+            .range([0, width]);
+
+          var y = d3.scale.linear()
+            .range([height, 0]);*/
+
+          var color = d3.scale.category10();
+
+          var xAxis = d3.svg.axis()
+            .scale(x)
+            .orient("bottom");
+
+
+          var yAxis = d3.svg.axis()
+            .scale(y)
+            .orient("left");
+
+          var line = d3.svg.line()
+            //.interpolate("basis")
+            .x(function (d) {
+                return x(d.qName);
+            })
+            .y(function (d) {
+              console.log(d);
+                return y(d.qValue);
+            });
+
+          var svg = d3.select(".msBar").append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+          svg.append("g")
+                .attr("class", "x axis")
+                .attr("transform", "translate(0," + height + ")");
+
+          svg.append("g")
+            .attr("class", "y axis")
+            .append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("y", 6)
+            .attr("dy", ".71em")
+            .style("text-anchor", "end")
+            .text("EFTE (F)");
+
+          update(dataset1);
+
+          /*var transitionInterval = setInterval(function () {
+            update(dataset2);
+          }, 1000);*/
+
+          $(".update").click(function(){
+            update(dataset2);
+          });
+
+          // draw and redraw, calculate axes/domains, etc here
+          function update(dataset) {
+
+
+            color.domain(d3.keys(dataset[0]).filter(function (key) {
+                return key !== "qName";
+            }));
+
+            var efteValues = color.domain().map(function (name) {
+            return {
+                name: name,
+                values: dataset.map(function (d) {
+                    return {
+                        qName: d.qName,
+                        qValue: +d[name]
+                    };
+                })
+                };
+            });
+
+            console.log(efteValues);
+            x.domain(dataset.map(function(d) {
+              return d.qName; }));
+
+            y.domain([
+            d3.min(efteValues, function (c) {
+                return d3.min(c.values, function (v) {
+                    return v.qValue;
+                });
+            }),
+            d3.max(efteValues, function (c) {
+                return d3.max(c.values, function (v) {
+                    return v.qValue;
+                });
+            })]);
+
+            // update axes
+            d3.transition(svg).select('.y.axis')
+                .call(yAxis);
+
+            d3.transition(svg).select('.x.axis')
+                .call(xAxis);
+
+            var city = svg.selectAll(".city")
+                .data(efteValues);
+
+            var cityEnter = city.enter().append("g")
+                .attr("class", "city");
+
+            cityEnter.append("path")
+                .attr("class", "line")
+                .attr("d", function (d) {
+                    return line(d.values);
+                })
+                .style("stroke", function (d) {
+                    return color(d.name);
+                });
+
+            // transition by selecting 'city'...
+            cityUpdate = d3.transition(city);
+
+            // ... and each path within
+            cityUpdate.select('path')
+               .transition().duration(600)
+                .attr("d", function (d) {
+                    return line(d.values);
+                });
+
+            city.exit().remove();
+
+            //clearInterval(transitionInterval);
           }
 
+        },
+
+        bw_graph_mapping: function(datajs, xkey, ykey) {
+          //initialize the dimensions
+          var margin = {top: 10, right: 10, bottom: 10, left: 10},
+              width = 800 - margin.left - margin.right,
+              height = 100 - margin.top - margin.bottom,
+              padding = 20
+              midline = (height - padding) / 2;
+
+          //initialize the x scale
+          var xScale = d3.scale.linear()
+                         .range([padding, width - padding]);
+
+          //initialize the x axis
+          var xAxis = d3.svg.axis()
+                        .scale(xScale)
+                        .orient("bottom");
+
+          //initialize boxplot statistics
+          var data = [],
+              outliers = [],
+              minVal = Infinity,
+              lowerWhisker = Infinity,
+              q1Val = Infinity,
+              medianVal = 0,
+              q3Val = -Infinity,
+              iqr = 0,
+              upperWhisker = -Infinity,
+              maxVal = -Infinity;
+
+            data = datajs.map(function(d) {
+              return d[ykey];
+            });
+
+            data = data.sort(d3.ascending);
+
+            //calculate the boxplot statistics
+            minVal = data[0],
+            q1Val = d3.quantile(data, .25),
+            medianVal = d3.quantile(data, .5),
+            q3Val = d3.quantile(data, .75),
+            iqr = q3Val - q1Val,
+            maxVal = data[data.length - 1];
+            // lowerWhisker = d3.max([minVal, q1Val - iqr])
+            // upperWhisker = d3.min([maxVal, q3Val + iqr]);
+
+            var index = 0;
+
+            //search for the lower whisker, the mininmum value within q1Val - 1.5*iqr
+            while (index < data.length && lowerWhisker == Infinity) {
+
+              if (data[index] >= (q1Val - 1.5*iqr))
+                lowerWhisker = data[index];
+              else
+                outliers.push(data[index]);
+              index++;
+            }
+
+            index = data.length-1; // reset index to end of array
+
+            //search for the upper whisker, the maximum value within q1Val + 1.5*iqr
+            while (index >= 0 && upperWhisker == -Infinity) {
+
+              if (data[index] <= (q3Val + 1.5*iqr))
+                upperWhisker = data[index];
+              else
+                outliers.push(data[index]);
+              index--;
+            }
+
+            //map the domain to the x scale +10%
+            xScale.domain([0,maxVal*1.10]);
+
+            var svg = d3.select(".msBar")
+                        .append("svg")
+                        .attr("width", width)
+                        .attr("height", height);
+
+            //append the axis
+            svg.append("g")
+               .attr("class", "axis")
+               .attr("transform", "translate(0, " + (height - padding) + ")")
+               .call(xAxis);
+
+            //draw verical line for lowerWhisker
+            svg.append("line")
+               .attr("class", "whisker")
+               .attr("x1", xScale(lowerWhisker))
+               .attr("x2", xScale(lowerWhisker))
+               .attr("stroke", "black")
+               .attr("y1", midline - 10)
+               .attr("y2", midline + 10);
+
+            //draw vertical line for upperWhisker
+            svg.append("line")
+               .attr("class", "whisker")
+               .attr("x1", xScale(upperWhisker))
+               .attr("x2", xScale(upperWhisker))
+               .attr("stroke", "black")
+               .attr("y1", midline - 10)
+               .attr("y2", midline + 10);
+
+            //draw horizontal line from lowerWhisker to upperWhisker
+            svg.append("line")
+               .attr("class", "whisker")
+               .attr("x1",  xScale(lowerWhisker))
+               .attr("x2",  xScale(upperWhisker))
+               .attr("stroke", "black")
+               .attr("y1", midline)
+               .attr("y2", midline);
+
+            //draw rect for iqr
+            svg.append("rect")
+               .attr("class", "box")
+               .attr("stroke", "black")
+               .attr("fill", "white")
+               .attr("x", xScale(q1Val))
+               .attr("y", padding)
+               .attr("width", xScale(iqr) - padding)
+               .attr("height", 20);
+
+            //draw vertical line at median
+            svg.append("line")
+               .attr("class", "median")
+               .attr("stroke", "black")
+               .attr("x1", xScale(medianVal))
+               .attr("x2", xScale(medianVal))
+               .attr("y1", midline - 10)
+               .attr("y2", midline + 10);
+
+            //draw data as points
+            svg.selectAll("circle")
+               .data(datajs)
+               .enter()
+               .append("circle")
+               .attr("r", 2.5)
+               .attr("class", function(d) {
+                if (d[ykey] < lowerWhisker || d[ykey] > upperWhisker)
+                  return "outlier";
+                else
+                  return "point";
+               })
+               .attr("cy", function(d) {
+                return random_jitter();
+               })
+               .attr("cx", function(d) {
+                return xScale(d[ykey]);
+               })
+               .append("title")
+               .text(function(d) {
+                return "Date: " + d[xkey] + "; value: " + d[ykey];
+               });
+
+          function random_jitter() {
+            if (Math.round(Math.random() * 1) == 0)
+              var seed = -5;
+            else
+              var seed = 5;
+            return midline + Math.floor((Math.random() * seed) + 1);
+          }
+
+          function type(d) {
+            //d.value = +d.value; // coerce to number
+            return d;
+          }
         },
 
         api_options_toggle: function() {
@@ -262,6 +686,29 @@ define([
               $("#" + getPrev[0]+"_opt").slideUp(300);
               $("#" + val+"_opt").delay(300).slideDown(300);
           }
+
+          var analyzation_options = {"bar_graph_mapping": ["None","Gausion Curve", "Normal Distrubtion","Polynomial Regression","Linear Regression"],
+                                      "pie_graph_mapping": ["None", "Sort","Normal Distrubtion"],
+                                      "line_graph_mapping": ["None", "Polynomial Regression","Linear Regression"],
+                                      "bw_graph_mapping": ["None", "Sort","Quartile"]};
+
+          console.log(analyzation_options);
+          d3.select("#analyze").selectAll("option")
+              .data(analyzation_options.bar_graph_mapping).enter()
+              .append("option")
+              .text(function(d){return d});
+
+          var scope = this;
+
+          $("#visuals").on("change", function() {
+            d3.select("#analyze").selectAll("option").remove();
+
+            var anval = $(this).val();
+            d3.select("#analyze").selectAll("option")
+                .data(analyzation_options[anval]).enter()
+                .append("option")
+                .text(function(d){return d});
+          });
         }
 
     });

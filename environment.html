@@ -80,8 +80,8 @@ $.ajax({
                   <h4><label for="api">API: </label>
                   <select name="api" id="api">
                     <option value="" selected disabled>Please select</option>
-                  <option value="redlist">Red List</option>
-                  <option value="ex">knoema.com</option>
+                    <option value="redlist">Red List</option>
+                    <option value="knoema">knoema.com</option>
                 </select>
               </h4>
               </form>
@@ -92,10 +92,10 @@ $.ajax({
                 <form action="#">
                   <h4><label for="visuals">Visual: </label>
                     <select name="visuals" id="visuals">
-                      <option value="selectTable" id="barEntertain" selected="selected">bar graph</option>
-                      <option value="selectPie" id="pieEntertain">pie graph</option>
-                      <option value="selectLine" id="lineEntertain">line graph</option>
-                      <option value="selectBaW" id="bAwEntertain">map</option>
+                      <option value="bar_graph_mapping" id="barEntertain" selected="selected">Bar Graph</option>
+                      <option value="pie_graph_mapping" id="pieEntertain">Pie Graph</option>
+                      <option value="line_graph_mapping" id="lineEntertain">Line Graph</option>
+                      <option value="bw_mapping" id="bAwEntertain">Box and Whisker Plot</option>
                     </select>
                   </h4>
                 </form>
@@ -106,51 +106,53 @@ $.ajax({
                   <h4><label for="analyze">Data Analysis: </label>
                     <select name="analyze" id="analyze">
                       <option value="msNone" id="noneEntertain" selected="selected">none</option>
-                      <option value="msUni" id="uniEntertain">uniform distribution</option>
                       <option value="msNorm" id="normEntertain">normal distribution</option>
+                      <option value="msQuadReg" id="polyRegEntertain">polynomial regression</option>
                       <option value="msLinReg" id="linRegEntertain">linear regression</option>
                     </select>
                   </h4>
                 </form>
             </div>
 
-
-            <!-- bootstrap style button -->
-            <button type="button" class="btn create" data-toggle="button" aria-pressed="false" autocomplete="off">
-                <b>Get Data</b>
-            </button>
         </div>
 
         <div id="data_options">
-            <div id="redlist_opt" style="display:none">
-              <form class="form-inline">
+            <div id="redlist_opt" style="display:none;">
+              <div class="form-inline">
 
-                <div class="ui-widget" style="display: inline-block">
-                     <label for="city">Scientific name: </label>
-                     <input id="city" class="form-control" type="text" placeholder="example: Herpestes brachyurus">
-                </div>
+                <div class="form-group" style="text-align: center; margin: auto">
 
-                <div class="demo">
+                  <div class="demo" style="float: left;">
                     <form action="#">
-                      <h4><label for="factors">Factors: </label>
-                        <select name="factors" id="factors">
-                          <option value="habitats">Habitats</option>
-                          <option value="threats">Threats</option>
-                          <!--<option value="countries">Countries</option>
-                          <option value="history">Historical Assesments</option>-->
-                       </select>
-                      </h4>
-                    </form>
+                    <h4>
+                    <label for="factors">Factors: </label>
+                    <select name="factors" id="factors">
+                      <option value="habitats">Habitats</option>
+                      <option value="threats">Threats</option>
+                   </select>
+                  </h4>
+                </form>
                 </div>
 
-              </form>
-            </div>
+                <div class="ui-widget" style="float: left">
+                  <h4 style="margin-top: 0px; margin-bottom: 0px"><label for="city">Your city: </label>
+                  <input placeholder="ex: Herpestes brachyurus" style="padding: 6px; font-size: 16px; border-radius: 5px; border: none; background-color: rgb(248, 248, 248)" id="city" type="text"></h4>
+                </div>
 
+                <div style="float: left; position: relative; transform: translateY(25%)">
+                <button type="button" class="btn create" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    <b>Get Data</b>
+                </button>
+              </div>
 
-            <div id="ex_opt" style="display:none">
+                </div>
+              </div>
+
+       </div>
+
+            <div id="knoema_opt" style="display:none">
                 <p>Coming</p>
             </div>
-        </div>
       </div>
 
         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -200,6 +202,11 @@ $.ajax({
                 </div>
             </div>
         </div>
+
+        <button type="button" class="btn update" data-toggle="button" aria-pressed="false" autocomplete="off">
+            <b>Update</b>
+        </button>
+        <label><input type="checkbox"> Sort values</label>
 
         <div class="msBar"></div>
 

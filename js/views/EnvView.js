@@ -14,7 +14,6 @@ define([
           console.log("environment");
           var n = 1;
           this.api_options_toggle();
-          this.api_dropdown();
           this.table();
           //this.test_bar();
           //this.model = new envModel();/*
@@ -29,10 +28,6 @@ define([
           this.table(jsdata);
           this.test_bar(jsdata);*/
           //return data;
-        },
-
-        api_dropdown: function() {
-
         },
 
         table: function() {
@@ -115,6 +110,9 @@ define([
          			success: function(d) {
          				console.log(d);
          				//console.log(data);
+                if(d.result.length===0) {
+                  alert("No data available");
+                }
 
                 d3.select("#table_loc table").remove();
                 d3.selectAll(".xaxis_opt").remove();
