@@ -3,7 +3,8 @@ define([
     'jqueryui',
     'd3',
     'backbone',
-    'js/models/graph'
+    'js/models/graph',
+    'http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js'
 
 ], function($, $ui, d3, backbone, Model) {
 
@@ -115,12 +116,12 @@ define([
 
           //console.log(trheader.datum());
           //console.log(keysdisabled);
-          this.carrier(data);
+          this.carrier(data, keydata);
 
           return "some val";
         },
 
-        carrier: function(data) {
+        carrier: function(data, allkeys) {
           //console.log(keys);
           //console.log($("#xaxis").val());
           var scope = this;
@@ -133,11 +134,11 @@ define([
 
             console.log($("#visuals").val());
             var functionvalue= $("#visuals").val();
-            scope[functionvalue](data, xaxis, yaxis);
+            scope[functionvalue](data, xaxis, yaxis, allkeys);
           });
         },
 
-        bar_graph_mapping: function(data, xkey, ykey) {
+        bar_graph_mapping: function(data, xkey, ykey, allkeys) {
           //console.log(mess);
           //var options = ["Sort", "Gausion distribution", "Linear regression"];
           //var dataAnalysisOptionsDropdown = d3.select(".msBar").append("select").selectAll("option").data(options).enter().text(function(d){return d})
@@ -166,11 +167,22 @@ define([
               .orient("left")
               .ticks(40);
 
+          var tip = d3.tip()
+              .attr('class', 'd3-tip')
+              .offset([-10, 0])
+              .html(function(d) {
+                //var keydata = Object.keys(d);
+                //console.log(keydata);
+                  return "<strong>"+xkey+": "+d[xkey]+"</strong> <br> <span style='color:red'>"+ykey+": "+d[ykey]+"</span>";
+              })
+
           var svg = d3.select(".msBar").append("svg")
               .attr("width", width + margin.left + margin.right)
               .attr("height", height + margin.top + margin.bottom)
               .append("g")
               .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+          svg.call(tip);
 
               x.domain(data.map(function(d) {
                   return d[xkey];
@@ -228,7 +240,10 @@ define([
                        .attr("x", function(d, i) {
                              return x(i);
                        });
-                  });
+                  })
+                  .on('mouseover', tip.show)
+                  .on('mouseout', tip.hide);
+
 
              function update(newdata) {
 
@@ -514,6 +529,15 @@ define([
                         .scale(xScale)
                         .orient("bottom");
 
+          var tip = d3.tip()
+              .attr('class', 'd3-tip')
+              .offset([-10, 0])
+              .html(function(d) {
+                //var keydata = Object.keys(d);
+                //console.log(keydata);
+                  return "<strong>"+xkey+": "+d[xkey]+"</strong> <br> <span style='color:red'>"+ykey+": "+d[ykey]+"</span>";
+              })
+
           //initialize boxplot statistics
           var data = [],
               outliers = [],
@@ -626,6 +650,8 @@ define([
                .attr("y1", midline - 10)
                .attr("y2", midline + 10);
 
+            svg.call(tip);
+
             //draw data as points
             svg.selectAll("circle")
                .data(datajs)
@@ -644,6 +670,8 @@ define([
                .attr("cx", function(d) {
                 return xScale(d[ykey]);
                })
+               .on("mouseover", tip.show)
+               .on("mouseout", tip.hide)
                .append("title")
                .text(function(d) {
                 return "Date: " + d[xkey] + "; value: " + d[ykey];
