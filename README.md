@@ -1,7 +1,6 @@
-# Boilerplate code for a data-based D3 application
+# Boilerplate code for a data-based D3 web application
 
-Clone this repository to efficiently build a data-based web application with D3 visualizations. Essential Backbone components, such as the model and view, have
-already been included.
+Clone this repository to efficiently build a data-based web application with D3 visualizations. Essential Backbone components, such as the model and view, have already been included. The web application utilizes website API's to retrieve data in json files.
 
 It contains all the boilerplate code for an application using:
 
