@@ -16,6 +16,7 @@ define([
 
         table_mapping: function(data){
           console.log(data);
+          //this.update(data);
 
           var scope = this;
 
@@ -133,6 +134,35 @@ define([
             var functionvalue= $("#visuals").val();
             scope[functionvalue](data, xaxis, yaxis, allkeys);
           });
+
+          $(".update").click(function(){
+            var xaxis = $("#xaxis").val();
+            var yaxis = $("#yaxis").val();
+
+            scope.update(data, xaxis, yaxis);
+          });
+        },
+
+        update: function(newdata, xkey, ykey) {
+          console.log(newdata);
+
+          var scope = this;
+
+          var barUpdate = d3.select("svg").data(newdata).transition()
+            .attr("transform", function(d) { return "translate(" + scope.x(d[xkey]) + ",0)"; })
+            //.attr("transform", function(d) { return "translate(40,20)"; });
+
+
+          barUpdate.selectAll("rect")//.data(newdata).transition()
+              .attr("y", function(d) { return scope.y(d[ykey]); })
+              .attr("height", function(d) { return 960-170 - scope.y(d[ykey]); })
+              .attr("width", scope.x.rangeBand())
+          /*$(".update").click(function(){
+            console.log(newdata);
+            //d3.selectAll(".bar").data(newdata).
+
+          });*/
+          //console.log(data);
         },
 
         bar_graph_mapping: function(data, xkey, ykey, allkeys) {
@@ -145,22 +175,22 @@ define([
               width = 960 - margin.left - margin.right,
               height = 500 - margin.top - margin.bottom;
 
-          var x = d3.scale.ordinal()
+          this.x = d3.scale.ordinal()
               .rangeRoundBands([0, width], .1);
 
-          var y = d3.scale.linear()
-              .range([height, 0], .3);
+          this.y = d3.scale.linear()
+              .range([height, 0]);
 
-          var xAxis = d3.svg.axis()
-              .scale(x)
+          this.xAxis = d3.svg.axis()
+              .scale(this.x)
               .orient("bottom");
 
-          var yAxis = d3.svg.axis()
-              .scale(y)
+          this.yAxis = d3.svg.axis()
+              .scale(this.y)
               .orient("left")
               .ticks(40);
 
-          var tip = d3.tip()
+          this.tip = d3.tip()
               .attr('class', 'd3-tip')
               .offset([-10, 0])
               .html(function(d) {
@@ -175,19 +205,19 @@ define([
               .append("g")
               .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-          svg.call(tip);
+          svg.call(this.tip);
 
-              x.domain(data.map(function(d) {
+              this.x.domain(data.map(function(d) {
                   return d[xkey];
               }));
-              y.domain([0, d3.max(data, function(d) {
+              this.y.domain([0, d3.max(data, function(d) {
                   return d[ykey];
               })]);
 
               svg.append("g")
                   .attr("class", "x axis")
                   .attr("transform", "translate(0," + height + ")")
-                  .call(xAxis)
+                  .call(this.xAxis)
                   .selectAll("text")
                   .attr("y", 0)
                   .attr("x", 9)
@@ -198,7 +228,7 @@ define([
 
               svg.append("g")
                   .attr("class", "y axis")
-                  .call(yAxis)
+                  .call(this.yAxis)
                   .append("text")
                   .attr("transform", "rotate(-90)")
                   .attr("y", 6)
@@ -206,25 +236,27 @@ define([
                   .style("text-anchor", "end")
                   .text(ykey);
 
+              var scope = this;
+
               svg.selectAll(".bar")
                   .data(data)
                   .enter().append("rect")
                   .attr("class", "bar")
                   .attr("x", function(d) {
-                      return x(d[xkey]);
+                      return scope.x(d[xkey]);
                   })
-                  .attr("width", x.rangeBand())
+                  .attr("width", this.x.rangeBand())
                   .attr("y", function(d) {
-                      return y(d[ykey]);
+                      return scope.y(d[ykey]);
                   })
                   .attr("height", function(d) {
-                      return height - y(d[ykey]);
+                      return height - scope.y(d[ykey]);
                   })
                   .attr("fill", function(d){
                     return "rgb(0, "+d[ykey]+",0)";
                   })
                   .on("click", function(){
-                    svg.selectAll("rect")
+                    /*svg.selectAll("rect")
                        .sort(function(a, b) {
                              return d3.ascending(a, b);
                        })
@@ -232,15 +264,18 @@ define([
                        .duration(1000)
                        .attr("x", function(d, i) {
                              return x(i);
-                       });
+                       });*/
                   })
-                  .on('mouseover', tip.show)
-                  .on('mouseout', tip.hide);
+                  .on('mouseover', this.tip.show)
+                  .on('mouseout', this.tip.hide);
 
 
-             function update(newdata) {
+             //function update(newdata) {
 
-             }
+             //}
+             /*$(".update").click(function(){
+               console.log(data);
+             });*/
 
         },
 
@@ -708,8 +743,8 @@ define([
               $("#" + val+"_opt").delay(300).slideDown(300);
           }
 
-          var analyzation_options = {"bar_graph_mapping": ["None","Gausion Curve", "Normal Distrubtion","Polynomial Regression","Linear Regression"],
-                                      "pie_graph_mapping": ["None", "Sort","Normal Distrubtion"],
+          var analyzation_options = {"bar_graph_mapping": ["None","Gaussian Curve", "Normal Distribution","Polynomial Regression","Linear Regression"],
+                                      "pie_graph_mapping": ["None", "Sort"],
                                       "line_graph_mapping": ["None", "Polynomial Regression","Linear Regression"],
                                       "bw_graph_mapping": ["None", "Sort","Quartile"]};
 

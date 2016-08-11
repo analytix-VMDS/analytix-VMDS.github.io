@@ -1,31 +1,31 @@
 <!doctype html>
 <html>
-    <!-- Header where scripts and stylesheets are called -->
+<!-- Header where scripts and stylesheets are called -->
 
-    <head>
-        <!-- google api -->
-        <!-- Calls to CSS Stylesheets -->
-        <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/main.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.css">
+<head>
+    <!-- google api -->
+    <!-- Calls to CSS Stylesheets -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.css">
 
-        <script src="https://use.typekit.net/edv1zzt.js"></script>
-        <script>
-            try {
-                Typekit.load({
-                    async: true
-                });
-            } catch (e) {}
-        </script>
+    <script src="https://use.typekit.net/edv1zzt.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
 
-        <!-- Calls to javascript files in bootstrap & jquery -->
-        <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
-        <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Calls to javascript files in bootstrap & jquery -->
+    <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
-        <script src="http://s3.amazonaws.com/filestore.rescuegroups.org/scripts/noncvs/jquery-json.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+    <script src="http://s3.amazonaws.com/filestore.rescuegroups.org/scripts/noncvs/jquery-json.js" type="text/javascript"></script>
 
-        <!--<script>
+    <!--<script>
 var thing = {"apikey":"gfcYBg2d","objectType":"animals","objectAction":"publicSearch","search":{"calcFoundRows":"Yes","resultStart":0,"resultLimit":0,"fields":["animalName"],"filters":[{"fieldName":"animalStatus","operation":"equals","criteria":"Adopted"},{"fieldName":"animalOrgID","operation":"equals","criteria":"****"}]}};
 var encoded = $.toJSON(thing)
 
@@ -43,53 +43,78 @@ $.ajax({
 });
 </script>-->
 
-        <!-- The main script is the entry point for the application -->
-        <!--<script data-main="js/views/mappings" src="lib/require/require.js"></script>-->
-        <script data-main="js/env-main" src="lib/require/require.js"></script>
-        <!--<script data-main="js/views/EnvView" src="lib/require/require.js"></script>-->
+    <!-- The main script is the entry point for the application -->
+    <!--<script data-main="js/views/mappings" src="lib/require/require.js"></script>-->
+    <script data-main="js/env-main" src="lib/require/require.js"></script>
+    <!--<script data-main="js/views/EnvView" src="lib/require/require.js"></script>-->
 
-        <!-- font awesome icon code -->
-        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-    </head>
+    <!-- font awesome icon code -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
 
-    <body>
-        <!--
+<body>
+    <!--
        Tabs connecting to Home branch
      -->
 
-        <!-- Page header for the webpage -->
+    <!-- Page header for the webpage -->
 
-        <div id="header">
-            <div id="top">
-                <p><a href="/"><i class="fa fa-home"></i>Home</a></p>
-            </div>
-            <h1>Environment<i class="fa fa-globe"></i></h1>
+    <div id="header">
+        <div id="top">
+            <p><a href="/"><i class="fa fa-home"></i>Home</a></p>
+        </div>
+        <h1>Environment<i class="fa fa-globe"></i></h1>
 
 
-            <div id="para">
-                <h4>Analyze the world's biggest current environment issues like global warming factors,
+        <div id="para">
+            <h4>Analyze the world's biggest current environment issues like global warming factors,
                 ocean acidification, coral reef destruction, and invasive species.
               </h4>
+        </div>
+    </div>
+    <!--tyle dropdown -->
+    <div id="dropdowns">
+        <button style="margin-right: 5em;" type="button" class="btn btn-default" aria-label="Left Align" data-toggle="modal" data-target="#myModal">
+            <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+        </button>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Info</h4>
+                    </div>
+                    <div class="modal-body">
+                          Begin by selecting the API of your choice which will retrieve data from the website indicated.
+                        Then select a visual and if desired, select a data analysis method. Upon selecting the Red List API, enter
+                        a scientific name of an animal in the dropdown field. Options will load as you type. Sorry, the Knoema API is still currently on its way.
+                        Then, click 'Get Data' and your selected data will display in the table. To view the visual you selected, select
+                         what you want to be on the x- and y-axis. Click 'Graph'.
+
+                         <br><br>Contact us for any other questions, comments, or concerns and be sure to share your favorite page
+                        on social media with the share buttons below!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
             </div>
         </div>
-        <!--tyle dropdown -->
-        <div id="dropdowns">
-
-          <div class="demo">
-              <form action="#">
-                  <h4><label for="api">API: </label>
+        <div class="demo">
+            <form action="#">
+                <h4><label for="api">API: </label>
                   <select name="api" id="api">
                     <option value="" selected disabled>Please select</option>
                     <option value="redlist">Red List</option>
                     <option value="knoema">knoema.com</option>
                 </select>
               </h4>
-              </form>
-          <</div>
+            </form>
+        </div>
 
-           <div class="demo">
-                <form action="#">
-                  <h4><label for="visuals">Visual: </label>
+        <div class="demo">
+            <form action="#">
+                <h4><label for="visuals">Visual: </label>
                     <select name="visuals" id="visuals">
                       <option value="bar_graph_mapping" id="barEntertain" selected="selected">Bar Graph</option>
                       <option value="pie_graph_mapping" id="pieEntertain">Pie Graph</option>
@@ -97,12 +122,12 @@ $.ajax({
                       <option value="bw_mapping" id="bAwEntertain">Box and Whisker Plot</option>
                     </select>
                   </h4>
-                </form>
-            </div>
+            </form>
+        </div>
 
-            <div class="demo">
-                <form action="#">
-                  <h4><label for="analyze">Data Analysis: </label>
+        <div class="demo">
+            <form action="#">
+                <h4><label for="analyze">Data Analysis: </label>
                     <select name="analyze" id="analyze">
                       <option value="msNone" id="noneEntertain" selected="selected">none</option>
                       <option value="msNorm" id="normEntertain">normal distribution</option>
@@ -110,74 +135,74 @@ $.ajax({
                       <option value="msLinReg" id="linRegEntertain">linear regression</option>
                     </select>
                   </h4>
-                </form>
-            </div>
-
+            </form>
         </div>
 
-        <div id="data_options">
-            <div id="redlist_opt" style="display:none;">
-              <div class="form-inline">
+    </div>
+
+    <div id="data_options">
+        <div id="redlist_opt" style="display:none;">
+            <div class="form-inline">
 
                 <div class="form-group" style="text-align: center; margin: auto">
 
-                  <div class="demo" style="float: left;">
-                    <form action="#">
-                    <h4>
+                    <div class="demo" style="float: left;">
+                        <form action="#">
+                            <h4>
                     <label for="factors">Factors: </label>
                     <select name="factors" id="factors">
                       <option value="habitats">Habitats</option>
                       <option value="threats">Threats</option>
                    </select>
                   </h4>
-                </form>
-                </div>
+                        </form>
+                    </div>
 
-                <div class="ui-widget" style="float: left">
-                  <h4 style="margin-top: 0px; margin-bottom: 0px"><label for="city">Your city: </label>
+                    <div class="ui-widget" style="float: left">
+                        <h4 style="margin-top: 0px; margin-bottom: 0px"><label for="city">Scientific Name: </label>
                   <input placeholder="ex: Herpestes brachyurus" style="padding: 6px; font-size: 16px; border-radius: 5px; border: none; background-color: rgb(248, 248, 248)" id="city" type="text"></h4>
+                    </div>
+
+                    <div style="float: left; position: relative; transform: translateY(25%)">
+                        <button type="button" class="btn create" data-toggle="button" aria-pressed="false" autocomplete="off">
+                            <b>Get Data</b>
+                        </button>
+                    </div>
+
                 </div>
-
-                <div style="float: left; position: relative; transform: translateY(25%)">
-                <button type="button" class="btn create" data-toggle="button" aria-pressed="false" autocomplete="off">
-                    <b>Get Data</b>
-                </button>
-              </div>
-
-                </div>
-              </div>
-
-       </div>
-
-            <div id="knoema_opt" style="display:none">
-                <p>Coming</p>
             </div>
-      </div>
 
-        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                    <h4 class="panel-title" title="hidden content closed">
+        </div>
+
+        <div id="knoema_opt" style="display:none">
+            <p>Coming</p>
+        </div>
+    </div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title" title="hidden content closed">
             <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
               Table
             </a>
           </h4>
-                </div>
-                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                    <div class="panel-body">
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
 
-                      <div class="demo">
-                          <form action="#">
+                    <div class="demo">
+                        <form action="#">
                             <h4><label style="color: blue;" for="xaxis">X-Axis: </label>
                               <select name="xaxis" id="xaxis">
                                 <option value="" selected disabled>Please select</option>
                               </select>
                             </h4>
-                          </form>
-                      </div>
+                        </form>
+                    </div>
 
-                      <div class="demo">
-                          <form action="#">
+                    <div class="demo">
+                        <form action="#">
                             <h4><label style="color: red;" for="yaxis">Y-Axis: </label>
                               <select name="yaxis" id="yaxis">
                                 <option value="" selected disabled>Please select</option>
@@ -187,58 +212,59 @@ $.ajax({
                                 (please choose column with numbers in it)
                               </p>
                             </h4>
-                          </form>
-                      </div>
-
-                        <div id="table_loc">
-                          <!-- where javascript loaded table goes -->
-                        </div>
-
-                        <button type="button" class="btn graph" data-toggle="button" aria-pressed="false" autocomplete="off">
-                            <b>Graph</b>
-                        </button>
+                        </form>
                     </div>
+
+                    <div id="table_loc">
+                        <!-- where javascript loaded table goes -->
+                    </div>
+
+                    <button type="button" class="btn graph" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <b>Graph</b>
+                    </button>
                 </div>
             </div>
         </div>
+    </div>
 
-        <button type="button" class="btn update" data-toggle="button" aria-pressed="false" autocomplete="off">
-            <b>Update</b>
-        </button>
-        <label><input type="checkbox"> Sort values</label>
+    <button type="button" class="btn update" data-toggle="button" aria-pressed="false" autocomplete="off">
+        <b>Update</b>
+    </button>
+    <label>
+        <input type="checkbox"> Sort values</label>
 
-        <div class="msBar"></div>
+    <div class="msBar"></div>
 
-        <!--<div class="map"></div>
+    <!--<div class="map"></div>
 
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF6-dEtsRQ5jcaXJy2oDjU46u896i_xDk&callback=initMap" async defer></script>
 
         <div id="svg_location"></div>-->
 
-        <!--<script src="https://gist.github.com/jonathantneal/5146557.js"></script>-->
+    <!--<script src="https://gist.github.com/jonathantneal/5146557.js"></script>-->
 
 
-        <div id="footer">
-            <ul class="share-buttons">
-              Share:
-                <li>
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost.8888&t=" target="_blank" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><i class="fa fa-facebook-square fa-2x"></i></a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Flocalhost.8888&text=:%20http%3A%2F%2Flocalhost.8888" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20' + encodeURIComponent(document.URL)); return false;"><i class="fa fa-twitter-square fa-2x"></i></a>
-                </li>
-                <li>
-                    <a href="http://www.reddit.com/submit?url=http%3A%2F%2Flocalhost.8888&title=" target="_blank" title="Submit to Reddit" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><i class="fa fa-reddit-square fa-2x"></i></a>
-                </li>
-                <li>
-                    <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost.8888&title=&summary=&source=http%3A%2F%2Flocalhost.8888" target="_blank" title="Share on LinkedIn" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><i class="fa fa-linkedin-square fa-2x"></i></a>
-                </li>
-            </ul>
-            Copyright &copy; 2016 Analytix
-            <br>
-            <p><a style="font-size:1em" href="https://github.com/cs-squad/Data-Analysis-Web-Application">Github<i class="fa fa-github"></i></a></p>
-        </div>
-        <!--<script src="lib/require/require.js"></script>
+    <div id="footer">
+        <ul class="share-buttons">
+            Share:
+            <li>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost.8888&t=" target="_blank" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><i class="fa fa-facebook-square fa-2x"></i></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Flocalhost.8888&text=:%20http%3A%2F%2Flocalhost.8888" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20' + encodeURIComponent(document.URL)); return false;"><i class="fa fa-twitter-square fa-2x"></i></a>
+            </li>
+            <li>
+                <a href="http://www.reddit.com/submit?url=http%3A%2F%2Flocalhost.8888&title=" target="_blank" title="Submit to Reddit" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><i class="fa fa-reddit-square fa-2x"></i></a>
+            </li>
+            <li>
+                <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost.8888&title=&summary=&source=http%3A%2F%2Flocalhost.8888" target="_blank" title="Share on LinkedIn" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            </li>
+        </ul>
+        Copyright &copy; 2016 Analytix
+        <br>
+        <p><a style="font-size:1em" href="https://github.com/cs-squad/Data-Analysis-Web-Application">Github<i class="fa fa-github"></i></a></p>
+    </div>
+    <!--<script src="lib/require/require.js"></script>
             <script type="text/javascript">
               // Load common code that includes config,
               // then load the app logic for this page.
@@ -250,6 +276,6 @@ $.ajax({
               });
             </script>-->
 
-    </body>
+</body>
 
 </html>

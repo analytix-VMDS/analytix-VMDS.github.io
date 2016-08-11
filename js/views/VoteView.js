@@ -13,6 +13,7 @@ define([
           console.log("response");
           this.draw_table();
           this.api_options_toggle();
+          //this.
 
         },
 

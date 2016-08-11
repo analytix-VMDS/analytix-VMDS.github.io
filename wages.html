@@ -52,6 +52,28 @@
 
     <!-- bootstrap style dropdown -->
     <div id="dropdowns">
+        <button style="margin-right: 5em;" type="button" class="btn btn-default" aria-label="Left Align" data-toggle="modal" data-target="#myModal">
+            <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+        </button>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Info</h4>
+                    </div>
+                    <div class="modal-body">
+                      Sorry, all the API's on this page are still on their way!
+
+                      <br><br>Contact us for any other questions, comments, or concerns and be sure to share your favorite page
+                    on social media with the share buttons below!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="demo">
             <form action="#">
                 <h4><label for="api">API: </label>
@@ -68,7 +90,7 @@
 
         <div class="demo">
             <form action="#">
-              <h4><label for="visuals">Visual: </label>
+                <h4><label for="visuals">Visual: </label>
                 <select name="visuals" id="visuals">
                   <option value="bar_graph_mapping">Bar Graph</option>
                   <option value="pie_graph_mapping">Pie Graph</option>
@@ -91,46 +113,17 @@
     </div>
 
     <div id="data_options">
-        <div id="knoema_opt" style="display:none;">
-          <div class="form-inline">
-
-            <div class="form-group" style="text-align: center; margin: auto">
-
-              <div class="demo" style="float: left;">
-                <form action="#">
-                <h4>
-                <label for="factors">Factors: </label>
-                <select name="factors" id="factors">
-                  <option value="habitats">Habitats</option>
-                  <option value="threats">Threats</option>
-               </select>
-              </h4>
-            </form>
-            </div>
-
-            <div class="ui-widget" style="float: left">
-              <h4 style="margin-top: 0px; margin-bottom: 0px"><label for="city">Your city: </label>
-              <input placeholder="ex: Herpestes brachyurus" style="padding: 6px; font-size: 16px; border-radius: 5px; border: none; background-color: rgb(248, 248, 248)" id="city" type="text"></h4>
-            </div>
-
-            <div style="float: left; position: relative; transform: translateY(25%)">
-            <button type="button" class="btn create" data-toggle="button" aria-pressed="false" autocomplete="off">
-                <b>Get Data</b>
-            </button>
-          </div>
-
-            </div>
-          </div>
-
-   </div>
-
-
-        <div id="quandl_opt" style="display:none">
-            <p>Coming</p>
+        <div id="knoema_opt" style="display:none">
+            <p>Coming soon!</p>
         </div>
 
+
+          <div id="quandl_opt" style="display:none">
+              <p>Coming soon!</p>
+          </div>
+
         <div id="usda_opt" style="display:none">
-            <p>Coming</p>
+            <p>Coming soon!</p>
         </div>
     </div>
     </div>

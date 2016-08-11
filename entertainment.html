@@ -54,6 +54,34 @@
 
     <!-- bootstrap style dropdown -->
     <div id="dropdowns">
+        <button style="margin-right: 5em;" type="button" class="btn btn-default" aria-label="Left Align" data-toggle="modal" data-target="#myModal">
+            <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+        </button>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Info</h4>
+                    </div>
+                    <div class="modal-body">
+                      Begin by selecting the API of your choice which will retrieve data from the website indicated.
+                    Then select a visual and if desired, select a data analysis method. Upon selecting the Movie DB API, enter
+                    a movie name in the dropdown field. Options will load as you type and let you know if your movie is in the database.
+                    If your movie shows up, then click the 'plus' button to add the movie to your list, which will be your dataset of movies.
+                     Sorry, the Knoema API is still currently on its way.
+                    Then, click 'Get Data' and your selected data will display in the table. To view the visual you selected, select
+                    what you want to be on the x- and y-axis. Click 'Graph'.
+
+                      <br><br>Contact us for any other questions, comments, or concerns and be sure to share your favorite page
+                    on social media with the share buttons below!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="demo">
             <form action="#">
                 <h4><label for="api">API: </label>
@@ -69,7 +97,7 @@
 
         <div class="demo">
             <form action="#">
-              <h4><label for="visuals">Visual: </label>
+                <h4><label for="visuals">Visual: </label>
                 <select name="visuals" id="visuals">
                   <option value="bar_graph_mapping">Bar Graph</option>
                   <option value="pie_graph_mapping">Pie Graph</option>
@@ -95,62 +123,46 @@
     <div id="data_options">
 
         <div id="movieDB_opt" style="display: none">
-          <div class="form-inline">
-            <div class="form-group" style="text-align: center; margin: auto">
+            <div class="form-inline">
+                <div class="form-group" style="text-align: center; margin: auto">
 
-              <div class="ui-widget" style="float: left">
-                <h4 style="margin-top: 0px; margin-bottom: 0px"><label for="city">Movie: </label>
+                    <div class="ui-widget" style="float: left">
+                        <h4 style="margin-top: 0px; margin-bottom: 0px"><label for="city">Movie: </label>
                 <input placeholder="ex: Deadpool" style="padding: 6px; font-size: 16px; border-radius: 5px; border: none; background-color: rgb(248, 248, 248); color: #78583e; margin-right: 0px; margin-left: 0px" id="city" type="text"></h4>
 
-                <div id="result-location">
-                  <!--<div style="padding: 6px; font-size: 16px; border-radius: 5px; background-color: rgb(248, 248, 248); color: #78583e; margin-right: 0px; margin-left: 0px">
+                        <div id="result-location">
+                            <!--<div style="padding: 6px; font-size: 16px; border-radius: 5px; background-color: rgb(248, 248, 248); color: #78583e; margin-right: 0px; margin-left: 0px">
 
                   </div>-->
+                        </div>
+
+                    </div>
+
+                    <div style="float: left; color: white; transform: translateY(25%)">
+                        <button type="button" class="add-button">
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                        </button>
+                    </div>
+
+                    <div style="float: left;">
+                        <button type="button" class="btn create" data-toggle="button" aria-pressed="false" autocomplete="off">
+                            <b>Get Data</b>
+                        </button>
+                    </div>
+
                 </div>
-
-              </div>
-
-              <div style="float: left; color: white; transform: translateY(25%)">
-                <button type="button" class="add-button">
-                  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                </button>
-              </div>
-
-              <div style="float: left;">
-                <button type="button" class="btn create" data-toggle="button" aria-pressed="false" autocomplete="off">
-                    <b>Get Data</b>
-                </button>
-              </div>
-
             </div>
-          </div>
         </div>
 
         <div id="knoema_opt" style="display:none">
-          <div class="form-inline">
+            <div class="form-inline">
 
-            <div class="form-group" style="text-align: center; margin: auto">
+                <div class="form-group" style="text-align: center; margin: auto">
 
-              <div class="demo" style="float: left; margin-right: 15px">
-                <form action="#">
-                <h4>
-                <label for="factors">Factors: </label>
-                <select name="factors" id="factors" style="color: #78583e;">
-                  <option value="habitats">Habitats</option>
-                  <option value="threats">Threats</option>
-               </select>
-              </h4>
-            </form>
+                    Coming
+
+                </div>
             </div>
-
-            <div style="float: left;">
-            <button type="button" class="btn create" data-toggle="button" aria-pressed="false" autocomplete="off">
-                <b>Get Data</b>
-            </button>
-          </div>
-
-            </div>
-          </div>
 
         </div>
 
@@ -203,18 +215,14 @@
                     <button type="button" class="btn graph" data-toggle="button" aria-pressed="false" autocomplete="off">
                         <b>Graph</b>
                     </button>
+
+                    <button type="button" class="btn update" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <b>Update</b>
+                    </button>
                 </div>
             </div>
         </div>
     </div>
-
-    <button type="button" class="btn update" data-toggle="button" aria-pressed="false" autocomplete="off">
-        <b>Update</b>
-    </button>
-<!-- popovers -->
-    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-  Popover on top
-</button>
 
     <div class="msBar"></div>
 

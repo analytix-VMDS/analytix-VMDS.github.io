@@ -61,7 +61,7 @@ define([
           $(".add-button").click(function(){
             var currentVal = $("#city").val();
             //console.log(currentVal);
-            //console.log(id);
+            //console.log(id);i need the new data lol i wanna update this code is kinda fat
 
             scope.selectedMovies.push(currentVal);
 
@@ -109,9 +109,16 @@ define([
               //console.log(index);
               //console.log(data.results[index]);
               arr.push(data.results[index]);
+              //console.log(arr);
 
             }
-            console.log(arr);
+
+
+            /*$(".update").click(function(){
+              console.log(arr);
+              var updater = new mappings();
+              return updater.update(arr);
+            });*/
             //console.log(scope.selectedMovies);
 
             /*var selectedData = data.results.filter(function(n, i){
@@ -128,6 +135,7 @@ define([
             //  return d.title !== scope.selectedMovies;
           //  })
             //console.log(selectedData);
+            d3.select("#table_loc table").remove();
 
             var table = new mappings();
             return table.table_mapping(arr);

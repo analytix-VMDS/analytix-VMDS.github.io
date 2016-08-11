@@ -407,3 +407,10 @@ body {
 	left:800px;
 	top:350px;
 }
+
+.modal-title{
+  font-size: 4em;
+}
+.modal-body{
+  font-size: 2em;
+}
