@@ -200,6 +200,7 @@ define([
               })
 
           var svg = d3.select(".msBar").append("svg")
+              //.attr("overflow","visible")
               .attr("width", width + margin.left + margin.right)
               .attr("height", height + margin.top + margin.bottom)
               .append("g")
@@ -255,6 +256,7 @@ define([
                   .attr("fill", function(d){
                     return "rgb(0, "+d[ykey]+",0)";
                   })
+                  .style("overflow","visible")
                   .on("click", function(){
                     /*svg.selectAll("rect")
                        .sort(function(a, b) {
@@ -268,6 +270,8 @@ define([
                   })
                   .on('mouseover', this.tip.show)
                   .on('mouseout', this.tip.hide);
+
+              //d3.selectAll("g").attr("overflow","visible");
 
 
              //function update(newdata) {

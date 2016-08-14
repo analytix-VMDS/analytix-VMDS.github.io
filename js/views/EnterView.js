@@ -29,29 +29,66 @@ define([
           var scope = this;
 
           var id = [];
+          var list = [];
+          var titles = [];
           $( "#city" ).autocomplete({
             source: function( request, response ) {
-              $.ajax( {
-                url: "http://api.themoviedb.org/3/discover/movie?api_key=9cff8111045983be875097f569683c8e&sort_by=popularity.desc",
-                dataType: "json",
-                data: {
-                  q: request.term
-                },
-                success: function( data ) {
-                  var arrofsn = [];
 
-                  for(var i = 0; i < data.results.length; i++) {
-                    arrofsn.push(data.results[i].title);
-                    id.push({"id": data.results[i].id, "title": data.results[i].title});
+              //for(var i=1; i < 8; i++) {
+
+                $.ajax( {
+                  url: "http://api.themoviedb.org/3/discover/movie?page=1&api_key=9cff8111045983be875097f569683c8e&sort_by=popularity.desc",
+                  dataType: "json",
+                  data: {
+                    q: request.term
+                  },
+                  success: function( data ) {
+                    var arrofsn = [];
+
+                    for(var i = 0; i < data.results.length; i++) {
+                      arrofsn.push(data.results[i].title);
+                      id.push({"id": data.results[i].id, "title": data.results[i].title});
+                    }
+                    ////console.log(id);
+                    //console.log(data);
+                    list.push(data);
+
+                    //console.log(list);
+                    var reslist = [];
+                    for(var f = 0; f < list.length; f++) {
+                      //console.log(list[f].results[1]);
+                      reslist.push(list[f].results);
+                      /*var l = list[f].results;
+                      for(var n = 0; n > l.length; n++) {
+                        console.log(l[n]);
+                      }*/
+                    }
+
+                    //console.log(reslist);
+
+                    /*for(var g = 0; g < reslist.length; g++) {
+                      //console.log(reslist[g]);
+                      for(var h = 0; h < reslist[g].length; h++) {
+                        //console.log(reslist[g][h].title);
+                        var names = [reslist[g][h].title];
+                        titles.push[names];
+                        return names;
+                        //console.log(titles);
+                        //console.log(names);
+                      }
+                    }*/
+
+                    console.log(titles);
+
+                    response($.ui.autocomplete.filter(arrofsn, request.term));
+
+                    scope.carrier(data);
+
                   }
-                  //console.log(id);
-                  //console.log(data);
-                  response($.ui.autocomplete.filter(arrofsn, request.term));
+                });
 
-                  scope.carrier(data);
 
-                }
-              });
+              //}
             },
             minLength: 2,
 
@@ -59,6 +96,7 @@ define([
 
           this.selectedMovies = [];
           $(".add-button").click(function(){
+            //console.log(titles);
             var currentVal = $("#city").val();
             //console.log(currentVal);
             //console.log(id);i need the new data lol i wanna update this code is kinda fat
@@ -84,7 +122,7 @@ define([
                     d3.select(this).remove();
                   })
 
-              console.log(scope.selectedMovies);
+              //console.log(scope.selectedMovies);
           });
 
           $("#accordion").draggable().resizable({
@@ -106,20 +144,20 @@ define([
             var arr = [];
             for(var f = 0; f < scope.selectedMovies.length; f++) {
               var index = arrayObjectIndexOf(data.results, scope.selectedMovies[f], "title");
-              //console.log(index);
-              //console.log(data.results[index]);
+              ////console.log(index);
+              ////console.log(data.results[index]);
               arr.push(data.results[index]);
-              //console.log(arr);
+              ////console.log(arr);
 
             }
 
 
             /*$(".update").click(function(){
-              console.log(arr);
+              //console.log(arr);
               var updater = new mappings();
               return updater.update(arr);
             });*/
-            //console.log(scope.selectedMovies);
+            ////console.log(scope.selectedMovies);
 
             /*var selectedData = data.results.filter(function(n, i){
 
@@ -134,7 +172,7 @@ define([
             //var selectedData = $.grep(data.results, function(d){
             //  return d.title !== scope.selectedMovies;
           //  })
-            //console.log(selectedData);
+            ////console.log(selectedData);
             d3.select("#table_loc table").remove();
 
             var table = new mappings();
@@ -179,11 +217,11 @@ define([
           $(".create").click(function(){
             var scientificName = $("#city").val().replace(" ","%20");
             var factor = $("#factors").val();
-            //console.log($("#city").val()+" "+$("#factors").val());
+            ////console.log($("#city").val()+" "+$("#factors").val());
             var api =  'http://apiv3.iucnredlist.org/api/v3/'+factor+'/species/name/'+scientificName+'?token=1da43ebfc20ad97f3b32afcee87d47b77d8acfac9113d2273f15c97e26e047c4';
-            //console.log('http://apiv3.iucnredlist.org/api/v3/'+factor+'/species/name/'+scientificName+'?token=1da43ebfc20ad97f3b32afcee87d47b77d8acfac9113d2273f15c97e26e047c4');
+            ////console.log('http://apiv3.iucnredlist.org/api/v3/'+factor+'/species/name/'+scientificName+'?token=1da43ebfc20ad97f3b32afcee87d47b77d8acfac9113d2273f15c97e26e047c4');
 
-            console.log(api);
+            //console.log(api);
 
             $.ajax({
               url: api,
@@ -196,8 +234,8 @@ define([
               },
               dataType: 'json',
               success: function(d) {
-                console.log(d);
-                //console.log(data);
+                //console.log(d);
+                ////console.log(data);
 
                 d3.select("#table_loc table").remove();
                 d3.selectAll(".xaxis_opt").remove();
@@ -228,14 +266,14 @@ define([
             $('#analyze').on('change', function() {
                 value = $(this).val();
                 change(value);
-                console.log(value);
+                //console.log(value);
             });
             var change = function(val) {
                 getPrev.push(val);
                 if (getPrev.length > 2) {
                     getPrev.shift();
                 }
-                console.log(val);
+                //console.log(val);
 
                 $("." + getPrev[0]).hide();
 
@@ -250,14 +288,14 @@ define([
             $('#subtopic').on('change', function() {
                 value = $(this).val();
                 change(value);
-                console.log(value);
+                //console.log(value);
             });
             var change = function(val) {
                 getPrev.push(val);
                 if (getPrev.length > 2) {
                     getPrev.shift();
                 }
-                console.log(getPrev);
+                //console.log(getPrev);
 
                 $("." + getPrev[0]).hide();
 
@@ -271,20 +309,20 @@ define([
            //style: "popup"
            $(".msBar").show();
            $(".msPie").hide();
-          // console.log($(body"));
+          // //console.log($(body"));
         });*/
             var getPrev = ["msBar"];
             $('#visual').on('change', function() {
                 value = $(this).val();
                 change(value);
-                console.log(value);
+                //console.log(value);
             });
             var change = function(val) {
                 getPrev.push(val);
                 if (getPrev.length > 2) {
                     getPrev.shift();
                 }
-                console.log(getPrev);
+                //console.log(getPrev);
 
                 $("." + getPrev[0]).hide();
                 $("." + val).show();
@@ -293,23 +331,23 @@ define([
 
         api_options_toggle: function() {
           /*$("#dropdowns").click(function(){
-            console.log("w");
+            //console.log("w");
             $("#redlist_opt").slideToggle("slow");
           });*/
 
           var getPrev = [];
           $('#api').on('change', function() {
               value = $(this).val();
-              console.log(value);
+              //console.log(value);
               change(value);
           });
           var change = function(val) {
-            //console.log(val);
+            ////console.log(val);
               getPrev.push(val);
               if (getPrev.length > 2) {
                   getPrev.shift();
               }
-              console.log(getPrev);
+              //console.log(getPrev);
 
               $("#" + getPrev[0]+"_opt").slideUp(300);
               $("#" + val+"_opt").delay(300).slideDown(300);
@@ -352,7 +390,7 @@ define([
             d3.csv("json/data.csv", type, function(error, data) {
                 if (error) throw error;
 
-                console.log(pie(data));
+                //console.log(pie(data));
 
                 this.g = svg.selectAll(".arc")
                     .data(pie(data))
@@ -399,10 +437,10 @@ define([
             }
 
             /*$("body").click(function() {
-                console.log("movie");
+                //console.log("movie");
                 d3.csv("json/datanewpie.csv", type, function(error, data) {
                     if (error) throw error;
-                    console.log(data);
+                    //console.log(data);
 
                     d3.selectAll(".arc").select("path").data(pie(data)).enter()
                         .insert("path")
@@ -442,10 +480,10 @@ define([
             var movdata = jQuery(tabledata).text();
             var final = movdata.replace(/M/g,"\n");
             //var next = final.replace(/\./g,":[");
-            console.log(final);
+            //console.log(final);
 
 
-            console.log($("table")[0]);*/
+            //console.log($("table")[0]);*/
 
         },
 
@@ -484,7 +522,7 @@ define([
                 if (error) throw error;
 
                 var keys = Object.keys(data[0]);
-                console.log(keys);
+                //console.log(keys);
 
                 var arr = [1, 4, 7, 2];
 
@@ -502,7 +540,7 @@ define([
                     }
                 });
 
-                console.log(gaussianArr);
+                //console.log(gaussianArr);
 
                 x.domain(gaussianArr.map(function(d) {
                     return d.name;
