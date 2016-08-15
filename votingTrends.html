@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<!-- Header where scripts and stylesheets are called -->
+
+<head>
+    <!-- google api -->
+    <!-- Calls to CSS Stylesheets -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.css">
+
+    <script src="https://use.typekit.net/edv1zzt.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
+
+    <!-- Calls to javascript files in bootstrap & jquery -->
+    <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- The main script is the entry point for the application -->
+    <script data-main="js/vote-main" src="lib/require/require.js"></script>
+    <!-- font awesome icon code -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!--
+       Tabs connecting to Home branch
+     -->
+
+    <!-- Page header for the webpage -->
+    <div id="header">
+        <div id="top">
+            <p><a href="/"><i class="fa fa-home"></i>Home</a></p>
+        </div>
+        <h1>U.S. Census<i class="fa fa-line-chart"></i></h1>
+
+        <div id="para">
+            <h4>Find America's history of polls in presidential elections and track
+          your favorite candidates during election seasons.
+        </h4>
+        </div>
+    </div>
+    <!-- bootstrap style dropdown -->
+    <div id="dropdowns">
+        <button style="margin-right: 5em;" type="button" class="btn btn-default" aria-label="Left Align" data-toggle="modal" data-target="#myModal">
+            <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+        </button>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Info</h4>
+                    </div>
+                    <div class="modal-body">
+                      Sorry, all the API's on this page are still on their way!
+
+                      <br><br>Contact us for any other questions, comments, or concerns and be sure to share your favorite page
+                    on social media with the share buttons below!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="demo">
+            <h4><label for="api">API: </label>
+            <select name="api" id="api">
+              <option value="" selected disabled>Please select</option>
+              <option value="census">census.gov</option>
+            </select>
+          </h4>
+            </form>
+        </div>
+
+        <div class="demo">
+            <form action="#">
+                <h4><label for="visual">Visual: </label>
+                  <select name="visual" id="visual">
+                  <option value="bar_graph_mapping">Bar Graph</option>
+                  <option value="pie_graph_mapping">Pie Graph</option>
+                  <option value="line_graph_mapping">Line Graph</option>
+                  <option value="bw_graph_mapping">Box and Whisker Plot</option>
+                </select>
+              </h4>
+            </form>
+        </div>
+
+        <div class="demo">
+            <form action="#">
+                <h4><label for="analyze">Data Analysis: </label>
+                  <select name="analyze" id="analyze">
+
+                </select>
+              </h4>
+            </form>
+        </div>
+    </div>
+
+    <div id="data_options">
+        <div id="census_opt" style="display:none;">
+            <div class="form-inline">
+
+                <div class="form-group" style="text-align: center; margin: auto">
+
+                    <div class="demo" style="float: left;">
+                        <form action="#">
+                            <h4>
+                <label for="factors">Factors: </label>
+                <select name="factors" id="factors">
+                  <option value="habitats">Habitats</option>
+                  <option value="threats">Threats</option>
+               </select>
+              </h4>
+                        </form>
+                    </div>
+
+                    <div class="ui-widget" style="float: left">
+                        <h4 style="margin-top: 0px; margin-bottom: 0px"><label for="city">Your city: </label>
+              <input placeholder="ex: Herpestes brachyurus" style="padding: 6px; font-size: 16px; border-radius: 5px; border: none; background-color: rgb(248, 248, 248)" id="city" type="text"></h4>
+                    </div>
+
+                    <div style="float: left; position: relative; transform: translateY(25%)">
+                        <button type="button" class="btn create" data-toggle="button" aria-pressed="false" autocomplete="off">
+                            <b>Get Data</b>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title" title="hidden content closed">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Table
+        </a>
+      </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+
+                    <div class="demo">
+                        <form action="#">
+                            <h4><label style="color: blue;" for="xaxis">X-Axis: </label>
+                          <select name="xaxis" id="xaxis">
+                            <option value="" selected disabled>Please select</option>
+                          </select>
+                        </h4>
+                        </form>
+                    </div>
+
+                    <div class="demo">
+                        <form action="#">
+                            <h4><label style="color: red;" for="yaxis">Y-Axis: </label>
+                          <select name="yaxis" id="yaxis">
+                            <option value="" selected disabled>Please select</option>
+                          </select>
+                          <br>
+                          <p>
+                            (please choose column with numbers in it)
+                          </p>
+                        </h4>
+                        </form>
+                    </div>
+
+                    <div id="table_loc">
+                        <!-- where javascript loaded table goes -->
+                    </div>
+
+                    <button type="button" class="btn graph" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <b>Graph</b>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="btn update" data-toggle="button" aria-pressed="false" autocomplete="off">
+        <b>Update</b>
+    </button>
+    <label>
+        <input type="checkbox"> Sort values</label>
+
+    <div class="msBar"></div>
+
+
+    <div id="footer">
+        <ul class="share-buttons">
+            Share:
+            <li>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost.8888&t=" target="_blank" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><i class="fa fa-facebook-square fa-2x"></i></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Flocalhost.8888&text=:%20http%3A%2F%2Flocalhost.8888" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20' + encodeURIComponent(document.URL)); return false;"><i class="fa fa-twitter-square fa-2x"></i></a>
+            </li>
+            <li>
+                <a href="http://www.reddit.com/submit?url=http%3A%2F%2Flocalhost.8888&title=" target="_blank" title="Submit to Reddit" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><i class="fa fa-reddit-square fa-2x"></i></a>
+            </li>
+            <li>
+                <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost.8888&title=&summary=&source=http%3A%2F%2Flocalhost.8888" target="_blank" title="Share on LinkedIn" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            </li>
+        </ul>
+        Copyright &copy; 2016 Analytix
+        <br>
+        <p><a style="font-size:1em" href="https://github.com/cs-squad/Data-Analysis-Web-Application">Github<i class="fa fa-github"></i></a></p>
+    </div>
+
+</body>
+
+</html>

@@ -1,5 +1,413 @@
 /*
-
 Add main CSS here
-
 */
+/*.icon {
+  transition: background-color 0.5s ease;
+  background-color: red;
+}
+.icon:hover {
+  background-color: blue;
+}*/
+body {
+  margin:0;
+  padding:0;
+}
+
+h1{
+    text-align: center;
+    color:#78583e;
+    font-weight:600;
+    font-size:3.5em;
+
+}
+label{
+  color:#78583e;
+}
+
+h4{
+  color:#78583e;
+}
+#data_options h4 label{
+  color: white;
+}
+#data_options label {
+  color: white;
+  /*float: left;*/
+}
+#data_options input {
+  /*float: right;*/
+  margin: 10px;
+}
+/*#data_options {
+  float: left;
+}*/
+.ui-autocomplete-loading {
+    background: white url("Images/ui-anim_basic_16x16.gif") right center no-repeat;
+}
+.add-button
+{
+-webkit-appearance: none;
+outline: none;
+border: 0;
+background: transparent;
+}
+select{
+  border:none;
+}
+a{
+  text-decoration:none !important;
+  font-weight: 700;
+  color: #78583e !important;
+  padding:.3em;
+}
+p{
+  display:inline;
+}
+ul.share-buttons{
+  list-style: none;
+  text-align:left;
+  bottom:0px;
+  padding:0;
+  display: inline-block;
+  float: left;
+  margin-left: 2em;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
+#table_loc {
+  height:400px;overflow:auto;
+}
+#top{
+  text-align:left;
+  font-size:1.3em;
+  color:#78583e;
+  margin:0;
+  display:block;
+  padding-left:1em;
+}
+.fa.fa-home{
+  font-size:1em;
+  padding-right:.15em;
+}
+.fa.fa-globe{
+   font-size:1.3em;
+   color:#78583e;
+   padding-left: .15em;
+}
+.fa.fa-gamepad{
+   font-size:1.3em;
+   color:#78583e;
+   padding-left: .15em;
+}
+.fa.fa-medkit{
+   font-size:1.3em;
+   color:#78583e;
+   padding-left: .15em;
+}
+.fa.fa-dollar{
+   font-size:1.3em;
+   color:#78583e;
+   padding-left: .15em;
+}
+.fa.fa-line-chart{
+   font-size:1.3em;
+   color:#78583e;
+   padding-left: .15em;
+}
+#dropdowns{
+  background-color: #eae8d7;
+  width:100%;
+  height:3.8em;
+  text-align: center;
+}
+#data_options {
+  background-color: #78583e;
+  /*width:100%;
+  text-align: center;*/
+  color:#FCFBE3;
+}
+#data_options div {
+  text-align: center;
+}
+#header{
+    text-align:center;
+    background-color:#FCFBE3;
+    padding-bottom:1.5em;
+    padding-top:1em;
+}
+#para{
+  font-size:2em;
+  text-align:center;
+  margin-top:1em;
+  margin-left:10em;
+  margin-right:10em;
+}
+#footer{
+  clear:both;
+  background-color:#ba9668;
+  text-align:right;
+  font-size:1.14em !important;
+  font-weight: 700;
+  color: #eae8d7;
+  bottom:0px;
+  width:100%;
+  padding-top:1em;
+}
+.demo{
+  display:inline-block;
+  padding-left: 1em;
+  font-size:1.3em;
+}
+
+.btn.create{
+  background-color:#c5bdaa;
+  border:.5em;
+  border-style: double;
+  border-color: white;
+  height: 3em;
+  color:#78583e;
+  margin-left: 2em;
+  margin-top: .2em;
+  /*margin-bottom: 3em;*/
+}
+.navbar {
+  margin-bottom: 2em;
+}
+
+.map {
+  margin-top: 5em;
+  margin-left: 10em;
+  margin-right: 5em;
+  height: 10em;
+  pointer-events: none;
+}
+
+.stations, .stations svg {
+  position: relative;
+}
+
+.stations svg {
+  width: 2em;
+  height: 2em;
+  padding-right: 5em;
+  font: 2em sans-serif;
+}
+
+.stations circle {
+  fill: green;
+  stroke: black;
+  stroke-width: 1.5px;
+}
+
+.stations circle:hover {
+  fill: blue;
+}
+
+/* line graph styling */
+.msLine {
+  font: 10px sans-serif;
+}
+
+.axis line_path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis line_path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: #6b486b;
+  stroke-width: 1.5px;
+}
+
+.poly{
+  stroke:#ccccff;
+}
+
+/*table option styling */
+#accordion {
+  float: right;
+  margin-top: 20px;
+  /*display: inline-block;*/
+  width: 300px;
+}
+
+/* bar graph styling */
+.bar {
+  fill: #6b486b;
+}
+
+.bar:hover {
+  fill: #8a89a6;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+/*normal distribution styling */
+body {
+        font: 10px sans-serif;
+    }
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+    /*.x.axis path {
+        display: none;
+    }*/
+    .line {
+        fill: none;
+        stroke: steelblue;
+        stroke-width: 1.5px;
+    }
+
+    .d3-tip {
+      line-height: 1;
+      font-weight: bold;
+      padding: 12px;
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      border-radius: 2px;
+    }
+
+    /* Creates a small triangle extender for the tooltip */
+    .d3-tip:after {
+      box-sizing: border-box;
+      display: inline;
+      font-size: 10px;
+      width: 100%;
+      line-height: 1;
+      color: rgba(0, 0, 0, 0.8);
+      content: "\25BC";
+      position: absolute;
+      text-align: center;
+    }
+
+    /* Style northward tooltips differently */
+    .d3-tip.n:after {
+      margin: -1px 0 0 0;
+      top: 100%;
+      left: 0;
+    }
+/* piechart styling */
+path.slice{
+  stroke-width:2px;
+}
+
+polyline{
+  opacity: .3;
+  stroke: black;
+  stroke-width: 2px;
+  fill: none;
+}
+.msPie {
+  margin-left: auto;
+  display: block;
+}
+/* line chart styling */
+path {
+	stroke: steelblue;
+	stroke-width: 1;
+	fill: none;
+}
+
+.axis {
+  shape-rendering: crispEdges;
+}
+
+.x.axis line {
+  stroke: lightgrey;
+}
+
+.x.axis .minor {
+  stroke-opacity: .5;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.y.axis line, .y.axis path {
+  fill: none;
+  stroke: #000;
+}
+
+/* linear regression styling */
+.msLinReg {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+/*map styling*/
+/* On mouse hover, lighten state color */
+path:hover {
+	fill-opacity: .7;
+}
+
+/* Style for Custom Tooltip */
+div.tooltip {
+ 	position: absolute;
+	text-align: center;
+	width: 60px;
+	height: 28px;
+	padding: 2px;
+	font: 12px sans-serif;
+	background: white;
+	border: 0px;
+	border-radius: 8px;
+	pointer-events: none;
+}
+
+/* Legend Font Style */
+body {
+	font: 11px sans-serif;
+}
+
+/* Legend Position Style */
+.legend {
+	position:absolute;
+	left:800px;
+	top:350px;
+}
+
+.modal-title{
+  font-size: 4em;
+}
+.modal-body{
+  font-size: 2em;
+}

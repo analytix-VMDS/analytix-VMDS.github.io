@@ -19,14 +19,72 @@ requirejs([
     'jquery',
     'd3',
     'js/models/graph',
-    'js/views/graph'
-],function($, d3, Model, View) {
+    'js/views/graph',
+    'js/views/EnterView',
+    'js/views/EnvView',
+    'js/views/HealthView',
+    'js/views/VoteView',
+    'js/views/WagesView'
+],function($, d3, Model, View, enterView, envView, healthView, voteView, wagesView) {
 
-  var data = [  ];
+  var data = [];
+  var scope = this;
 
-  this.graph_model = new Model( data );
+  /*$.ajax({
+      url:"data-grabber.py", success: function(){alert("DONE");}
+ });*/
+var ajaxdata = function(api) {
+   $.ajax({
+      url: api,
+      data: {
+         format: 'json'
+      },
+      error: function() {
+         $('#info').html('<p>An error has occurred</p>');
+      },
+      dataType: 'jsonp',
+      success: function(data) {
+        console.log(data);
 
-  this.graph_view = new View( { "model" : this.graph_model } );
+      },
+      type: 'GET'
+   });
+ }
+
+ ajaxdata('http://services.cngnow.com/V1/Stations.svc/external/circlefilter?latitude=35.4675&longitude=-97.5161&range=15&status=active');
+ //ajaxdata('someapi');
+ ajaxdata('http://uselectionatlas.org/WIKI/api.php');
+ //ajaxdata('http://www.boxofficemojo.com/data/js/wknd5.php');
+
+
+  /*for(var i = 0; i < 1; i++) {
+    d3.json("json/file"+i+".json", function(error, json){
+
+      if (error) {  //If error is not null, something went wrong.
+        console.log(error);  //Log the error.
+      } else {      //If no error, the file loaded correctly.
+
+        //Include other code to execute after successful file load here
+        data = json;
+        caller(data);
+
+      }
+    })
+  }*/
+
+  //var caller = function(data) {
+    //console.log(data);
+    this.graph_model = new Model( data );
+
+    //this.enter_view = new enterView( { "model" : this.graph_model } );
+    //this.env_view = new envView( { "model" : this.graph_model } );
+    //this.health_view = new healthView( { "model" : this.graph_model } );
+    //this.vote_view = new voteView( { "model" : this.graph_model } );
+    //this.wages_view = new wagesView( { "model" : this.graph_model } );
+
+    this.graph_view = new View( { "model" : this.graph_model } );
+    //console.log(this.graph_model)
+  //}
 
 
 });

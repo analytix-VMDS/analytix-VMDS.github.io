@@ -1,0 +1,135 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+h1{
+	text-align: center;
+	color: #78583e;
+	font-weight:600;
+	font-style:normal;
+	font-size:4.8em;
+	padding-top:1.5em;
+}
+a{
+	text-decoration:none;
+	font-weight: 700;
+	font-size: 1.25em;
+	color: #78583e;
+	display:block;
+	padding:.3em;
+}
+#more-info{
+    text-align:left;
+    font-size: .85em;
+    margin-bottom: 0;
+    margin-left:.5em;
+    margin-top: .5em;
+}
+
+#navbar ul{
+	list-style-type: none;
+	overflow:hidden;
+	position:fixed;
+	margin-top: 0;
+	padding:0em;
+	width:100%;
+	background-color:#eae8d7;
+	top:0;
+}
+#navbar ul li{
+	float:left;
+	padding: .5em;
+}
+#navbar ul li:hover {
+	background-color: #dcd9bc;
+}
+#options ul li{
+	text-align: center;
+	display:inline-block;
+	padding:1em;
+}
+#options ul li a:hover {
+    background-color: #eae8d7;
+    transition: all 0.5s ease;
+}
+#options ul li a {
+	width: 10em;
+	height: 8em;
+	padding-top: 2em;
+	transition: all 0.5s ease;
+	border-radius: 10em;
+}
+.fa.fa-globe{
+	font-size:5em;
+	display: block;
+}
+.fa.fa-line-chart{
+	font-size:4.5em;
+	display:block;
+}
+.fa.fa-gamepad{
+	font-size:5em;
+	display:block;
+}
+.fa.fa-dollar{
+	font-size:5em;
+	display:block;
+}
+.fa.fa-medkit{
+	font-size:5em;
+	display:block;
+}
+.fa.fa-github{
+	font-size:1em;
+}
+
+#container
+{
+    background-color: white;
+    min-height: 100vh;
+}
+
+#header{
+	background-color: white;
+	padding:1em;
+}
+
+#options ul{
+	text-align: center;
+	list-style-type: none;
+    color: #78583e;
+    padding-bottom: 10em
+
+}
+
+#footer{
+	clear:both;
+	text-align: right;
+	background-color:#ba9668;
+	font-weight: 700;
+	color: #eae8d7;
+	bottom:0px;
+	width:100%;
+	padding-top:1em;
+
+}
+#about-us{
+	background-color:#eae8d7;
+	color: #78583e;
+	font-size:1.5em;
+	text-align:justify;
+	padding-right: 5em;
+	padding-left:5em;
+	padding-bottom: 1em;
+	padding-top:1em;
+}
+#contact{
+	background-color:#78583e;
+	padding-right: 5em;
+	padding-left:5em;
+	padding-bottom: 1em;
+	padding-top:1em;
+	font-size:1.5em;
+	color:#eae8d7;
+	text-align:justify;
+}

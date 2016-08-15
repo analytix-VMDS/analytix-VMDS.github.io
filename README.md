@@ -1,23 +1,22 @@
-# Boilerplate code for a data-based D3 application
+# Visualizations of Modern Day Statistics
+ A website that provides an easy way to analyze data from numerous topics, such as the environment, politics, wages, and voting trends.
 
-Clone this repository to efficiently build a data-based web application with D3 visualizations. Essential Backbone components, such as the model and view, have
-already been included.
-
-It contains all the boilerplate code for an application using:
-
-1. Backbone.js and Underscore.js as an MVC framework
-2. Require.js for module loading
-3. and JQuery for widgets HTML/JS interaction/glue-code.
-
-## To begin ...
+## To explore the code...
 
 Clone this repository
 ```
-git clone https://github.com/SMCCoder/d3app
+git clone https://github.com/cs-squad/Data-Analysis-Web-Application.git
 ```
 then download the submodules.
 ```
-cd d3-databased-app-boilerplate
+cd Data-Analysis-Web-Application
 git submodule init
 git submodule update
 ```
+Currently, the page with the most recent updates is Home, so use:
+
+```
+git checkout Home
+```
+
+to switch to that branch.
