@@ -54,7 +54,10 @@ define([
               .data(keydata).enter()
               .append("th")
               .text(function(d) {
-                  return d;
+                d = d.toLowerCase().replace(/\b[a-z]/g, function(letter) {
+                    return letter.toUpperCase();
+                });
+                return d;
               })
               .style("background-color", "lightgrey")
               .on("mouseover", function() {
