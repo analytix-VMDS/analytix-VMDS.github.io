@@ -188,7 +188,8 @@ define([
           this.yAxis = d3.svg.axis()
               .scale(this.y)
               .orient("left")
-              .ticks(40);
+              // this could be a value the user could change
+              .ticks(10);
 
           this.tip = d3.tip()
               .attr('class', 'd3-tip')
@@ -212,7 +213,7 @@ define([
                   return d[xkey];
               }));
               this.y.domain([0, d3.max(data, function(d) {
-                  return d[ykey];
+                  return +d[ykey];
               })]);
 
               svg.append("g")
@@ -248,25 +249,28 @@ define([
                   })
                   .attr("width", this.x.rangeBand())
                   .attr("y", function(d) {
-                      return scope.y(d[ykey]);
+                      return scope.y(+d[ykey]);
                   })
                   .attr("height", function(d) {
-                      return height - scope.y(d[ykey]);
+                      return height - scope.y(+d[ykey]);
                   })
                   .attr("fill", function(d){
                     return "rgb(0, "+d[ykey]+",0)";
                   })
-                  .style("overflow","visible")
+                  //.style("overflow","visible")
                   .on("click", function(){
-                    /*svg.selectAll("rect")
+                    svg.selectAll("rect")
                        .sort(function(a, b) {
                              return d3.ascending(a, b);
                        })
                        .transition()
                        .duration(1000)
                        .attr("x", function(d, i) {
-                             return x(i);
-                       });*/
+                             return scope.x(d[xkey]);
+                       })
+                       .attr("y", function(d, i) {
+                             return scope.y(d[ykey]);
+                       });
                   })
                   .on('mouseover', this.tip.show)
                   .on('mouseout', this.tip.hide);
