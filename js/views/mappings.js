@@ -4,7 +4,7 @@ define([
     'd3',
     'backbone',
     'js/models/graph',
-    'http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js'
+    'ext-lib/d3-tip'
 
 ], function($, $ui, d3, backbone, Model) {
 
