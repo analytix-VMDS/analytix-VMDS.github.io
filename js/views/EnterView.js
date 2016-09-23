@@ -37,7 +37,7 @@ define([
               //for(var i=1; i < 8; i++) {
 
                 $.ajax( {
-                  url: "http://api.themoviedb.org/3/discover/movie?page=1&api_key=9cff8111045983be875097f569683c8e&sort_by=popularity.desc",
+                  url: "https://api.themoviedb.org/3/discover/movie?page=1&api_key=9cff8111045983be875097f569683c8e&sort_by=popularity.desc",
                   dataType: "json",
                   data: {
                     q: request.term
@@ -195,7 +195,7 @@ define([
           $( "#city" ).autocomplete({
             source: function( request, response ) {
               $.ajax( {
-                url: "http://apiv3.iucnredlist.org/api/v3/species/page/1?token=1da43ebfc20ad97f3b32afcee87d47b77d8acfac9113d2273f15c97e26e047c4",
+                url: "https://apiv3.iucnredlist.org/api/v3/species/page/1?token=1da43ebfc20ad97f3b32afcee87d47b77d8acfac9113d2273f15c97e26e047c4",
                 dataType: "json",
                 data: {
                   q: request.term
@@ -218,7 +218,7 @@ define([
             var scientificName = $("#city").val().replace(" ","%20");
             var factor = $("#factors").val();
             ////console.log($("#city").val()+" "+$("#factors").val());
-            var api =  'http://apiv3.iucnredlist.org/api/v3/'+factor+'/species/name/'+scientificName+'?token=1da43ebfc20ad97f3b32afcee87d47b77d8acfac9113d2273f15c97e26e047c4';
+            var api =  'https://apiv3.iucnredlist.org/api/v3/'+factor+'/species/name/'+scientificName+'?token=1da43ebfc20ad97f3b32afcee87d47b77d8acfac9113d2273f15c97e26e047c4';
             ////console.log('http://apiv3.iucnredlist.org/api/v3/'+factor+'/species/name/'+scientificName+'?token=1da43ebfc20ad97f3b32afcee87d47b77d8acfac9113d2273f15c97e26e047c4');
 
             //console.log(api);
