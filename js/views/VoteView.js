@@ -79,7 +79,7 @@ define([
           $("#topic").on('change', function(){
             subTopicDisplay();
           });
-          
+
           function subTopicDisplay()
           {
               var subTopics=[];
@@ -193,7 +193,7 @@ define([
                  {
                     if(subTopicName=="All Subtopics")
                     {
-                        url="http://api.census.gov/data/"+year+"/acs5/?get="+subTopicCode+",NAME&for=us:1&key="+key;
+                        url="https://api.census.gov/data/"+year+"/acs5/?get="+subTopicCode+",NAME&for=us:1&key="+key;
                     }
                     //so basically just mess with this part....
                     else
@@ -203,18 +203,18 @@ define([
                         {
                              s+=(","+states[ii].fips);
                         }
-                        url="http://api.census.gov/data/"+year+"/acs5/?get="+topicCode+subTopicCode+",NAME&for=state:01"+s+"&key="+key;
+                        url="https://api.census.gov/data/"+year+"/acs5/?get="+topicCode+subTopicCode+",NAME&for=state:01"+s+"&key="+key;
                     }
                  }
                  else
                  {
                     if(subTopicName=="All Subtopics")
                     {
-                        url="http://api.census.gov/data/"+year+"/acs5/?get="+subTopicCode+",NAME&for=state:"+state+"&key="+key;
+                        url="https://api.census.gov/data/"+year+"/acs5/?get="+subTopicCode+",NAME&for=state:"+state+"&key="+key;
                     }
                     else
                     {
-                        url="http://api.census.gov/data/"+year+"/acs5/?get="+topicCode+subTopicCode+",NAME&for=state:"+state+"&key="+key;
+                        url="https://api.census.gov/data/"+year+"/acs5/?get="+topicCode+subTopicCode+",NAME&for=state:"+state+"&key="+key;
                     }
                  }
                  $.ajax({
