@@ -37,7 +37,7 @@ define([
               //for(var i=1; i < 8; i++) {
 
                 $.ajax( {
-                  url: "https://api.themoviedb.org/3/discover/movie?page=1&api_key=9cff8111045983be875097f569683c8e&sort_by=popularity.desc",
+                  url: "https://api.themoviedb.org/3/discover/movie?page=1&api_key=9cff8111045983be875097f569683c8e&sort_by=popularity.desc&q=Deadpool",
                   dataType: "json",
                   data: {
                     q: request.term
